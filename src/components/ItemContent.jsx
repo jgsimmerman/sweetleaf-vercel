@@ -8,10 +8,7 @@ import Helmet from 'react-helmet';
 import BuyButton from './BuyButton';
 import Img from 'gatsby-image';
 import { Grid, GridItem } from 'styled-grid-component';
-//import { openCart, addToCart } from '@escaladesports/zygote-cart';
-// //import { Cart, openCart, addToCart, Totals, utils} from '@escaladesports/zygote-cart/src/export/utils/calculate-total';
 import { openCart, addToCart } from 'cart';
-// import * as EscaAPI from '@escaladesports/zygote-plugin-esca-api'
 
 
 

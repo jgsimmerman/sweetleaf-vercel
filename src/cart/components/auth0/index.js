@@ -21,7 +21,7 @@ export default class Login extends React.Component {
 					autoclose: true,
 					closeable: true,
 					theme: {
-						logo: `https://www.escaladesports.com/uploads/icon.png`,
+						logo: ``,
 						...settingsState.state.auth0Theme,
 					},
 					languageDictionary: {

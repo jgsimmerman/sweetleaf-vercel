@@ -12,14 +12,6 @@ import { Grid, GridItem } from 'styled-grid-component';
 import { Cart } from 'cart';
 
 
-// import * as preinfo from "preinfo";
-// import * as calculatetax from "calculatetax";
-// import * as secondplugin from "secondplugin";
-// import * as componentTest from "componentTest";
-//import * as helpers from "helpers";
-
-//import * as EscaAPI from '@escaladesports/zygote-plugin-esca-api';
-
 const ZygoteCart = props => {
 
   //const { subtotal } = props.Totals.totalsState.state

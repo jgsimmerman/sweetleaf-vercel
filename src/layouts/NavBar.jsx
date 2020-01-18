@@ -5,7 +5,7 @@ import Headroom from 'react-headroom';
 import logo from '../../static/logo/header-logo.png';
 import { FaShoppingCart } from 'react-icons/fa';
 import { Zygote } from 'components';
-import { CartQuantity, openCart } from 'zygote-cart-clone'
+import { CartQuantity, openCart } from 'cart'
 
 
 

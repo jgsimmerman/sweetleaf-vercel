@@ -8,8 +8,7 @@ import '../styles/prism';
 import Helmet from 'react-helmet';
 import BuyButton from '../components/BuyButton';
 import ItemContent from '../components/ItemContent';
-//import { Cart, openCart, addToCart, Totals } from '@escaladesports/zygote-cart';
-import { Cart, openCart, addToCart, Totals } from 'zygote-cart-clone';
+import { Cart, openCart, addToCart, Totals } from 'cart';
 
 
 const Post = ({ data, pageContext }) => {

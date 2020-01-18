@@ -12,8 +12,7 @@ import { SEO, ZygoteCart } from 'components';
 import { NavBar, Footer, BurgerMenu, SocialIcons } from 'layouts';
 import theme from '../../config/theme';
 import headroom from '../styles/headroom';
-//import { Cart, openCart, addToCart, Totals, Zygote, totalsState, State } from '@escaladesports/zygote-cart';
-import { Cart, openCart, addToCart, Totals, Zygote, totalsState, State } from 'zygote-cart-clone';
+import { Cart, openCart, addToCart, Totals, Zygote, totalsState, State } from 'cart';
 
 
 function Loading(props) {
