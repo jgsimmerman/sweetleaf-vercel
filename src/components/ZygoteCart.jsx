@@ -9,7 +9,7 @@ import BuyButton from './BuyButton';
 import Img from 'gatsby-image';
 import { Grid, GridItem } from 'styled-grid-component';
 
-import { Cart } from 'cart';
+import { Cart, getShippingMethods } from 'cart';
 
 
 const ZygoteCart = props => {
@@ -35,7 +35,7 @@ const ZygoteCart = props => {
       infoWebhook='/.netlify/functions/info-stripe'
 			orderWebhook='/.netlify/functions/order-stripe'
       
-      //plugins={[ helpers ]}
+      plugins={[ getShippingMethods ]}
 
       cartHeader={<div>Sweet Leaf Succulents</div>}
 

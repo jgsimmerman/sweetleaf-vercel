@@ -5,6 +5,7 @@ export { default as closeCart } from './utils/close-cart'
 export { default as toggleCart } from './utils/toggle-cart'
 export { default as addToCart } from './utils/add-to-cart'
 export { default as removeFromCart } from './utils/remove-from-cart'
+export { default as getShippingMethods } from './plugins/getShippingMethods'
 export {
 	addedToCartState,
 	customerState,
