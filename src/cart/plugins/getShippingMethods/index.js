@@ -159,7 +159,7 @@ const getShippingMethods = async ({ response, info, preFetchData }) => {
 		{
 			id: option.id,
 			description: option.description,
-			value: option.value(subtotal),
+			value: `${option.value(subtotal)}`, //place value inside of quotes
 			addInfo: `${option.addInfo}`,
 		}
 	))
@@ -170,7 +170,7 @@ const getShippingMethods = async ({ response, info, preFetchData }) => {
 
 	return {
 		...response,
-		methods: shippingMethods,
+		shippingMethods: shippingMethods, //change this back to just "methods: shippingMethods"?
 		selected: shippingMethods[0], // Default selected method
 	}
 }
