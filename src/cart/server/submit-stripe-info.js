@@ -24,130 +24,6 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 		meta: {},
 	}
 
-	// Shipping Methods
-
-	let subtotal = body.subtotal
-
-  let shippingOptions = [
-    {
-      id: `shipping-0`,
-      description: `Priority Shipping`,
-      amount: (subtotal) => {
-        if (subtotal < 3000) {
-          return 795
-        } else if (subtotal < 4500) {
-          return 895
-        }
-        else if (subtotal < 5000) {
-          return 995
-        }
-        else if (subtotal >= 5000) {
-          return 0 //1195
-        }
-        // else if (subtotal > 7501) {
-        // 	return 0
-        // }
-      },
-    },
-    {
-      id: `shipping-1`,
-      description: `Express Shipping`,
-      amount: (subtotal) => {
-        if (subtotal < 3000) {
-          return 1595
-        } else if (subtotal < 4500) {
-          return 1795
-        } else if (subtotal < 6000) {
-          return 1895
-        }
-        else if (subtotal < 7500) {
-          return 2195
-        }
-        else if (subtotal < 10500) {
-          return 3095
-        }
-        else if (subtotal < 14000) {
-          return 3395
-        }
-        else if (subtotal < 17500) {
-          return 4195
-        }
-        else if (subtotal < 21000) {
-          return 4795
-        }
-        else if (subtotal < 35000) {
-          return 5495
-        }
-        else if (subtotal < 50000) {
-          return 6796
-        }
-        else if (subtotal < 75000) {
-          return 7995
-        }
-        else if (subtotal <= 100000) {
-          return 9695
-        }
-        else if (subtotal > 100000) {
-          return 9695
-        }
-      },
-    },
-    {
-      id: `shipping-2`,
-      description: `Overnight Shipping`,
-      amount: (subtotal) => {
-        if (subtotal < 3000) {
-          return 2995
-        } else if (subtotal < 4500) {
-          return 3295
-        } else if (subtotal < 6000) {
-          return 3495
-        }
-        else if (subtotal < 7500) {
-          return 3995
-        }
-        else if (subtotal < 10500) {
-          return 5695
-        }
-        else if (subtotal < 14000) {
-          return 5995
-        }
-        else if (subtotal < 17500) {
-          return 7195
-        }
-        else if (subtotal < 21000) {
-          return 8195
-        }
-        else if (subtotal < 35000) {
-          return 8995
-        }
-        else if (subtotal < 50000) {
-          return 10995
-        }
-        else if (subtotal < 75000) {
-          return 12595
-        }
-        else if (subtotal <= 100000) {
-          return 14995
-        }
-        else if (subtotal > 100000) {
-          return 16995
-        }
-      },
-    },
-  ]
-
-  body.shippingMethods = shippingOptions.map(option => (
-    {
-      id: option.id,
-      description: option.description,
-      amount: `${option.amount(subtotal)}`, //place amount inside of quotes
-      //addInfo: `${option.addInfo}`,
-    }
-	))
-	const ship = [...body.shippingMethods]
-	// End Shipping Methods
-
 	// Create stripe order
 	let order
 	let orderType = `order`
@@ -186,14 +62,6 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 					country: `US`,
 				},
 			},
-			shipping_methods: ship.map(({ id, amount, description })=>(
-				{
-					id: id,
-					description: description,
-					amount: amount, 
-					//addInfo: `${option.addInfo}`,
-				}
-			)),
 		}
 		if (body.coupon) {
 			obj.coupon = body.coupon
@@ -256,20 +124,20 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 			if (type === `discount` || type === `tax` || type === `shipping`) {
 				res.modifications.push({
 					id: type === `discount` ? parent : type,
-					amount: amount,
+					value: amount,
 					description,
 				})
 			}
 		})
 	}
 
-	console.log(order.shipping_methods)
+
 	// Get shipping
 	if (order.shipping_methods) {
 		res.shippingMethods = order.shipping_methods.map(({ id, amount, description }) => {
 			return {
 				id,
-				amount: amount,
+				value: amount,
 				description,
 			}
 		})

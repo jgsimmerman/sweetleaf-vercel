@@ -9,7 +9,7 @@ import BuyButton from './BuyButton';
 import Img from 'gatsby-image';
 import { Grid, GridItem } from 'styled-grid-component';
 
-import { Cart, getShippingMethods, preInfo } from 'cart';
+import { Cart, getShippingMethods, preInfo, Shipping} from 'cart';
 
 
 const ZygoteCart = props => {
@@ -34,12 +34,13 @@ const ZygoteCart = props => {
       //stripeApiKey=`${process.env.STRIPE_API_PUBLIC}`
       infoWebhook='/.netlify/functions/info-stripe'
       orderWebhook='/.netlify/functions/order-stripe'
-      //infoWebhook='https://98f0c2b3.ngrok.io/.netlify/functions/info-stripe'
-      //orderWebhook='https://98f0c2b3.ngrok.io/.netlify/functions/order-stripe'
+      // infoWebhook='https://98f0c2b3.ngrok.io/.netlify/functions/info-stripe'
+      // orderWebhook='https://98f0c2b3.ngrok.io/.netlify/functions/order-stripe'
       
       plugins={[ 
         // getShippingMethods, 
         // preInfo, 
+        Shipping
       ]}
 
       cartHeader={<div>Sweet Leaf Succulents</div>}
