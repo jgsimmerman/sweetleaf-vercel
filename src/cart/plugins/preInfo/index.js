@@ -22,7 +22,6 @@ const preInfo = async ({ preFetchData, info }) => {
         // 	return 0
         // }
       },
-      addInfo:  `Free priority shipping on orders over $50!`,
     },
     {
       id: `shipping-1`,
@@ -66,7 +65,6 @@ const preInfo = async ({ preFetchData, info }) => {
           return 9695
         }
       },
-      addInfo: ``,
     },
     {
       id: `shipping-2`,
@@ -110,11 +108,10 @@ const preInfo = async ({ preFetchData, info }) => {
           return 16995
         }
       },
-      addInfo: ``,
     },
   ]
 
-  shippingMethods = shippingOptions.map(option => (
+  info.shippingMethods = shippingOptions.map(option => (
     {
       id: option.id,
       description: option.description,
@@ -122,12 +119,12 @@ const preInfo = async ({ preFetchData, info }) => {
       addInfo: `${option.addInfo}`,
     }
   ))
+    
 
   console.log(`preinfo plugin: ${shippingMethods}`)
   
   return {
-    ...info,
-    shippingMethods
+    info
   }
 }
 

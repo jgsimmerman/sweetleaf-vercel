@@ -142,7 +142,7 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
       id: option.id,
       description: option.description,
       value: `${option.value(subtotal)}`, //place value inside of quotes
-      addInfo: `${option.addInfo}`,
+      //addInfo: `${option.addInfo}`,
     }
 	))
 	
@@ -186,7 +186,14 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 					country: `US`,
 				},
 			},
-			shipping_methods: body.shippingMethods,
+			shipping_methods: body.shippingMethods.map(({ id, amount, description })=>(
+				{
+					id: id,
+					description: description,
+					amount: value, //place value inside of quotes
+					//addInfo: `${option.addInfo}`,
+				}
+			)),
 		}
 		if (body.coupon) {
 			obj.coupon = body.coupon
