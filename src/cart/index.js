@@ -6,6 +6,8 @@ export { default as toggleCart } from './utils/toggle-cart'
 export { default as addToCart } from './utils/add-to-cart'
 export { default as removeFromCart } from './utils/remove-from-cart'
 export { default as getShippingMethods } from './plugins/getShippingMethods'
+export { default as preInfo } from './plugins/preInfo'
+
 export {
 	addedToCartState,
 	customerState,

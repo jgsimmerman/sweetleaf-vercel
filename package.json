@@ -77,6 +77,7 @@
     "is-phone": "^2.0.0",
     "is-valid-zip": "^0.0.3",
     "isomorphic-fetch": "^2.2.1",
+    
     "npm-run-all": "^4.1.5",
     "prismjs": "^1.17.1",
     "prop-types": "^15.7.2",
