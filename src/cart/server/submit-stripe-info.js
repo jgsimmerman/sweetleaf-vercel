@@ -32,7 +32,7 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
     {
       id: `shipping-0`,
       description: `Priority Shipping`,
-      value: (subtotal) => {
+      amount: (subtotal) => {
         if (subtotal < 3000) {
           return 795
         } else if (subtotal < 4500) {
@@ -52,7 +52,7 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
     {
       id: `shipping-1`,
       description: `Express Shipping`,
-      value: (subtotal) => {
+      amount: (subtotal) => {
         if (subtotal < 3000) {
           return 1595
         } else if (subtotal < 4500) {
@@ -95,7 +95,7 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
     {
       id: `shipping-2`,
       description: `Overnight Shipping`,
-      value: (subtotal) => {
+      amount: (subtotal) => {
         if (subtotal < 3000) {
           return 2995
         } else if (subtotal < 4500) {
@@ -141,7 +141,7 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
     {
       id: option.id,
       description: option.description,
-      value: `${option.value(subtotal)}`, //place value inside of quotes
+      amount: `${option.amount(subtotal)}`, //place amount inside of quotes
       //addInfo: `${option.addInfo}`,
     }
 	))
@@ -190,7 +190,7 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 				{
 					id: id,
 					description: description,
-					amount: value, //place value inside of quotes
+					amount: amount, 
 					//addInfo: `${option.addInfo}`,
 				}
 			)),
@@ -256,20 +256,20 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 			if (type === `discount` || type === `tax` || type === `shipping`) {
 				res.modifications.push({
 					id: type === `discount` ? parent : type,
-					value: amount,
+					amount: amount,
 					description,
 				})
 			}
 		})
 	}
 
-
+	console.log(order.shipping_methods)
 	// Get shipping
 	if (order.shipping_methods) {
 		res.shippingMethods = order.shipping_methods.map(({ id, amount, description }) => {
 			return {
 				id,
-				value: amount,
+				amount: amount,
 				description,
 			}
 		})
