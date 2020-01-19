@@ -27,6 +27,7 @@ export default async function fetchWebhook(path, body) {
 			totals: totalsState.state,
 			meta: metaState.state.meta,
 			subtotal: totalsState.state.subtotal,
+			shippingMethods: shippingState.state.methods,
 		}
 
 		preFetchData = info

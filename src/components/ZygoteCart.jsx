@@ -35,7 +35,10 @@ const ZygoteCart = props => {
       infoWebhook='/.netlify/functions/info-stripe'
 			orderWebhook='/.netlify/functions/order-stripe'
       
-      plugins={[ getShippingMethods, preInfo ]}
+      plugins={[ 
+        getShippingMethods, 
+        // preInfo, 
+      ]}
 
       cartHeader={<div>Sweet Leaf Succulents</div>}
 

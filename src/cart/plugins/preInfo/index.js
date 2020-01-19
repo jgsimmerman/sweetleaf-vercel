@@ -122,8 +122,11 @@ const preInfo = async ({ preFetchData, info }) => {
       addInfo: `${option.addInfo}`,
     }
   ))
+
+  console.log(`preinfo plugin: ${shippingMethods}`)
   
   return {
+    ...info,
     shippingMethods
   }
 }
