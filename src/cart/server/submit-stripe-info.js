@@ -145,7 +145,7 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
       //addInfo: `${option.addInfo}`,
     }
 	))
-	
+	const ship = [...body.shippingMethods]
 	// End Shipping Methods
 
 	// Create stripe order
@@ -186,7 +186,7 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 					country: `US`,
 				},
 			},
-			shipping_methods: body.shippingMethods.map(({ id, amount, description })=>(
+			shipping_methods: ship.map(({ id, amount, description })=>(
 				{
 					id: id,
 					description: description,
