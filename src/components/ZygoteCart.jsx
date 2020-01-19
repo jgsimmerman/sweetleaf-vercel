@@ -50,7 +50,7 @@ const ZygoteCart = props => {
           id: `ship`,
           description: `Shipping Modification`,
           value: 1000,
-          displayValue: `Shipping Modification`
+          displayValue: `$10.00`
         }
       ]}
 

@@ -1,5 +1,5 @@
-// import React, { Fragment } from 'react'
-// import ShippingMethodsList from './list'
+ import React, { Fragment } from 'react'
+ import ShippingMethodsList from './list'
 
 // export default class Shipping extends React.Component {
 //   render() {
@@ -42,7 +42,7 @@
   
 // }
 
-export class Shipping extends React.Component {
+export default class Shipping extends React.Component {
   render() {
     return (
       <Fragment>

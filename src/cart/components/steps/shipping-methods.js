@@ -34,6 +34,7 @@ export default class ShippingStep extends React.Component{
 									if (typeof Shipping === `function`) {
 										return <Shipping key={key} />
 									}
+									
 								})}
 								<div className='zygoteShippingBtn'>
 									<Button
