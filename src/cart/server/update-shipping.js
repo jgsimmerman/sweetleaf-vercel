@@ -158,7 +158,7 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 		},
 	]
 
-	shippingMethods = shippingOptions.map(option => (
+	ship = shippingOptions.map(option => (
 		{
 			id: option.id,
 			description: option.description,
@@ -167,7 +167,7 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 		}
 	))
 
-  //
+  shippingMethods = JSON.parse(JSON.stringify(ship))
 
 	// Validate product prices & stock here
 	// Create empty result object to be sent later
