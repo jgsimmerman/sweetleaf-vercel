@@ -158,7 +158,7 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 		},
 	]
 
-	ship = shippingOptions.map(option => (
+	let ship = shippingOptions.map(option => (
 		{
 			id: option.id,
 			description: option.description,
