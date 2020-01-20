@@ -40,19 +40,12 @@ const ZygoteCart = props => {
       plugins={[ 
         // getShippingMethods, 
         // preInfo, 
-        Shipping
+        // Shipping
       ]}
 
       cartHeader={<div>Sweet Leaf Succulents</div>}
 
-      totalModifications = {[
-        {
-          id: `ship`,
-          description: `Shipping Modification`,
-          value: 1000,
-          displayValue: `$10.00`
-        }
-      ]}
+      
 
       // totalModifications={[
       //   // {
