@@ -10,44 +10,12 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 		body = JSON.parse(body)
   }
   
-  // Start shipping methods
-  // let info 
-  // try {
-  //   info = await fetch(infoWebhook, vals)
-  // }
-  // catch (err) {
-  //   info = {}
-  // }
-	// let subtotal = info.subtotal // Use body.order_amount instead?
 
 	let subtotal = body.order.amount
 	
 	console.log(`Subtotal from updateShipping ${subtotal}`)
 	let shippingMethods = []
 
-
-	// // eslint-disable-next-line no-undef
-	// await fetch(`shipWebhook`, {
-	// 	method: `post`,
-	// 	body: JSON.stringify(shipping),
-	// })
-	// 	.then(response => response.json())
-	// 	.then(data => {
-	// 		if (data.errors) {
-	// 			throw Error(data.errors)
-	// 		}
-
-	// 		shippingMethods = data.shippingOptions.map(option => (
-	// 			{
-	// 				id: option.id,
-	// 				description: option.label,
-	// 				value: option.value,
-	// 				addInfo: option.addInfo,
-	// 			}
-	// 		))
-	// 	})
-
-	
 
 	let shippingOptions = [
 		{
@@ -161,16 +129,6 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 		},
 	]
 
-	// let ship = shippingOptions.map(option => (
-	// 	{
-	// 		id: option.id,
-	// 		description: option.description,
-	// 		value: option.value(subtotal),
-	// 		addInfo: `${option.addInfo}`,
-	// 	}
-	// ))
-
-	//shippingMethods = JSON.parse(JSON.stringify(ship))
 	
 	shippingMethods = shippingOptions.map(option => 		
 		option.value(subtotal)
@@ -180,9 +138,13 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 	let ship1 = ship[1]
 	let ship2 = ship[2]
 
-	// Validate product prices & stock here
-	// Create empty result object to be sent later
+	let itemTax = Math.ceil(subtotal*.08)
 
+	let tax0 = Math.ceil(ship0*.08)
+  let tax1 = Math.ceil(ship1*.08)
+  let tax2 = Math.ceil(ship2*.08)
+
+	
   let response = {
     "order_update": {
       "items": [
@@ -190,7 +152,7 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
           "parent": null,
           "type": "tax",
           "description": "Sales taxes",
-          "amount": 245,
+          "amount": itemTax,
           "currency": "usd"
         }
       ],
@@ -201,16 +163,16 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
           "amount": ship0,
           "currency": "usd",
 
-          // // Optional delivery estimate and tax items:
-          // "tax_items": [
-          //   {
-          //     "parent": "priority_shipping",
-          //     "type": "tax",
-          //     "description": "Shipping sales taxes",
-          //     "amount": 49,
-          //     "currency": "usd"
-          //   }
-          // ]
+          // Optional delivery estimate and tax items:
+          "tax_items": [
+            {
+              "parent": "priority_shipping",
+              "type": "tax",
+              "description": "Shipping sales taxes",
+              "amount": tax0,
+              "currency": "usd"
+            }
+          ]
         },
         {
           "id": "shipping-1",
@@ -218,16 +180,16 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
           "amount": ship1,
           "currency": "usd",
 
-          // // Optional delivery estimate and tax items:
-          // "tax_items": [
-          //   {
-          //     "parent": "express",
-          //     "type": "tax",
-          //     "description": "Shipping sales taxes",
-          //     "amount": 49,
-          //     "currency": "usd"
-          //   }
-          // ]
+          // Optional delivery estimate and tax items:
+          "tax_items": [
+            {
+              "parent": "express",
+              "type": "tax",
+              "description": "Shipping sales taxes",
+              "amount": tax1,
+              "currency": "usd"
+            }
+          ]
         },
         {
           "id": "shipping-2",
@@ -235,16 +197,16 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
           "amount": ship2,
           "currency": "usd",
 
-          // // Optional delivery estimate and tax items:
-          // "tax_items": [
-          //   {
-          //     "parent": "overnight_shipping",
-          //     "type": "tax",
-          //     "description": "Shipping sales taxes",
-          //     "amount": 49,
-          //     "currency": "usd"
-          //   }
-          // ]
+          // Optional delivery estimate and tax items:
+          "tax_items": [
+            {
+              "parent": "overnight_shipping",
+              "type": "tax",
+              "description": "Shipping sales taxes",
+              "amount": tax2,
+              "currency": "usd"
+            }
+          ]
         },
       ]
     }
