@@ -11,15 +11,18 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
   }
   
   // Start shipping methods
-  let info 
-  try {
-    info = await fetch(infoWebhook, vals)
-  }
-  catch (err) {
-    info = {}
-  }
-  let subtotal = info.subtotal
+  // let info 
+  // try {
+  //   info = await fetch(infoWebhook, vals)
+  // }
+  // catch (err) {
+  //   info = {}
+  // }
+	// let subtotal = info.subtotal // Use body.order_amount instead?
 
+	let subtotal = body.order.amount
+	
+	console.log(`Subtotal from updateShipping ${subtotal}`)
 	let shippingMethods = []
 
 
@@ -158,16 +161,24 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 		},
 	]
 
-	let ship = shippingOptions.map(option => (
-		{
-			id: option.id,
-			description: option.description,
-			value: option.value(subtotal),
-			addInfo: `${option.addInfo}`,
-		}
-	))
+	// let ship = shippingOptions.map(option => (
+	// 	{
+	// 		id: option.id,
+	// 		description: option.description,
+	// 		value: option.value(subtotal),
+	// 		addInfo: `${option.addInfo}`,
+	// 	}
+	// ))
 
-  shippingMethods = JSON.parse(JSON.stringify(ship))
+	//shippingMethods = JSON.parse(JSON.stringify(ship))
+	
+	shippingMethods = shippingOptions.map(option => 		
+		option.value(subtotal)
+		)
+	let ship = JSON.parse(JSON.stringify(shippingMethods))
+	let ship0 = ship[0]
+	let ship1 = ship[1]
+	let ship2 = ship[2]
 
 	// Validate product prices & stock here
 	// Create empty result object to be sent later
@@ -185,17 +196,9 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
       ],
       "shipping_methods": [
         {
-          "id": "free_shipping",
-          "description": "Free 7-day shipping",
-          "amount": 0,
-          "currency": "usd",
-          // Optional delivery estimate and tax items:
-          "tax_items": []
-        }, 
-        {
           "id": "shipping-0",
           "description": "Priority shipping",
-          "amount": shippingMethods[0].value,
+          "amount": ship0,
           "currency": "usd",
 
           // // Optional delivery estimate and tax items:
@@ -212,7 +215,7 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
         {
           "id": "shipping-1",
           "description": "Express shipping",
-          "amount": shippingMethods[1].value,
+          "amount": ship1,
           "currency": "usd",
 
           // // Optional delivery estimate and tax items:
@@ -229,7 +232,7 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
         {
           "id": "shipping-2",
           "description": "Overnight shipping",
-          "amount": shippingMethods[2].value,
+          "amount": ship2,
           "currency": "usd",
 
           // // Optional delivery estimate and tax items:
