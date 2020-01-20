@@ -24,6 +24,8 @@ export async function handler({ body }) {
 	// 	})
 	// }
 
+  console.log(JSON.stringify(res))
+  
 	return {
 		statusCode: 200,
 		body: JSON.stringify(res),

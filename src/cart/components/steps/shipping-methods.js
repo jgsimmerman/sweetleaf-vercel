@@ -9,6 +9,7 @@ import Totals from '../totals'
 import ShippingMethods from '../shipping-methods'
 import nextStep from '../../utils/next-step'
 import previousStep from '../../utils/previous-step'
+import Shipping from '../../plugins/Shipping'
 
 export default class ShippingStep extends React.Component{
 	render() {
@@ -34,7 +35,7 @@ export default class ShippingStep extends React.Component{
 									if (typeof Shipping === `function`) {
 										return <Shipping key={key} />
 									}
-									
+									<Shipping />
 								})}
 								<div className='zygoteShippingBtn'>
 									<Button
