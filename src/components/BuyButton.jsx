@@ -46,12 +46,19 @@ let BuyButton = React.memo(({ post, images }) => {
 
         onClick={() => addToCart({
           id: `${post.sku}`,
-          name: post.title,
-          image: `https://via.placeholder.com/75x75`,
-          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit...`,
-          price: post.price*100,
-          shippable: true,
-          quantity: 1,
+              name: post.title,
+              image: `https://via.placeholder.com/75x75`,
+              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit...`,
+              price: post.price*100,
+              shippable: true,
+              quantity: 1,
+          // id: `${post.sku}`,
+          // name: post.title,
+          // image: `https://via.placeholder.com/75x75`,
+          // description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit...`,
+          // price: post.price*100,
+          // shippable: true,
+          // quantity: 1,
         })}
         // className="snipcart-add-item"
         // data-item-id={post.dataItemId}

@@ -1,4 +1,6 @@
 import React, { Fragment } from 'react';
+import { graphql } from 'gatsby';
+
 import Loadable from 'react-loadable';
 
 import { ThemeProvider } from 'emotion-theming';
@@ -8,7 +10,7 @@ import PropTypes from 'prop-types';
 //import 'typeface-merriweather';
 import 'typeface-open-sans';
 import 'typeface-candal';
-import { SEO, ZygoteCart } from 'components';
+import { SEO, ZygoteCart, Header } from 'components';
 import { NavBar, Footer, BurgerMenu, SocialIcons } from 'layouts';
 import theme from '../../config/theme';
 import headroom from '../styles/headroom';
@@ -86,46 +88,10 @@ const Layout = ({ children }) => (
         `}
       />
       <SEO />
-      {/* <Cart
-        stripeApiKey="pk_test_kuLPajeHN54EmoQl9DN6OTXh00Nbu3XDXV"
-        orderWebhook="/api/place-order"
-        //infoWebhook="/api/info" // Wild Guess. I don't know what I'm doing.
-
-        //let totalCost = {totalsState.state.total}
-
-        // let getShippingCost = () => {
-        //   if(totalsState.state.total > 1000){
-        //     return shippingCost = 1400
-        //   }  
-        //   else { return shippingCost = 695}
-        // }
-
-        totalModifications={[
-          {
-            id: `shipping`,
-            description: `Shipping`,
-            value: 695,
-            displayValue: `6.95`,
-          },
-          // {
-          //   id: `tax`,
-          //   description: `Tax`,
-          //   value: 325,
-          //   displayValue: `Calculated at checkout`,
-          // },
-          
-          // {
-          //   id: `tax`,
-          //   description: `Tax`,
-          //   displayValue: `Calculated at checkout`,
-          //   value: () => {
-          // 	    return totalsState.state.total * 1.08
-          //   },
-          // }
-        ]}
-      /> */}
+      
       {/* <LoadableBurgerMenu /> */}
       <div className="site">
+        
         <NavBar />
         <div className="site-content">
           {children}
@@ -142,3 +108,16 @@ export default Layout;
 Layout.propTypes = {
   children: PropTypes.oneOfType([PropTypes.array, PropTypes.node]).isRequired,
 };
+
+
+export const query = graphql`
+  query {
+    logo: file(relativePath: { eq: "logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+  }
+`;

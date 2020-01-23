@@ -138,13 +138,29 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 	let ship1 = ship[1]
 	let ship2 = ship[2]
 
+	// Taxes
+
 	let itemTax = Math.ceil(subtotal*.08)
 
 	let tax0 = Math.ceil(ship0*.08)
   let tax1 = Math.ceil(ship1*.08)
-  let tax2 = Math.ceil(ship2*.08)
+	let tax2 = Math.ceil(ship2*.08)
 
 	
+	
+	// let avaTax = fetch({
+	// 	method:'get',
+	// 	url:'https://sandbox-rest.avatax.com/api/v2/taxrates/bypostalcode?country=<COUNTRY>&postalCode=<POSTAL-CODE>',
+	// 	headers: {'Authorization': 'Basic ' + <Base64Encoded(AVALARA_ACCOUNT_ID + ':' + AVALARA_LICENSE_KEY)>}
+	// })
+	// 	.then(function (response) {
+	// 		console.log(response.data);
+	// 	})
+	// 	.catch(function (error) {
+	// 		console.log(error.response.data);
+	// 	});
+
+	// Prepare response
   let response = {
     "order_update": {
       "items": [

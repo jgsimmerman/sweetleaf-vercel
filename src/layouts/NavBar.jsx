@@ -3,11 +3,10 @@ import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import Headroom from 'react-headroom';
 import logo from '../../static/logo/header-logo.png';
+import { IconContext } from 'react-icons';
 import { FaShoppingCart } from 'react-icons/fa';
 import { Zygote } from 'components';
-import { CartQuantity, openCart } from 'cart'
-
-
+import { CartQuantity, openCart } from 'cart';
 
 const StyledLink = styled(Link)`
   display: flex;
@@ -45,38 +44,38 @@ const Nav = styled.nav`
  * IMPORTANT
  *
  *******************************************/
-const NavBar = (props) => (
+const NavBar = props => (
   <>
-     
-  <Headroom calcHeightOnResize disableInlineStyles>
-     
-    <StyledLink to="/">
-      <img src="" alt="" />
-    </StyledLink>
-    <Nav>
-      <Link to="/">Home</Link>
-      <Link to="/catalog">Catalog</Link>
-      <Link to="/about">About</Link>
-      {/* <Link to="/blog">Blog</Link> */}
-      {/* <div>
-          <FaShoppingCart onClick={openCart} styles={{color: `${props => props.theme.colors.white.base}` }} /> 
-          <CartQuantity 
-            styles={{
-              verticalAlign: `top`,
-              fontSize: `0.75rem` ,
-              color: `${props => props.theme.colors.white.base}`,
-            }}
-          >
-            {qty => (
-              <React.Fragment>
-                {qty}
-              </React.Fragment>
-            )}
-          </CartQuantity>
-       
-      </div> */}
-    </Nav>
-  </Headroom>
+    <Headroom calcHeightOnResize disableInlineStyles>
+      <StyledLink to="/">
+        <img src="" alt="" />
+      </StyledLink>
+      <Nav>
+        <Link to="/">Home</Link>
+        <Link to="/catalog">Catalog</Link>
+        <Link to="/about">About</Link>
+        {/* <Link to="/blog">Blog</Link> */}
+        <div> {`  `} </div>
+        <IconContext.Provider
+          value={{
+            color: `white`,
+            size: `1rem`,
+          }}
+        >
+          <div style={{
+                //verticalAlign: `top`,
+                paddingLeft: `2rem`,
+                fontSize: `1rem`,
+                color: `white`,
+              }}>
+            <FaShoppingCart onClick={openCart} />
+            <CartQuantity>
+              {qty => <React.Fragment >{qty}</React.Fragment>}
+            </CartQuantity>
+          </div>
+        </IconContext.Provider>
+      </Nav>
+    </Headroom>
   </>
 );
 

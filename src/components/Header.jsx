@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import { SocialIcon } from 'react-social-icons';
@@ -19,7 +20,7 @@ const Wrapper = styled.header`
   overflow: hidden;
 `;
 
-const Text = styled.div`
+const SweetLeaf = styled.div`
   color: ${props => props.theme.colors.white.base};
   z-index: 0;
   position: absolute;
@@ -40,18 +41,61 @@ const Subtitle = styled.h3`
   max-width: 650px;
   color: ${props => props.theme.colors.white.light};
 `;
+const Logo = styled.div`
+  position: relative;
+  flex-basis: calc(99.9% * 2/5 - 2.5rem);
+  max-width: calc(99.9% * 2/5 - 2.5rem);
+  width: calc(99.9% * 2/5 - 2.5rem);
+  margin-bottom: 2rem;
+  
+  @media (max-width: ${props => props.theme.breakpoints.m}) {
+    flex-basis: calc(99.9% * 1 /2);
+  max-width: calc(99.9% * 1 / 2 );
+  width: calc(99.9% * 1 / 2 );  
+  }
+  @media (max-width: ${props => props.theme.breakpoints.s}) {
+    flex-basis: calc(99.9% * 4/5 );
+  max-width: calc(99.9% * 4/5);
+  width: calc(99.9% * 4/5 );  
+  }
+ 
 
-const Header = ({ children, title, date, cover }) => (
+`;
+
+// Begin Component
+
+const Header = ({ children, title, date, cover }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      logo: file(relativePath: { eq: "logo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000, quality: 90) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+ return(
+   <>
   <Wrapper>
-    <Img fluid={cover || {} || [] || ''} />
-    <Text>
-      <h1>{title}</h1>
-      <h3>{date}</h3>
+      {/* <Img fluid={cover || {} || [] || ''} /> */}
+      
+      <SweetLeaf>
+        {/* <h1>{title}</h1> */}
+        <h3>{date}</h3>
+        <Logo> 
+          <Img fluid={data.logo.childImageSharp.fluid} />
+          <Link to="/" />
+        </Logo>
 
-      {children && <Subtitle>{children}</Subtitle>}
-    </Text>
-  </Wrapper>
-);
+        {children && <Subtitle>{children}</Subtitle>}
+      </SweetLeaf>
+    </Wrapper>
+    
+    </>
+  )
+};
 
 export default Header;
 

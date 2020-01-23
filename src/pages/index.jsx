@@ -158,9 +158,10 @@ const Index = ({ data }) => {
 
       <Header title="Sweet Leaf Succulents">
         {/* and Ornamental Plants */}
+        {/* <Img fluid={data.logo.childImageSharp.fluid} /> */}
+    
         <LoadableSocialIcons />
       </Header>
-
       <PostWrapper>
           <h2> Featured Plants </h2>
       </PostWrapper>
@@ -383,6 +384,13 @@ export const pageQuery = graphql`
       }
     }
     imageSix: file(relativePath: { eq: "zebra-plant.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    logo: file(relativePath: { eq: "logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG

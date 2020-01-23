@@ -114,9 +114,9 @@ const ItemContent = ({ post, html }) => {
             {/* <p className="ItemName">
                   {post.story}
               </p>  */}
-            {/* <BuyButton post={post}></BuyButton> */}
+            <BuyButton post={post}></BuyButton>
 
-            <button onClick={() => addToCart({
+            {/* <button onClick={() => addToCart({
               id: `${post.sku}`,
               name: post.title,
               image: `https://via.placeholder.com/75x75`,
@@ -128,7 +128,7 @@ const ItemContent = ({ post, html }) => {
               Add to Zygote Cart!
             </button> 
 
-            <button onClick={openCart}>Open Cart</button>
+            <button onClick={openCart}>Open Cart</button> */}
           </Info>
         </GridItem>
       </Grid>
