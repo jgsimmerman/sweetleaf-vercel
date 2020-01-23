@@ -9,7 +9,7 @@ import BuyButton from './BuyButton';
 import Img from 'gatsby-image';
 import { Grid, GridItem } from 'styled-grid-component';
 import { openCart, addToCart } from 'cart';
-
+// import { SRLWrapper } from "simple-react-lightbox";
 
 
 const Wrapper = styled.div`
@@ -97,6 +97,10 @@ const ItemContent = ({ post, html }) => {
           <Image>
             <Img fluid={post.pic.childImageSharp.fluid} alt="" />
           </Image>
+          
+          {/* <SRLWrapper>
+          </SRLWrapper> */}
+
         </GridItem>
         <GridItem column="2 " row="1">
           <Info>

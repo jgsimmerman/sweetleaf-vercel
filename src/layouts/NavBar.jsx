@@ -13,7 +13,15 @@ const StyledLink = styled(Link)`
   font-weight: 700;
   align-items: center;
 `;
-
+const CartQty = styled.div`
+    color: ${props => props.theme.colors.white.base};
+    
+    transition: all ${props => props.theme.transitions.default.duration};
+    &:hover {
+      padding-right: 4px;
+      color: ${props => props.theme.colors.white.grey};
+    }
+`;
 const Nav = styled.nav`
   display: flex;
   justify-content: flex-end;
@@ -26,6 +34,7 @@ const Nav = styled.nav`
     margin-left: 2rem;
     transition: all ${props => props.theme.transitions.default.duration};
     &:hover {
+      padding-right: 4px;
       color: ${props => props.theme.colors.white.grey};
     }
   }
@@ -56,24 +65,25 @@ const NavBar = props => (
         <Link to="/about">About</Link>
         {/* <Link to="/blog">Blog</Link> */}
         <div> {`  `} </div>
-        <IconContext.Provider
-          value={{
-            color: `white`,
-            size: `1rem`,
-          }}
-        >
-          <div style={{
-                //verticalAlign: `top`,
-                paddingLeft: `2rem`,
-                fontSize: `1rem`,
-                color: `white`,
-              }}>
-            <FaShoppingCart onClick={openCart} />
-            <CartQuantity>
-              {qty => <React.Fragment >{qty}</React.Fragment>}
-            </CartQuantity>
-          </div>
-        </IconContext.Provider>
+        <CartQty>
+          <IconContext.Provider
+            value={{
+              size: `1rem`,
+            }}
+          >
+            <div style={{
+                  verticalAlign: `top`,
+                  paddingLeft: `2rem`,
+                  fontSize: `1rem`,
+
+                }}>
+              <FaShoppingCart onClick={openCart} />
+              <CartQuantity>
+                {qty => <React.Fragment >{qty}</React.Fragment>}
+              </CartQuantity>
+            </div>
+          </IconContext.Provider>
+        </CartQty>
       </Nav>
     </Headroom>
   </>

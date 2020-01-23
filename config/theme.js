@@ -1,8 +1,8 @@
 export const colors = {
   white: {
-    base: '#fff',
+    base:  '#ce62c9', //'#fff',
     light: '#C5CBE3',
-    grey: '#cecece',
+    grey:  '#6272ce',// '#cecece',
     dark: '#a0afd7',
   },
   black: {
@@ -16,9 +16,14 @@ export const colors = {
     dark: '#284187',
   },
   background: {
-    light: '#3e5fbc',
-    dark: '#284187',
+    base: '#d5ffd5',
+    light: '#D2EAB5',
+    dark: '#BFD5A5',
   },
+  // background: {
+  //   light: '#3e5fbc',
+  //   dark: '#284187',
+  // },
 };
 
 export const shadow = {

@@ -20,9 +20,9 @@ const SocialWrapper = styled.span`
   a {
     padding: 1rem 1rem;
     svg {
-      color: white;
+      color: ${props => props.theme.colors.white.base};
       &:hover {
-        color: hsla(228, 34.9%, 83.1%, 0.3);
+        color: ${props => props.theme.colors.white.grey};
       }
     }
   }

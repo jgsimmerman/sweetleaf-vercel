@@ -3,7 +3,26 @@ import styled from '@emotion/styled';
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
-import { SocialIcon } from 'react-social-icons';
+import { SocialIcons } from 'components';
+
+// function Loading(props) {
+//   if (props.error) {
+//     return <div>Something went wrong! <button onClick= { props.retry }>Retry</button></div>;
+//   } else if (props.timedOut) {
+//     return <div>Seems like your net is slow.. <button onClick={ props.retry }>Retry</button> </div>
+//   } else if (props.pastDelay) {
+//     return <p>Loading Social Icons...</p>;
+//   } else {
+//     return null;
+//   }
+// }
+
+// const LoadableSocialIcons = Loadable({
+//   loader: () => import('./SocialIcons'),
+//   loading: Loading,
+//   delay: 1000, // 1 seconds
+//   timeout: 150000, // 15 seconds
+// });
 
 const Wrapper = styled.header`
   @media (max-width: ${props => props.theme.breakpoints.s}) {
@@ -89,7 +108,11 @@ const Header = ({ children, title, date, cover }) => {
           <Link to="/" />
         </Logo>
 
+        {/* <LoadableSocialIcons /> */}
+        {/* <SocialIcons /> */}
         {children && <Subtitle>{children}</Subtitle>}
+        
+
       </SweetLeaf>
     </Wrapper>
     

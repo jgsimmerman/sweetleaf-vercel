@@ -48,7 +48,7 @@ const Layout = ({ children }) => (
             box-sizing: inherit;
           }
           html {
-                        background-color: hsla(228, 34.9%, 88.1%, 0.3);
+            background-color: hsla(228, 34.9%, 88.1%, 0.3);
 
             text-rendering: optimizeLegibility;
             overflow-x: hidden;
