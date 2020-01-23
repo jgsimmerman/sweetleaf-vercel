@@ -121,6 +121,7 @@ export default class Cart extends React.Component {
 			boxShadow: `-3px 0 4px rgba(0, 0, 0, 0.2)`,
 			padding: 20,
 			paddingTop: 30,
+			zIndex: 2,
 		},
 		'.zygoteCloseButton': {
 			background: `transparent`,
