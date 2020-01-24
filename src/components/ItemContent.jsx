@@ -80,6 +80,7 @@ const Table = styled.table`
   }
 `;
 
+
 const ItemContent = ({ post, html }) => {
 
   return (
@@ -118,9 +119,22 @@ const ItemContent = ({ post, html }) => {
             {/* <p className="ItemName">
                   {post.story}
               </p>  */}
-            <BuyButton post={post}></BuyButton>
+            {/* <BuyButton post={post}></BuyButton> */}
 
-            {/* <button onClick={() => addToCart({
+            <button style={{
+              backgroundColor: 'hsl(228, 34.9%, 83.1%)',
+              borderRadius: '5px',
+              marginTop: '36px',
+              border: '0',
+              color: 'hsl(228, 34.9%, 23.1%)',
+              fontWeight: '500',
+              paddingBottom: '15px',
+              paddingTop: '15px',
+              paddingRight: '35px',
+              paddingLeft: '35px',
+              fontSize: '24',
+            }}
+         onClick={() => addToCart({
               id: `${post.sku}`,
               name: post.title,
               image: `https://via.placeholder.com/75x75`,
@@ -129,10 +143,10 @@ const ItemContent = ({ post, html }) => {
               shippable: true,
               quantity: 1,
             })}>
-              Add to Zygote Cart!
+              Add to Cart!
             </button> 
 
-            <button onClick={openCart}>Open Cart</button> */}
+            {/* <button onClick={openCart}>Open Cart</button> */}
           </Info>
         </GridItem>
       </Grid>
