@@ -25,6 +25,7 @@ const Text = styled.div`
 const Footer = () => (
   <Wrapper>
     <Text>
+      <hr></hr>
       <span>
         Sweet Leaf Succulents and Ornamental Plants, LLC{' '}
         {/* <a href="https://twitter.com/jacobsimmerman">Follow us on twitter!</a> */}

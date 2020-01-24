@@ -109,7 +109,7 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 			}
 		}
 		else if (err.message) {
-			res.messages.error.push(err.message)
+			res.messages.error.push(`Sorry! This item may be out of stock. Please lower the quantity or remove this product from your cart.`)
 		}
 
 		if (err.param === `coupon`) {
