@@ -140,7 +140,6 @@ const Index = ({ data }) => {
 
       <Header title="Sweet Leaf Succulents">
         {/* <Img fluid={data.logo.childImageSharp.fluid} /> */}
-    
       </Header>
       <PostWrapper>
           <h2> Featured Plants </h2>
