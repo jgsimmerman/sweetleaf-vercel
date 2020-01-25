@@ -7,7 +7,7 @@ import { Layout, Container } from 'layouts';
 const About = center => (
   <Layout>
     <Helmet title={'About Us'} />
-    <Header title="About Us">Sweet Leaf Succulents and Ornamental Plants</Header>
+    <Header title="About Us"></Header>
     <Container center={center}>
       <h3>Welcome to Sweet Leaf Succulents!</h3>
       <p>Based in Lamar, South Carolina; we specialize in succulents and ornamental plants.</p>

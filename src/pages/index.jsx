@@ -1,5 +1,4 @@
 import React from 'react';
-import Loadable from 'react-loadable';
 import { Link, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
@@ -9,24 +8,7 @@ import { Layout } from 'layouts';
 import theme from '../../config/theme';
 import Img from 'gatsby-image';
 
-function Loading(props) {
-  if (props.error) {
-    return <div>Something went wrong! <button onClick= { props.retry }>Retry</button></div>;
-  } else if (props.timedOut) {
-    return <div>Seems like your net is slow.. <button onClick={ props.retry }>Retry</button> </div>
-  } else if (props.pastDelay) {
-    return <p>Loading Social Icons...</p>;
-  } else {
-    return null;
-  }
-}
 
-const LoadableSocialIcons = Loadable({
-  loader: () => import('../components/SocialIcons'),
-  loading: Loading,
-  delay: 1000, // 1 seconds
-  timeout: 150000, // 15 seconds
-});
 
 const PostWrapper = styled.main`
   display: flex;
@@ -157,10 +139,8 @@ const Index = ({ data }) => {
       <Helmet title={'Sweet Leaf Succulents'} />
 
       <Header title="Sweet Leaf Succulents">
-        {/* and Ornamental Plants */}
         {/* <Img fluid={data.logo.childImageSharp.fluid} /> */}
     
-        <LoadableSocialIcons />
       </Header>
       <PostWrapper>
           <h2> Featured Plants </h2>
@@ -339,7 +319,7 @@ Index.propTypes = {
 export const fluidImage = graphql`
   fragment fluidImage on File {
     childImageSharp {
-      fluid(maxWidth: 1000, quality: 90, traceSVG: { color: "#2B2B2F" }) {
+      fluid(maxWidth: 500, quality: 90, traceSVG: { color: "#2B2B2F" }) {
         ...GatsbyImageSharpFluid
       }
     }
@@ -350,49 +330,49 @@ export const pageQuery = graphql`
   query {
     imageOne: file(relativePath: { eq: "echeveria.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000, quality: 90) {
+        fluid(maxWidth: 500, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     imageTwo: file(relativePath: { eq: "kiwi.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000, quality: 90) {
+        fluid(maxWidth: 500, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     imageThree: file(relativePath: { eq: "alata1.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000, quality: 90) {
+        fluid(maxWidth: 500, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     imageFour: file(relativePath: { eq: "wandering.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000, quality: 90) {
+        fluid(maxWidth: 500, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     imageFive: file(relativePath: { eq: "miniPixie.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000, quality: 90) {
+        fluid(maxWidth: 500, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     imageSix: file(relativePath: { eq: "zebra-plant.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000, quality: 90) {
+        fluid(maxWidth: 500, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     logo: file(relativePath: { eq: "logo.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1000, quality: 90) {
+        fluid(maxWidth: 500, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
