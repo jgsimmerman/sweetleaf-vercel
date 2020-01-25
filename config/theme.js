@@ -1,9 +1,9 @@
 export const colors = {
-  white: {
-    base:  '#ce62c9', //'#fff',
+  white: { // purple
+    base:  'hsl(285, 60%, 50%)', //'#fff',
     light: '#C5CBE3',
-    grey:  '#6272ce',// '#cecece',
-    dark: '#a0afd7',
+    grey:  'hsl(303, 70%, 70%)',// '#cecece',
+    dark: 'hsl(303, 60%, 40%)',
   },
   black: {
     base: '#333438',
@@ -15,10 +15,10 @@ export const colors = {
     light: '#3e5fbc',
     dark: '#284187',
   },
-  background: {
-    base: '#d5ffd5',
-    light: '#D2EAB5',
-    dark: '#BFD5A5',
+  background: { // green
+    light: 'hsl(120, 100%, 96%)',
+    base: 'hsl(120, 100%, 95%)',
+    dark: 'hsl(120, 100%, 94%)',
   },
   // background: {
   //   light: '#3e5fbc',

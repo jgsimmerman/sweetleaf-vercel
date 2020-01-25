@@ -13,6 +13,9 @@ const CatalogWrapper = styled.main`
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 4rem 4rem 1rem 4rem;
+  a {
+    color: ${props => props.theme.colors.white.base};
+  }
   @media (max-width: 1000px) {
     margin: 4rem 2rem 1rem 2rem;
   }
@@ -63,7 +66,6 @@ const Catalog = ({ data }) => {
   return (
     <Layout>
       <Header title="Full Catalog">
-        Sweet Leaf Succulents and Ornamental Plants
       </Header>
       <PostWrapper>
           <h2>Currently Available Ornamental Plants </h2>

@@ -19,13 +19,13 @@ const Text = styled.div`
   margin: 0;
   padding-bottom: 2rem;
   text-align: center;
-  color: ${props => props.theme.colors.white.base};
+  color: ${props => props.theme.colors.white.grey};
 `;
 
 const Footer = () => (
   <Wrapper>
     <Text>
-      <hr></hr>
+      {/* <hr></hr> */}
       <span>
         Sweet Leaf Succulents and Ornamental Plants, LLC{' '}
         {/* <a href="https://twitter.com/jacobsimmerman">Follow us on twitter!</a> */}
