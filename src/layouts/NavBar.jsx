@@ -56,11 +56,11 @@ const Nav = styled.nav`
 const NavBar = props => (
   <>
     <Headroom calcHeightOnResize disableInlineStyles>
-      <StyledLink to="/">
+      {/* <StyledLink to="/">
         <img src="" alt="" />
-      </StyledLink>
+      </StyledLink> */}
       <Nav>
-        <Link to="/">Home</Link>
+        <Link to="/index">Home</Link>
         <Link to="/catalog">Catalog</Link>
         <Link to="/about">About</Link>
         {/* <Link to="/blog">Blog</Link> */}
