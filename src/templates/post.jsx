@@ -14,6 +14,24 @@ import { Cart, openCart, addToCart, Totals } from 'cart';
 const Post = ({ data, pageContext }) => {
   const { next, prev } = pageContext;
   const post = data.markdownRemark;
+  const skus = data.skus.edges;
+
+  let skuObj = {
+    sku: '',
+    quantity: 0,
+  }
+
+  skuObj = skus.map(({ node: sku }) => ({
+      sku: sku.id,
+      quantity: sku.inventory.quantity,
+    })
+  );
+
+
+
+  
+
+  console.log(skuObj);
   const image = post.frontmatter.cover.childImageSharp.fluid;
   //const pic = post.frontmatter.image.childImageSharp.fluid;
   const title = post.frontmatter.title;
@@ -44,7 +62,7 @@ const Post = ({ data, pageContext }) => {
       <Header title={title} cover={image} />
 
       <Container>
-        <ItemContent post={post.frontmatter} html={html} />
+        <ItemContent post={post.frontmatter} skus={skus} skuObj={skuObj}  html={html} />
       </Container>
     </Layout>
   );
@@ -62,6 +80,21 @@ Post.propTypes = {
 
 export const query = graphql`
   query($pathSlug: String!) {
+    skus: allStripeSku {
+      edges {
+        node {
+          id
+          currency
+          price
+          attributes {
+            name
+          }
+          inventory {
+            quantity
+          }
+        }
+      }
+    }
     markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
       html
       

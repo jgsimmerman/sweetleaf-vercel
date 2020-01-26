@@ -81,8 +81,16 @@ const Table = styled.table`
 `;
 
 
-const ItemContent = ({ post, html }) => {
+const ItemContent = ({ post, skuObj, skus, html }) => {
 
+  let itemQuantity = 0;
+  if(post.sku) {
+    let itemSkuArray = skuObj.find(obj => obj.sku == post.sku)
+    itemQuantity = itemSkuArray.quantity;
+  }
+
+  
+  
   return (
     <Wrapper>
       <Grid
@@ -98,7 +106,6 @@ const ItemContent = ({ post, html }) => {
           <Image>
             <Img fluid={post.pic.childImageSharp.fluid} alt="" />
           </Image>
-          
           {/* <SRLWrapper>
           </SRLWrapper> */}
 
@@ -108,6 +115,9 @@ const ItemContent = ({ post, html }) => {
             <ItemName>{post.title}</ItemName>
             <p>
               <em>{post.scientificname}</em>
+            </p>
+            <p>
+              Only {itemQuantity} left in stock!
             </p>
             <Cost>
               <strong>${post.price}</strong>
@@ -142,6 +152,7 @@ const ItemContent = ({ post, html }) => {
               price: post.price*100,
               shippable: true,
               quantity: 1,
+              stock: itemQuantity,
             })}>
               Add to Cart!
             </button> 

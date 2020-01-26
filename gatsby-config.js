@@ -1,8 +1,11 @@
+//import dotenv from 'dotenv'
+//dotenv.config({ silent: true })
+
 const config = require('./config/site');
 
-// require("dotenv").config({
-//   path: `.env.${process.env.NODE_ENV}`,
-// })
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+})
 
 module.exports = {
   siteMetadata: {
@@ -108,13 +111,14 @@ module.exports = {
           ],
         }     
     },
-    // {
-    //   resolve: `gatsby-source-stripe`,
-    //   options: {
-    //     objects: ["Sku"],
-    //     secretKey: process.env.STRIPE_SECRET_KEY,
-    //     downloadFiles: true,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-stripe`,
+      options: {
+        objects: ["Sku"],
+        secretKey: process.env.STRIPE_API_SECRET,
+        downloadFiles: false,
+        auth: false
+      },
+    },
   ],
 };

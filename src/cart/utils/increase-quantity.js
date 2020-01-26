@@ -2,6 +2,17 @@ import productState from '../state/products'
 import calculateTotals from './calculate-totals'
 import triggerEvent from './trigger-event'
 
+// import Skus: example query found in: "../components/Products/Skus"
+
+/*
+
+				{skus.edges.map(({ node: sku }, id) => (
+          maxQuantity = sku.inventory.quantity 
+        ))}
+
+*/
+
+
 export default function increaseQuantity(id, quantity = 1) {
 	let products = [...productState.state.products]
 	let modifiedProduct
