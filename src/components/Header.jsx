@@ -103,9 +103,9 @@ const Header = ({ children, title, date, cover }) => {
       
       <SweetLeaf>
         {/* <h1>{title}</h1> */}
-        <h3>{date}</h3>
+        {/* <h3>{date}</h3> */}
         <Logo> 
-          <Link to="/home"><Img fluid={data.logo.childImageSharp.fluid} alt="Home" /></Link>
+          <Link to="/"><Img fluid={data.logo.childImageSharp.fluid} alt="Home" /></Link>
         </Logo>
 
         <LoadableSocialIcons />

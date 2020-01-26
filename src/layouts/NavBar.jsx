@@ -63,7 +63,7 @@ const NavBar = props => (
         <Link to="/#">Home</Link>
         <Link to="/catalog">Catalog</Link>
         <Link to="/about">About</Link>
-        {/* <Link to="/blog">Blog</Link> */}
+        <Link to="/care">Care Guides</Link>
         <div> {`  `} </div>
         <CartQty>
           <IconContext.Provider

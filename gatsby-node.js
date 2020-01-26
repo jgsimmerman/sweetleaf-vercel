@@ -6,6 +6,7 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     const postTemplate = path.resolve('src/templates/post.jsx');
     const blogTemplate = path.resolve('src/templates/blogTemplate.jsx');
+    const careTemplate = path.resolve('src/templates/careTemplate.jsx');
 
     const tagPage = path.resolve('src/pages/tags.jsx');
     const tagPosts = path.resolve('src/templates/tag.jsx');
@@ -84,11 +85,11 @@ exports.createPages = ({ graphql, actions }) => {
           const next =
             index === posts.length - 1 ? null : posts[index + 1].node;
 
-          if (node.frontmatter.posttype === "blog") {
+          if (node.frontmatter.posttype === "guides") {
             // OR if(node.frontmatter.id === 1000) similar to above tags function
             createPage({
               path,
-              component: blogTemplate,
+              component: careTemplate,
               context: {
                 pathSlug: path,
                 prev,

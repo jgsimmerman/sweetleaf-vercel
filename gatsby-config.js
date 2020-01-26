@@ -1,7 +1,7 @@
 //import dotenv from 'dotenv'
 //dotenv.config({ silent: true })
 require('dotenv').config()
- 
+
 const config = require('./config/site');
 
 require('dotenv').config({
@@ -39,8 +39,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/instructions`,
-        name: 'instructions',
+        path: `${__dirname}/content/posts/guides`,
+        name: 'care',
       },
     },
     'gatsby-transformer-sharp',
