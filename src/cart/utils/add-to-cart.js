@@ -16,10 +16,13 @@ export default function addToCart(newProduct){
 		const product = products[i]
 		if (product.id === newProduct.id) {
 			alreadyInCart = true
-			products[i] = {
-				...newProduct,
-				quantity: products[i].quantity + newProduct.quantity,
+			if(products[i].quantity < newProduct.stock ) {
+				products[i] = {
+					...newProduct,
+					quantity: products[i].quantity + newProduct.quantity,
+				}
 			}
+			
 		}
 		shippable = (shippable || product.shippable || newProduct.shippable)
 	}

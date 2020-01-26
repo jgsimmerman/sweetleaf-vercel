@@ -1,6 +1,6 @@
 export const colors = {
   white: { // purple
-    base:  'hsl(285, 60%, 50%)', //'#fff',
+    base:  'hsl(285, 60%, 25%)', //'#fff',
     light: '#C5CBE3',
     grey:  'hsl(303, 70%, 70%)',// '#cecece',
     dark: 'hsl(303, 60%, 40%)',

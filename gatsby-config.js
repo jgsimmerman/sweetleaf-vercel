@@ -1,6 +1,7 @@
 //import dotenv from 'dotenv'
 //dotenv.config({ silent: true })
-
+require('dotenv').config()
+ 
 const config = require('./config/site');
 
 require('dotenv').config({
