@@ -19,7 +19,7 @@ const Text = styled.div`
   margin: 0;
   padding-bottom: 2rem;
   text-align: center;
-  color: ${props => props.theme.colors.white.grey};
+  color: ${props => props.theme.colors.white.base};
 `;
 
 const Footer = () => (

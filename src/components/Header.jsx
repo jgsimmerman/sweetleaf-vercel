@@ -89,7 +89,7 @@ const Header = ({ children, title, date, cover }) => {
     query {
       logo: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1000, quality: 90) {
+          fluid(maxWidth: 1000, quality: 75) {
             ...GatsbyImageSharpFluid
           }
         }

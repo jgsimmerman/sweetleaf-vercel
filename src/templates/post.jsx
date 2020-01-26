@@ -28,10 +28,6 @@ const Post = ({ data, pageContext }) => {
   );
 
 
-
-  
-
-  console.log(skuObj);
   const image = post.frontmatter.cover.childImageSharp.fluid;
   //const pic = post.frontmatter.image.childImageSharp.fluid;
   const title = post.frontmatter.title;
@@ -121,7 +117,7 @@ export const query = graphql`
         dataItemWeight
         pic {
           childImageSharp {
-            fluid( maxWidth: 375, quality: 90, traceSVG: { color: "#2B2B2F" }) {
+            fluid( maxWidth: 500, quality: 75, traceSVG: { color: "#2B2B2F" }) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -130,12 +126,12 @@ export const query = graphql`
           childImageSharp {
             fluid(
               maxWidth: 1920
-              quality: 90
+              quality: 75
               duotone: { highlight: "#386eee", shadow: "#2323be", opacity: 60 }
             ) {
               ...GatsbyImageSharpFluid_withWebp
             }
-            resize(width: 1200, quality: 90) {
+            resize(width: 1200, quality: 60) {
               src
             }
           }

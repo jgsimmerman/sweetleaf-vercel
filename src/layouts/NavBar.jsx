@@ -18,7 +18,7 @@ const CartQty = styled.div`
     transition: all ${props => props.theme.transitions.default.duration};
     &:hover {
       padding-right: 4px;
-      color: ${props => props.theme.colors.white.grey};
+      color: ${props => props.theme.colors.white.base};
     }
 `;
 const Nav = styled.nav`
@@ -34,7 +34,7 @@ const Nav = styled.nav`
     transition: all ${props => props.theme.transitions.default.duration};
     &:hover {
       padding-right: 4px;
-      color: ${props => props.theme.colors.white.grey};
+      color: ${props => props.theme.colors.white.base};
     }
   }
 
