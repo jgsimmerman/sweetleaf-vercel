@@ -11,7 +11,7 @@ const TagsContainer = styled.div`
   justify-content: center;
   a {
     margin: 0 1rem 1rem 0;
-    color: ${props => props.theme.colors.black.blue};
+    color: ${props => props.theme.colors.black.light};
     padding: 0.3rem 0.6rem;
     background: ${props => props.theme.colors.white.grey};
     border-radius: 10px;

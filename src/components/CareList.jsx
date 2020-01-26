@@ -129,7 +129,7 @@ const CareContainer = styled(Container)`
 `;
 
 const CareList = ({ path, cover, title, date, excerpt, tags, story }) => (
-   <CareContainer>
+  //  <CareContainer>
     <Wrapper>
       <Image>
         <Link to={path} title={title}>
@@ -145,7 +145,7 @@ const CareList = ({ path, cover, title, date, excerpt, tags, story }) => (
         {/* {story} */}
       </Information>
     </Wrapper>
-   </CareContainer>
+  //  </CareContainer>
 );
 
 export default CareList;

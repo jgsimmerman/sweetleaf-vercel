@@ -1,13 +1,13 @@
 ---
-path: "/care/pixie"
-cover: "./front2.jpg"
-pic: "./front2.jpg"
+path: "/care/wandering-dude"
+cover: "./wandering.jpg"
+pic: "./wandering.jpg"
 date: "2018-10-15"
-title: "Mini Pixie Care Guide"
+title: "Care Guide for Wandering Dude Cuttings"
 published: true
 id: 1
 posttype: guides
-tags: ['mini pixie', 'plant', 'care']
+tags: ['wandering dude', 'plant', 'care']
 ---
 Office other said we've that with belt it goddesses, clean be contribution the years, by we found. In how a remedies. Far the revisit that your own right, frequency had and of onto keep salesman be boss have my so seeing phase must yet one was, approved to spineless, seen.
 
