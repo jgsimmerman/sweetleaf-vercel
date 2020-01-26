@@ -1,8 +1,8 @@
 ---
 path: "/catalog/carnivorous-plants/alata"
 cover: "./alata1.jpg"
-pic: "./back2.jpg"
-snipPic: "./back2.jpg"
+pic: "./back1.jpg"
+snipPic: "./back1.jpg"
 care: "/care/dummy.pdf"
 title: "Nepenthes Alata"
 scientificname: "Nepenthes alata"
