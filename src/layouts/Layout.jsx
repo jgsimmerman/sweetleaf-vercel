@@ -89,7 +89,8 @@ const Layout = ({ children }) => (
       />
       <SEO />
       
-      <LoadableBurgerMenu />
+      <BurgerMenu />
+      {/* <LoadableBurgerMenu /> */}
       <div className="site">
         
         <NavBar />
