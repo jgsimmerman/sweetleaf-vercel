@@ -13,13 +13,13 @@ const StyledLink = styled(Link)`
   align-items: center;
 `;
 const CartQty = styled.div`
+  color: ${props => props.theme.colors.white.base};
+
+  transition: all ${props => props.theme.transitions.default.duration};
+  &:hover {
+    padding-right: 4px;
     color: ${props => props.theme.colors.white.base};
-    
-    transition: all ${props => props.theme.transitions.default.duration};
-    &:hover {
-      padding-right: 4px;
-      color: ${props => props.theme.colors.white.base};
-    }
+  }
 `;
 const Nav = styled.nav`
   display: flex;
@@ -60,7 +60,7 @@ const NavBar = props => (
       </StyledLink> */}
       <div></div>
       <Nav>
-        <Link to="/#">Home</Link>
+        <Link to="/">Home</Link>
         <Link to="/catalog">Catalog</Link>
         <Link to="/about">About</Link>
         <Link to="/care">Care Guides</Link>
@@ -71,15 +71,16 @@ const NavBar = props => (
               size: `1rem`,
             }}
           >
-            <div style={{
-                  verticalAlign: `top`,
-                  paddingLeft: `2rem`,
-                  fontSize: `1rem`,
-
-                }}>
+            <div
+              style={{
+                verticalAlign: `top`,
+                paddingLeft: `2rem`,
+                fontSize: `1rem`,
+              }}
+            >
               <FaShoppingCart onClick={openCart} />
               <CartQuantity>
-                {qty => <React.Fragment >{qty}</React.Fragment>}
+                {qty => <React.Fragment>{qty}</React.Fragment>}
               </CartQuantity>
             </div>
           </IconContext.Provider>

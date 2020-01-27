@@ -13,10 +13,10 @@ const TagsContainer = styled.div`
     margin: 0 1rem 1rem 0;
     color: ${props => props.theme.colors.black.light};
     padding: 0.3rem 0.6rem;
-    background: ${props => props.theme.colors.white.grey};
+    background: ${props => props.theme.colors.primary.base};
     border-radius: 10px;
     &:hover {
-      color: ${props => props.theme.colors.white.light};
+      color: ${props => props.theme.colors.primary.light};
       background: ${props => props.theme.colors.primary.light};
       border: ${props => props.theme.colors.primary.light};
     }

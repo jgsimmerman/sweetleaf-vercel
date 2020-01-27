@@ -3,7 +3,7 @@ path: "/care/pixie"
 cover: "./front2.jpg"
 pic: "./front2.jpg"
 date: "2018-10-15"
-title: "Mini Pixie Care Guide"
+title: "Care Guide for Mini Pixie"
 published: true
 id: 1
 posttype: guides

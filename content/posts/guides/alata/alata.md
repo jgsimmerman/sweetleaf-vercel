@@ -3,7 +3,7 @@ path: "/care/alata"
 cover: "./alata1.jpg"
 pic: "./alata1.jpg"
 date: "2018-10-15"
-title: "Nepenthes Alata Care Guide"
+title: "Care Guide for Nepenthes Alata"
 published: true
 id: 1
 posttype: guides

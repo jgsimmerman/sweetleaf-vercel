@@ -89,7 +89,7 @@ const Layout = ({ children }) => (
       />
       <SEO />
       
-      {/* <LoadableBurgerMenu /> */}
+      <LoadableBurgerMenu />
       <div className="site">
         
         <NavBar />

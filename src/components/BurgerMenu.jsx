@@ -3,8 +3,9 @@ import { push as Menu } from 'react-burger-menu';
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 
+import { IconContext } from 'react-icons';
 import { FaShoppingCart } from 'react-icons/fa';
-import { CartQuantity, openCart } from 'cart'
+import { CartQuantity, openCart } from 'cart';
 
 import styles from './styles';
 
@@ -17,7 +18,7 @@ const Nav = styled.nav`
   font-size: 1.1rem;
   align-items: left;
   a {
-    color: ${props => props.theme.colors.white.grey};
+    color: ${props => props.theme.colors.white.base};
     margin: 0.5rem;
     transition: all ${props => props.theme.transitions.default.duration};
     &:hover {
@@ -25,11 +26,6 @@ const Nav = styled.nav`
 
       color: ${props => props.theme.colors.white.base};
     }
-  }
-
-  .snipcart-items-count {
-    vertical-align: 1.5em;
-    font-size: 0.75rem;
   }
 `;
 
@@ -51,10 +47,19 @@ const Nav2 = styled.nav`
     }
   }
 `;
+const CartQty = styled.div`
+  color: ${props => props.theme.colors.white.base};
+
+  transition: all ${props => props.theme.transitions.default.duration};
+  &:hover {
+    padding-right: 4px;
+    color: ${props => props.theme.colors.white.base};
+  }
+`;
 
 const Head = styled.h1`
   a {
-    color: ${props => props.theme.colors.white.grey};
+    color: ${props => props.theme.colors.white.base};
     margin: 0.2rem;
     transition: all ${props => props.theme.transitions.default.duration};
     &:hover {
@@ -98,8 +103,11 @@ const BurgerMenu = () => {
 
           <Nav className="navbar">
             <Link to="/">Home</Link>
+            <Link to="/care">Care Guides</Link>
+            <Link to="/about">About</Link>
             <Link to="/catalog">Full Catalog</Link>
-            <Nav2>
+
+            {/* <Nav2>
               <Link to="/catalog/echeveria">Echeveria</Link>
               <Link to="/catalog/sempervivum-heuffelii">
                 Sempervivum Heuffelii
@@ -112,27 +120,34 @@ const BurgerMenu = () => {
               <Link to="/catalog/carnivorous-plants">Carnivorous Plants</Link>
               <Link to="/catalog/houseplants">Houseplants</Link>
 
-            </Nav2>
-            <Link to="/about">About</Link>
+            </Nav2> */}
+            {/* <Link to="/about">About</Link> */}
             {/* <Link to="/blog">Blog</Link>
              */}
-            {/* <div>
-                <FaShoppingCart onClick={openCart} styles={{color: `${props => props.theme.colors.white.base}` }} /> 
-                {' '}
-                <CartQuantity 
-                  styles={{ 
-                    verticalAlign: `1.5em`, 
-                    fontSize: `0.75rem`}}
+           <hr />
+
+            <section>
+              <CartQty>
+                <IconContext.Provider
+                  value={{
+                    size: `1rem`,
+                  }}
                 >
-                  {qty => (
-                    <React.Fragment>
-                      {qty}
-                    </React.Fragment>
-                  )}
-                </CartQuantity>
-                
-              
-            </div> */}
+                  <div
+                    style={{
+                      verticalAlign: `top`,
+                      paddingLeft: `2rem`,
+                      fontSize: `1rem`,
+                    }}
+                  >
+                    <FaShoppingCart onClick={openCart} />
+                    <CartQuantity>
+                      {qty => <React.Fragment>{qty}</React.Fragment>}
+                    </CartQuantity>
+                  </div>
+                </IconContext.Provider>
+              </CartQty>
+            </section>
             <hr />
             {/* <a
               href="#"

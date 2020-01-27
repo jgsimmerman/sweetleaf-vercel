@@ -24,7 +24,7 @@ export default {
     height: '100%',
   },
   bmMenu: {
-    background: '#373a47',
+    background: 'hsl(120, 100%, 95%)',
     padding: '2.5em 1.5em 0',
     fontSize: '1.15em',
   },
@@ -32,14 +32,14 @@ export default {
     fill: '#373a47',
   },
   bmItemList: {
-    color: '#b8b7ad',
+    color: 'hsl(285, 60%, 25%)',
     padding: '0.8em',
   },
   bmItem: {
     display: 'inline-block',
   },
   bmOverlay: {
-    background: 'rgba(0, 0, 0, 0.3)',
+    background: 'hsl(120, 100%, 95%)',
   },
   pageWrapId: {
     overflow: 'auto',

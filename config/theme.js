@@ -11,8 +11,8 @@ export const colors = {
     blue: '#2e3246',
   },
   primary: {
-    base: '#3498db',
-    light: '#3e5fbc',
+    base: 'hsl(228, 34.9%, 83.1%)',
+    light: 'hsl(228, 34.9%, 23.1%)',
     dark: '#284187',
   },
   background: { // green
