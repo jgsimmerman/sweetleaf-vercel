@@ -121,5 +121,44 @@ module.exports = {
         auth: false
       },
     },
+    {
+			resolve: `gatsby-plugin-pinterest-twitter-facebook`,
+			options: {
+				delayTimer: 100,
+				pinterest: {
+					enable: true,
+					tall: true,
+					round: false
+				},
+				// twitter: {
+				// 	enable: true,
+				// 	containerSelector: '.twitter-container',
+				// 	handle: process.env.GATSBY_TWITTER_SOURCE,
+				// 	showFollowButton: true,
+				// 	showTimeline: true,
+				// 	showFollowerCount: true,
+				// 	timelineTweetCount: 1,
+				// 	width: null,
+				// 	height: null,
+				// 	noHeader: true,
+				// 	noFooter: true,
+				// 	noBorders: true,
+				// 	noScrollbar: true,
+				// 	transparent: true
+				// },
+				// facebook: {
+				// 	enable: true,
+				// 	containerSelector: '.facebook-container',
+				// 	profile: process.env.GATSBY_FACEBOOK_SOURCE,
+				// 	// width: 340,
+				// 	// height: 500,
+				// 	tabs: 'timeline, events, messages',
+				// 	hideCover: false,
+				// 	showFacepile: true,
+				// 	smallHeader: false,
+				// 	adaptContainerWidth: true
+				// }
+			}
+		},
   ],
 };

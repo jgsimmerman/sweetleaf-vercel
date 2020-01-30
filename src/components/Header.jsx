@@ -105,7 +105,7 @@ const Header = ({ children, title, date, cover }) => {
         {/* <h1>{title}</h1> */}
         {/* <h3>{date}</h3> */}
         <Logo> 
-          <Link to="/"><Img fluid={data.logo.childImageSharp.fluid} alt="Home" /></Link>
+          <Link to="/"><Img fluid={data.logo.childImageSharp.fluid} alt="Home" data-pin-nopin="true"/></Link>
         </Logo>
 
         <LoadableSocialIcons />

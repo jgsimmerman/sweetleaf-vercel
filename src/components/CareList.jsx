@@ -59,7 +59,7 @@ const Image = styled.div`
     }
     &:focus {
       outline: none;
-      box-shadow: 0 0 0 5px ${props => props.theme.colors.white.base};
+      box-shadow: 0 0 0 5px ${props => props.theme.colors.white.light};
     }
   }
   flex-basis: 100%;
