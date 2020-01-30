@@ -86,6 +86,7 @@ const SEO = ({ title, desc, banner, pathname, article }) => (
             <meta name="image" content={seo.image} />
             <meta name="apple-mobile-web-app-title" content={shortName} />
             <meta name="application-name" content={shortName} />
+            <meta name="p:domain_verify" content="25dbb4735617b64cd0bafe0086789449"/>
             <script type="application/ld+json">
               {JSON.stringify(schemaOrgJSONLD)}
             </script>
