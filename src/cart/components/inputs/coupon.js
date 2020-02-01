@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import Input from './input'
 import Toggle from './toggle'
 
-export default class CompanyNameInput extends React.Component {
+export default class CouponInput extends React.Component {
 	static defaultProps = {
 		toggleText: `Apply a Coupon`,
 		label: `Coupon Code`,

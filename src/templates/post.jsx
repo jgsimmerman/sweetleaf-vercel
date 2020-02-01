@@ -15,6 +15,7 @@ const Post = ({ data, pageContext }) => {
   const { next, prev } = pageContext;
   const post = data.markdownRemark;
   const skus = data.skus.edges;
+  const coupons = data.coupons.edges
 
   let skuObj = {
     sku: '',
@@ -88,6 +89,16 @@ export const query = graphql`
           inventory {
             quantity
           }
+        }
+      }
+    }
+    coupons: allStripeCoupon {
+      edges{
+        node {
+          id
+          duration
+          percent_off
+          object
         }
       }
     }

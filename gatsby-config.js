@@ -115,7 +115,7 @@ module.exports = {
     {
       resolve: `gatsby-source-stripe`,
       options: {
-        objects: ["Sku"],
+        objects: ["Sku", "Coupon"],
         secretKey: process.env.STRIPE_API_SECRET,
         downloadFiles: false,
         auth: false
