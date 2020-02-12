@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby";
+import theme from '../../config/theme';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import Loadable from 'react-loadable';
@@ -67,7 +68,7 @@ const Logo = styled.div`
   max-width: calc(99.9% * 2/5 - 2.5rem);
   width: calc(99.9% * 2/5 - 2.5rem);
   margin-bottom: 2rem;
-  
+
   @media (max-width: ${props => props.theme.breakpoints.m}) {
     flex-basis: calc(99.9% * 1 /2);
   max-width: calc(99.9% * 1 / 2 );
@@ -78,8 +79,6 @@ const Logo = styled.div`
   max-width: calc(99.9% * 4/5);
   width: calc(99.9% * 4/5 );  
   }
- 
-
 `;
 
 // Begin Component
@@ -105,7 +104,8 @@ const Header = ({ children, title, date, cover }) => {
         {/* <h1>{title}</h1> */}
         {/* <h3>{date}</h3> */}
         <Logo> 
-          <Link to="/"><Img fluid={data.logo.childImageSharp.fluid} alt="Home" /></Link>
+          {/* <Link to="/"><Img fluid={data.logo.childImageSharp.fluid} alt="Home" data-pin-nopin="true"/></Link> */}
+          <Link to="/"><img src={"/logo/logo.png"} alt="Home" data-pin-nopin="true" /></Link>
         </Logo>
 
         <LoadableSocialIcons />

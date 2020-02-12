@@ -22,6 +22,7 @@ const SocialWrapper = styled.span`
     svg {
       color: ${props => props.theme.colors.white.base};
       &:hover {
+        border-bottom: 4px solid ${props => props.theme.colors.white.base};
         color: ${props => props.theme.colors.white.base};
       }
     }

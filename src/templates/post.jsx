@@ -17,14 +17,28 @@ const Post = ({ data, pageContext }) => {
   const skus = data.skus.edges;
   const coupons = data.coupons.edges
 
+  let couponObj = {
+    id: '',
+    percent_off: 0,
+  }
+
+  couponObj = coupons.map(({ node: coupons }) => ({
+      id: coupons.id,
+      percent_off: coupons.percent_off,
+    })
+  );
+  console.log(couponObj);
+
   let skuObj = {
     sku: '',
     quantity: 0,
+    image: '',
   }
 
   skuObj = skus.map(({ node: sku }) => ({
       sku: sku.id,
       quantity: sku.inventory.quantity,
+      image: sku.image,
     })
   );
 
@@ -81,6 +95,7 @@ export const query = graphql`
       edges {
         node {
           id
+          image
           currency
           price
           attributes {
@@ -88,6 +103,9 @@ export const query = graphql`
           }
           inventory {
             quantity
+          }
+          localFiles {
+            publicURL
           }
         }
       }

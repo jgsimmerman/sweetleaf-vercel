@@ -7,7 +7,7 @@ export default {
     top: '26px', // 36
   },
   bmBurgerBars: {
-    background: '#000000',
+    background: `hsl(285, 60%, 25%)`,
   },
   bmBurgerBarsHover: {
     background: 'hsl(285, 60%, 25%)',
