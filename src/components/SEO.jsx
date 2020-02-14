@@ -93,13 +93,13 @@ const SEO = ({ title, desc, banner, pathname, article }) => (
 
             {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
             <script async src="https://googletagmanager.com/gtag/js?id=UA-158535531-1"></script>
-            <script>
+            {/* <script>
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments)}
               gtag('js', new Date());
 
               gtag('config', 'UA-158535531-1');
-            </script>
+            </script> */}
 
             {/* OpenGraph  */}
             <meta property="og:url" content={seo.url} />

@@ -66,7 +66,7 @@ const Post = ({ data, pageContext }) => {
         title={title}
         story={story}
         //description={post.frontmatter.description || post.excerpt || ' '}
-        image={image}
+        //image={image}
         pathname={post.frontmatter.path}
         article
       />
@@ -95,7 +95,6 @@ export const query = graphql`
       edges {
         node {
           id
-          image
           currency
           price
           attributes {
@@ -103,9 +102,6 @@ export const query = graphql`
           }
           inventory {
             quantity
-          }
-          localFiles {
-            publicURL
           }
         }
       }

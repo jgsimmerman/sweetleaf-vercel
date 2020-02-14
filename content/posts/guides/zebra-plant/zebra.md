@@ -9,16 +9,11 @@ id: 1
 posttype: guides
 tags: ['zebra plant', 'calathea zebrina', 'care']
 ---
-## Unpacking
+Calathea Zebrina (Zebra plant) likes to be indoors & cannot handle temps below 61 degrees F. Cold hardy outdoors year round in Zones 11 - 12 in shade. Normal room temperature inside is ideal. 
+Plants prefer bright indirect light and will not do well in full sun, as it will cause their leaves to fade. Soil should be kept moist in Summer and does not like to dry out. 
+These plants do not like chlorine, so be sure to leave water out for a day or two to allow chemicals to evaporate or water with reverse osmosis water, distilled water or clean collected rain. Prior to arriving at its new home, your plant has only been given rain water. Fertilize twice a month during the growing season from Spring to Fall. To increase humidity, mist twice daily or place on a tray of rocks or pebbles so that the pot has, at most, “wet feet” but is not sitting in deep standing water. In especially dry conditions, such as during Winter in heated homes, a humidifier may be especially beneficial. 
+Calatheas grow quickly and will require regular pruning to keep it looking beautiful. If your plant looks sad or has damaged leaves upon arrival, don’t panic. Once it has been repotted and given a chance to get established in its new home it will stop focusing on new roots and will start focusing on new leaves. New leaves will sprout from the stems of older leaves and resemble a straw as they emerge until they are free to unfurl. 
 
-When plant arrives: Carefully remove from box and cut out of bag. Remove any paper or packaging material gently, as it will be packed between leaves to prevent crushing. Water thoroughly with rain, distilled or reverse osmosis water. Your plant has been on a long journey and it has delicate leaves. While we try everything we can to ensure that your plant does not get damaged when shipping, the carriers do not care as much about your package as you or I do. When you open it there may be some damage to the delicate leaves, however it is a fast grower and will be popping out new leaves in no time! If there is extreme damage that the plant will not recover from, please contact me with photos within 24 hours. 
-
-## Caring for your Calathea Zebrina from Sweet Leaf!
-
-Calathea zebrina (the Zebra Plant) is a fast grower that should be transplanted when needed. From time to time outer leaves will die. Prune them as new leaves grow in.
-
-This species likes to be indoors if it is below 61 degrees F. These plants prefer indirect light and will NOT do well in full sun. Soil should be kept moist in Summer and does not like to dry out. Plants enjoy a shower with lukewarm water when possible, however, Calatheas do not particularly care for tap water. If possible, always water with reverse osmosis water, distilled water or collected rain. If unavailable, putting water out on the counter the night before to let the chlorine escape is best. Fertilize twice a month during the growing season from Spring to Fall. NO fertilizer in Winter. Misting or placing on a tray of rocks and water is also beneficial, as this plant like humid surroundings. However, do not leave the plant in standing water that is high enough to rot the roots. 
-
-Non-Toxic. Fuzzy pet and reptile safe. 
-
-If you have any questions, please feel free to message us at any time! We try to get back to people quickly. 
+Damaged leaves still photosynthesize, so we leave damaged leaves on our plants until they die on their own of old age, but if you want to remove them, allow for two new leaves to sprout before trimming out each damaged one so the plant has the opportunity to fill out while as you trim. More leaves photosynthesizing means more energy for your plant to grow faster. 
+If you have a leaf that is so damaged that you feel it needs to go immediately, be sure to check to ensure that the newest leaves have already come out of that stem. You can tell by looking at the stem on the leave to see if it appears empty where another leaf and stem has come out of it. If it has not and you cannot wait for the new leaves to emerge, snip leaf off at the top of the stem, allowing the plant time to still put off new incoming leaves before cutting the empty stem off at the soil line. By snipping the stem at the soil line before the new leaves have come out, you will lose both the leaf you are trimming and the new leaves that were going to come out in the future. 
+If you have questions or concerns, feel free to shoot us a message and we will help in any way that we are able. And if you have questions about other plants that we carry, please check our other care guides to see if they can be of help.   

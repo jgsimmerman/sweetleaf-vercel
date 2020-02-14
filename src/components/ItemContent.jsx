@@ -89,10 +89,10 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
     let itemSkuArray = skuObj.find(obj => obj.sku == post.sku)
     console.log(itemSkuArray);
     itemQuantity = itemSkuArray.quantity;
-    itemImage = itemSkuArray.image;
+    //itemImage = itemSkuArray.image;
   }
 
-  console.log(`itemImage: ${itemImage}`)
+  //console.log(`itemImage: ${itemImage}`)
   
   
   return (
@@ -151,7 +151,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
          onClick={() => addToCart({
               id: `${post.sku}`,
               name: post.title,
-              image: itemImage, //`https://via.placeholder.com/75x75`, //itemImage,
+              image: `https://via.placeholder.com/75x75`, //itemImage,
               description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit...`,
               price: post.price*100,
               shippable: true,
