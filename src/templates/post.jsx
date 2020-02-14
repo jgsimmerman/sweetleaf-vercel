@@ -66,7 +66,7 @@ const Post = ({ data, pageContext }) => {
         title={title}
         story={story}
         //description={post.frontmatter.description || post.excerpt || ' '}
-        //image={image}
+        image={image}
         pathname={post.frontmatter.path}
         article
       />
@@ -97,6 +97,7 @@ export const query = graphql`
           id
           currency
           price
+          image
           attributes {
             name
           }

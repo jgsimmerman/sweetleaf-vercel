@@ -104,7 +104,7 @@ const BurgerMenu = () => {
           <Nav className="navbar">
             <Link to="/">Home</Link>
             <Link to="/care">Care Guides</Link>
-            <Link to="/about">About</Link>
+            {/* <Link to="/about">About</Link> */}
             <Link to="/catalog">Full Catalog</Link>
             <Nav2>
               <Link to="/catalog/carnivorous-plants">Carnivorous Plants</Link>
@@ -128,6 +128,11 @@ const BurgerMenu = () => {
 
             </Nav2> */}
             <Link to="/about">About</Link>
+            <Nav2>
+              <Link to="/shipping/">Shipping Policies</Link>
+              {/* <Link to="/catalog/houseplants">Houseplants</Link>
+              <Link to="/catalog/fairy-garden">Fairy Garden Plants</Link> */}
+            </Nav2> 
             {/* <Link to="/blog">Blog</Link>
              */}
            <hr />
