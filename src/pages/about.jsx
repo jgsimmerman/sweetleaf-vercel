@@ -11,6 +11,7 @@ const About = center => (
     <Container center={center}>
       <h3>Welcome to Sweet Leaf Succulents!</h3>
       <p>Based in Lamar, South Carolina; we specialize in succulents and ornamental plants.</p>
+      <p>Send us an email at <a href="mailto:sweetleafsucculents@gmail.com">sweetleafsucculents@gmail.com</a></p> 
     </Container>
   </Layout>
 );

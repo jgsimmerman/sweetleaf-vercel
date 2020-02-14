@@ -67,6 +67,7 @@ const Catalog = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
+      <Helmet title={'Complete Catalog'} />
       <Header title="Full Catalog">
       </Header>
       <PostWrapper>

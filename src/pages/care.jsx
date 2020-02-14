@@ -28,7 +28,7 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-evenly;
-margin: 4rem 4rem 4rem 4rem;
+margin: 2rem 2rem 2rem 2rem;
 .SocialIcon {
   display: flex;
   flex-direction: row;
