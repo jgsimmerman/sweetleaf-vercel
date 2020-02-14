@@ -76,6 +76,7 @@
     "gatsby-source-stripe": "^3.0.5",
     "gatsby-transformer-remark": "^2.6.45",
     "gatsby-transformer-sharp": "^2.3.9",
+    "invariant": "^2.2.4",
     "is-email": "^1.0.0",
     "is-phone": "^2.0.0",
     "is-valid-zip": "^0.0.3",
