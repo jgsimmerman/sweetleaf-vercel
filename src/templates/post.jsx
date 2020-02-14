@@ -15,19 +15,19 @@ const Post = ({ data, pageContext }) => {
   const { next, prev } = pageContext;
   const post = data.markdownRemark;
   const skus = data.skus.edges;
-  const coupons = data.coupons.edges
+  // const coupons = data.coupons.edges
 
-  let couponObj = {
-    id: '',
-    percent_off: 0,
-  }
+  // let couponObj = {
+  //   id: '',
+  //   percent_off: 0,
+  // }
 
-  couponObj = coupons.map(({ node: coupons }) => ({
-      id: coupons.id,
-      percent_off: coupons.percent_off,
-    })
-  );
-  console.log(couponObj);
+  // couponObj = coupons.map(({ node: coupons }) => ({
+  //     id: coupons.id,
+  //     percent_off: coupons.percent_off,
+  //   })
+  // );
+  // console.log(couponObj);
 
   let skuObj = {
     sku: '',
