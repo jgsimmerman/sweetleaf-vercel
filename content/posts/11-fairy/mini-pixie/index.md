@@ -9,7 +9,7 @@ title: "Mini Pixie"
 scientificname: "Syngonium podophyllum"
 id: 11
 dataItemId: 1234567
-sku: "sku_GPu4z7x1Q62yja"
+sku: "sku_GjXxSfnv5hFSLH"
 catalog-section: "fairy garden"
 tags: ['fairy garden', 'terrarium', 'syngonium']
 primarycolor: "Green"

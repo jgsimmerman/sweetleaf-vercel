@@ -7,7 +7,7 @@ title: "Mini Pink"
 scientificname: "Fittonia albivenis verschaffeltii"
 id: 11
 dataItemId: 1234567
-sku: "sku_GPu4z7x1Q62yja"
+sku: "sku_GjXqaPCnyBQi4v"
 catalog-section: "fairy garden"
 tags: ['fairy garden', 'terrarium', 'fittonia']
 primarycolor: "Green"

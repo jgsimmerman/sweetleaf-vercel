@@ -8,7 +8,7 @@ title: "Nepenthes Alata"
 scientificname: "Nepenthes alata"
 id: 9 
 dataItemId: 12345678
-sku: "sku_GPu6Hg898ywjUZ"
+sku: "sku_GjWTZsvKuYGmRe"
 catalog-section: "carnivorous-plants"
 tags: ['carnivorous', 'terrarium', 'nepenthes']
 primarycolor: "Green"

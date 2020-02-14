@@ -7,7 +7,7 @@ title: "White Hypoestes"
 scientificname: "Hypoestes phyllostachya "
 id: 11 
 dataItemId: 1234567
-sku: "sku_GPu4z7x1Q62yja"
+sku: "sku_GjXj7GKMFiSV9O"
 catalog-section: "fairy garden"
 tags: ['fairy garden', 'terrarium', 'hypoestes']
 primarycolor: "Green"
