@@ -3,7 +3,7 @@
 
 // // const coupons = async ({ response, info, preFetchData }) => {
 // const coupons = async ({ response, info, preFetchData, data }) => {
-//   var stripe = require('stripe')('sk_live_OhuKqHZuXMWq9uCovYTeTud300uelbNDkc');
+//   var stripe = require('stripe')('sk_live_');
 
 //   let coupon = stripe.coupons.retrieve(
 //       info.coupon,
