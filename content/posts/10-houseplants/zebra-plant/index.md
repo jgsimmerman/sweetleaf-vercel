@@ -1,6 +1,6 @@
 ---
 path: "/catalog/houseplants/zebra-plant"
-cover: "./back1.jpg"
+cover: "./front1.jpg"
 pic: "./front1.jpg"
 snipPic: "./front1.jpg"
 care: "/care/dummy.pdf"
@@ -10,7 +10,7 @@ id: 10
 dataItemId: 123456789
 sku: "sku_GbWhuyQsHgbZE3"
 catalog-section: "houseplants"
-tags: ['houseplants', 'calathea']
+tags: ['houseplants', 'terrarium', 'calathea']
 primarycolor: "Green"
 stresscolors: "White"
 bloomcolor: ""

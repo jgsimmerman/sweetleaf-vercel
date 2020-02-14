@@ -29,6 +29,8 @@ const PostWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 4rem 4rem 4rem 4rem;
+  color: ${props => props.theme.colors.white.base};
+
   .SocialIcon {
     display: flex;
     flex-direction: row;

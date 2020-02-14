@@ -39,7 +39,7 @@ const Nav2 = styled.nav`
   align-items: left;
   text-indent: 2rem;
   a {
-    color: ${props => props.theme.colors.white.grey};
+    color: ${props => props.theme.colors.white.base};
     margin: 0.2rem;
     transition: all ${props => props.theme.transitions.default.duration};
     &:hover {
@@ -98,7 +98,7 @@ const BurgerMenu = () => {
       >
         <div>
           <Head>
-            <Link to="/">Sweet Leaf Succulents</Link>
+            <Link to="/">Sweet Leaf</Link>
           </Head>
 
           <Nav className="navbar">
@@ -106,6 +106,12 @@ const BurgerMenu = () => {
             <Link to="/care">Care Guides</Link>
             <Link to="/about">About</Link>
             <Link to="/catalog">Full Catalog</Link>
+            <Nav2>
+              <Link to="/catalog/carnivorous-plants">Carnivorous Plants</Link>
+              <Link to="/catalog/houseplants">Houseplants</Link>
+              <Link to="/catalog/fairy-garden">Fairy Garden Plants</Link>
+            </Nav2> 
+            
 
             {/* <Nav2>
               <Link to="/catalog/echeveria">Echeveria</Link>
@@ -121,7 +127,7 @@ const BurgerMenu = () => {
               <Link to="/catalog/houseplants">Houseplants</Link>
 
             </Nav2> */}
-            {/* <Link to="/about">About</Link> */}
+            <Link to="/about">About</Link>
             {/* <Link to="/blog">Blog</Link>
              */}
            <hr />
@@ -148,7 +154,7 @@ const BurgerMenu = () => {
                 </IconContext.Provider>
               </CartQty>
             </section>
-            <hr />
+            {/* <hr /> */}
             {/* <a
               href="#"
               className="snipcart-user-profile"

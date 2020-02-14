@@ -180,15 +180,15 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
           "currency": "usd",
 
           // Optional delivery estimate and tax items:
-          "tax_items": [
-            {
-              "parent": "priority_shipping",
-              "type": "tax",
-              "description": "Shipping sales taxes",
-              "amount": tax0,
-              "currency": "usd"
-            }
-          ]
+          // "tax_items": [
+          //   {
+          //     "parent": "priority_shipping",
+          //     "type": "tax",
+          //     "description": "Shipping sales taxes",
+          //     "amount": tax0,
+          //     "currency": "usd"
+          //   }
+          // ]
         },
         {
           "id": "shipping-1",
@@ -197,15 +197,15 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
           "currency": "usd",
 
           // Optional delivery estimate and tax items:
-          "tax_items": [
-            {
-              "parent": "express",
-              "type": "tax",
-              "description": "Shipping sales taxes",
-              "amount": tax1,
-              "currency": "usd"
-            }
-          ]
+          // "tax_items": [
+          //   {
+          //     "parent": "express",
+          //     "type": "tax",
+          //     "description": "Shipping sales taxes",
+          //     "amount": tax1,
+          //     "currency": "usd"
+          //   }
+          // ]
         },
         {
           "id": "shipping-2",
@@ -214,15 +214,15 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
           "currency": "usd",
 
           // Optional delivery estimate and tax items:
-          "tax_items": [
-            {
-              "parent": "overnight_shipping",
-              "type": "tax",
-              "description": "Shipping sales taxes",
-              "amount": tax2,
-              "currency": "usd"
-            }
-          ]
+          // "tax_items": [
+          //   {
+          //     "parent": "overnight_shipping",
+          //     "type": "tax",
+          //     "description": "Shipping sales taxes",
+          //     "amount": tax2,
+          //     "currency": "usd"
+          //   }
+          // ]
         },
       ]
     }

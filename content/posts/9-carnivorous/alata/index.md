@@ -10,7 +10,7 @@ id: 9
 dataItemId: 12345678
 sku: "sku_GPu6Hg898ywjUZ"
 catalog-section: "carnivorous-plants"
-tags: ['carnivorous', 'nepenthes']
+tags: ['carnivorous', 'terrarium', 'nepenthes']
 primarycolor: "Green"
 stresscolors: "Pink"
 bloomcolor: ""

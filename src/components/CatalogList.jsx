@@ -104,6 +104,8 @@ const Date = styled.div`
 
 const Title = styled.h2`
   margin: 0;
+  color: ${props => props.theme.colors.white.base};
+
 `;
 
 const CatalogContainer = styled(Container)`

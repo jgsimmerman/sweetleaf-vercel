@@ -6,12 +6,35 @@ import PropTypes from 'prop-types';
 import { Header, CatalogList } from 'components';
 import { Layout } from 'layouts';
 
+const PostWrapper = styled.main`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 2rem 2rem 2rem 2rem;
+  color: ${props => props.theme.colors.white.base};
+
+  .SocialIcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 25px;
+    height: 25px;
+  }
+  @media (max-width: 1000px) {
+    margin: 4rem 2rem 1rem 2rem;
+  }
+  @media (max-width: 700px) {
+    margin: 4rem 1rem 1rem 1rem;
+  }
+`;
+
 const CatalogWrapper = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 4rem 4rem 1rem 4rem;
+  justify-content: space-around;
+  margin: 2rem 4rem 1rem 4rem;
   @media (max-width: 1000px) {
     margin: 4rem 2rem 1rem 2rem;
   }
@@ -27,7 +50,9 @@ const houseplants = ({ data }) => {
       <Header title="Houseplants">
         Sweet Leaf Succulents and Ornamental Plants
       </Header>
-
+      <PostWrapper>
+          <h2> Houseplants </h2>
+      </PostWrapper>
       <CatalogWrapper>
         {edges.map(({ node }) => (
           <CatalogList

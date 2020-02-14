@@ -1,5 +1,5 @@
 ---
-path: "/catalog/houseplants/mini-pixie"
+path: "/catalog/fairy-garden/mini-pixie"
 cover: "./front2.jpg"
 pic: "./front2.jpg"
 snipPic: "./front2.jpg"
@@ -7,11 +7,11 @@ care: "/care/dummy.pdf"
 
 title: "Mini Pixie"
 scientificname: "Syngonium podophyllum"
-id: 10 
+id: 11
 dataItemId: 1234567
 sku: "sku_GPu4z7x1Q62yja"
-catalog-section: "houseplants"
-tags: ['houseplants', 'syngonium']
+catalog-section: "fairy garden"
+tags: ['fairy garden', 'terrarium', 'syngonium']
 primarycolor: "Green"
 stresscolors: "White"
 bloomcolor: ""

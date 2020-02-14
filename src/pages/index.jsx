@@ -15,7 +15,9 @@ const PostWrapper = styled.main`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 4rem 4rem 4rem 4rem;
+  margin: 2rem 2rem 2rem 2rem;
+  color: ${props => props.theme.colors.white.base};
+
   .SocialIcon {
     display: flex;
     flex-direction: row;
@@ -159,7 +161,7 @@ const Index = ({ data }) => {
         </Wrapper>
         <Wrapper>
           <Image>
-            <Img fluid={data.imageThree.childImageSharp.fluid} alt="Nepenthes Alata"/>
+            <Img fluid={data.imageTen.childImageSharp.fluid} alt="Nepenthes Alata"/>
           </Image>
           <StyledLink to="/catalog/carnivorous-plants/alata/">
             <Info>
@@ -170,12 +172,34 @@ const Index = ({ data }) => {
         </Wrapper>
         <Wrapper>
           <Image>
-            <Img fluid={data.imageFour.childImageSharp.fluid} alt="Wandering Dude"/>
+            <Img fluid={data.imageSeven.childImageSharp.fluid} alt="Mini White"/>
           </Image>
-          <StyledLink to="/catalog/houseplants/wandering-dude/">
+          <StyledLink to="/catalog/fairy-garden/mini-white/">
             <Info>
-              <Title>Wandering Dude Cuttings</Title>
-              <Price>$4.95</Price>
+              <Title>Mini White</Title>
+              <Price>$6.95</Price>
+            </Info>
+          </StyledLink>
+        </Wrapper>
+        <Wrapper>
+          <Image>
+            <Img fluid={data.imageEight.childImageSharp.fluid} alt="Rose Hypoestes"/>
+          </Image>
+          <StyledLink to="/catalog/fairy-garden/rose-hypoestes/">
+            <Info>
+              <Title>Rose Hypoestes</Title>
+              <Price>$6.45</Price>
+            </Info>
+          </StyledLink>
+        </Wrapper>
+        <Wrapper>
+          <Image>
+            <Img fluid={data.imageNine.childImageSharp.fluid} alt="Mixed Colors Hypoestes"/>
+          </Image>
+          <StyledLink to="/catalog/fairy-garden/mixed-hypoestes/">
+            <Info>
+              <Title>Mixed Colors Hypoestes</Title>
+              <Price>$6.45</Price>
             </Info>
           </StyledLink>
         </Wrapper>
@@ -190,6 +214,9 @@ const Index = ({ data }) => {
             </Info>
           </StyledLink>
         </Wrapper>
+      </PostWrapper>
+      <PostWrapper>
+        <h4> <Link to="/catalog/">See our full catalog for more!</Link></h4>
       </PostWrapper>
       {/* <PostWrapper>
           <h2> Coming Spring 2020! </h2>
@@ -363,6 +390,34 @@ export const pageQuery = graphql`
       }
     }
     imageSix: file(relativePath: { eq: "zebra-plant.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400, quality: 60) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    imageSeven: file(relativePath: { eq: "miniWhite.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400, quality: 60) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    imageEight: file(relativePath: { eq: "rose.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400, quality: 60) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    imageNine: file(relativePath: { eq: "mixedColor.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400, quality: 60) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    imageTen: file(relativePath: { eq: "newAlata.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 400, quality: 60) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
