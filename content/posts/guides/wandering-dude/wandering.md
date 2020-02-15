@@ -7,6 +7,6 @@ title: "Care Guide for Wandering Dude Cuttings"
 published: true
 id: 1
 posttype: guides
-tags: ['wandering dude', 'plant', 'care']
+tags: ['wandering dude', 'plant', 'care guides']
 ---
 # Coming Soon!

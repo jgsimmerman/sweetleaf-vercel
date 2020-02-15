@@ -7,7 +7,7 @@ title: "Care Guide for Fittonia albivenis verschaffeltii"
 published: true
 id: 1
 posttype: guides
-tags: ['nerve plant', 'fittonia', 'mosaic', 'care']
+tags: ['nerve plant', 'fittonia', 'mosaic', 'fairy garden', 'terrarium', 'care guides']
 ---
 <em><strong>Fittonia albivenis verschaffeltii</strong> (The Nerve Plant, Mosaic Plant)</em> likes to be indoors when temps dip below 50 degrees & does not like direct sunlight. Cold hardy outdoors year round in Zones 10 - 11 in shade. Normal room temperature inside is ideal. 
 

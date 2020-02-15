@@ -7,7 +7,7 @@ title: "Care Guide for Zebra Plant"
 published: true
 id: 1
 posttype: guides
-tags: ['zebra plant', 'calathea zebrina', 'care']
+tags: ['zebra plant', 'calathea zebrina', 'terrarium', 'care guides']
 ---
 Calathea Zebrina (Zebra plant) likes to be indoors & cannot handle temps below 61 degrees F. Cold hardy outdoors year round in Zones 11 - 12 in shade. Normal room temperature inside is ideal. 
 Plants prefer bright indirect light and will not do well in full sun, as it will cause their leaves to fade. Soil should be kept moist in Summer and does not like to dry out. 

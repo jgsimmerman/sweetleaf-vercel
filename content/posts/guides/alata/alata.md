@@ -7,7 +7,7 @@ title: "Care Guide for Nepenthes Alata"
 published: true
 id: 1
 posttype: guides
-tags: ['nepenthes', 'alata', 'care']
+tags: ['nepenthes', 'alata', 'terrarium', 'care guides']
 ---
 
 Your nepenthes are coming from someone who knows how to grow carnivorous plants properly and have never been in a big box store. It has never been given tap water. There is no need to flush or repot on arrival. Your plant is growing in the correct medium and can remain in this pot until you feel that it is ready to be moved to a larger pot. When this time comes, gently wrap the roots in pure long fiber sphagnum moss or a 50/50 mixture of long fiber sphagnum moss and perlite. Be gentle with the roots as Nepenthes roots are very delicate. 

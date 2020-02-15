@@ -7,7 +7,7 @@ title: "Care Guide for Hypoestes phyllostachya"
 published: true
 id: 1
 posttype: guides
-tags: ['polka dot plant', 'hypoestes', 'freckle face plant', 'care']
+tags: ['polka dot plant', 'hypoestes', 'freckle face plant', 'fairy garden', 'terrarium', 'care guides']
 ---
 <em><strong>Hypoestes phyllostachya</strong> (The Polka Dot Plant - Freckle Face Plant)</em> likes to be indoors when temps dip below 61 degrees & does not like direct sunlight. Cold hardy outdoors year round in Zones 10 - 11 in shade. Normal room temperature inside is ideal. 
 

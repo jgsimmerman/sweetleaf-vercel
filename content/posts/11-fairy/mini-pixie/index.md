@@ -11,7 +11,7 @@ id: 11
 dataItemId: 1234567
 sku: "sku_GjXxSfnv5hFSLH"
 catalog-section: "fairy garden"
-tags: ['fairy garden', 'terrarium', 'syngonium']
+tags: ['fairy garden', 'terrarium', 'syngonium', 'mini pixie']
 primarycolor: "Green"
 stresscolors: "White"
 bloomcolor: ""

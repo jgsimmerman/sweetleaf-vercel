@@ -9,7 +9,7 @@ id: 11
 dataItemId: 1234567
 sku: "sku_GjXaa6W3GZfADK"
 catalog-section: "fairy garden"
-tags: ['fairy garden', 'terrarium', 'fittonia']
+tags: ['fairy garden', 'terrarium', 'fittonia', 'nerve plant', 'mosaic plant']
 primarycolor: "Green"
 stresscolors: "Red"
 bloomcolor: ""
