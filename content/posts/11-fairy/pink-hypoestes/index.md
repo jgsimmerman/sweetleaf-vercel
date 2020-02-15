@@ -7,7 +7,7 @@ title: "Pink Hypoestes"
 scientificname: "Hypoestes phyllostachya "
 id: 11 
 dataItemId: 1234567
-sku: "sku_GjXoi5rdMhF3mr"
+sku: "sku_GjxYiNOR9gTB4W"
 catalog-section: "fairy garden"
 tags: ['fairy garden', 'terrarium', 'freckle face plant', 'polka dot plant', 'hypoestes']
 primarycolor: "Green"

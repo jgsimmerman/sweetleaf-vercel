@@ -7,7 +7,7 @@ title: "Red Hypoestes"
 scientificname: "Hypoestes phyllostachya "
 id: 11 
 dataItemId: 1234567
-sku: "sku_GjXtEcVYXzqM4Y"
+sku: "sku_GjxLay5PikR3tB"
 catalog-section: "fairy garden"
 tags: ['fairy garden', 'terrarium', 'freckle face plant', 'polka dot plant', 'hypoestes']
 primarycolor: "Green"

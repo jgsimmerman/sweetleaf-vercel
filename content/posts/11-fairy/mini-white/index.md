@@ -7,7 +7,7 @@ title: "Mini White"
 scientificname: "Fittonia albivenis verschaffeltii"
 id: 11 
 dataItemId: 1234567
-sku: "sku_GjXeZYMVte64bw"
+sku: "sku_Gjxrzxp7GTuUQk"
 catalog-section: "fairy garden"
 tags: ['fairy garden', 'terrarium', 'fittonia', 'nerve plant', 'mosaic plant']
 primarycolor: "Green"

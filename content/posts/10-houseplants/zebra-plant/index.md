@@ -8,7 +8,7 @@ title: "Zebra Plant"
 scientificname: "Calathea zebrina"
 id: 10 
 dataItemId: 123456789
-sku: "sku_GjXz9vTwNRhHBi"
+sku: "sku_GjxA2eE2aC2DoF"
 catalog-section: "houseplants"
 tags: ['houseplants', 'terrarium', 'calathea']
 primarycolor: "Green"

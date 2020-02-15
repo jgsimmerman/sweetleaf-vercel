@@ -7,7 +7,7 @@ title: "Rose Hypoestes"
 scientificname: "Hypoestes phyllostachya "
 id: 11 
 dataItemId: 1234567
-sku: "sku_GjXgibHgOXc86E"
+sku: "sku_GjxpUZn3HhzwGw"
 catalog-section: "fairy garden"
 tags: ['fairy garden', 'terrarium', 'freckle face plant', 'polka dot plant', 'hypoestes']
 primarycolor: "Green"

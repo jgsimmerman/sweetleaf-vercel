@@ -7,7 +7,7 @@ title: "Mixed Colors Hypoestes"
 scientificname: "Hypoestes phyllostachya "
 id: 11 
 dataItemId: 1234567
-sku: "sku_GjXb3CTt0MxHPm"
+sku: "sku_Gjxu2dHJtLu5gh"
 catalog-section: "fairy garden"
 tags: ['fairy garden', 'terrarium', 'freckle face plant', 'polka dot plant', 'hypoestes']
 primarycolor: "Green"

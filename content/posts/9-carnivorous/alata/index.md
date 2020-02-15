@@ -8,7 +8,7 @@ title: "Nepenthes x Ventrata"
 scientificname: "Nepenthes alata"
 id: 9 
 dataItemId: 12345678
-sku: "sku_GjWTZsvKuYGmRe"
+sku: "sku_GjxyukjjpQOVDs"
 catalog-section: "carnivorous-plants"
 tags: ['carnivorous', 'terrarium', 'nepenthes']
 primarycolor: "Green"
