@@ -9,7 +9,7 @@ id: 11
 dataItemId: 1234567
 sku: "sku_GjXtEcVYXzqM4Y"
 catalog-section: "fairy garden"
-tags: ['fairy garden', 'terrarium', 'hypoestes']
+tags: ['fairy garden', 'terrarium', 'freckle face plant', 'polka dot plant', 'hypoestes']
 primarycolor: "Green"
 stresscolors: "Red"
 bloomcolor: ""
