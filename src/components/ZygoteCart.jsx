@@ -44,7 +44,7 @@ const ZygoteCart = props => {
         // Shipping
       ]}
 
-      cartHeader={<div>Sweet Leaf Succulents</div>}
+      cartHeader={<div>Sweet Leaf </div>}
 
       
 

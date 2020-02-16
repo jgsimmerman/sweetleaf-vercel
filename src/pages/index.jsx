@@ -152,7 +152,7 @@ const Index = ({ data }) => {
           <Image>
             <Img fluid={data.imageFive.childImageSharp.fluid} alt="Mini Pixie"/>
           </Image>
-          <StyledLink to="/catalog/houseplants/mini-pixie/">
+          <StyledLink to="/catalog/fairy-garden/mini-pixie/">
             <Info>
               <Title>Mini Pixie</Title>
               <Price>$8.95</Price>
