@@ -11,7 +11,7 @@ id: 10
 dataItemId: 123456
 sku: "sku_GjwxRAKJhx5bHq"
 catalog-section: "houseplants"
-tags: ['houseplants', 'zebrina']
+tags: ['houseplants', 'zebrina', 'wandering dude']
 primarycolor: "Purple"
 stresscolors: "Green"
 bloomcolor: ""
