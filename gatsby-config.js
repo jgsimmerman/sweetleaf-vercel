@@ -205,5 +205,14 @@ module.exports = {
         anonymize: true,
       },
     },
+    {
+      resolve: `@mangoart/gatsby-plugin-purechat`,
+      options: {
+        // include the PureChat js snippet
+        enabled: true,
+        // your website id, extract from the snippet provided by purechat 
+        websiteId: `95d36fea-f481-4495-8662-b3f118d5b387`, 
+      },
+    },
   ],
 };
