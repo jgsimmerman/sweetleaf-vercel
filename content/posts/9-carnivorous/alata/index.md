@@ -4,8 +4,8 @@ cover: "./alata1.jpg"
 pic: "./feb4.jpg"
 snipPic: "./back1.jpg"
 care: "/care/dummy.pdf"
-title: "Nepenthes x Ventrata"
-scientificname: "Nepenthes alata"
+title: "Nepenthes x ventrata"
+scientificname: "Nepenthes alata hybrid"
 id: 9 
 dataItemId: 12345678
 sku: "sku_GjxyukjjpQOVDs"
