@@ -23,12 +23,12 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 			description: `Priority Shipping`,
 			value: (subtotal) => {
 				if (subtotal < 3000) {
-					return 800
+					return 795
 				} else if (subtotal < 4500) {
-					return 900
+					return 895
 				}
 				else if (subtotal < 5000) {
-					return 100
+					return 995
 				}
 				else if (subtotal >= 5000) {
 					return 0 //1195
@@ -44,41 +44,41 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 			description: `Express Shipping`,
 			value: (subtotal) => {
 				if (subtotal < 3000) {
-					return 1600
+					return 1595
 				} else if (subtotal < 4500) {
-					return 1800
+					return 1795
 				} else if (subtotal < 6000) {
-					return 1900
+					return 1895
 				}
 				else if (subtotal < 7500) {
-					return 2200
+					return 2195
 				}
 				else if (subtotal < 10500) {
-					return 3100
+					return 3095
 				}
 				else if (subtotal < 14000) {
-					return 3400
+					return 3395
 				}
 				else if (subtotal < 17500) {
-					return 4200
+					return 4195
 				}
 				else if (subtotal < 21000) {
-					return 4800
+					return 4795
 				}
 				else if (subtotal < 35000) {
-					return 5500
+					return 5495
 				}
 				else if (subtotal < 50000) {
-					return 6800
+					return 6796
 				}
 				else if (subtotal < 75000) {
-					return 8000
+					return 7995
 				}
 				else if (subtotal <= 100000) {
-					return 9700
+					return 9695
 				}
 				else if (subtotal > 100000) {
-					return 9700
+					return 9695
 				}
 			},
 			addInfo: ``,
@@ -88,41 +88,41 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 			description: `Overnight Shipping`,
 			value: (subtotal) => {
 				if (subtotal < 3000) {
-					return 3000
+					return 2995
 				} else if (subtotal < 4500) {
-					return 3300
+					return 3295
 				} else if (subtotal < 6000) {
-					return 3500
+					return 3495
 				}
 				else if (subtotal < 7500) {
-					return 4000
+					return 3995
 				}
 				else if (subtotal < 10500) {
-					return 5700
+					return 5695
 				}
 				else if (subtotal < 14000) {
-					return 6000
+					return 5995
 				}
 				else if (subtotal < 17500) {
-					return 7200
+					return 7195
 				}
 				else if (subtotal < 21000) {
-					return 8200
+					return 8195
 				}
 				else if (subtotal < 35000) {
-					return 9000
+					return 8995
 				}
 				else if (subtotal < 50000) {
-					return 10100
+					return 10995
 				}
 				else if (subtotal < 75000) {
-					return 12600
+					return 12595
 				}
 				else if (subtotal <= 100000) {
-					return 15000
+					return 14995
 				}
 				else if (subtotal > 100000) {
-					return 17000
+					return 16995
 				}
 			},
 			addInfo: ``,

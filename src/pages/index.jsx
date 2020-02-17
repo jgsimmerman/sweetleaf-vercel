@@ -155,7 +155,7 @@ const Index = ({ data }) => {
           <StyledLink to="/catalog/fairy-garden/mini-pixie/">
             <Info>
               <Title>Mini Pixie</Title>
-              <Price>$8.95</Price>
+              <Price>$6.95</Price>
             </Info>
           </StyledLink>
         </Wrapper>
