@@ -20,7 +20,7 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 	let shippingOptions = [
 		{
 			id: `shipping-0`,
-			description: `Priority Shipping`,
+			description: `Standard Shipping`,
 			value: (subtotal) => {
 				if (subtotal < 3000) {
 					return 795
@@ -37,7 +37,7 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 				// 	return 0
 				// }
 			},
-			addInfo:  `Free priority shipping on orders over $50!`,
+			addInfo:  `Free standard shipping on orders over $50!`,
 		},
 		{
 			id: `shipping-1`,
