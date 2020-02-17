@@ -137,7 +137,7 @@ const BurgerMenu = () => {
              */}
            <hr />
 
-            <section>
+            {/* <section>
               <CartQty>
                 <IconContext.Provider
                   value={{
@@ -158,7 +158,7 @@ const BurgerMenu = () => {
                   </div>
                 </IconContext.Provider>
               </CartQty>
-            </section>
+            </section> */}
             {/* <hr /> */}
             {/* <a
               href="#"

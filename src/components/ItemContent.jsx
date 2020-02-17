@@ -134,7 +134,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
                   {post.story}
               </p>  */}
             {/* <BuyButton post={post}></BuyButton> */}
-
+{/* 
             <button style={{
               backgroundColor: 'hsl(228, 34.9%, 83.1%)',
               borderRadius: '5px',
@@ -159,7 +159,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
               stock: itemQuantity,
             })}>
               Add to Cart!
-            </button> 
+            </button>  */}
 
             {/* <button onClick={openCart}>Open Cart</button> */}
           </Info>

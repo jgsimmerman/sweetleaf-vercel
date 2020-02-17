@@ -77,10 +77,10 @@ const NavBar = props => (
                 fontSize: `1rem`,
               }}
             >
-              <FaShoppingCart onClick={openCart} />
+              {/* <FaShoppingCart onClick={openCart} />
               <CartQuantity>
                 {qty => <React.Fragment>{qty}</React.Fragment>}
-              </CartQuantity>
+              </CartQuantity> */}
             </div>
           </IconContext.Provider>
         </CartQty>
