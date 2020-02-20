@@ -23,7 +23,7 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 			description: `Standard Shipping`,
 			value: (subtotal) => {
 				if (subtotal < 3000) {
-					return 795
+					return 595
 				} else if (subtotal < 4500) {
 					return 895
 				}
@@ -41,6 +41,27 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 		},
 		{
 			id: `shipping-1`,
+			description: `(+$3.00) Priority Shipping`,
+			value: (subtotal) => {
+				if (subtotal < 3000) {
+					return 895
+				} else if (subtotal < 4500) {
+					return 1195
+				}
+				else if (subtotal < 5000) {
+					return 1295
+				}
+				else if (subtotal < 6000) {
+					return 395 //1195
+				}
+				else if (subtotal > 7501) {
+					return 695
+				}
+			},
+			addInfo:  `Free standard shipping on orders over $50!`,
+		},
+		{
+			id: `shipping-2`,
 			description: `Express Shipping`,
 			value: (subtotal) => {
 				if (subtotal < 3000) {
@@ -84,7 +105,7 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 			addInfo: ``,
 		},
 		{
-			id: `shipping-2`,
+			id: `shipping-3`,
 			description: `Overnight Shipping`,
 			value: (subtotal) => {
 				if (subtotal < 3000) {
@@ -126,6 +147,12 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 				}
 			},
 			addInfo: ``,
+		},
+		{
+			id: `shipping-4`,
+			description: `Free Local Pickup`,
+			value: 0,
+			addInfo: `In the area? Feel free to stop by and pick up your plant!`,
 		},
 	]
 

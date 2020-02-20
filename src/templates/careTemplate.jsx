@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import { Layout, Container, Content } from 'layouts';
 import { TagsBlock, Header, SEO } from 'components';
+import Img from 'gatsby-image';
 import '../styles/prism';
 
 const SuggestionBar = styled.div`
@@ -24,6 +25,7 @@ const care = ({ data, pageContext }) => {
   const {html, frontmatter, excerpt } = data.markdownRemark
   const {date, title, tags, path, description} = frontmatter
   const image = frontmatter.cover.childImageSharp.fluid;
+  const pic = frontmatter.pic.childImageSharp.fluid;
 
   return (
     <Layout>
@@ -37,6 +39,8 @@ const care = ({ data, pageContext }) => {
       <Header title={title} date={date} cover={image} />
       <Container>
         <h1>{title}</h1>
+        
+        <Img fluid={pic} alt="" />
 
         <Content input={html} />
         <TagsBlock list={tags || []} />
@@ -81,6 +85,13 @@ export const query = graphql`
         date
         title
         tags
+        pic {
+          childImageSharp {
+            fluid( maxWidth: 500, quality: 75, traceSVG: { color: "#2B2B2F" }) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
         cover {
           childImageSharp {
             fluid(
