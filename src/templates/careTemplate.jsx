@@ -40,7 +40,7 @@ const care = ({ data, pageContext }) => {
       <Container>
         <h1>{title}</h1>
         
-        <Img fluid={pic} alt="" />
+        {/* <Img fluid={pic} alt="" /> */}
 
         <Content input={html} />
         <TagsBlock list={tags || []} />
