@@ -26,6 +26,12 @@ const Image = styled.span`
   flex: 1;
   min-height: 50vh;  
 `;
+const Image2 = styled.span`
+  background: #eee;
+  display: inline-block;
+  padding: 5px;
+  width: 200px;  
+`;
 
 const Info = styled.span`
   margin-top: 2rem;
@@ -110,6 +116,21 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
           <Image>
             <Img fluid={post.pic.childImageSharp.fluid} alt="" />
           </Image>
+          
+          {/* <SRLWrapper>
+          </SRLWrapper> */}
+
+        </GridItem>
+        <GridItem column="1" row="2">
+          <Image2>
+            <Img fluid={post.pic.childImageSharp.fluid} alt="" />
+          </Image2>
+          <Image2>
+            <Img fluid={post.pic.childImageSharp.fluid} alt="" />
+          </Image2>
+          <Image2>
+            <Img fluid={post.pic.childImageSharp.fluid} alt="" />
+          </Image2>
           {/* <SRLWrapper>
           </SRLWrapper> */}
 

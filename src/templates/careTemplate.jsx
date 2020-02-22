@@ -7,6 +7,23 @@ import { TagsBlock, Header, SEO } from 'components';
 import Img from 'gatsby-image';
 import '../styles/prism';
 
+const CareWrapper = styled.div`
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+margin: 4rem 4rem 1rem 4rem;
+a {
+  color: ${props => props.theme.colors.white.base};
+}
+@media (max-width: 1000px) {
+  margin: 4rem 2rem 1rem 2rem;
+}
+@media (max-width: 700px) {
+  margin: 4rem 1rem 1rem 1rem;
+}
+`;
+
 const SuggestionBar = styled.div`
   display: flex;
   flex-wrap: nowrap;
@@ -39,9 +56,13 @@ const care = ({ data, pageContext }) => {
       <Header title={title} date={date} cover={image} />
       <Container>
         <h1>{title}</h1>
-        
+        <CareWrapper>
+          <Img fluid={pic} alt="" />
+        </CareWrapper>
         {/* <Img fluid={pic} alt="" /> */}
+        <CareWrapper>
 
+        </CareWrapper>
         <Content input={html} />
         <TagsBlock list={tags || []} />
       </Container>
@@ -95,7 +116,7 @@ export const query = graphql`
         cover {
           childImageSharp {
             fluid(
-              maxWidth: 1920
+              maxHeight: 200
               quality: 50
               duotone: { highlight: "#386eee", shadow: "#2323be", opacity: 60 }
             ) {

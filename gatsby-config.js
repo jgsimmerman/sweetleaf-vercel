@@ -214,5 +214,6 @@ module.exports = {
         websiteId: `95d36fea-f481-4495-8662-b3f118d5b387`, 
       },
     },
+    "gatsby-theme-gallery",
   ],
 };
