@@ -2,6 +2,10 @@
 path: "/catalog/hybrids/ghost-plant"
 cover: "./succ3.jpg"
 pic: "./succ3.jpg"
+pic2: "./succ3.jpg"
+pic3: "./succ3.jpg"
+pic4: "./succ3.jpg"
+
 title: "Ghost Plant, Mother of Pearl Plant"
 scientificname: "Graptopetalum Paraguayense"
 id: 6

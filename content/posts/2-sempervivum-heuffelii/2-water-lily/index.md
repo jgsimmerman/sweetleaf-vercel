@@ -2,6 +2,9 @@
 path: "/catalog/sempervivum-heuffelli/water-lily"
 cover: "./succ3.jpg"
 pic: "./succ3.jpg"
+pic2: "./succ3.jpg"
+pic3: "./succ3.jpg"
+pic4: "./succ3.jpg"
 title: "Water Lily"
 scientificname: "Sempervivum Heuffelii"
 id: 2

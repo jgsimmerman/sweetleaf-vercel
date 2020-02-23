@@ -2,6 +2,9 @@
 path: "/catalog/echeveria/wilderness"
 cover: "./succ3.jpg"
 pic: "./succ3.jpg"
+pic2: "./succ3.jpg"
+pic3: "./succ3.jpg"
+pic4: "./succ3.jpg"
 title: "Wilderness"
 scientificname: "Echeveria"
 id: 4

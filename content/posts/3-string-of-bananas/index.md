@@ -2,6 +2,9 @@
 path: "/catalog/senecio/string-of-bananas"
 cover: "./succ3.jpg"
 pic: "./succ3.jpg"
+pic2: "./succ3.jpg"
+pic3: "./succ3.jpg"
+pic4: "./succ3.jpg"
 title: "String of Bananas"
 scientificname: "Senecio Radicans"
 id: 3

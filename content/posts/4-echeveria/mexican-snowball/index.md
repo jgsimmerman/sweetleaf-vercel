@@ -2,6 +2,9 @@
 path: "/catalog/echeveria/mexican-snowball"
 cover: "./succ3.jpg"
 pic: "./succ3.jpg"
+pic2: "./succ3.jpg"
+pic3: "./succ3.jpg"
+pic4: "./succ3.jpg"
 title: "Mexican Snowball"
 scientificname: "Echeveria Elegans"
 id: 4

@@ -2,6 +2,9 @@
 path: "/catalog/sempervivum-heuffelli/green-stone"
 cover: "./succ1.jpg"
 pic: "./succ1.jpg"
+pic2: "./succ1.jpg"
+pic3: "./succ1.jpg"
+pic4: "./succ1.jpg"
 title: "Green Stone"
 scientificname: "Sempervivum Heuffelii"
 id: 2

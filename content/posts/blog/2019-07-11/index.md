@@ -2,6 +2,10 @@
 path: "/blog/post-one"
 cover: "./blocks.jpg"
 pic: "./blocks.jpg"
+pic2: "./blocks.jpg"
+pic3: "./blocks.jpg"
+pic4: "./blocks.jpg"
+
 date: "2018-10-15"
 title: "Post Number One"
 published: true

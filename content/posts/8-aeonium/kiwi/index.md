@@ -2,6 +2,9 @@
 path: "/catalog/aeonium/kiwi"
 cover: "./kiwi.jpg"
 pic: "./kiwi.jpg"
+pic2: "./kiwi.jpg"
+pic3:  "./kiwi.jpg"
+pic4:  "./kiwi.jpg"
 title: "Kiwi"
 scientificname: "Aeonium"
 id: 8

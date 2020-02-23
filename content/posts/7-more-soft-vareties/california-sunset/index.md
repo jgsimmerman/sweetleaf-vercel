@@ -2,6 +2,10 @@
 path: "/catalog/more-soft-varieties/california-sunset"
 cover: "./succ3.jpg"
 pic: "./succ3.jpg"
+pic2: "./succ3.jpg"
+pic3: "./succ3.jpg"
+pic4: "./succ3.jpg"
+
 title: "California Sunset"
 scientificname: "Graptosedum"
 id: 7

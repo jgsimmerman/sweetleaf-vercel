@@ -1,7 +1,10 @@
 ---
 path: "/catalog/sempervivum/old-copper"
 cover: "./succ4.jpg"
-pic:  "./succ4.jpg"
+pic: "./succ4.jpg"
+pic2: "./succ4.jpg"
+pic3: "./succ4.jpg"
+pic4: "./succ4.jpg"
 date: "2018-10-19"
 title: "Old Copper"
 scientificname: "Sempervivum"

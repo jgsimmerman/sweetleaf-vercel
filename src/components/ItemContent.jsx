@@ -89,6 +89,13 @@ const Table = styled.table`
 
 const ItemContent = ({ post, skuObj, skus, html }) => {
 
+  let pic1 = post.pic.childImageSharp.fluid;
+  let pic2 = post.pic2.childImageSharp.fluid;
+  let pic3 = post.pic3.childImageSharp.fluid;
+  let pic4 = post.pic4.childImageSharp.fluid;
+
+  let largePic = pic1;
+
   let itemQuantity = 0;
   let itemImage
   if(post.sku) {
@@ -114,7 +121,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
       >
         <GridItem column="1" row="1">
           <Image>
-            <Img fluid={post.pic.childImageSharp.fluid} alt="" />
+            <Img fluid={largePic} alt="" />
           </Image>
           
           {/* <SRLWrapper>
@@ -123,16 +130,16 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
         </GridItem>
         <GridItem column="1 / 3" row="2">
           <Image2>
-            <Img fluid={post.pic.childImageSharp.fluid} alt="" />
+            <Img onClick={largePic=pic1} fluid={pic1} alt="" />
           </Image2>
           <Image2>
-            <Img fluid={post.pic2.childImageSharp.fluid} alt="" />
+            <Img onClick={largePic=pic2} fluid={pic2} alt="" />
           </Image2>
           <Image2>
-            <Img fluid={post.pic3.childImageSharp.fluid} alt="" />
+            <Img fluid={pic3} alt="" />
           </Image2>
           <Image2>
-            <Img fluid={post.pic4.childImageSharp.fluid} alt="" />
+            <Img fluid={pic4} alt="" />
           </Image2>
           {/* <SRLWrapper>
           </SRLWrapper> */}

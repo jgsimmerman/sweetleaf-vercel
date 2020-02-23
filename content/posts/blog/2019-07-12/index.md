@@ -2,6 +2,9 @@
 path: "/blog/post-two"
 cover: "./speed.jpg"
 pic: "./speed.jpg"
+pic2: "./speed.jpg"
+pic3: "./speed.jpg"
+pic4: "./speed.jpg"
 date: "2018-10-15"
 title: "Post Number Two"
 published: true

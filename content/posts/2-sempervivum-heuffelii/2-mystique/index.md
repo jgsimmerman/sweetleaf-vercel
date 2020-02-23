@@ -2,6 +2,9 @@
 path: "/catalog/sempervivum-heuffelli/artemis"
 cover: "./succ3.jpg"
 pic: "./succ3.jpg"
+pic2: "./succ3.jpg"
+pic3: "./succ3.jpg"
+pic4: "./succ3.jpg"
 title: "Artemis"
 scientificname: "Sempervivum Heuffelii"
 id: 2
