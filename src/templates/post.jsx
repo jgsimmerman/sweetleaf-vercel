@@ -148,6 +148,27 @@ export const query = graphql`
             }
           }
         }
+        pic2 {
+          childImageSharp {
+            fluid( maxWidth: 500, quality: 75, traceSVG: { color: "#2B2B2F" }) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
+        pic3 {
+          childImageSharp {
+            fluid( maxWidth: 500, quality: 75, traceSVG: { color: "#2B2B2F" }) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
+        pic4 {
+          childImageSharp {
+            fluid( maxWidth: 500, quality: 75, traceSVG: { color: "#2B2B2F" }) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
         cover {
           childImageSharp {
             fluid(

@@ -121,21 +121,25 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
           </SRLWrapper> */}
 
         </GridItem>
-        <GridItem column="1" row="2">
+        <GridItem column="1 / 3" row="2">
           <Image2>
             <Img fluid={post.pic.childImageSharp.fluid} alt="" />
           </Image2>
           <Image2>
-            <Img fluid={post.pic.childImageSharp.fluid} alt="" />
+            <Img fluid={post.pic2.childImageSharp.fluid} alt="" />
           </Image2>
           <Image2>
-            <Img fluid={post.pic.childImageSharp.fluid} alt="" />
+            <Img fluid={post.pic3.childImageSharp.fluid} alt="" />
+          </Image2>
+          <Image2>
+            <Img fluid={post.pic4.childImageSharp.fluid} alt="" />
           </Image2>
           {/* <SRLWrapper>
           </SRLWrapper> */}
 
         </GridItem>
-        <GridItem column="2 " row="1">
+        
+        <GridItem column="2" row="1">
           <Info>
             <ItemName>{post.title}</ItemName>
             <p>

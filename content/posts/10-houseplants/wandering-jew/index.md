@@ -1,7 +1,10 @@
 ---
 path: "/catalog/houseplants/wandering-dude"
 cover: "./wandering.jpg"
-pic: "./wandering2.jpg"
+pic: "./wandering.jpg"
+pic2: "./wandering2.jpg"
+pic3: "./wandering2.jpg"
+pic4: "./wandering2.jpg"
 snipPic: "./wandering.jpg"
 care: "/care/dummy.pdf"
 

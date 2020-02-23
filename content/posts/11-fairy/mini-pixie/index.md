@@ -2,6 +2,9 @@
 path: "/catalog/fairy-garden/mini-pixie"
 cover: "./front2.jpg"
 pic: "./front2.jpg"
+pic2: "./front3.jpg"
+pic3: "./frontPlastic.jpg"
+pic4: "./topPlastic.jpg"
 snipPic: "./front2.jpg"
 care: "/care/dummy.pdf"
 
