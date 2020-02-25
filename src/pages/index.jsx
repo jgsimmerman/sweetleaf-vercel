@@ -166,7 +166,7 @@ const Index = ({ data }) => {
           <StyledLink to="/catalog/carnivorous-plants/alata/">
             <Info>
               <Title>Nepenthes</Title>
-              <Price>$14.95</Price>
+              <Price>$13.45</Price>
             </Info>
           </StyledLink>
         </Wrapper>

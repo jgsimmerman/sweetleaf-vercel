@@ -10,7 +10,8 @@ import ZygoteCart from './ZygoteCart';
 import BlogList from './BlogList';
 import PostList from './PostList';
 import CareList from './CareList';
+import PotSelect from './PotSelect';
 
 
 
-export { CatalogList, Header, ItemList, SEO, TagsBlock, BurgerMenu, SocialIcons, ZygoteCart, BlogList, PostList, CareList };
+export { CatalogList, Header, ItemList, SEO, TagsBlock, BurgerMenu, SocialIcons, ZygoteCart, BlogList, PostList, CareList, PotSelect };

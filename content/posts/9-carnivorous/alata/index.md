@@ -21,7 +21,7 @@ petsafe: ""
 temperature: ""
 seasonality: ""
 inventory: 14
-price: 14.95
+price: 13.45
 published: true
 available: 1
 

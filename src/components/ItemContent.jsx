@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useState, Component, PureComponent, Fragment } from 'react';
+import ReactDOM from 'react-dom';
+
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import { Layout, Container, Content } from 'layouts';
-import { TagsBlock, Header, SEO, SecondNav, Zygote } from 'components';
+import { TagsBlock, Header, SEO, SecondNav, Zygote, PotSelect } from 'components';
 import Helmet from 'react-helmet';
 import BuyButton from './BuyButton';
 import Img from 'gatsby-image';
 import { Grid, GridItem } from 'styled-grid-component';
 import { openCart, addToCart } from 'cart';
 // import { SRLWrapper } from "simple-react-lightbox";
+//import Select from 'react-select';
+
 
 
 const Wrapper = styled.div`
@@ -87,12 +91,23 @@ const Table = styled.table`
 `;
 
 
+
 const ItemContent = ({ post, skuObj, skus, html }) => {
 
   let pic1 = post.pic.childImageSharp.fluid;
   let pic2 = post.pic2.childImageSharp.fluid;
   let pic3 = post.pic3.childImageSharp.fluid;
   let pic4 = post.pic4.childImageSharp.fluid;
+
+  let sku1 = post.sku;
+  let sku2 = post.sku2;
+  let price1 = post.price;
+  let price2 = post.price2;
+  let options = [sku1, sku2];
+
+  let itemPrice = price1;
+
+  
 
   let largePic = pic1;
 
@@ -106,6 +121,59 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
   }
 
   //console.log(`itemImage: ${itemImage}`)
+  
+  // class Select extends PureComponent {
+  //   state = {
+  //     price1: price1,
+  //     price2: price2,
+  //     itemPrice: itemPrice,
+  //     options: [
+  //       {
+  //         name: 'Select…',
+  //         value: null,
+  //       },
+  //       {
+  //         name: 'Plastic Pot',
+  //         value: 'a',
+  //         itemPrice: price1,
+  //       },
+  //       {
+  //         name: 'Terra Cotta Pot (+$2.00)',
+  //         value: 'b',
+  //         itemPrice: price2,
+  //       },
+  //     ],
+  //     value: '?',
+  //     itemSku: '?',
+  //     //itemPrice: 'itemPrice',
+  //   };
+  
+  //   handleChange = (event) => {
+  //     this.setState({ value: event.target.value });
+  //     this.setState({ itemPrice: event.target.itemPrice });
+  //     console.log(`class: ${itemPrice}`);
+  
+  //   };
+  
+  //   render() {
+  //     const { options, value, itemPrice, price1, price2, sku1, sku2, itemSku } = this.state;
+  
+  //     return (
+  //       <Fragment>
+  //         <h5>Pot Type: {name}</h5>
+  //         <select onChange={this.handleChange} value={value} itemPrice={itemPrice}>
+  //           {options.map(item => (
+  //             <option key={item.value} value={item.value} itemPrice={itemPrice}>
+  //               {item.name}
+  //             </option>
+  //           ))}
+  //         </select>
+  //         <p></p>
+  //       </Fragment>
+  //     );
+  //   }
+  // }
+
   
   
   return (
@@ -156,7 +224,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
               Only {itemQuantity} left in stock!
             </p>
             <Cost>
-              <strong>${post.price}</strong>
+              <strong>${itemPrice}</strong>
             </Cost>
             <p>
             {/* <a href={`${post.care}`}>Care Instructions</a> */}
@@ -166,6 +234,8 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
                   {post.story}
               </p>  */}
             {/* <BuyButton post={post}></BuyButton> */}
+
+             {/* <Select  price1={price1} price2={price2} itemPrice={itemPrice}/> */}
 
             <button style={{
               backgroundColor: 'hsl(228, 34.9%, 83.1%)',
