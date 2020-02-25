@@ -14,8 +14,6 @@ import { openCart, addToCart } from 'cart';
 // import { SRLWrapper } from "simple-react-lightbox";
 //import Select from 'react-select';
 
-
-
 const Wrapper = styled.div`
   padding: 1rem 0 2rem 0;
   display: flex;
@@ -34,7 +32,7 @@ const Image2 = styled.span`
   background: #eee;
   display: inline-block;
   padding: 5px;
-  width: 200px;  
+  width: 150px;  
 `;
 
 const Info = styled.span`
@@ -103,11 +101,8 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
   let sku2 = post.sku2;
   let price1 = post.price;
   let price2 = post.price2;
-  let options = [sku1, sku2];
 
   let itemPrice = price1;
-
-  
 
   let largePic = pic1;
 
