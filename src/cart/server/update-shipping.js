@@ -24,7 +24,7 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 			description: `Standard Shipping`,
 			value: (subtotal) => {
 				if (subtotal < 3000) {
-					return 795
+					return 595
 				} else if (subtotal < 4500) {
 					return 895
 				}
@@ -176,7 +176,7 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
       "shipping_methods": [
         {
           "id": "shipping-0",
-          "description": "Priority shipping",
+          "description": "Standard shipping",
           "amount": ship0,
           "currency": "usd",
 
