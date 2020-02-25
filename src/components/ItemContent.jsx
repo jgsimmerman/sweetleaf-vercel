@@ -181,7 +181,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
             <p>
             {/* <a href={`${post.care}`}>Care Instructions</a> */}
             </p>
-            {option1.length > 0 &&
+            {/* {option1.length > 0 &&
             <Select options={scaryAnimals}
                     onChange={opt => {
                       if(opt.value == 1){
@@ -196,7 +196,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
 
                       console.log(itemPrice);
                       console.log(opt.label, opt.value)}} />
-            }
+            } */}
             {/* <p className="ItemName">
                   {post.story}
               </p>  */}
