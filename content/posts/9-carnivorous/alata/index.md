@@ -11,7 +11,6 @@ title: "Nepenthes x ventrata"
 scientificname: "Nepenthes alata hybrid"
 id: 9 
 dataItemId: 12345678
-sku: "sku_GjxyukjjpQOVDs"
 catalog-section: "carnivorous-plants"
 tags: ['carnivorous', 'terrarium', 'nepenthes']
 primarycolor: "Green"
@@ -21,8 +20,12 @@ petsafe: ""
 temperature: ""
 seasonality: ""
 inventory: 14
+option1: ""
+option2: ""
 price: 13.49
 price2: 14.99
+sku: "sku_GjxyukjjpQOVDs"
+sku2: "sku_GjxyukjjpQOVDs"
 published: true
 available: 1
 

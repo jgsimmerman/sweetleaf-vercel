@@ -127,7 +127,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
     { label: `${option1}`, value: 1 },
     { label: `${option2}`, value: 2 },
   ];
-  
+  console.log(scaryAnimals[0])
   return (
     <Wrapper>
       <Grid
@@ -181,7 +181,8 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
             <p>
             {/* <a href={`${post.care}`}>Care Instructions</a> */}
             </p>
-            {/* <Select options={scaryAnimals}
+            {option1.length > 0 &&
+            <Select options={scaryAnimals}
                     onChange={opt => {
                       if(opt.value == 1){
                         itemPrice = price1;
@@ -194,7 +195,8 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
                       setPrice(itemPrice);
 
                       console.log(itemPrice);
-                      console.log(opt.label, opt.value)}} /> */}
+                      console.log(opt.label, opt.value)}} />
+            }
             {/* <p className="ItemName">
                   {post.story}
               </p>  */}
