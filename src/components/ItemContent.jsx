@@ -12,7 +12,7 @@ import Img from 'gatsby-image';
 import { Grid, GridItem } from 'styled-grid-component';
 import { openCart, addToCart } from 'cart';
 // import { SRLWrapper } from "simple-react-lightbox";
-//import Select from 'react-select';
+import Select from 'react-select';
 
 const Wrapper = styled.div`
   padding: 1rem 0 2rem 0;
@@ -92,17 +92,22 @@ const Table = styled.table`
 
 const ItemContent = ({ post, skuObj, skus, html }) => {
 
+
   let pic1 = post.pic.childImageSharp.fluid;
   let pic2 = post.pic2.childImageSharp.fluid;
   let pic3 = post.pic3.childImageSharp.fluid;
   let pic4 = post.pic4.childImageSharp.fluid;
 
+  let option1 = post.option1;
+  let option2 = post.option2;
   let sku1 = post.sku;
   let sku2 = post.sku2;
   let price1 = post.price;
   let price2 = post.price2;
 
+  let itemSku = sku1;
   let itemPrice = price1;
+  const [price, setPrice] = useState(itemPrice)
 
   let largePic = pic1;
 
@@ -117,59 +122,11 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
 
   //console.log(`itemImage: ${itemImage}`)
   
-  // class Select extends PureComponent {
-  //   state = {
-  //     price1: price1,
-  //     price2: price2,
-  //     itemPrice: itemPrice,
-  //     options: [
-  //       {
-  //         name: 'Select…',
-  //         value: null,
-  //       },
-  //       {
-  //         name: 'Plastic Pot',
-  //         value: 'a',
-  //         itemPrice: price1,
-  //       },
-  //       {
-  //         name: 'Terra Cotta Pot (+$2.00)',
-  //         value: 'b',
-  //         itemPrice: price2,
-  //       },
-  //     ],
-  //     value: '?',
-  //     itemSku: '?',
-  //     //itemPrice: 'itemPrice',
-  //   };
-  
-  //   handleChange = (event) => {
-  //     this.setState({ value: event.target.value });
-  //     this.setState({ itemPrice: event.target.itemPrice });
-  //     console.log(`class: ${itemPrice}`);
-  
-  //   };
-  
-  //   render() {
-  //     const { options, value, itemPrice, price1, price2, sku1, sku2, itemSku } = this.state;
-  
-  //     return (
-  //       <Fragment>
-  //         <h5>Pot Type: {name}</h5>
-  //         <select onChange={this.handleChange} value={value} itemPrice={itemPrice}>
-  //           {options.map(item => (
-  //             <option key={item.value} value={item.value} itemPrice={itemPrice}>
-  //               {item.name}
-  //             </option>
-  //           ))}
-  //         </select>
-  //         <p></p>
-  //       </Fragment>
-  //     );
-  //   }
-  // }
 
-  
+  const scaryAnimals = [
+    { label: `${option1}`, value: 1 },
+    { label: `${option2}`, value: 2 },
+  ];
   
   return (
     <Wrapper>
@@ -219,12 +176,25 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
               Only {itemQuantity} left in stock!
             </p>
             <Cost>
-              <strong>${itemPrice}</strong>
+              <strong>${price}</strong>
             </Cost>
             <p>
             {/* <a href={`${post.care}`}>Care Instructions</a> */}
             </p>
-            
+            <Select options={scaryAnimals}
+                    onChange={opt => {
+                      if(opt.value == 1){
+                        itemPrice = price1;
+                        itemSku = sku2;
+                      }
+                      else if (opt.value == 2) {
+                        itemPrice = price2;
+                        itemSku = sku2;
+                      }
+                      setPrice(itemPrice);
+
+                      console.log(itemPrice);
+                      console.log(opt.label, opt.value)}} />
             {/* <p className="ItemName">
                   {post.story}
               </p>  */}
@@ -250,7 +220,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
               name: post.title,
               image: itemImage, //`https://via.placeholder.com/75x75`, //itemImage,
               description: ``,
-              price: Math.round(post.price*100),
+              price: Math.round(itemPrice*100),
               shippable: true,
               quantity: 1,
               stock: itemQuantity,

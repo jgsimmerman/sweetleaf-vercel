@@ -126,8 +126,12 @@ export const query = graphql`
         tags
         id
         dataItemId
+        option1
+        option2
         sku
+        sku2
         price
+        price2
         path
         care 
         story

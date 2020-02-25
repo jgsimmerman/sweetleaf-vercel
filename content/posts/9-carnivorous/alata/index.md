@@ -22,6 +22,7 @@ temperature: ""
 seasonality: ""
 inventory: 14
 price: 13.50
+price2: 14.99
 published: true
 available: 1
 
