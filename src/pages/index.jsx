@@ -155,7 +155,7 @@ const Index = ({ data }) => {
           <StyledLink to="/catalog/fairy-garden/mini-pixie/">
             <Info>
               <Title>Mini Pixie</Title>
-              <Price>$6.95</Price>
+              {/* <Price>$6.95</Price> */}
             </Info>
           </StyledLink>
         </Wrapper>
@@ -166,7 +166,7 @@ const Index = ({ data }) => {
           <StyledLink to="/catalog/carnivorous-plants/alata/">
             <Info>
               <Title>Nepenthes</Title>
-              <Price>$13.49</Price>
+              {/* <Price>$13.49</Price> */}
             </Info>
           </StyledLink>
         </Wrapper>
@@ -177,7 +177,7 @@ const Index = ({ data }) => {
           <StyledLink to="/catalog/fairy-garden/mini-white/">
             <Info>
               <Title>Mini White</Title>
-              <Price>$6.95</Price>
+              {/* <Price>$6.95</Price> */}
             </Info>
           </StyledLink>
         </Wrapper>
@@ -188,7 +188,7 @@ const Index = ({ data }) => {
           <StyledLink to="/catalog/fairy-garden/rose-hypoestes/">
             <Info>
               <Title>Rose Hypoestes</Title>
-              <Price>$6.45</Price>
+              {/* <Price>$6.45</Price> */}
             </Info>
           </StyledLink>
         </Wrapper>
@@ -199,7 +199,7 @@ const Index = ({ data }) => {
           <StyledLink to="/catalog/fairy-garden/mixed-hypoestes/">
             <Info>
               <Title>Mixed Colors Hypoestes</Title>
-              <Price>$6.45</Price>
+              {/* <Price>$6.45</Price> */}
             </Info>
           </StyledLink>
         </Wrapper>
@@ -210,7 +210,7 @@ const Index = ({ data }) => {
           <StyledLink to="/catalog/houseplants/zebra-plant/">
             <Info>
               <Title>Zebra Plant</Title>
-              <Price>$9.95</Price>
+              {/* <Price>$9.95</Price> */}
             </Info>
           </StyledLink>
         </Wrapper>

@@ -23,9 +23,12 @@ inventory: 14
 option1: ""
 option2: ""
 price: 13.49
-price2: 14.99
+# price2: 14.99
 sku: "sku_GjxyukjjpQOVDs"
-sku2: "sku_GjxyukjjpQOVDs"
+# sku2: "sku_GjxyukjjpQOVDs"
+# option1: "blue"
+# option2: "red"
+# options: '[{ label: "Small", value: 1 }, { label: "Large", value: 2 }]'
 published: true
 available: 1
 

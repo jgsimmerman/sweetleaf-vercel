@@ -100,10 +100,12 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
 
   let option1 = post.option1;
   let option2 = post.option2;
+  // let options = post.options;
+
   let sku1 = post.sku;
   let sku2 = post.sku2;
   let price1 = post.price;
-  let price2 = post.price2;
+  //let price2 = post.price2;
 
   let itemSku = sku1;
   let itemPrice = price1;
@@ -122,12 +124,13 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
 
   //console.log(`itemImage: ${itemImage}`)
   
-
-  const scaryAnimals = [
-    { label: `${option1}`, value: 1 },
-    { label: `${option2}`, value: 2 },
-  ];
-  console.log(scaryAnimals[0])
+  //let opts = JSON.parse(options);
+  //console.log("Options: " + opts);
+  // const scaryAnimals = [
+  //   { label: `${option1}`, value: 1 },
+  //   { label: `${option2}`, value: 2 },
+  // ];
+  //console.log(scaryAnimals[0])
   return (
     <Wrapper>
       <Grid

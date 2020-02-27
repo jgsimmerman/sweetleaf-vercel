@@ -129,9 +129,8 @@ export const query = graphql`
         option1
         option2
         sku
-        sku2
+        
         price
-        price2
         path
         care 
         story

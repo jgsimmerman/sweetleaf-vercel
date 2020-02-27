@@ -20,12 +20,14 @@ petsafe: ""
 temperature: ""
 seasonality: ""
 inventory: 14
-option1: "Regular"
+# option1: "Regular"
 sku: "sku_GjxA2eE2aC2DoF"
 price: 9.95
 option2: "Large"
-sku2: "sku_GjxA2eE2aC2DoF"
-price2: 14.99
+# sku2: "sku_GjxA2eE2aC2DoF"
+# price2: 14.99
+options: '[{ label: "Small", value: 1 }, { label: "Large", value: 2 }]'
+
 shipping: 6.50
 available: 1
 # dataItemCustom1Name: "Pot Options"
