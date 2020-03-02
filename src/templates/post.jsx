@@ -125,12 +125,14 @@ export const query = graphql`
         title
         tags
         id
-        dataItemId
+
         option1
         option2
         sku
-        
+        sku2
         price
+        price2
+        
         path
         care 
         story
@@ -141,9 +143,7 @@ export const query = graphql`
         seasonality
         bloomcolor
         temperature
-        dataItemCustom1Name
-        dataItemCustom1Options
-        dataItemWeight
+        
         pic {
           childImageSharp {
             fluid( maxWidth: 500, quality: 75, traceSVG: { color: "#2B2B2F" }) {

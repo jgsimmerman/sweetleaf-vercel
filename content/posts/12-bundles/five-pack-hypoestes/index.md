@@ -10,7 +10,6 @@ title: "Five (5) Pack of Hypoestes"
 scientificname: "Hypoestes phyllostachya"
 id: 12
 dataItemId: 1234567
-sku: "sku_GpM9lay2ueYHTc"
 catalog-section: "bundles"
 tags: ['fairy garden', 'terrarium', 'freckle face plant', 'polka dot plant', 'hypoestes', 'bundles']
 primarycolor: "Green"
@@ -20,11 +19,13 @@ petsafe: ""
 temperature: ""
 seasonality: ""
 inventory: 15
+sku: "sku_GpM9lay2ueYHTc"
+sku2: "sku_GpZr4QCBtaDa6K"
+option1: "Plastic Nursery Pot"
+option2: "Terra Cotta Pot (+$2.00)"
 price: 29.99
+price2: 39.99
 available: 1
-dataItemCustom1Name: "Pot Options"
-dataItemCustom1Options: "Plastic Nursery Pot|Terra Cotta Pot (+$2.00)[+2]"
-dataItemWeight: ""
 published: true
 story: "'Fittonia 3 Pack Bundle - The Nerve Plant - is covered in beautiful colored veins over green leaves."
 ---

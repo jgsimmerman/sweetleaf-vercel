@@ -215,5 +215,6 @@ module.exports = {
       },
     },
     "gatsby-theme-gallery",
+    //`gatsby-plugin-netlify-cms`,
   ],
 };

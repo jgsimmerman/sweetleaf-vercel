@@ -9,8 +9,7 @@ care: "/care/dummy.pdf"
 title: "White Hypoestes"
 scientificname: "Hypoestes phyllostachya "
 id: 11 
-dataItemId: 1234567
-sku: "sku_Gjxm5phGrOudm4"
+
 catalog-section: "fairy garden"
 tags: ['fairy garden', 'terrarium', 'freckle face plant', 'polka dot plant', 'hypoestes']
 primarycolor: "Green"
@@ -20,11 +19,13 @@ petsafe: ""
 temperature: ""
 seasonality: ""
 inventory: 14
-price: 6.45
 available: 1
-dataItemCustom1Name: "Pot Options"
-dataItemCustom1Options: "Plastic Nursery Pot|Terra Cotta Pot (+$2.00)[+2]"
-dataItemWeight: ""
+option1: "Plastic Nursery Pot"
+option2: "Terra Cotta Pot (+$2.00)"
+price: 6.45
+price2: 8.45
+sku: "sku_Gpc8SrcSpOMcyO"
+sku2: "sku_Gjxm5phGrOudm4"
 published: true
 story: "White color Hypoestes phyllostachya - The Polka Dot Plant is covered in beautiful colored splotches."
 

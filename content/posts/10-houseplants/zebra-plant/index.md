@@ -10,7 +10,6 @@ care: "/care/dummy.pdf"
 title: "Zebra Plant"
 scientificname: "Calathea zebrina"
 id: 10 
-dataItemId: 123456789
 catalog-section: "houseplants"
 tags: ['houseplants', 'terrarium', 'calathea']
 primarycolor: "Green"
@@ -20,20 +19,18 @@ petsafe: ""
 temperature: ""
 seasonality: ""
 inventory: 14
-# option1: "Regular"
+option1:
+option2: 
 sku: "sku_GjxA2eE2aC2DoF"
+sku2: "null"
 price: 9.95
-option2: "Large"
+price2: 0.00
 # sku2: "sku_GjxA2eE2aC2DoF"
 # price2: 14.99
-options: '[{ label: "Small", value: 1 }, { label: "Large", value: 2 }]'
+# options: '[{ label: "Small", value: 1 }, { label: "Large", value: 2 }]'
 
-shipping: 6.50
 available: 1
-# dataItemCustom1Name: "Pot Options"
-# dataItemCustom1Options: "Plastic Nursery Pot|Terra Cotta Pot (+$2.00)[+2]"
-dataItemWeight: ""
-published: true
+# published: true
 story: "Calathea zebrina (the Zebra Plant) is a an evergreen perennial from Brazil."
 
 ---

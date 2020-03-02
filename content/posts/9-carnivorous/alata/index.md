@@ -10,7 +10,6 @@ care: "/care/dummy.pdf"
 title: "Nepenthes x ventrata"
 scientificname: "Nepenthes alata hybrid"
 id: 9 
-dataItemId: 12345678
 catalog-section: "carnivorous-plants"
 tags: ['carnivorous', 'terrarium', 'nepenthes']
 primarycolor: "Green"

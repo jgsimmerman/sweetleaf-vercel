@@ -9,8 +9,6 @@ care: "/care/dummy.pdf"
 title: "Three (3) Pack of Fittonia albivenis verschaffeltii"
 scientificname: "Fittonia albivenis verschaffeltii"
 id: 12
-dataItemId: 1234567
-sku: "sku_GpM17hfBYtRLQx"
 catalog-section: "bundles"
 tags: ['fairy garden', 'terrarium', 'fittonia', 'nerve plant', 'mosaic plant', 'bundles']
 primarycolor: "Green"
@@ -21,10 +19,12 @@ temperature: ""
 seasonality: ""
 inventory: 14
 price: 19.49
+price2: 25.49
+sku: "sku_GpM17hfBYtRLQx"
+sku2: "sku_GpZsbhr7brqtaR"
+option1: "Plastic Nursery Pot"
+option2: "Terra Cotta Pot (+$2.00)"
 available: 1
-dataItemCustom1Name: "Pot Options"
-dataItemCustom1Options: "Plastic Nursery Pot|Terra Cotta Pot (+$2.00)[+2]"
-dataItemWeight: ""
 published: true
 story: "'Fittonia 3 Pack Bundle - The Nerve Plant - is covered in beautiful colored veins over green leaves."
 ---

@@ -11,8 +11,6 @@ care: "/care/dummy.pdf"
 title: "Purple Wandering Dude (Cuttings)"
 scientificname: "Tradescantia zebrina"
 id: 10 
-dataItemId: 123456
-sku: "sku_GjwxRAKJhx5bHq"
 catalog-section: "houseplants"
 tags: ['houseplants', 'zebrina', 'wandering dude']
 primarycolor: "Purple"
@@ -22,7 +20,13 @@ petsafe: ""
 temperature: ""
 seasonality: ""
 inventory: 14
-price: 4.95
+option1: "Three Cuttings"
+option2: "Ten Cuttings"
+option3:
+price: 4.49
+price2: 12.49
+sku: "sku_GjwxRAKJhx5bHq"
+sku2: "sku_GpZzo9fb93KZHa"
 published: true
 available: 1
 story: "Purple Wandering Dude Cuttings. You will receive three fresh, cut to order, Wandering Dude cuttings. Each cutting will be more than 6 inches in length and will contain at least three leaf bunches/nodes for rooting."

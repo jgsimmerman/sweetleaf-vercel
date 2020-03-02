@@ -11,8 +11,7 @@ care: "/care/dummy.pdf"
 title: "Mini Pixie"
 scientificname: "Syngonium podophyllum"
 id: 11
-dataItemId: 1234567
-sku: "sku_GjxDd1qqJ6T54c"
+
 catalog-section: "fairy garden"
 tags: ['fairy garden', 'terrarium', 'syngonium', 'mini pixie']
 primarycolor: "Green"
@@ -22,13 +21,24 @@ petsafe: ""
 temperature: ""
 seasonality: ""
 inventory: 14
-price: 6.95
 available: 1
-dataItemCustom1Name: "Pot Options"
-dataItemCustom1Options: "Plastic Nursery Pot|Terra Cotta Pot (+$2.00)[+2]"
-dataItemWeight: ""
+
+option1: "2 inch Plastic Nursery Pot"
+option2: "2 inch Terra Cotta Pot (+$2.00)"
+option3: "3.5 inch Plastic Nursery Pot"
+option4: "3.5 inch Terra Cotta Pot (+$2.00)"
+price: 6.95
+price2: 8.95
+price3: 9.95
+price4: 12.95
+sku: "sku_GjxDd1qqJ6T54c"
+sku2: "sku_GpcRr4uhgFu3pw"
+sku3: "sku_GpcUYFWQN07Wc1"
+sku4: "sku_GpcVERBp2iBybJ"
+
 published: true
 story: "Semi-tropical plant perfect for fairy gardens, doll houses or just a really cute house plant for tiny spaces! Plant comes in a two inch plastic nursery pot or a 2.5 inch terra cotta pot and only grows to be about six inches tall at maturity."
+
 
 ---
 <strong>Syngonium podophyllum ‘Mini Pixie’</strong> is a dwarf version of the Syngonium Pixie Butterfly plant or Arrowhead Plant and is a member of the Araceae family. Syngoniums are toxic to furry pets, but there are mixed opinions from the plant community on their toxicity to reptiles. 

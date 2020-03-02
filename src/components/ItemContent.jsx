@@ -100,16 +100,19 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
 
   let option1 = post.option1;
   let option2 = post.option2;
-  // let options = post.options;
+  //let options = post.options;
+  let option3 = "";
+  let option4 = "";
 
   let sku1 = post.sku;
   let sku2 = post.sku2;
   let price1 = post.price;
-  //let price2 = post.price2;
+  let price2 = post.price2;
 
   let itemSku = sku1;
   let itemPrice = price1;
-  const [price, setPrice] = useState(itemPrice)
+  const [price, setPrice] = useState(itemPrice);
+  const [sku, setSku] = useState(itemSku);
 
   let largePic = pic1;
 
@@ -126,10 +129,12 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
   
   //let opts = JSON.parse(options);
   //console.log("Options: " + opts);
-  // const scaryAnimals = [
-  //   { label: `${option1}`, value: 1 },
-  //   { label: `${option2}`, value: 2 },
-  // ];
+  const scaryAnimals = [
+    { label: `${option1}`, value: 1 },
+    { label: `${option2}`, value: 2 },
+    // { label: `${option3}`, value: 3 },
+    // { label: `${option4}`, value: 4 },
+  ];
   //console.log(scaryAnimals[0])
   return (
     <Wrapper>
@@ -184,29 +189,31 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
             <p>
             {/* <a href={`${post.care}`}>Care Instructions</a> */}
             </p>
-            {/* {option1.length > 0 &&
+            {option1  &&
             <Select options={scaryAnimals}
                     onChange={opt => {
                       if(opt.value == 1){
                         itemPrice = price1;
-                        itemSku = sku2;
+                        itemSku = sku1;
                       }
                       else if (opt.value == 2) {
                         itemPrice = price2;
                         itemSku = sku2;
                       }
                       setPrice(itemPrice);
-
+                      setSku(itemSku);
+                      console.log(itemSku)
                       console.log(itemPrice);
-                      console.log(opt.label, opt.value)}} />
-            } */}
+                      console.log(opt.label, opt.value)}
+                    } />
+            } 
             {/* <p className="ItemName">
                   {post.story}
-              </p>  */}
+              </p> 
             {/* <BuyButton post={post}></BuyButton> */}
 
              {/* <Select  price1={price1} price2={price2} itemPrice={itemPrice}/> */}
-
+            {console.log(sku)}
             <button style={{
               backgroundColor: 'hsl(228, 34.9%, 83.1%)',
               borderRadius: '5px',
@@ -221,7 +228,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
               fontSize: '24',
             }}
          onClick={() => addToCart({
-              id: `${post.sku}`,
+              id: sku, //`${post.sku}`,
               name: post.title,
               image: itemImage, //`https://via.placeholder.com/75x75`, //itemImage,
               description: ``,
