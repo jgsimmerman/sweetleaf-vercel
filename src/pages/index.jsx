@@ -212,6 +212,17 @@ const Index = ({ data }) => {
             </Info>
           </StyledLink>
         </Wrapper>
+        <Wrapper>
+          <Image>
+            <Img fluid={data.imageEleven.childImageSharp.fluid} alt="Nepenthes Kokedama"/>
+          </Image>
+          <StyledLink to="/catalog/carnivorous-plants/kokedama">
+            <Info>
+              <Title>Nepenthes Kokedama</Title>
+              {/* <Price>$9.95</Price> */}
+            </Info>
+          </StyledLink>
+        </Wrapper>
       </PostWrapper>
       <PostWrapper>
         <h4> <Link to="/catalog/">See our full catalog for more!</Link></h4>
@@ -416,6 +427,13 @@ export const pageQuery = graphql`
       }
     }
     imageTen: file(relativePath: { eq: "newAlata1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400, quality: 60) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    imageEleven: file(relativePath: { eq: "kokedama.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 400, quality: 60) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
