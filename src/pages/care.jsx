@@ -29,6 +29,8 @@ flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-evenly;
 margin: 2rem 2rem 2rem 2rem;
+color: ${props => props.theme.colors.white.base};
+
 .SocialIcon {
   display: flex;
   flex-direction: row;

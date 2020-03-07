@@ -387,7 +387,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    imageSix: file(relativePath: { eq: "zebra-plant.jpg" }) {
+    imageSix: file(relativePath: { eq: "zebra-plant2.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 400, quality: 60) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
