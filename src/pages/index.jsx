@@ -415,7 +415,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    imageTen: file(relativePath: { eq: "newAlata.jpg" }) {
+    imageTen: file(relativePath: { eq: "newAlata1.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 400, quality: 60) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
