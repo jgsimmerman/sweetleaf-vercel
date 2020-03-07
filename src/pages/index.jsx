@@ -85,13 +85,14 @@ const StyledLink = styled(Link)`
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.3) 50%,
-      rgba(0, 0, 0, 0.7) 80%,
-      rgba(0, 0, 0, 0.8) 100%
-    );
+    // background: linear-gradient(
+    //   to bottom,
+    //   rgba(0, 0, 0, 0) 0%,
+    //   rgba(0, 0, 0, 0) 50%,
+    //   rgba(0, 0, 0, 0.1) 65%,
+    //   rgba(0, 0, 0, 0.2) 75%,
+    //   rgba(0, 0, 0, 0.3) 100%
+    // );
     z-index: -10;
     border-radius: ${theme.borderRadius.default};
     transition: opacity ${theme.transitions.default.duration};
@@ -121,6 +122,11 @@ const Image = styled.div`
 
 const Info = styled.div`
   color: ${props => props.theme.colors.white.light};
+  -webkit-text-fill-color: ${props => props.theme.colors.white.exp};
+  // -webkit-text-fill-color: hsl(86, 34%, 53%);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 0 0 50px hsla(0, 0%, 0%, .9);
   margin: 0 1rem 1.25rem 1.25rem;
   position: absolute;
   bottom: 0;

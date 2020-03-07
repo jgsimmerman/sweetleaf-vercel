@@ -155,7 +155,7 @@ const BurgerMenu = () => {
                   >
                     <FaShoppingCart onClick={openCart} />
                     <CartQuantity>
-                      {qty => <React.Fragment>{qty}</React.Fragment>}
+                      {qty => qty>0 &&<React.Fragment>{qty}</React.Fragment>}
                     </CartQuantity>
                   </div>
                 </IconContext.Provider>

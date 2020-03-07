@@ -4,6 +4,7 @@ export const colors = {
     light: '#C5CBE3',
     grey:  'hsl(303, 70%, 70%)',// '#cecece',
     dark: 'hsl(303, 60%, 40%)',
+    exp: 'hsl(285, 60%,90%)',
   },
   black: {
     base: '#333438',
