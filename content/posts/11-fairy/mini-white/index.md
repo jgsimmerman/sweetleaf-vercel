@@ -21,7 +21,7 @@ inventory: 14
 available: 1
 option1: "Plastic Nursery Pot"
 option2: "Terra Cotta Pot (+$2.00)"
-price: 6.95
+price: 6.25
 price2: 8.95
 sku: "sku_Gjxrzxp7GTuUQk"
 sku2: "sku_GpbmL5j0k9fU82"

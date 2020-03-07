@@ -27,7 +27,7 @@ option1: "2 inch Plastic Nursery Pot"
 option2: "2 inch Terra Cotta Pot (+$2.00)"
 option3: "3.5 inch Plastic Nursery Pot"
 option4: "3.5 inch Terra Cotta Pot (+$2.00)"
-price: 6.95
+price: 6.59
 price2: 8.95
 price3: 9.95
 price4: 12.95
