@@ -85,14 +85,6 @@ const StyledLink = styled(Link)`
     left: 0;
     right: 0;
     bottom: 0;
-    // background: linear-gradient(
-    //   to bottom,
-    //   rgba(0, 0, 0, 0) 0%,
-    //   rgba(0, 0, 0, 0) 50%,
-    //   rgba(0, 0, 0, 0.1) 65%,
-    //   rgba(0, 0, 0, 0.2) 75%,
-    //   rgba(0, 0, 0, 0.3) 100%
-    // );
     z-index: -10;
     border-radius: ${theme.borderRadius.default};
     transition: opacity ${theme.transitions.default.duration};
@@ -123,7 +115,6 @@ const Image = styled.div`
 const Info = styled.div`
   color: ${props => props.theme.colors.white.light};
   -webkit-text-fill-color: ${props => props.theme.colors.white.exp};
-  // -webkit-text-fill-color: hsl(86, 34%, 53%);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   text-shadow: 0 0 50px hsla(0, 0%, 0%, .9);
@@ -167,12 +158,12 @@ const Index = ({ data }) => {
         </Wrapper>
         <Wrapper>
           <Image>
-            <Img fluid={data.imageTen.childImageSharp.fluid} alt="Nepenthes Alata"/>
+            <Img fluid={data.imageEight.childImageSharp.fluid} alt="Rose Hypoestes"/>
           </Image>
-          <StyledLink to="/catalog/carnivorous-plants/alata/">
+          <StyledLink to="/catalog/fairy-garden/rose-hypoestes/">
             <Info>
-              <Title>Nepenthes</Title>
-              {/* <Price>$13.49</Price> */}
+              <Title>Rose Hypoestes</Title>
+              {/* <Price>$6.45</Price> */}
             </Info>
           </StyledLink>
         </Wrapper>
@@ -189,15 +180,16 @@ const Index = ({ data }) => {
         </Wrapper>
         <Wrapper>
           <Image>
-            <Img fluid={data.imageEight.childImageSharp.fluid} alt="Rose Hypoestes"/>
+            <Img fluid={data.imageTen.childImageSharp.fluid} alt="Nepenthes Alata"/>
           </Image>
-          <StyledLink to="/catalog/fairy-garden/rose-hypoestes/">
+          <StyledLink to="/catalog/carnivorous-plants/alata/">
             <Info>
-              <Title>Rose Hypoestes</Title>
-              {/* <Price>$6.45</Price> */}
+              <Title>Nepenthes</Title>
+              {/* <Price>$13.49</Price> */}
             </Info>
           </StyledLink>
         </Wrapper>
+        
         <Wrapper>
           <Image>
             <Img fluid={data.imageNine.childImageSharp.fluid} alt="Mixed Colors Hypoestes"/>

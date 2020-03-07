@@ -7,9 +7,12 @@ const preInfo = async ({ preFetchData, info }) => {
       id: `shipping-0`,
       description: `Standard Shipping`,
       value: (subtotal) => {
-        if (subtotal < 3000) {
-          return 595
-        } else if (subtotal < 4500) {
+        if (subtotal < 1000) {
+          return 549
+        } else if (subtotal < 3000) {
+          return 749
+        }
+        else if (subtotal < 4500) {
           return 895
         }
         else if (subtotal < 5000) {

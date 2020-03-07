@@ -9,7 +9,7 @@ const Shipping = center => (
     <Helmet title={'Shipping Policies'} />
     <Header title="Shipping Policies"></Header>
     <Container  styles={{textAlign: "left"}}>
-      <h3>SHIPPING POLICIES</h3>
+      <h1>SHIPPING POLICIES</h1>
       <p>
         All plants are hand picked by us, including any assortments, and hand packaged and wrapped by us. 
         We package plants in a way that should be safe if the plant is dropped from a height of 10 feet or more. 
@@ -22,9 +22,10 @@ const Shipping = center => (
       </p>
       <p>
         <ul>
-          <li>All orders up to $30 will be $7.95</li>
-          <li>Orders for $30.01 to $45.00 will be $8.95</li>
-          <li>Orders for $45.01 - $49.99 will be $9.95</li>
+          <li>All orders up to $10 will be $5.49</li>
+          <li>Orders for $10.00 to $29.99 will be $7.49</li>
+          <li>Orders for $30.00 to $44.99 will be $8.95</li>
+          <li>Orders for $45.00 - $49.99 will be $9.95</li>
           <li>All orders of $50 or more receive free standard shipping</li>
         </ul>
       </p>

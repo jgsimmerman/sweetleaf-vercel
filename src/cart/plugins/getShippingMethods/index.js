@@ -45,26 +45,28 @@ const getShippingMethods = async ({ response, info, preFetchData }) => {
 
 	let shippingOptions = [
 		{
-			id: `shipping-0`,
-			description: `Standard Shipping`,
-			value: (subtotal) => {
-				if (subtotal < 3000) {
-					return 595
-				} else if (subtotal < 4500) {
-					return 895
-				}
-				else if (subtotal < 5000) {
-					return 995
-				}
-				else if (subtotal >= 5000) {
-					return 0 //1195
-				}
-				// else if (subtotal > 7501) {
-				// 	return 0
-				// }
-			},
-			addInfo:  `Free standard shipping on orders over $50!`,
-		},
+      id: `shipping-0`,
+      description: `Standard Shipping`,
+      value: (subtotal) => {
+        if (subtotal < 1000) {
+          return 549
+        } else if (subtotal < 3000) {
+          return 749
+        }
+        else if (subtotal < 4500) {
+          return 895
+        }
+        else if (subtotal < 5000) {
+          return 995
+        }
+        else if (subtotal >= 5000) {
+          return 0 //1195
+        }
+        // else if (subtotal > 7501) {
+        // 	return 0
+        // }
+      },
+    },
 		{
 			id: `shipping-1`,
 			description: `Express Shipping`,
