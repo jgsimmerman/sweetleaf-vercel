@@ -116,6 +116,8 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
 
   let largePic = pic1;
 
+  const [pic, setPic] = useState(largePic);
+
   let itemQuantity = 0;
   let itemImage
   if(post.sku) {
@@ -149,7 +151,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
       >
         <GridItem column="1" row="1">
           <Image>
-            <Img fluid={largePic} alt="" />
+            <Img fluid={pic} alt="" />
           </Image>
           
           {/* <SRLWrapper>
@@ -158,16 +160,24 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
         </GridItem>
         <GridItem column="1 / 3" row="2">
           <Image2>
-            <Img onClick={largePic=pic1} fluid={pic1} alt="" />
+            <div onMouseEnter={() => setPic(pic1)}>
+              <Img fluid={pic1} alt="" />
+            </div>
           </Image2>
           <Image2>
-            <Img onClick={largePic=pic2} fluid={pic2} alt="" />
+            <div onMouseEnter={() => setPic(pic2)}>
+              <Img fluid={pic2} alt="" />
+            </div>
           </Image2>
           <Image2>
-            <Img fluid={pic3} alt="" />
+            <div onMouseEnter={() => setPic(pic3)}>
+              <Img fluid={pic3} alt="" />
+            </div>
           </Image2>
           <Image2>
-            <Img fluid={pic4} alt="" />
+            <div onMouseEnter={() => setPic(pic4)}>
+              <Img fluid={pic4} alt="" />
+            </div>
           </Image2>
           {/* <SRLWrapper>
           </SRLWrapper> */}
