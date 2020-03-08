@@ -354,7 +354,7 @@ Index.propTypes = {
 export const fluidImage = graphql`
   fragment fluidImage on File {
     childImageSharp {
-      fluid(maxWidth: 500, quality: 60, traceSVG: { color: "#2B2B2F" }) {
+      fluid(maxWidth: 500, quality: 80, traceSVG: { color: "#2B2B2F" }) {
         ...GatsbyImageSharpFluid
       }
     }
@@ -365,84 +365,84 @@ export const pageQuery = graphql`
   query {
     imageOne: file(relativePath: { eq: "echeveria.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400, quality: 60) {
+        fluid(maxWidth: 400, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     imageTwo: file(relativePath: { eq: "kiwi.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400, quality: 60) {
+        fluid(maxWidth: 400, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     imageThree: file(relativePath: { eq: "alata1.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400, quality: 60) {
+        fluid(maxWidth: 400, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     imageFour: file(relativePath: { eq: "wandering.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400, quality: 60) {
+        fluid(maxWidth: 400, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     imageFive: file(relativePath: { eq: "miniPixie.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400, quality: 60) {
+        fluid(maxWidth: 400, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     imageSix: file(relativePath: { eq: "zebra-plant2.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400, quality: 60) {
+        fluid(maxWidth: 400, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     imageSeven: file(relativePath: { eq: "miniWhite.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400, quality: 60) {
+        fluid(maxWidth: 400, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     imageEight: file(relativePath: { eq: "rose.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400, quality: 60) {
+        fluid(maxWidth: 400, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     imageNine: file(relativePath: { eq: "mixedColor.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400, quality: 60) {
+        fluid(maxWidth: 400, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     imageTen: file(relativePath: { eq: "newAlata1.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400, quality: 60) {
+        fluid(maxWidth: 400, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     imageEleven: file(relativePath: { eq: "kokedama.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400, quality: 60) {
+        fluid(maxWidth: 400, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     logo: file(relativePath: { eq: "logo.png" }) {
       childImageSharp {
-        fluid(maxWidth: 400, quality: 60) {
+        fluid(maxWidth: 400, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
