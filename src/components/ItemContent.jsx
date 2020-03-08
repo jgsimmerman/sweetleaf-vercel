@@ -145,7 +145,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
     { label: `${option3}`, value: 3 },
     { label: `${option4}`, value: 4 },
   ];
-  if(sku3 === undefined) {
+  if(sku3 === undefined || sku3 === null) {
     scaryAnimals.pop();
     scaryAnimals.pop();
   }

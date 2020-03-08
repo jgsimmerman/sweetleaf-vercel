@@ -1,6 +1,6 @@
 ---
 path: "/catalog/carnivorous-plants/alata"
-cover: "./alata1.jpg"
+cover: "./newAlata1.jpg"
 pic: "./front37.jpg"
 pic2: "./front1.jpg"
 pic3: "./ruler37.jpg"
@@ -21,7 +21,7 @@ seasonality: ""
 inventory: 14
 option1: ""
 option2: ""
-price: 13.49
+price: 14.25
 # price2: 14.99
 sku: "sku_GjxyukjjpQOVDs"
 # sku2: "sku_GjxyukjjpQOVDs"

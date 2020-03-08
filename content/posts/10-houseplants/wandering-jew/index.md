@@ -28,7 +28,7 @@ price2: 12.49
 sku: "sku_GjwxRAKJhx5bHq"
 sku2: "sku_GpZzo9fb93KZHa"
 published: true
-available: 1
+available: 0
 story: "Purple Wandering Dude Cuttings. You will receive three fresh, cut to order, Wandering Dude cuttings. Each cutting will be more than 6 inches in length and will contain at least three leaf bunches/nodes for rooting."
 
 ---

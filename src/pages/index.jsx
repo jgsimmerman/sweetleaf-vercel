@@ -145,14 +145,14 @@ const Index = ({ data }) => {
       </PostWrapper>
 
       <PostWrapper>
-        <Wrapper>
+      <Wrapper>
           <Image>
-            <Img fluid={data.imageFive.childImageSharp.fluid} alt="Mini Pixie"/>
+            <Img fluid={data.imageEleven.childImageSharp.fluid} alt="Nepenthes Kokedama"/>
           </Image>
-          <StyledLink to="/catalog/fairy-garden/mini-pixie/">
+          <StyledLink to="/catalog/carnivorous-plants/kokedama">
             <Info>
-              <Title>Mini Pixie</Title>
-              {/* <Price>$6.95</Price> */}
+              <Title>Nepenthes Kokedama</Title>
+              {/* <Price>$9.95</Price> */}
             </Info>
           </StyledLink>
         </Wrapper>
@@ -167,6 +167,19 @@ const Index = ({ data }) => {
             </Info>
           </StyledLink>
         </Wrapper>
+        <Wrapper>
+          <Image>
+            <Img fluid={data.imageFive.childImageSharp.fluid} alt="Mini Pixie"/>
+          </Image>
+          <StyledLink to="/catalog/fairy-garden/mini-pixie/">
+            <Info>
+              <Title>Mini Pixie</Title>
+              {/* <Price>$6.95</Price> */}
+            </Info>
+          </StyledLink>
+        </Wrapper>
+        
+
         <Wrapper>
           <Image>
             <Img fluid={data.imageSeven.childImageSharp.fluid} alt="Mini White"/>
@@ -212,17 +225,7 @@ const Index = ({ data }) => {
             </Info>
           </StyledLink>
         </Wrapper>
-        <Wrapper>
-          <Image>
-            <Img fluid={data.imageEleven.childImageSharp.fluid} alt="Nepenthes Kokedama"/>
-          </Image>
-          <StyledLink to="/catalog/carnivorous-plants/kokedama">
-            <Info>
-              <Title>Nepenthes Kokedama</Title>
-              {/* <Price>$9.95</Price> */}
-            </Info>
-          </StyledLink>
-        </Wrapper>
+        
       </PostWrapper>
       <PostWrapper>
         <h4> <Link to="/catalog/">See our full catalog for more!</Link></h4>
