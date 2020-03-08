@@ -1,7 +1,7 @@
 ---
 path: "/catalog/fairy-garden/mini-pixie"
-cover: "./front2.jpg"
-pic: "./front2.jpg"
+cover: "./terraCottaComparison37.jpg"
+pic: "./terraCottaComparison37.jpg"
 pic2: "./front3.jpg"
 pic3: "./frontPlastic.jpg"
 pic4: "./topPlastic.jpg"

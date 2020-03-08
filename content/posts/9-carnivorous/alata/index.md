@@ -1,9 +1,9 @@
 ---
 path: "/catalog/carnivorous-plants/alata"
 cover: "./alata1.jpg"
-pic: "./feb4.jpg"
+pic: "./front37.jpg"
 pic2: "./front1.jpg"
-pic3: "./front3.jpg"
+pic3: "./ruler37.jpg"
 pic4: "./top2.jpg"
 snipPic: "./back1.jpg"
 care: "/care/dummy.pdf"

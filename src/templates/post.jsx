@@ -128,11 +128,16 @@ export const query = graphql`
 
         option1
         option2
+        option3
+        option4
         sku
         sku2
+        sku3
+        sku4
         price
         price2
-        
+        price3
+        price4
         path
         care 
         story

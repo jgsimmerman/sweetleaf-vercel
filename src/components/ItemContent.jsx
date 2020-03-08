@@ -5,7 +5,14 @@ import { useStaticQuery, graphql, Link } from 'gatsby';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import { Layout, Container, Content } from 'layouts';
-import { TagsBlock, Header, SEO, SecondNav, Zygote, PotSelect } from 'components';
+import {
+  TagsBlock,
+  Header,
+  SEO,
+  SecondNav,
+  Zygote,
+  PotSelect,
+} from 'components';
 import Helmet from 'react-helmet';
 import BuyButton from './BuyButton';
 import Img from 'gatsby-image';
@@ -26,13 +33,12 @@ const Wrapper = styled.div`
 const Image = styled.span`
   background: #eee;
   flex: 1;
-  
 `;
 const Image2 = styled.span`
   background: #eee;
   display: inline-block;
   padding: 5px;
-  width: 150px;  
+  width: 150px;
 `;
 
 const Info = styled.span`
@@ -88,11 +94,7 @@ const Table = styled.table`
   }
 `;
 
-
-
 const ItemContent = ({ post, skuObj, skus, html }) => {
-
-
   let pic1 = post.pic.childImageSharp.fluid;
   let pic2 = post.pic2.childImageSharp.fluid;
   let pic3 = post.pic3.childImageSharp.fluid;
@@ -101,13 +103,18 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
   let option1 = post.option1;
   let option2 = post.option2;
   //let options = post.options;
-  let option3 = "";
-  let option4 = "";
+  let option3 = post.option3;
+  let option4 = post.option4;
 
   let sku1 = post.sku;
   let sku2 = post.sku2;
+  let sku3 = post.sku3;
+  let sku4 = post.sku4;
+
   let price1 = post.price;
   let price2 = post.price2;
+  let price3 = post.price3;
+  let price4 = post.price4;
 
   let itemSku = sku1;
   let itemPrice = price1;
@@ -119,25 +126,30 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
   const [pic, setPic] = useState(largePic);
 
   let itemQuantity = 0;
-  let itemImage
-  if(post.sku) {
-    let itemSkuArray = skuObj.find(obj => obj.sku == post.sku)
+  let itemImage;
+  if (post.sku) {
+    let itemSkuArray = skuObj.find(obj => obj.sku == post.sku);
     console.log(itemSkuArray);
     itemQuantity = itemSkuArray.quantity;
     itemImage = itemSkuArray.image;
   }
 
   //console.log(`itemImage: ${itemImage}`)
-  
+
   //let opts = JSON.parse(options);
   //console.log("Options: " + opts);
+  console.log(sku3)
   const scaryAnimals = [
     { label: `${option1}`, value: 1 },
     { label: `${option2}`, value: 2 },
-    // { label: `${option3}`, value: 3 },
-    // { label: `${option4}`, value: 4 },
+    { label: `${option3}`, value: 3 },
+    { label: `${option4}`, value: 4 },
   ];
-  //console.log(scaryAnimals[0])
+  if(sku3 === undefined) {
+    scaryAnimals.pop();
+    scaryAnimals.pop();
+  }
+  console.log(scaryAnimals)
   return (
     <Wrapper>
       <Grid
@@ -153,102 +165,95 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
           <Image>
             <Img fluid={pic} alt="" />
           </Image>
-          
+
           {/* <SRLWrapper>
           </SRLWrapper> */}
-
         </GridItem>
         <GridItem column="1 / 3" row="2">
-          <Image2>
-            <div onMouseEnter={() => setPic(pic1)}>
-              <Img fluid={pic1} alt="" />
-            </div>
+          <Image2 onMouseEnter={() => setPic(pic1)}>
+            <Img fluid={pic1} alt="" />
           </Image2>
-          <Image2>
-            <div onMouseEnter={() => setPic(pic2)}>
-              <Img fluid={pic2} alt="" />
-            </div>
+          <Image2 onMouseEnter={() => setPic(pic2)}>
+            <Img fluid={pic2} alt="" />
           </Image2>
-          <Image2>
-            <div onMouseEnter={() => setPic(pic3)}>
-              <Img fluid={pic3} alt="" />
-            </div>
+          <Image2 onMouseEnter={() => setPic(pic3)}>
+            <Img fluid={pic3} alt="" />
           </Image2>
-          <Image2>
-            <div onMouseEnter={() => setPic(pic4)}>
-              <Img fluid={pic4} alt="" />
-            </div>
+          <Image2 onMouseEnter={() => setPic(pic4)}>
+            <Img fluid={pic4} alt="" />
           </Image2>
           {/* <SRLWrapper>
           </SRLWrapper> */}
-
         </GridItem>
-        
+
         <GridItem column="2" row="1">
           <Info>
             <ItemName>{post.title}</ItemName>
             <p>
               <em>{post.scientificname}</em>
             </p>
-            <p>
-              Only {itemQuantity} left in stock!
-            </p>
+            <p>Only {itemQuantity} left in stock!</p>
             <Cost>
               <strong>${price}</strong>
             </Cost>
-            <p>
-            {/* <a href={`${post.care}`}>Care Instructions</a> */}
-            </p>
-            {option1  &&
-            <Select options={scaryAnimals}
-                    onChange={opt => {
-                      if(opt.value == 1){
-                        itemPrice = price1;
-                        itemSku = sku1;
-                      }
-                      else if (opt.value == 2) {
-                        itemPrice = price2;
-                        itemSku = sku2;
-                      }
-                      setPrice(itemPrice);
-                      setSku(itemSku);
-                      console.log(itemSku)
-                      console.log(itemPrice);
-                      console.log(opt.label, opt.value)}
-                    } />
-            } 
-            {/* <p className="ItemName">
-                  {post.story}
-              </p> 
-            {/* <BuyButton post={post}></BuyButton> */}
+            <p>{/* <a href={`${post.care}`}>Care Instructions</a> */}</p>
+            {option1 && (
+              <Select
+                options={scaryAnimals}
+                onChange={opt => {
+                  if (opt.value == 1) {
+                    itemPrice = price1;
+                    itemSku = sku1;
+                  } else if (opt.value == 2) {
+                    itemPrice = price2;
+                    itemSku = sku2;
+                  } else if (opt.value == 3) {
+                    itemPrice = price3;
+                    itemSku = sku3;
+                  } else if (opt.value == 4) {
+                    itemPrice = price4;
+                    itemSku = sku4;
+                  }
+                  setPrice(itemPrice);
+                  setSku(itemSku);
+                  // console.log(`new Sku ${itemSku}`);
+                  // console.log(itemPrice);
+                  // console.log(opt.label, opt.value);
+                }}
+              />
+            )}
+            
 
-             {/* <Select  price1={price1} price2={price2} itemPrice={itemPrice}/> */}
-            {console.log(sku)}
-            <button style={{
-              backgroundColor: 'hsl(228, 34.9%, 83.1%)',
-              borderRadius: '5px',
-              marginTop: '36px',
-              border: '0',
-              color: 'hsl(228, 34.9%, 23.1%)',
-              fontWeight: '500',
-              paddingBottom: '15px',
-              paddingTop: '15px',
-              paddingRight: '35px',
-              paddingLeft: '35px',
-              fontSize: '24',
-            }}
-         onClick={() => addToCart({
-              id: sku, //`${post.sku}`,
-              name: post.title,
-              image: itemImage, //`https://via.placeholder.com/75x75`, //itemImage,
-              description: ``,
-              price: Math.round(price*100),
-              shippable: true,
-              quantity: 1,
-              stock: itemQuantity,
-            })}>
+            {console.log(`Sending sku ${sku}`)}
+            <button
+              style={{
+                backgroundColor: 'hsl(228, 34.9%, 83.1%)',
+                borderRadius: '5px',
+                marginTop: '36px',
+                border: '0',
+                color: 'hsl(228, 34.9%, 23.1%)',
+                fontWeight: '500',
+                paddingBottom: '15px',
+                paddingTop: '15px',
+                paddingRight: '35px',
+                paddingLeft: '35px',
+                fontSize: '24',
+              }}
+              onClick={() =>
+                addToCart({
+                  id: sku, //`${post.sku}`,
+                  name: post.title,
+                  image: itemImage, //`https://via.placeholder.com/75x75`, //itemImage,
+                  description: ``,
+                  price: Math.round(price * 100),
+                  shippable: true,
+                  quantity: 1,
+                  stock: itemQuantity,
+                })
+              }
+            >
               Add to Cart!
-            </button> 
+            </button>
 
             {/* <button onClick={openCart}>Open Cart</button> */}
           </Info>
@@ -257,10 +262,10 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
       <Grid>
         <br />
         <GridItem column=" 1 / 2" row="2">
-        <Story
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+          <Story
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
           <br />
         </GridItem>
       </Grid>
@@ -305,5 +310,3 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
 };
 
 export default ItemContent;
-
-
