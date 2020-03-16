@@ -64,7 +64,15 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 			},
 		}
 		if (body.coupon) {
-			obj.coupon = body.coupon
+			// obj.coupon = body.coupon
+			// Add Modification here
+			if (body.coupon == '10_Off') {
+				res.modifications.push({
+					id: `discount`,
+					value: -1000,
+					description: `$10.00 Off`,
+				})
+			}
 		}
 		// Determine if we are subscribing to plans, or placing an order
 		switch (orderType) {

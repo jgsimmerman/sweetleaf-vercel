@@ -16,7 +16,7 @@ export default function addToCart(newProduct){
 		const product = products[i]
 		if (product.id === newProduct.id) {
 			alreadyInCart = true
-			if(products[i].quantity < newProduct.stock ) {
+			if(products[i].quantity < newProduct.stock ) { // check that order doesn't exceed stock
 				products[i] = {
 					...newProduct,
 					quantity: products[i].quantity + newProduct.quantity,
