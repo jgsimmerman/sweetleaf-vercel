@@ -15,10 +15,10 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
   
 	console.log(`body: ${body1}`)
 	let subtotal = body.order.amount
-	let skuMatch = body.order.items.parent.id
-	// 	let skuMatch = body.order.products.some((product) => product.id === 'sku_GrsjNKjWmiGT87')
+	//let skuMatch = body.order.items.parent.id
+	let skuMatch = body.order.items.some((product) => product.parent.id === 'sku_GrsjNKjWmiGT87')
 
-	console.log(`body.order.items.parent.id: ${skuMatch}`)
+	console.log(`skuMatch: ${skuMatch}`)
 	// console.log(`body.order.items.parent: ${skuMatch.parent}`)
 
 	
@@ -30,8 +30,11 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 		{
       id: `shipping-0`,
       description: `Standard Shipping`,
-      value: (subtotal) => {
-        if (subtotal < 1000) {
+      value: (subtotal, skuMatch) => {
+				if (skuMatch) {
+					return 0
+				}
+        else if (subtotal < 1000) {
           return 549
         } else if (subtotal < 3000) {
           return 749
