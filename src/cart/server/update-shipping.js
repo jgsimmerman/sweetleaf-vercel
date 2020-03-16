@@ -13,7 +13,7 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
   
 
 	let subtotal = body.order.amount
-	let skuMatch = body.order.products
+	let skuMatch = body.order.items
 	// 	let skuMatch = body.order.products.some((product) => product.id === 'sku_GrsjNKjWmiGT87')
 
 	console.log(`body.order.products: ${skuMatch}`)
