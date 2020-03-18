@@ -8,6 +8,8 @@ export default async function submitStripeOrder({ stripeApiSecret, body, verbose
 
 	const { subtotal, modifications, total, loading } = this.props.totals
 
+	total = JSON.stringify(total);
+	total = JSON.parse(total);
 	if(verbose){
 		log = console.log
 		error = console.error
