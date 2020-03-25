@@ -54,31 +54,31 @@ export default async function submitStripeOrder({ stripeApiSecret, body, verbose
 
 		// Pay for order
 	// stripe.orders.pay
-	if (body.coupon.length < 2) {
-		if (res.success) {
-			let req
-			try {
-				req = await stripe.orders.pay(res.meta.orderId, {
-					email: body.infoEmail,
-					source: body.payment.id,
-				})
-				res.success = req.status === `paid`
-				log(`submitStripeOrder received from Stripe after order placement:`, req)
-			}
-			catch (err) {
-				error(err)
-				if (err.code === `out_of_inventory` || err.code === `resource_missing`) {
-					res.step = `cart`
-					res.messages.error.push(`Sorry! One or more items in your cart have gone out of stock. Please remove these products or try again later.`)
-				}
-				else if (err.message) {
-					res.messages.error.push(err.message)
-				}
-				res.success = false
+	// if (body.coupon.length < 2) {
+	// 	if (res.success) {
+	// 		let req
+	// 		try {
+	// 			req = await stripe.orders.pay(res.meta.orderId, {
+	// 				email: body.infoEmail,
+	// 				source: body.payment.id,
+	// 			})
+	// 			res.success = req.status === `paid`
+	// 			log(`submitStripeOrder received from Stripe after order placement:`, req)
+	// 		}
+	// 		catch (err) {
+	// 			error(err)
+	// 			if (err.code === `out_of_inventory` || err.code === `resource_missing`) {
+	// 				res.step = `cart`
+	// 				res.messages.error.push(`Sorry! One or more items in your cart have gone out of stock. Please remove these products or try again later.`)
+	// 			}
+	// 			else if (err.message) {
+	// 				res.messages.error.push(err.message)
+	// 			}
+	// 			res.success = false
 			
-		}
-	}
-	else {
+	// 	}
+	// }
+	// else {
 			// Pay for order
 		// stripe.charges.create
 		if (res.success) {
@@ -105,8 +105,8 @@ export default async function submitStripeOrder({ stripeApiSecret, body, verbose
 					});
 				})
 			}	
-		}
-	}
+		//}
+//	}
 
 	res = {
 		...body,

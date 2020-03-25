@@ -27,7 +27,8 @@ export default class PaymentRequest extends React.Component {
 			displayItems: this.createDisplayItems(),
 			total: {
 				label: `Total`,
-				amount: totalsState.state.total,
+				//amount: totalsState.state.total,
+				amount: displayItems.amount,
 			},
 		})
 		this.setState({ paymentRequest })

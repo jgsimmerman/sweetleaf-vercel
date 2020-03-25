@@ -111,6 +111,8 @@ const BurgerMenu = () => {
               <Link to="/catalog/houseplants">Houseplants</Link>
               <Link to="/catalog/fairy-garden">Fairy Garden Plants</Link>
               <Link to="/catalog/bundles">Bundles</Link>
+              <Link to="/catalog/succulents/sempervivum">Sempervivum</Link>
+
 
             </Nav2> 
             

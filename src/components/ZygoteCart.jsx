@@ -34,10 +34,10 @@ const ZygoteCart = props => {
      stripeApiKey="pk_test_Vc8z3p2pdxHFQgxhbbhIXtyv00GnPddsjV"
 
       //stripeApiKey=`${process.env.STRIPE_API_PUBLIC}`
-      infoWebhook='/.netlify/functions/info-stripe'
-      orderWebhook='/.netlify/functions/order-stripe'
-      // infoWebhook='https://98f0c2b3.ngrok.io/.netlify/functions/info-stripe'
-      // orderWebhook='https://98f0c2b3.ngrok.io/.netlify/functions/order-stripe'
+      // infoWebhook='/.netlify/functions/info-stripe'
+      // orderWebhook='/.netlify/functions/order-stripe'
+       infoWebhook='https://f2498517.ngrok.io/.netlify/functions/info-stripe'
+       orderWebhook='https://f2498517.ngrok.io/.netlify/functions/order-stripe'
       shippingWebhook='/.netlify/functions/shipping-stripe'
       
       plugins={[ 

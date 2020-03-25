@@ -20,6 +20,8 @@ import { Grid, GridItem } from 'styled-grid-component';
 import { openCart, addToCart } from 'cart';
 // import { SRLWrapper } from "simple-react-lightbox";
 import Select from 'react-select';
+import Zoom from 'react-medium-image-zoom';
+// https://www.reddit.com/r/gatsbyjs/comments/fmgm2k/gatsbyimage_zoom/
 
 const Wrapper = styled.div`
   padding: 1rem 0 2rem 0;
@@ -272,7 +274,8 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
 
       <hr></hr>
 
-      {/* <Table>
+      {post.primarycolor &&
+       <Table>
         <thead>
             <tr>
               <th colspan="2" >Plant Details</th>
@@ -304,7 +307,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
             <td>{post.temperature}</td>
           </tr>
         </tbody>
-      </Table> */}
+      </Table> }
     </Wrapper>
   );
 };
