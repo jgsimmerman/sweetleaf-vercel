@@ -27,6 +27,13 @@ export default class PaymentRequest extends React.Component {
 			displayItems: this.createDisplayItems(),
 			total: {
 				label: `Total`,
+				//
+				//
+				//
+				// Changed This 
+				//
+				//
+				//
 				//amount: totalsState.state.total,
 				amount: displayItems.amount,
 			},

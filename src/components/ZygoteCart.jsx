@@ -36,8 +36,8 @@ const ZygoteCart = props => {
       //stripeApiKey=`${process.env.STRIPE_API_PUBLIC}`
       // infoWebhook='/.netlify/functions/info-stripe'
       // orderWebhook='/.netlify/functions/order-stripe'
-       infoWebhook='https://f2498517.ngrok.io/.netlify/functions/info-stripe'
-       orderWebhook='https://f2498517.ngrok.io/.netlify/functions/order-stripe'
+       infoWebhook='https://2ffd70f1.ngrok.io/.netlify/functions/info-stripe'
+       orderWebhook='https://2ffd70f1.ngrok.io/.netlify/functions/order-stripe'
       shippingWebhook='/.netlify/functions/shipping-stripe'
       
       plugins={[ 
