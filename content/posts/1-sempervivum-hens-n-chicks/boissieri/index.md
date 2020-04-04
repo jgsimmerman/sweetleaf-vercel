@@ -5,7 +5,7 @@ pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./side1.jpg"
 pic4: "./top1.jpg"
-title: "Sempervivum 'Black'"
+title: "Sempervivum 'Boissieri'"
 scientificname: "Sempervivum tectorum"
 id: 13 
 catalog-section: "succulents"

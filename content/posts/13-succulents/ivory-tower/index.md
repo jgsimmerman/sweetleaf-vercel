@@ -9,7 +9,7 @@ snipPic: "./back1.jpg"
 care: "/care/dummy.pdf"
 title: "Ivory Towers"
 scientificname: "Crassula × perforata"
-id: 14 
+id: 15 
 catalog-section: "succulents"
 tags: ['succulents', 'terrarium', 'ivory towers']
 primarycolor: "Blue / Blue-green"

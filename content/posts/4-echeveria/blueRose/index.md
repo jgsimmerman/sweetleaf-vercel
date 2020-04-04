@@ -1,11 +1,11 @@
 ---
-path: "/catalog/succulents/echeveria/blue-prince"
+path: "/catalog/succulents/echeveria/blue-rose"
 cover: "./front1.jpg"
 pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./side1.jpg"
 pic4: "./top1.jpg"
-title: "Blue Prince"
+title: "Blue Rose"
 scientificname: "Echeveria"
 id: 14 
 catalog-section: "succulents"
@@ -21,7 +21,7 @@ option1: ""
 option2: ""
 price: 4.25
 # price2: 14.99
-sku: "sku_GjxyukjjpQOVDs"
+sku: "sku_H2HRzTq8NB33gE"
 # sku2: "sku_GjxyukjjpQOVDs"
 # option1: "blue"
 # option2: "red"
@@ -33,4 +33,4 @@ story: "Echeveria are cared for as any typical succulent and thrive on neglect. 
 
 ---
 
-Echeveria 'Blue Prince': Echeveria are cared for as any typical succulent and thrive on neglect. Water every 10 to 14 days when your plant is showing signs of thirst. Give bright lighting conditions. If succulent starts to stretch then it is not getting enough light. Light is one of the most important factors in keeping your succulents healthy and looking beautiful. Repot in a succulent mix with coarse sand mixed in, or make your own mix with one part perlite, two parts coarse sand and three parts potting soil or peat.
+Echeveria 'Blue Rose': Echeveria are cared for as any typical succulent and thrive on neglect. Water every 10 to 14 days when your plant is showing signs of thirst. Give bright lighting conditions. If succulent starts to stretch then it is not getting enough light. Light is one of the most important factors in keeping your succulents healthy and looking beautiful. Repot in a succulent mix with coarse sand mixed in, or make your own mix with one part perlite, two parts coarse sand and three parts potting soil or peat.
