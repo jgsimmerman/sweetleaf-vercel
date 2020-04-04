@@ -21,7 +21,7 @@ option1: ""
 option2: ""
 price: 4.25
 # price2: 14.99
-sku: "sku_GjxyukjjpQOVDs"
+sku: "sku_H2H9fg6NEGi8K2"
 # sku2: "sku_GjxyukjjpQOVDs"
 # option1: "blue"
 # option2: "red"
