@@ -1,6 +1,5 @@
 import Stripe from 'stripe'
 import noop from '../utils/noop'
-import addTotalModification from '../utils/add-total-modification'
 
 export default async function submitStripeInfo({ stripeApiSecret, body, verbose }) {
 	let log = noop
@@ -65,17 +64,7 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 			},
 		}
 		if (body.coupon) {
-			// obj.coupon = body.coupon
-			// Add Modification here
-			if (body.coupon == '10_Off') {
-				let testMod = {
-					id: `discount`,
-					value: -1000,
-					description: `$10.00 Off`,
-				}
-				addTotalModification(testMod)
-				res.modifications.push(testMod)
-			}
+			obj.coupon = body.coupon
 		}
 		// Determine if we are subscribing to plans, or placing an order
 		switch (orderType) {
