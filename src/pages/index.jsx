@@ -61,6 +61,36 @@ const Wrapper = styled.section`
     width: 100%;
     height: 15rem;
   }
+`; 
+
+const Wrapper2 = styled.section`
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+  border-radius: ${props => props.theme.borderRadius.default};
+  box-shadow: ${props => props.theme.shadow.feature.small.default};
+  height: 17rem;
+  flex-basis: calc(99.9% - 2.5rem);
+  max-width: calc(99.9% - 2.5rem);
+  width: calc(99.9% - 2.5rem);
+
+  &:hover {
+    box-shadow: ${props => props.theme.shadow.feature.small.hover};
+  }
+
+  @media (max-width: 1000px) {
+    flex-basis: calc(99.9% * 1 / 2 - 1rem);
+    max-width: calc(99.9% * 1 / 2 - 1rem);
+    width: calc(99.9% * 1 / 2 - 1rem);
+    height: 18rem;
+  }
+
+  @media (max-width: 700px) {
+    flex-basis: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 15rem;
+  }
 `;
 
 const StyledLink = styled(Link)`
@@ -145,6 +175,17 @@ const Index = ({ data }) => {
       </PostWrapper>
 
       <PostWrapper>
+      <Wrapper2>
+          <Image>
+            <Img fluid={data.imageTwelve.childImageSharp.fluid} alt="Succulents"/>
+          </Image>
+          <StyledLink to="/catalog/echeveria">
+            <Info>
+              <Title>Succulents</Title>
+              {/* <Price>$9.95</Price> */}
+            </Info>
+          </StyledLink>
+        </Wrapper2>
       <Wrapper>
           <Image>
             <Img fluid={data.imageEleven.childImageSharp.fluid} alt="Nepenthes Kokedama"/>
@@ -437,6 +478,13 @@ export const pageQuery = graphql`
       }
     }
     imageEleven: file(relativePath: { eq: "kokedama.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400, quality: 80) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    imageTwelve: file(relativePath: { eq: "succulents.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 400, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
