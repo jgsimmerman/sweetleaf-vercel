@@ -21,7 +21,7 @@ seasonality: ""
 inventory: 3
 option1: ""
 option2: ""
-price: 37.99
+price: 49.99
 # price2: 14.99
 sku: "sku_GrsjNKjWmiGT87"
 # sku2: "sku_GjxyukjjpQOVDs"

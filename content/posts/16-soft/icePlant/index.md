@@ -1,20 +1,20 @@
 ---
-path: "/catalog/succulents/soft/opalina"
+path: "/catalog/succulents/soft/ice-plant"
 cover: "./front1.jpg"
 pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./side1.jpg"
 pic4: "./top1.jpg"
-title: "Opalina"
-scientificname: "Echeveria colorata × Graptopetalum amethystinum"
+title: "Ice Plant"
+scientificname: "Corpuscularia lehmannii"
 id: 16 
 catalog-section: "succulents"
 tags: ['succulents', 'soft', 'soft varieties']
-primarycolor: "Grey / Silver"
-stresscolors: "Pink, Blue / Blue-green"
+primarycolor: "Blue / Blue-green"
+stresscolors: ""
 bloomcolor: "Yellow Bloom"
 petsafe: "Yes"
-temperature: "20F"
+temperature: "30F"
 seasonality: ""
 inventory: 14
 option1: ""
@@ -29,7 +29,7 @@ sku: ""
 published: true
 available: 1
 
-story: "'Opalina' (Echeveria colorata × Graptopetalum amethystinum): "
+story: "Corpuscularia lehmannii"
 
 ---
-'Opalina' (Echeveria colorata × Graptopetalum amethystinum):  
+Corpuscularia lehmannii: 

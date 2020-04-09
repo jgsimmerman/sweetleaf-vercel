@@ -1,20 +1,20 @@
 ---
-path: "/catalog/succulents/soft/opalina"
+path: "/catalog/succulents/soft/ivory-towers"
 cover: "./front1.jpg"
 pic: "./front1.jpg"
 pic2: "./front2.jpg"
-pic3: "./side1.jpg"
+pic3: "./top2.jpg"
 pic4: "./top1.jpg"
-title: "Opalina"
-scientificname: "Echeveria colorata × Graptopetalum amethystinum"
+title: "Ivory Towers"
+scientificname: "Crassula × perforata"
 id: 16 
 catalog-section: "succulents"
 tags: ['succulents', 'soft', 'soft varieties']
-primarycolor: "Grey / Silver"
-stresscolors: "Pink, Blue / Blue-green"
-bloomcolor: "Yellow Bloom"
+primarycolor: "Blue / Blue-green"
+stresscolors: "Pink"
+bloomcolor: "White Bloom"
 petsafe: "Yes"
-temperature: "20F"
+temperature: "30F"
 seasonality: ""
 inventory: 14
 option1: ""
@@ -29,7 +29,7 @@ sku: ""
 published: true
 available: 1
 
-story: "'Opalina' (Echeveria colorata × Graptopetalum amethystinum): "
+story: "Ivory Towers or Giant String of Buttons (Crassula × perforata):"
 
 ---
-'Opalina' (Echeveria colorata × Graptopetalum amethystinum):  
+Ivory Towers or Giant String of Buttons (Crassula × perforata): 

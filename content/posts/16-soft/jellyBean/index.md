@@ -1,20 +1,20 @@
 ---
-path: "/catalog/succulents/soft/opalina"
+path: "/catalog/succulents/soft/jelly-bean"
 cover: "./front1.jpg"
 pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./side1.jpg"
 pic4: "./top1.jpg"
-title: "Opalina"
-scientificname: "Echeveria colorata × Graptopetalum amethystinum"
+title: "Jelly Bean"
+scientificname: "Sedum rubrotinctum"
 id: 16 
 catalog-section: "succulents"
 tags: ['succulents', 'soft', 'soft varieties']
-primarycolor: "Grey / Silver"
-stresscolors: "Pink, Blue / Blue-green"
+primarycolor: "Green / Lime"
+stresscolors: "Red / Burgundy"
 bloomcolor: "Yellow Bloom"
 petsafe: "Yes"
-temperature: "20F"
+temperature: "30F"
 seasonality: ""
 inventory: 14
 option1: ""
@@ -29,7 +29,7 @@ sku: ""
 published: true
 available: 1
 
-story: "'Opalina' (Echeveria colorata × Graptopetalum amethystinum): "
+story: "Jelly Bean (Sedum rubrotinctum):"
 
 ---
-'Opalina' (Echeveria colorata × Graptopetalum amethystinum):  
+Jelly Bean (Sedum rubrotinctum): 
