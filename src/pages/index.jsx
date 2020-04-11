@@ -69,7 +69,7 @@ const Wrapper2 = styled.section`
   z-index: 1;
   border-radius: ${props => props.theme.borderRadius.default};
   box-shadow: ${props => props.theme.shadow.feature.small.default};
-  height: 17rem;
+  height: 34rem;
   flex-basis: calc(99.9% - 2.5rem);
   max-width: calc(99.9% - 2.5rem);
   width: calc(99.9% - 2.5rem);
@@ -179,7 +179,7 @@ const Index = ({ data }) => {
           <Image>
             <Img fluid={data.imageTwelve.childImageSharp.fluid} alt="Succulents"/>
           </Image>
-          <StyledLink to="/catalog/echeveria">
+          <StyledLink to="/catalog/succulents/">
             <Info>
               <Title>Succulents</Title>
               {/* <Price>$9.95</Price> */}
@@ -484,9 +484,9 @@ export const pageQuery = graphql`
         }
       }
     }
-    imageTwelve: file(relativePath: { eq: "succulents.jpg" }) {
+    imageTwelve: file(relativePath: { eq: "succulents2.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400, quality: 80) {
+        fluid(maxWidth: 1600, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }

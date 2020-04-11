@@ -1,6 +1,6 @@
 ---
 path: "/catalog/succulents/rosette/irene"
-cover: "./front1.jpg"
+cover: "./top1.jpg"
 pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./side1.jpg"
@@ -19,9 +19,9 @@ seasonality: ""
 inventory: 5
 option1: ""
 option2: ""
-price: 4.25
+price: 4.99
 # price2: 14.99
-sku: "sku_H2HOLfd1vf0HfH"
+sku: "sku_H4iIGtfUI8Z03y"
 # sku2: "sku_GjxyukjjpQOVDs"
 # option1: "blue"
 # option2: "red"

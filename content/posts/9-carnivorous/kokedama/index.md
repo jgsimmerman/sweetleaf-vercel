@@ -12,8 +12,8 @@ scientificname: "Nepenthes alata hybrid"
 id: 9 
 catalog-section: "carnivorous-plants"
 tags: ['carnivorous', 'terrarium', 'nepenthes']
-primarycolor: "Green"
-stresscolors: "Pink"
+primarycolor: ""
+stresscolors: ""
 bloomcolor: ""
 petsafe: ""
 temperature: ""

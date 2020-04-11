@@ -8,7 +8,7 @@ pic4: "./speed.jpg"
 date: "2018-10-15"
 title: "Post Number Two"
 published: true
-id: 1000
+id: 1
 posttype: blog
 tags: ['website', 'react', 'other']
 ---

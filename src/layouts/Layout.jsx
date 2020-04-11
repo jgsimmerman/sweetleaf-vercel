@@ -36,6 +36,7 @@ const LoadableBurgerMenu = Loadable({
   timeout: 150000, // 15 seconds
 });
 
+//background-color: hsla(228, 34.9%, 88.1%, 0.3);
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
@@ -48,7 +49,7 @@ const Layout = ({ children }) => (
             box-sizing: inherit;
           }
           html {
-            background-color: hsla(228, 34.9%, 88.1%, 0.3);
+            background-color: hsl(192, 15%, 99%);
 
             text-rendering: optimizeLegibility;
             overflow-x: hidden;
@@ -60,7 +61,7 @@ const Layout = ({ children }) => (
           }
           html,
           body {
-            background-color: hsla(228, 34.9%, 88.1%, 0.3);
+            background-color: hsl(192, 15%, 99%);
           }
 
           .site {

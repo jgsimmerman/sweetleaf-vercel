@@ -13,12 +13,14 @@ export const colors = {
   },
   primary: {
     base: 'hsl(228, 34.9%, 83.1%)',
+    //base: '#fff',
     light: 'hsl(228, 34.9%, 23.1%)',
     dark: '#284187',
   },
   background: { // green
-    light: 'hsl(120, 100%, 96%)',
+    //light: 'hsl(120, 100%, 96%)',
     base: 'hsl(120, 100%, 95%)',
+    light: 'hsl(192, 15% 94%)', // white header background
     dark: 'hsl(120, 100%, 94%)',
   },
   // background: {

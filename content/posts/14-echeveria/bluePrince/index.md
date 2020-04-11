@@ -1,6 +1,6 @@
 ---
 path: "/catalog/succulents/echeveria/blue-prince"
-cover: "./front1.jpg"
+cover: "./top1.jpg"
 pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./side1.jpg"

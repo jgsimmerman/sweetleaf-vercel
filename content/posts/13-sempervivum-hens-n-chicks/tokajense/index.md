@@ -1,6 +1,6 @@
 ---
 path: "/catalog/succulents/sempervivum/tokajense"
-cover: "./front1.jpg"
+cover: "./top1.jpg"
 pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./side1.jpg"
