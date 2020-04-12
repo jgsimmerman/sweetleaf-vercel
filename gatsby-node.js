@@ -6,18 +6,6 @@ const { zipFunctions } = require('@netlify/zip-it-and-ship-it');
 sharp.cache(false);
 sharp.simd(false);
 
-// const { zipFunctions } = require('@netlify/zip-it-and-ship-it');
-// exports.onPostBuild = () => {
-//   const srcLocation = path.join(__dirname, `./cart/functions`);
-//   const outputLocation = path.join(__dirname, `./public/functions`);
-//   if (!fs.existsSync(outputLocation)) {
-//     fs.mkdirSync(outputLocation);
-//   }
-//   return zipFunctions(srcLocation, outputLocation);
-// };
-
-
-
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
