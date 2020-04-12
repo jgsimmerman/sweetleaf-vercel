@@ -27,7 +27,7 @@ const Wrapper = styled.div`
   padding: 1rem 0 2rem 0;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   color: hsl(0, 0%, 29%);
   font-weight: 400;
 `;
@@ -38,7 +38,7 @@ const Image = styled.span`
 `;
 const Image2 = styled.span`
   background: #eee;
-  display: inline-block;
+  display: inline-grid;
   padding: 5px;
   width: 150px;
 `;
@@ -156,14 +156,15 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
     <Wrapper>
       <Grid
         display="flex"
-        flex-wrap="wrap"
+        //flex-wrap="wrap"
         width="100%"
         height="100%"
-        templateColumns="repeat(2, 1fr)"
-        gap="70px"
-        autoRows="max-content"
+        templateColumns="repeat(auto-fill, minmax(16rem, 1fr))"
+        //templateColumns="repeat(auto-fill, 16rem)"
+        gap="1rem"
+        //autoRows="max-content"
       >
-        <GridItem column="1" row="1">
+        <GridItem >
           <Image>
             <Img fluid={pic} alt="" />
           </Image>
@@ -171,24 +172,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
           {/* <SRLWrapper>
           </SRLWrapper> */}
         </GridItem>
-        <GridItem column="1 / 3" row="2">
-          <Image2 onMouseEnter={() => setPic(pic1)}>
-            <Img fluid={pic1} alt="" />
-          </Image2>
-          <Image2 onMouseEnter={() => setPic(pic2)}>
-            <Img fluid={pic2} alt="" />
-          </Image2>
-          <Image2 onMouseEnter={() => setPic(pic3)}>
-            <Img fluid={pic3} alt="" />
-          </Image2>
-          <Image2 onMouseEnter={() => setPic(pic4)}>
-            <Img fluid={pic4} alt="" />
-          </Image2>
-          {/* <SRLWrapper>
-          </SRLWrapper> */}
-        </GridItem>
-
-        <GridItem column="2" row="1">
+        <GridItem >
           <Info>
             <ItemName>{post.title}</ItemName>
             <p>
@@ -256,10 +240,32 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
             >
               Add to Cart!
             </button>
-
+            
             {/* <button onClick={openCart}>Open Cart</button> */}
           </Info>
         </GridItem>
+      </Grid>
+      <Grid>
+        <GridItem justifyContent="center">
+          <Image2 onMouseEnter={() => setPic(pic1)}>
+            <Img fluid={pic1} alt="" />
+          </Image2>
+          <Image2 onMouseEnter={() => setPic(pic2)}>
+            <Img fluid={pic2} alt="" />
+          </Image2>
+          <Image2 onMouseEnter={() => setPic(pic3)}>
+            <Img fluid={pic3} alt="" />
+          </Image2>
+          <Image2 onMouseEnter={() => setPic(pic4)}>
+            <Img fluid={pic4} alt="" />
+          </Image2>
+          {/* <SRLWrapper>
+          </SRLWrapper> */}
+        </GridItem>
+
+        
+        
+
       </Grid>
       <Grid>
         <br />
