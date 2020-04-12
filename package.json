@@ -41,6 +41,7 @@
     "@mdx-js/mdx": "^1.5.3",
     "@mdx-js/react": "^1.5.3",
     "@mdx-js/tag": "^0.20.3",
+    "@netlify/zip-it-and-ship-it": "^0.3.1",
     "auth0-lock": "^11.20.3",
     "babel-plugin-emotion": "^10.0.27",
     "babel-runtime": "^6.26.0",
