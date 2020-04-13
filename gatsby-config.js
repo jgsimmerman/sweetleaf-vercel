@@ -223,7 +223,7 @@ module.exports = {
       options: {
         domain: 'https://dev-cbk6z20i.auth0.com',
         clientID: '2VYDe7FojdVooeMFbcWsf9rXEI0F8clm',
-        redirectUri: 'https://sweetleaf-gc.netlify.com/callback',
+        redirectUri: 'j',
         // audience: process.env.AUTH0_AUDIENCE, // Optional
         // responseType: process.env.AUTH0_RESPONSE_TYPE, // Optional
         // scope: process.env.AUTH0_SCOPE, // Optional
