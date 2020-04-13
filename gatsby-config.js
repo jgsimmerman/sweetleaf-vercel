@@ -146,7 +146,7 @@ module.exports = {
 				// 	noFooter: true,
 				// 	noBorders: true,
 				// 	noScrollbar: true,
-				// 	transparent: true
+				// 	transparent: true,
 				// },
 				// facebook: {
 				// 	enable: true,
@@ -216,19 +216,19 @@ module.exports = {
         websiteId: `95d36fea-f481-4495-8662-b3f118d5b387`, 
       },
     },
-    "gatsby-theme-gallery",
+    // "gatsby-theme-gallery",
     //`gatsby-plugin-netlify-cms`,
-    // {
-    //   resolve: "gatsby-theme-auth0",
-    //   options: {
-    //     domain: 'https://dev-cbk6z20i.auth0.com',
-    //     clientID: '2VYDe7FojdVooeMFbcWsf9rXEI0F8clm',
-    //     redirectUri: 'https://localhost:8000/callback',
-    //     // audience: process.env.AUTH0_AUDIENCE, // Optional
-    //     // responseType: process.env.AUTH0_RESPONSE_TYPE, // Optional
-    //     // scope: process.env.AUTH0_SCOPE, // Optional
-    //     // callbackPath: "/auth/callback", // Optional
-    //   },
-    // },
+    {
+      resolve: "gatsby-theme-auth0",
+      options: {
+        domain: 'https://dev-cbk6z20i.auth0.com',
+        clientID: '2VYDe7FojdVooeMFbcWsf9rXEI0F8clm',
+        redirectUri: 'https://sweetleaf-gc.netlify.com/callback',
+        // audience: process.env.AUTH0_AUDIENCE, // Optional
+        // responseType: process.env.AUTH0_RESPONSE_TYPE, // Optional
+        // scope: process.env.AUTH0_SCOPE, // Optional
+        callbackPath: "/callback", // Optional
+      },
+    },
   ],
 };

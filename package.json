@@ -80,7 +80,6 @@
     "gatsby-source-google-spreadsheet": "^2.0.0",
     "gatsby-source-stripe": "^3.0.5",
     "gatsby-theme-auth0": "^1.1.1",
-    "gatsby-theme-gallery": "^1.0.2",
     "gatsby-transformer-remark": "^2.6.45",
     "gatsby-transformer-sharp": "^2.3.9",
     "invariant": "^2.2.4",
