@@ -110,6 +110,7 @@
     "react-responsive-navbar": "^1.0.11",
     "react-select": "^3.0.8",
     "react-stripe-elements": "^2.0.1",
+    "react-transition-group": "^4.3.0",
     "react-typography": "^0.16.19",
     "statable": "^0.3.2",
     "stripe": "^7.14.0",
@@ -134,6 +135,11 @@
     "prettier": "^1.19.1",
     "react-axe": "^3.3.0",
     "react-social-icons": "^4.1.0"
+  },
+  "resolutions": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-transition-group": "^4.1.1"
   },
   "keywords": [
     "succulent store",
