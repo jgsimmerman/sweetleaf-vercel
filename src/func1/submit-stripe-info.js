@@ -73,7 +73,7 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 			// 	{
 			// 		id: "ship2",
 			// 	},
-			// ],
+			 ],
 		}
 		if (body.coupon) {
 			obj.coupon = body.coupon

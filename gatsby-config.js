@@ -106,10 +106,12 @@ module.exports = {
     {
         resolve: `gatsby-plugin-netlify`,
         options: {
-          allPageHeaders: [
-            "Link: /static/care/dummy.pdf; rel=preload;",
-            "Link: /static/dummy.pdf; rel=preload;",
-          ],
+          headers: {
+            "/*": [
+              "Access-Control-Allow-Origin: *",
+              "Access-Control-Allow-Headers: Content-Type",
+            ],
+          }
         }     
     },
     {
