@@ -34,7 +34,7 @@ const ZygoteCart = props => {
      stripeApiKey="pk_test_Vc8z3p2pdxHFQgxhbbhIXtyv00GnPddsjV"
 
       //stripeApiKey=`${process.env.STRIPE_API_PUBLIC}`
-      
+
       infoWebhook='/.netlify/functions/info-stripe'
       orderWebhook='/.netlify/functions/order-stripe'
       shippingWebhook='/.netlify/functions/shipping-stripe'
@@ -52,7 +52,8 @@ const ZygoteCart = props => {
       cartHeader={<div>Sweet Leaf</div>}
 
       auth0ClientID='2VYDe7FojdVooeMFbcWsf9rXEI0F8clm'
-      auth0Logout='https://localhost:8000/'
+      //auth0Logout='https://localhost:8000/'
+      auth0Logout='https://sweetleaf-gc.netlify.com'
       auth0Domain='dev-cbk6z20i.auth0.com'
       auth0Theme={{
         primaryColor: '#00cfff',
