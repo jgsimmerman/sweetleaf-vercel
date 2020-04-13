@@ -159,8 +159,8 @@ module.exports = {
 				// 	showFacepile: true,
 				// 	smallHeader: false,
 				// 	adaptContainerWidth: true
-				// }
-			}
+				// },
+			},
 		},
     // {
     //   resolve: `gatsby-plugin-owa`,
@@ -218,5 +218,17 @@ module.exports = {
     },
     "gatsby-theme-gallery",
     //`gatsby-plugin-netlify-cms`,
+    // {
+    //   resolve: "gatsby-theme-auth0",
+    //   options: {
+    //     domain: 'https://dev-cbk6z20i.auth0.com',
+    //     clientID: '2VYDe7FojdVooeMFbcWsf9rXEI0F8clm',
+    //     redirectUri: 'https://localhost:8000/callback',
+    //     // audience: process.env.AUTH0_AUDIENCE, // Optional
+    //     // responseType: process.env.AUTH0_RESPONSE_TYPE, // Optional
+    //     // scope: process.env.AUTH0_SCOPE, // Optional
+    //     // callbackPath: "/auth/callback", // Optional
+    //   },
+    // },
   ],
 };

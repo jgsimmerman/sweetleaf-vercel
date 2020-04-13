@@ -34,20 +34,34 @@ const ZygoteCart = props => {
      stripeApiKey="pk_test_Vc8z3p2pdxHFQgxhbbhIXtyv00GnPddsjV"
 
       //stripeApiKey=`${process.env.STRIPE_API_PUBLIC}`
-      infoWebhook='/.netlify/functions/info-stripe'
-      orderWebhook='/.netlify/functions/order-stripe'
-      // infoWebhook='https://2ffd70f1.ngrok.io/.netlify/functions/info-stripe'
-      // orderWebhook='https://2ffd70f1.ngrok.io/.netlify/functions/order-stripe'
-      shippingWebhook='/.netlify/functions/shipping-stripe'
-      
+      // infoWebhook='/.netlify/functions/info-stripe'
+      // orderWebhook='/.netlify/functions/order-stripe'
+      // shippingWebhook='/.netlify/functions/shipping-stripe'
+
+      infoWebhook='https://d5e1a2f3.ngrok.io/.netlify/functions/info-stripe'
+      orderWebhook='https://d5e1a2f3.ngrok.io/.netlify/functions/order-stripe'
+      shippingWebhook='https://d5e1a2f3.ngrok.io/.netlify/functions/shipping-stripe'
+
       plugins={[ 
         // getShippingMethods, 
         // preInfo, 
         // Shipping
       ]}
 
-      cartHeader={<div>Sweet Leaf </div>}
+      cartHeader={<div>Sweet Leaf</div>}
 
+      auth0ClientID='2VYDe7FojdVooeMFbcWsf9rXEI0F8clm'
+      auth0Logout='https://localhost:8000/'
+      auth0Domain='dev-cbk6z20i.auth0.com'
+      auth0Theme={{
+        primaryColor: '#00cfff',
+      }}
+      auth0Options={{
+        rememberLastLogin: false,
+        auth: {
+          redirect: false,
+        },
+      }}
       
 
       // totalModifications={[
