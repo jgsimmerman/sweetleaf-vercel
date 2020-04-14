@@ -3,8 +3,8 @@ const sharp = require('sharp');
 const fs = require('fs');
 const { zipFunctions } = require('@netlify/zip-it-and-ship-it');
 
-//sharp.cache(false);
-//sharp.simd(false);
+sharp.cache(false);
+sharp.simd(false);
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
