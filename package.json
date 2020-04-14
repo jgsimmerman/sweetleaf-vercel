@@ -42,8 +42,8 @@
     "@mdx-js/react": "^1.5.3",
     "@mdx-js/tag": "^0.20.3",
     "@netlify/zip-it-and-ship-it": "^0.3.1",
-    "auth0-js": "^9.13.2",
-    "auth0-lock": "^11.20.3",
+    "auth0-js": "^9.8.2",
+    "auth0-lock": "11.12.1",
     "babel-plugin-emotion": "^10.0.27",
     "babel-runtime": "^6.26.0",
     "better-react-spinkit": "^2.0.4",
@@ -109,7 +109,6 @@
     "react-responsive-navbar": "^1.0.11",
     "react-select": "^3.0.8",
     "react-stripe-elements": "^2.0.1",
-    "react-transition-group": "^4.3.0",
     "react-typography": "^0.16.19",
     "statable": "^0.3.2",
     "stripe": "^7.14.0",
@@ -134,11 +133,6 @@
     "prettier": "^1.19.1",
     "react-axe": "^3.3.0",
     "react-social-icons": "^4.1.0"
-  },
-  "resolutions": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-transition-group": "^4.1.1"
   },
   "keywords": [
     "succulent store",
