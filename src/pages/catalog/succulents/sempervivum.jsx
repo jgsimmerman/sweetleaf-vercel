@@ -99,7 +99,7 @@ sempervivum.propTypes = {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: { frontmatter: { id: { eq: 13 } } }) {
+    allMarkdownRemark(filter: { frontmatter: { type1: { eq: "sempervivum" } } }) {
       edges {
         node {
           id

@@ -8,6 +8,8 @@ pic4: "./top1.jpg"
 title: "Perle von Nurnberg"
 scientificname: "Echeveria gibbiflora 'Metallica' × E. elegans"
 id: 14 
+type1: "echeveria"
+type2: "rosette"
 catalog-section: "succulents"
 tags: ['succulents', 'echeveria']
 primarycolor: "Pink"

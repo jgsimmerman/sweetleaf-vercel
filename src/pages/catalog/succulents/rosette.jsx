@@ -99,7 +99,7 @@ rosette.propTypes = {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: { frontmatter: { id: { eq: 15 } } }) {
+    allMarkdownRemark(filter: { frontmatter: { type2: { eq: "rosette" } } }) {
       edges {
         node {
           id

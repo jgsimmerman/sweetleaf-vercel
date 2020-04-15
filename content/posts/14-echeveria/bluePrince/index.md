@@ -7,7 +7,9 @@ pic3: "./side1.jpg"
 pic4: "./top1.jpg"
 title: "Blue Prince"
 scientificname: "Echeveria"
-id: 14 
+id: 14
+type1: "echeveria"
+type2: "rosette"
 catalog-section: "succulents"
 tags: ['succulents', 'echeveria']
 primarycolor: "Blue / Blue-green"

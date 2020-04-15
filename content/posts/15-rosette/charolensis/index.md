@@ -1,5 +1,5 @@
 ---
-path: "/catalog/succulents/rosette/charolensis"
+path: "/catalog/succulents/sempervivum/charolensis"
 cover: "./top1.jpg"
 pic: "./front1.jpg"
 pic2: "./front2.jpg"
@@ -8,6 +8,8 @@ pic4: "./top1.jpg"
 title: "Charolensis"
 scientificname: "Sempervivum"
 id: 15
+type1: "sempervivum"
+type2: "rosette"
 catalog-section: "succulents"
 tags: ['succulents', 'sempervivum', rosette]
 primarycolor: "Green / Lime"

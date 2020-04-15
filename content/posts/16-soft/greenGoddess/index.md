@@ -1,5 +1,5 @@
 ---
-path: "/catalog/succulents/soft/green-goddess"
+path: "/catalog/succulents/echeveria/green-goddess"
 cover: "./top1.jpg"
 pic: "./front1.jpg"
 pic2: "./front2.jpg"
@@ -8,6 +8,9 @@ pic4: "./top1.jpg"
 title: "Green Goddess"
 scientificname: "Echeveria"
 id: 16 
+type1: "echeveria"
+type2: "rosette"
+type3: "soft"
 catalog-section: "succulents"
 tags: ['succulents', 'echeveria', 'soft']
 primarycolor: "Blue / Blue-green"

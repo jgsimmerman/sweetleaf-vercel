@@ -15,6 +15,7 @@ stresscolors: ""
 bloomcolor: "Yellow Bloom"
 petsafe: "Yes"
 temperature: "30F"
+shape: "Vertical Grower/ Tall Stem"
 seasonality: ""
 inventory: 14
 option1: ""

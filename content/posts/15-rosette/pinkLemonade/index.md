@@ -1,5 +1,5 @@
 ---
-path: "/catalog/succulents/rosette/pink-lemonade"
+path: "/catalog/succulents/sempervivum/pink-lemonade"
 cover: "./top1.jpg"
 pic: "./front1.jpg"
 pic2: "./front2.jpg"
@@ -7,6 +7,8 @@ pic3: "./side1.jpg"
 pic4: "./top1.jpg"
 title: "Pink Lemonade"
 scientificname: "Sempervivum"
+type1: "sempervivum"
+type2: "rosette"
 id: 15
 catalog-section: "succulents"
 tags: ['succulents', 'sempervivum', rosette]

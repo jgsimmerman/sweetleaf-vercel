@@ -99,7 +99,7 @@ echeveria.propTypes = {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: { frontmatter: { id: { eq: 14 } } }) {
+    allMarkdownRemark(filter: { frontmatter: { type1: { eq: "echeveria" } } }) {
       edges {
         node {
           id

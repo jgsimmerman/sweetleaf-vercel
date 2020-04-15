@@ -8,6 +8,8 @@ pic4: "./top1.jpg"
 title: "Sempervivum 'Boissieri'"
 scientificname: "Sempervivum tectorum"
 id: 13 
+type1: "sempervivum"
+type2: ""
 catalog-section: "succulents"
 tags: ['succulents', 'sempervivum', 'hens-n-chicks']
 primarycolor: "Green / Lime"

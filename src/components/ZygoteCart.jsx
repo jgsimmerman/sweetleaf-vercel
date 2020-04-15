@@ -52,8 +52,8 @@ const ZygoteCart = props => {
       cartHeader={<div>Sweet Leaf</div>}
 
       auth0ClientID='2VYDe7FojdVooeMFbcWsf9rXEI0F8clm'
-      //auth0Logout='https://localhost:8000/'
-      auth0Logout='https://sweetleaf-gc.netlify.com'
+      auth0Logout='https://localhost:8000/'
+      // auth0Logout='https://sweetleaf-gc.netlify.com'
       auth0Domain='dev-cbk6z20i.auth0.com'
       auth0Theme={{
         primaryColor: '#00cfff',

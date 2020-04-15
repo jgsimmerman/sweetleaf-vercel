@@ -1,5 +1,5 @@
 ---
-path: "/catalog/succulents/rosette/irene"
+path: "/catalog/succulents/sempervivum/irene"
 cover: "./top1.jpg"
 pic: "./front1.jpg"
 pic2: "./front2.jpg"
@@ -8,6 +8,8 @@ pic4: "./top1.jpg"
 title: "Irene"
 scientificname: "Sempervivum heuffelii"
 id: 15
+type1: "sempervivum"
+type2: "rosette"
 catalog-section: "succulents"
 tags: ['succulents', 'sempervivum', rosette]
 primarycolor: "Red / Burgundy"

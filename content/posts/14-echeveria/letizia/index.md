@@ -8,6 +8,8 @@ pic4: "./top1.jpg"
 title: "Sedeveria 'Letizia' "
 scientificname: "Sedum cuspidatum × Echeveria setosa ciliata"
 id: 14 
+type1: "echeveria"
+type2: "rosette"
 catalog-section: "succulents"
 tags: ['succulents', 'echeveria']
 primarycolor: "Green / Lime"

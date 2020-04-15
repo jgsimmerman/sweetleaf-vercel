@@ -8,6 +8,8 @@ pic4: "./top1.jpg"
 title: "Black Knight"
 scientificname: "Echeveria affinis"
 id: 14 
+type1: "echeveria"
+type2: "rosette"
 catalog-section: "succulents"
 tags: ['succulents', 'echeveria']
 primarycolor: "Purple / Black"

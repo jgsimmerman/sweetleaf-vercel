@@ -15,6 +15,7 @@ stresscolors: "Pink"
 bloomcolor: "White Bloom"
 petsafe: "Yes"
 temperature: "30F"
+shape: "Vertical Grower / Tall Stem, Hanging / Trailing"
 seasonality: ""
 inventory: 14
 option1: ""

@@ -27,7 +27,7 @@ price: 29.99
 price2: 39.99
 available: 1
 published: true
-story: "'Fittonia 3 Pack Bundle - The Nerve Plant - is covered in beautiful colored veins over green leaves."
+story: "'Fittonia 5 Pack Bundle - The Nerve Plant - is covered in beautiful colored veins over green leaves."
 ---
 This listing is for a bundle of five plants in one of each of the colors that we carry. If you are looking for an individual color, please check our other listings. We currently carry [Red](/catalog/fairy-garden/red-hypoestes), [White](/catalog/fairy-garden/white-hypoestes), [Rose](/catalog/fairy-garden/rose-hypoestes), [Pink](/catalog/fairy-garden/pink-hypoestes), and a [mixed pot](/catalog/fairy-garden/mixed-hypoestes).
 

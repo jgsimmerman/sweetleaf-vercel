@@ -178,7 +178,10 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
             <p>
               <em>{post.scientificname}</em>
             </p>
-            <p>Only {itemQuantity} left in stock!</p>
+            <p>
+              {/* Refactor with useEffect to fetch stripe data */}
+              Only {itemQuantity} left in stock!
+            </p>
             <Cost>
               <strong>${price}</strong>
             </Cost>

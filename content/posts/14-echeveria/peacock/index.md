@@ -8,6 +8,8 @@ pic4: "./top1.jpg"
 title: "Echeveria peacockii - Peacock Echeveria"
 scientificname: "Echeveria peacockii"
 id: 14 
+type1: "echeveria"
+type2: "rosette"
 catalog-section: "succulents"
 tags: ['succulents', 'echeveria']
 primarycolor: "Blue / Blue-green"
