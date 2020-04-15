@@ -53,7 +53,7 @@ const ZygoteCart = props => {
 
       auth0ClientID='2VYDe7FojdVooeMFbcWsf9rXEI0F8clm'
       //auth0Logout='https://localhost:8000/'
-       auth0Logout='https://sweetleaf-gc.netlify.com'
+      auth0Logout='https://sweetleaf-gc.netlify.com/'
       auth0Domain='dev-cbk6z20i.auth0.com'
       auth0Theme={{
         primaryColor: '#00cfff',
@@ -61,8 +61,13 @@ const ZygoteCart = props => {
       auth0Options={{
         rememberLastLogin: false,
         hashCleanup: true,
+        avatar: null,
         auth: {
+          // Solution from this link: https://github.com/auth0/lock/issues/1294
+          responseType: 'token',
           redirect: false,
+          //redirectUrl: 'https://localhost:8000/callback'
+          redirectUrl: 'https://sweetleaf-gc.netlify.com/callback'
         },
       }}
       
