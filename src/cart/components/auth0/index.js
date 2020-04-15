@@ -1,5 +1,6 @@
 import React from 'react'
-import Auth0Lock from 'auth0-lock'
+//import Auth0Lock from 'auth0-lock'
+import Auth0Lock from 'sweetleaf-lock'
 import { Subscribe } from 'statable'
 
 import settingsState from '../../state/settings'

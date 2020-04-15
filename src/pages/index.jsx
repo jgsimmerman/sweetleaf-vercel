@@ -70,9 +70,9 @@ const Wrapper2 = styled.section`
   border-radius: ${props => props.theme.borderRadius.default};
   box-shadow: ${props => props.theme.shadow.feature.small.default};
   height: 34rem;
-  flex-basis: calc(99.9% - 2.5rem);
-  max-width: calc(99.9% - 2.5rem);
-  width: calc(99.9% - 2.5rem);
+  flex-basis: calc(99% - 2.5rem);
+  max-width: calc(99% - 2.5rem);
+  width: calc(99% - 2.5rem);
 
   &:hover {
     box-shadow: ${props => props.theme.shadow.feature.small.hover};

@@ -8,6 +8,8 @@ pic4: "./top1.jpg"
 title: "Sedum 'Little Missy' - Variegated"
 scientificname: "Sedum"
 id: 16 
+type1: "soft"
+type2: ""
 catalog-section: "succulents"
 tags: ['succulents', 'soft', 'soft varieties']
 primarycolor: "Green / Lime"

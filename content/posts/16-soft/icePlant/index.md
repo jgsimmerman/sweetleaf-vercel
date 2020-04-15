@@ -8,6 +8,8 @@ pic4: "./top1.jpg"
 title: "Corpuscularia lehmannii (Ice Plant)"
 scientificname: "Corpuscularia lehmannii"
 id: 16 
+type1: "soft"
+type2: ""
 catalog-section: "succulents"
 tags: ['succulents', 'soft', 'soft varieties']
 primarycolor: "Blue / Blue-green"

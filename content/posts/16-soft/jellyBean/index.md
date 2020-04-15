@@ -8,6 +8,8 @@ pic4: "./top1.jpg"
 title: "Jelly Bean (Sedum rubrotinctum)"
 scientificname: "Sedum rubrotinctum"
 id: 16 
+type1: "soft"
+type2: ""
 catalog-section: "succulents"
 tags: ['succulents', 'soft', 'soft varieties']
 primarycolor: "Green / Lime"
