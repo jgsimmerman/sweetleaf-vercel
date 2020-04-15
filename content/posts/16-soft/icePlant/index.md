@@ -5,7 +5,7 @@ pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./side1.jpg"
 pic4: "./top1.jpg"
-title: "Ice Plant"
+title: "Corpuscularia lehmannii (Ice Plant)"
 scientificname: "Corpuscularia lehmannii"
 id: 16 
 catalog-section: "succulents"
@@ -20,7 +20,7 @@ seasonality: ""
 inventory: 14
 option1: ""
 option2: ""
-price: 4.99
+price: 5.49
 # price2: 14.99
 sku: "sku_H4iVy4XRH9Wwdo"
 # sku2: "sku_GjxyukjjpQOVDs"
@@ -30,7 +30,7 @@ sku: "sku_H4iVy4XRH9Wwdo"
 published: true
 available: 1
 
-story: "Corpuscularia lehmannii"
+story: "Corpuscularia lehmannii (Ice Plant)"
 
 ---
-Corpuscularia lehmannii: 
+Corpuscularia lehmannii (Ice Plant): 

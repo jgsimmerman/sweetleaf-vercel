@@ -11,7 +11,7 @@ id: 14
 type1: "echeveria"
 type2: "rosette"
 catalog-section: "succulents"
-tags: ['succulents', 'echeveria']
+tags: ['succulents', 'echeveria', 'rosettes']
 primarycolor: "Blue / Blue-green"
 stresscolors: "Pink"
 bloomcolor: "Yellow Bloom"
@@ -21,7 +21,7 @@ seasonality: "Year-round Color"
 inventory: 14
 option1: ""
 option2: ""
-price: 4.25
+price: 6.95
 # price2: 14.99
 sku: "sku_H2HUXKNEQ6VXOS"
 # sku2: "sku_GjxyukjjpQOVDs"

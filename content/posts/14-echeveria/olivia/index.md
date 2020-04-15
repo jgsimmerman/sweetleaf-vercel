@@ -11,7 +11,7 @@ id: 14
 type1: "echeveria"
 type2: "rosette"
 catalog-section: "succulents"
-tags: ['succulents', 'echeveria', 'graptopetalum']
+tags: ['succulents', 'echeveria', 'graptopetalum', 'rosettes']
 primarycolor: "Green / Lime"
 stresscolors: "Pink"
 bloomcolor: "Yellow Bloom"
@@ -21,7 +21,7 @@ seasonality: ""
 inventory: 14
 option1: ""
 option2: ""
-price: 4.25
+price: 4.95
 # price2: 14.99
 sku: "sku_H2HXKbLh4FLXPo"
 # sku2: "sku_GjxyukjjpQOVDs"
@@ -35,4 +35,4 @@ story: "Echeveria are cared for as any typical succulent and thrive on neglect. 
 
 ---
 
-Graptoveria 'Olivia': Echeveria are cared for as any typical succulent and thrive on neglect. Water every 10 to 14 days when your plant is showing signs of thirst. Give bright lighting conditions. If succulent starts to stretch then it is not getting enough light. Light is one of the most important factors in keeping your succulents healthy and looking beautiful. Repot in a succulent mix with coarse sand mixed in, or make your own mix with one part perlite, two parts coarse sand and three parts potting soil or peat.
+Graptoveria 'Olivia': An intergeneric hybrid of Graptopetalum x Echeveria, these are cared for as any typical succulent and thrive on neglect. Water every 10 to 14 days when your plant is showing signs of thirst. Give bright lighting conditions. If succulent starts to stretch then it is not getting enough light. Light is one of the most important factors in keeping your succulents healthy and looking beautiful. Repot in a succulent mix with coarse sand mixed in, or make your own mix with one part perlite, two parts coarse sand and three parts potting soil or peat.

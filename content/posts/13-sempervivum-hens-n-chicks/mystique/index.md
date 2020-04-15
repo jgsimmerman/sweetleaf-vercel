@@ -5,19 +5,20 @@ pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./side1.jpg"
 pic4: "./top1.jpg"
-title: "Mystique"
+title: "Sempervivum heuffelii 'Mystique'"
 scientificname: "Sempervivum heuffelii"
 id: 15
 type1: "sempervivum"
 type2: "rosette"
 catalog-section: "succulents"
-tags: ['succulents', 'sempervivum', rosette]
+tags: ['succulents', 'sempervivum', 'rosette']
 primarycolor: "Red / Burgundy"
 stresscolors: "Green / Lime"
 bloomcolor: "Yellow Bloom"
 petsafe: "Yes"
 temperature: "-30F"
-seasonality: ""
+seasonality: "Peak Color in Fall"
+light: "Full Sun, Filtered / Partial Sun"
 inventory: 5
 option1: ""
 option2: ""

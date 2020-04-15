@@ -5,7 +5,7 @@ pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./top2.jpg"
 pic4: "./top1.jpg"
-title: "Ivory Towers"
+title: "Crassula × perforata (Ivory Towers)"
 scientificname: "Crassula × perforata"
 id: 16 
 catalog-section: "succulents"
@@ -16,11 +16,11 @@ bloomcolor: "White Bloom"
 petsafe: "Yes"
 temperature: "30F"
 shape: "Vertical Grower / Tall Stem, Hanging / Trailing"
-seasonality: ""
+seasonality: "Year-round Color"
 inventory: 14
 option1: ""
 option2: ""
-price: 4.99
+price: 5.25
 # price2: 14.99
 sku: "sku_H4iTeUcJNLy6RX"
 # sku2: "sku_GjxyukjjpQOVDs"

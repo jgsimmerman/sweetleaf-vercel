@@ -99,7 +99,7 @@ succulents.propTypes = {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: { frontmatter: { id: { gt: 12 } } }) {
+    allMarkdownRemark(filter: { frontmatter: { type1: { in: ["echeveria", "sempervivum", "soft"] } } }) {
       edges {
         node {
           id

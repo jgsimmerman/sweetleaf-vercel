@@ -5,7 +5,7 @@ pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./side1.jpg"
 pic4: "./top1.jpg"
-title: "Jelly Bean"
+title: "Jelly Bean (Sedum rubrotinctum)"
 scientificname: "Sedum rubrotinctum"
 id: 16 
 catalog-section: "succulents"
@@ -16,11 +16,11 @@ bloomcolor: "Yellow Bloom"
 petsafe: "Yes"
 temperature: "30F"
 shape: "Vertical Grower / Tall Stem, Hanging / Trailing"
-seasonality: ""
+seasonality: "Blooms in Spring"
 inventory: 14
 option1: ""
 option2: ""
-price: 4.99
+price: 5.25
 # price2: 14.99
 sku: "sku_H4iR7pPHRQyp4g"
 # sku2: "sku_GjxyukjjpQOVDs"

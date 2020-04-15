@@ -5,13 +5,13 @@ pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./side1.jpg"
 pic4: "./top1.jpg"
-title: "Sedeveria 'Letizia' "
+title: "Sedeveria 'Letizia'"
 scientificname: "Sedum cuspidatum × Echeveria setosa ciliata"
 id: 14 
 type1: "echeveria"
 type2: "rosette"
 catalog-section: "succulents"
-tags: ['succulents', 'echeveria']
+tags: ['succulents', 'echeveria', 'rosettes']
 primarycolor: "Green / Lime"
 stresscolors: "Red / Burgundy"
 bloomcolor: "White Bloom"
@@ -21,7 +21,7 @@ seasonality: "Year-round Color"
 inventory: 14
 option1: ""
 option2: ""
-price: 4.25
+price: 4.95
 # price2: 14.99
 sku: "sku_H2HV2wFRgOaQiL"
 # sku2: "sku_GjxyukjjpQOVDs"

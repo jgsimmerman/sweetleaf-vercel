@@ -5,24 +5,24 @@ pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./side2.jpg"
 pic4: "./top1.jpg"
-title: "Green Goddess"
+title: "Echeveria 'Green Goddess'"
 scientificname: "Echeveria"
 id: 16 
 type1: "echeveria"
 type2: "rosette"
 type3: "soft"
 catalog-section: "succulents"
-tags: ['succulents', 'echeveria', 'soft']
+tags: ['succulents', 'echeveria', 'soft', 'rosettes']
 primarycolor: "Blue / Blue-green"
 stresscolors: ""
 bloomcolor: "Pink Bloom"
 petsafe: "Yes"
 temperature: "20F"
-seasonality: ""
+seasonality: "Peak Color in Summer"
 inventory: 14
 option1: ""
 option2: ""
-price: 4.99
+price: 4.95
 # price2: 14.99
 sku: "sku_H4iWJg0l8bZG5Z"
 # sku2: "sku_GjxyukjjpQOVDs"

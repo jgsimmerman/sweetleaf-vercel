@@ -5,7 +5,7 @@ pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./side1.jpg"
 pic4: "./top1.jpg"
-title: "Alpenglow"
+title: "Graptosedum 'Alpenglow'"
 scientificname: "Graptopetalum × Sedum"
 id: 16 
 catalog-section: "succulents"
@@ -15,11 +15,11 @@ stresscolors: ""
 bloomcolor: "Yellow Bloom"
 petsafe: "Yes"
 temperature: "30F"
-seasonality: ""
+seasonality: "Peak Color in Summer"
 inventory: 14
 option1: ""
 option2: ""
-price: 4.99
+price: 5.25
 # price2: 14.99
 sku: "sku_H4iYL52yull1Zv"
 # sku2: "sku_GjxyukjjpQOVDs"

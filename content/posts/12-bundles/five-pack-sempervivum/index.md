@@ -9,6 +9,8 @@ care: "/care/dummy.pdf"
 title: "Five (5) Pack of Sempervivum"
 scientificname: "Sempervivum"
 id: 12
+type1: "sempervivum"
+type2: ""
 catalog-section: "bundles"
 tags: ['fairy garden', 'terrarium', 'hens-n-chicks', 'succulents', 'sempervivum', 'bundles']
 primarycolor: ""
@@ -23,7 +25,7 @@ sku2: ""
 option1: "Plastic Nursery Pot"
 option2: "Terra Cotta Pot"
 price: 29.99
-price2: 39.99
+# price2: 39.99
 available: 1
 published: true
 story: "Succulent Five Pack Bundle - Sempervivum Assortment"

@@ -9,19 +9,20 @@ title: "Sempervivum 'Black'"
 scientificname: "Sempervivum"
 id: 13 
 type1: "sempervivum"
-type2: ""
+type2: "rosette"
 catalog-section: "succulents"
-tags: ['succulents', 'sempervivum', 'hens-n-chicks']
+tags: ['succulents', 'sempervivum', 'hens-n-chicks', 'rosette']
 primarycolor: "Green / Lime"
 stresscolors: "Purple / Black"
 bloomcolor: "Yellow Bloom"
 petsafe: "Yes"
 temperature: "-20F"
+light: "Filtered / Partial Sun, Full Sun"
 seasonality: ""
 inventory: 14
 option1: ""
 option2: ""
-price: 4.25
+price: 4.95
 # price2: 14.99
 sku: "sku_H2H7ewxk7Y0skF"
 # sku2: "sku_GjxyukjjpQOVDs"

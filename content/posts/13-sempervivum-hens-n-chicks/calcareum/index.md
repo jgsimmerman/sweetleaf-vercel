@@ -9,19 +9,20 @@ title: "Sempervivum calcareum"
 scientificname: "Sempervivum"
 id: 13 
 type1: "sempervivum"
-type2: ""
+type2: "rosette"
 catalog-section: "succulents"
-tags: ['succulents', 'sempervivum', 'hens-n-chicks']
+tags: ['succulents', 'sempervivum', 'hens-n-chicks', 'rosette']
 primarycolor: "Blue / Blue-green"
-stresscolors: "Purple / Black"
-bloomcolor: "White Bloom"
+stresscolors: "Red / Burgundy"
+bloomcolor: "Pink Bloom"
 petsafe: "Yes"
 temperature: "-20F"
 seasonality: ""
+light: "Filtered / Partial Sun, Full Sun"
 inventory: 14
 option1: ""
 option2: ""
-price: 4.25
+price: 5.49
 # price2: 14.99
 sku: "sku_H2H9fg6NEGi8K2"
 # sku2: "sku_GjxyukjjpQOVDs"

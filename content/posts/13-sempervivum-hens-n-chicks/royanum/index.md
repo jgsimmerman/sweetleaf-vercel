@@ -9,19 +9,20 @@ title: "Sempervivum tectorum 'Royanum'"
 scientificname: "Sempervivum tectorum"
 id: 13
 type1: "sempervivum"
-type2: ""
+type2: "rosette"
 catalog-section: "succulents"
-tags: ['succulents', 'sempervivum', 'hens-n-chicks']
+tags: ['succulents', 'sempervivum', 'hens-n-chicks', 'rosette']
 primarycolor: "Green / Lime"
 stresscolors: "Purple / Black"
 bloomcolor: "Pink Bloom"
 petsafe: "Yes"
 temperature: "-20F"
 seasonality: ""
+light: "Filtered / Partial Sun"
 inventory: 14
 option1: ""
 option2: ""
-price: 4.25
+price: 5.29
 # price2: 14.99
 sku: "sku_H2HDgIeS3P45kE"
 # sku2: "sku_GjxyukjjpQOVDs"

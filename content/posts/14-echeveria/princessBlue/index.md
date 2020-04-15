@@ -5,13 +5,13 @@ pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./side1.jpg"
 pic4: "./top1.jpg"
-title: "Princess Blue"
+title: "Echeveria 'Princess Blue'"
 scientificname: "Echeveria"
 id: 15 
 type1: "echeveria"
 type2: "rosette"
 catalog-section: "succulents"
-tags: ['succulents', 'echeveria', 'rosette']
+tags: ['succulents', 'echeveria', 'rosettes']
 primarycolor: "Blue / Blue-green"
 stresscolors: "Pink"
 bloomcolor: "Pink Bloom"
@@ -21,7 +21,7 @@ seasonality: ""
 inventory: 14
 option1: ""
 option2: ""
-price: 4.99
+price: 4.95
 # price2: 14.99
 sku: "sku_H4iBfS09PWIPSc"
 # sku2: "sku_GjxyukjjpQOVDs"
