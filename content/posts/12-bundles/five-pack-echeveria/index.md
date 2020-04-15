@@ -18,7 +18,7 @@ petsafe: ""
 temperature: ""
 seasonality: ""
 inventory: 15
-sku: ""
+sku: "sku_H6CfEzbFaJHuXg"
 sku2: ""
 option1: "Plastic Nursery Pot"
 option2: "Terra Cotta Pot"
