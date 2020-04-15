@@ -159,7 +159,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
         //flex-wrap="wrap"
         width="100%"
         height="100%"
-        templateColumns="repeat(auto-fill, minmax(16rem, 1fr))"
+        templateColumns="repeat(auto-fill, minmax(19rem, 1fr))"
         //templateColumns="repeat(auto-fill, 16rem)"
         gap="1rem"
         //autoRows="max-content"
