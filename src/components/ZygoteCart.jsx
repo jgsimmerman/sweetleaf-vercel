@@ -53,7 +53,7 @@ const ZygoteCart = props => {
 
       auth0ClientID='2VYDe7FojdVooeMFbcWsf9rXEI0F8clm'
       //auth0Logout='https://localhost:8000'
-      auth0Logout='https://sweetleaf-gc.netlify.com/'
+      auth0Logout='https://sweetleaf-gc.netlify.app/'
       auth0Domain='dev-cbk6z20i.auth0.com'
       auth0Theme={{
         primaryColor: '#00cfff',
@@ -68,7 +68,7 @@ const ZygoteCart = props => {
            responseType: 'token',
            redirect: true,
           // redirectUrl: 'https://localhost:8000/'
-          redirectUrl: 'https://sweetleaf-gc.netlify.com/'
+          redirectUrl: 'https://sweetleaf-gc.netlify.app/'
         },
       }}
       
