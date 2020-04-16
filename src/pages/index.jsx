@@ -255,17 +255,6 @@ const Index = ({ data }) => {
             </Info>
           </StyledLink>
         </Wrapper>
-        <Wrapper>
-          <Image>
-            <Img fluid={data.imageSix.childImageSharp.fluid} alt="Zebra Plant"/>
-          </Image>
-          <StyledLink to="/catalog/houseplants/zebra-plant/">
-            <Info>
-              <Title>Zebra Plant</Title>
-              {/* <Price>$9.95</Price> */}
-            </Info>
-          </StyledLink>
-        </Wrapper>
         
       </PostWrapper>
       <PostWrapper>
