@@ -35,13 +35,13 @@ const ZygoteCart = props => {
 
       //stripeApiKey=`${process.env.STRIPE_API_PUBLIC}`
 
-      infoWebhook='/.netlify/functions/info-stripe'
-      orderWebhook='/.netlify/functions/order-stripe'
-      shippingWebhook='/.netlify/functions/shipping-stripe'
+      // infoWebhook='/.netlify/functions/info-stripe'
+      // orderWebhook='/.netlify/functions/order-stripe'
+      // shippingWebhook='/.netlify/functions/shipping-stripe'
 
-      // infoWebhook='https://4ca1588d.ngrok.io/.netlify/functions/info-stripe'
-      // orderWebhook='https://4ca1588d.ngrok.io/.netlify/functions/order-stripe'
-      // shippingWebhook='https://4ca1588d.ngrok.io/.netlify/functions/shipping-stripe'
+      infoWebhook='https://4ca1588d.ngrok.io/.netlify/functions/info-stripe'
+      orderWebhook='https://4ca1588d.ngrok.io/.netlify/functions/order-stripe'
+      shippingWebhook='https://4ca1588d.ngrok.io/.netlify/functions/shipping-stripe'
 
       plugins={[ 
         // getShippingMethods, 
@@ -51,26 +51,26 @@ const ZygoteCart = props => {
 
       cartHeader={<div>Sweet Leaf</div>}
 
-      // auth0ClientID='2VYDe7FojdVooeMFbcWsf9rXEI0F8clm'
-      // auth0Logout='https://localhost:8000/'
-      // //auth0Logout='https://sweetleaf-gc.netlify.app/'
-      // auth0Domain='dev-cbk6z20i.auth0.com'
-      // auth0Theme={{
-      //   primaryColor: '#00cfff',
-      // }}
-      // auth0Options={{
-      //   avatar: null,
-      //   rememberLastLogin: false,
-      //   hashCleanup: true,
+      auth0ClientID='2VYDe7FojdVooeMFbcWsf9rXEI0F8clm'
+      auth0Logout='https://localhost:8000/'
+      //auth0Logout='https://sweetleaf-gc.netlify.app/'
+      auth0Domain='dev-cbk6z20i.auth0.com'
+      auth0Theme={{
+        primaryColor: '#00cfff',
+      }}
+      auth0Options={{
+        avatar: null,
+        rememberLastLogin: false,
+        hashCleanup: true,
         
-      //   auth: {
-      //     // Solution from this link: https://github.com/auth0/lock/issues/1294
-      //      responseType: 'token',
-      //      redirect: true,
-      //      redirectUrl: 'https://localhost:8000/'
-      //     //redirectUrl: 'https://sweetleaf-gc.netlify.app/'
-      //   },
-      // }}
+        auth: {
+          // Solution from this link: https://github.com/auth0/lock/issues/1294
+           responseType: 'token',
+           redirect: true,
+           redirectUrl: 'https://localhost:8000/'
+          //redirectUrl: 'https://sweetleaf-gc.netlify.app/'
+        },
+      }}
       
 
       // totalModifications={[
