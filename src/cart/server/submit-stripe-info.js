@@ -23,7 +23,15 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 		modifications: [],
 		meta: {},
 	}
-
+	// Create stripe customer
+	
+		let customer = await stripe.customers.create(
+			{
+				email: body.customer.email,
+			}
+		)
+	
+	
 	// Create stripe order
 	let order
 	let orderType = `order`
@@ -31,6 +39,7 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 		const obj = {
 			currency: `usd`,
 			email: body.infoEmail,
+			customer: customer.id,
 			items: body.products.map(({ id, quantity, type }) => {
 				switch (type) {
 
@@ -58,6 +67,7 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 					line1: body.shippingAddress1,
 					line2: body.shippingAddress2,
 					city: body.shippingCity,
+					state: body.state,
 					postal_code: body.shippingZip,
 					country: `US`,
 				},

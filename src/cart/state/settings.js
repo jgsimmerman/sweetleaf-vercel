@@ -18,7 +18,7 @@ const settingsState = new State({
 	onOrder: noop,
 	onError: noop,
 	orderSubmitError: `Sorry! One or more items in your cart may have gone out of stock. Please remove these products or try again later.`,
-	infoSubmitError: `Sorry! One or more items in your cart has low inventory. Please lower the quantity or remove this product from your cart.`,
+	infoSubmitError: `Please log in to place an order.`,
 	splitName: false,
 	testing: false,
 	plugins: [],

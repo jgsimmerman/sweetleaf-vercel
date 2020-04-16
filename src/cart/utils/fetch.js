@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-fetch'
 
-import { metaState, shippingState, productsState, totalsState, stepState, settingsState } from '../state'
+import { metaState, shippingState, productsState, totalsState, stepState, settingsState, customerState } from '../state'
 import * as cartState from '../state'
 import displayError from './display-error'
 import displayInfo from './display-info'
@@ -28,6 +28,7 @@ export default async function fetchWebhook(path, body) {
 			meta: metaState.state.meta,
 			subtotal: totalsState.state.subtotal,
 			shippingMethods: shippingState.state.methods,
+			customer: customerState.state.customer,
 		}
 
 		preFetchData = info
