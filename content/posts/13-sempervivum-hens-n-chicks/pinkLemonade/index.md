@@ -22,7 +22,7 @@ light: "Filtered / Partial Sun, Full Sun"
 inventory: 5
 option1: ""
 option2: ""
-price: 5.95
+price: 4.95
 # price2: 14.99
 sku: "sku_H4iDsQRUOZfsWI"
 # sku2: "sku_GjxyukjjpQOVDs"

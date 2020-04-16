@@ -21,7 +21,7 @@ seasonality: "Year-round Color"
 inventory: 14
 option1: ""
 option2: ""
-price: 6.95
+price: 5.95
 # price2: 14.99
 sku: "sku_H2HRzTq8NB33gE"
 # sku2: "sku_GjxyukjjpQOVDs"
