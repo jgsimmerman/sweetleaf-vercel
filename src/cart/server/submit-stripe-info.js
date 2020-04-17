@@ -67,7 +67,7 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 					line1: body.shippingAddress1,
 					line2: body.shippingAddress2,
 					city: body.shippingCity,
-					state: body.state,
+					state: body.shippingStateAbbr,
 					postal_code: body.shippingZip,
 					country: `US`,
 				},

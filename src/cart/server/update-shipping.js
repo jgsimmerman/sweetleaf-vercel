@@ -1,5 +1,6 @@
 
 import Stripe from 'stripe'
+import createTaxAPI from './update-tax'
 
 export default async function updateShipping({ stripeApiSecret, body, verbose }) {
 	
@@ -15,6 +16,7 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 	let subtotal = body.order.amount
 	
 	console.log(`Subtotal from updateShipping ${subtotal}`)
+	console.log(`body.order.shipping.address.postal_code from updateShipping ${body.order.shipping.address.postal_code}`)
 	let shippingMethods = []
 
 
@@ -141,28 +143,52 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 	let ship1 = ship[1]
 	let ship2 = ship[2]
 
-	// Taxes
 
+	//	let taxRate = createTaxAPI(postalCode)
 	let itemTax = Math.ceil(subtotal*.08)
 
 	let tax0 = Math.ceil(ship0*.08)
   let tax1 = Math.ceil(ship1*.08)
 	let tax2 = Math.ceil(ship2*.08)
 
+
+
+
+	// const createTaxAPI = (avaCredentials, postalCode) => {
+	// 	const api = create({
+	// 		baseURL: 'https://sandbox-rest.avatax.com/api/v2/taxrates/',
+	// 		headers: {
+	// 			Authorization: `Basic ${new Buffer(avaCredentials, 'utf8').toString('base64')}`,
+	// 		},
+	// 	});
 	
+	// 	const getTaxRate = (postalCode) => api.get(`/bypostalcode?country=US&postalCode=${postalCode}`);
 	
+	// 	return {
+	// 		getTaxRate,
+	// 	};
+	// };
+	 
+	// let avatax = createTaxAPI(avaCredentials, postalCode)
+	// let taxRate = JSON.parse(avatax)
 	// let avaTax = fetch({
 	// 	method:'get',
-	// 	url:'https://sandbox-rest.avatax.com/api/v2/taxrates/bypostalcode?country=<COUNTRY>&postalCode=<POSTAL-CODE>',
-	// 	headers: {'Authorization': 'Basic ' + <Base64Encoded(AVALARA_ACCOUNT_ID + ':' + AVALARA_LICENSE_KEY)>}
-	// })
-	// 	.then(function (response) {
+	// 	url: `https://sandbox-rest.avatax.com/api/v2/taxrates/bypostalcode?country=US&postalcode=${postalCode}`,
+	// 	headers: {
+	// 		//'Authorization': 'Basic ' + <Base64Encoded(AVALARA_ACCOUNT_ID + ':' + AVALARA_LICENSE_KEY)>
+	// 		Authorization: `Basic ${new Buffer(avaCredentials, 'utf8').toString('base64')}`,
+
+	// 	},
+	//  })
+	//  .then(function (response) {
 	// 		console.log(response.data);
 	// 	})
 	// 	.catch(function (error) {
 	// 		console.log(error.response.data);
 	// 	});
 
+	
+	
 	// Prepare response
   let response = {
     "order_update": {
@@ -183,15 +209,15 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
           "currency": "usd",
 
           // Optional delivery estimate and tax items:
-          // "tax_items": [
-          //   {
-          //     "parent": "priority_shipping",
-          //     "type": "tax",
-          //     "description": "Shipping sales taxes",
-          //     "amount": tax0,
-          //     "currency": "usd"
-          //   }
-          // ]
+          "tax_items": [
+            {
+              "parent": "priority_shipping",
+              "type": "tax",
+              "description": "Shipping sales taxes",
+              "amount": tax0,
+              "currency": "usd"
+            }
+          ]
         },
         {
           "id": "shipping-1",
@@ -200,15 +226,15 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
           "currency": "usd",
 
           // Optional delivery estimate and tax items:
-          // "tax_items": [
-          //   {
-          //     "parent": "express",
-          //     "type": "tax",
-          //     "description": "Shipping sales taxes",
-          //     "amount": tax1,
-          //     "currency": "usd"
-          //   }
-          // ]
+          "tax_items": [
+            {
+              "parent": "express",
+              "type": "tax",
+              "description": "Shipping sales taxes",
+              "amount": tax1,
+              "currency": "usd"
+            }
+          ]
         },
         {
           "id": "shipping-2",
@@ -217,15 +243,15 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
           "currency": "usd",
 
           // Optional delivery estimate and tax items:
-          // "tax_items": [
-          //   {
-          //     "parent": "overnight_shipping",
-          //     "type": "tax",
-          //     "description": "Shipping sales taxes",
-          //     "amount": tax2,
-          //     "currency": "usd"
-          //   }
-          // ]
+          "tax_items": [
+            {
+              "parent": "overnight_shipping",
+              "type": "tax",
+              "description": "Shipping sales taxes",
+              "amount": tax2,
+              "currency": "usd"
+            }
+          ]
         },
       ]
     }
