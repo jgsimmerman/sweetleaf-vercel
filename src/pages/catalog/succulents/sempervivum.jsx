@@ -54,7 +54,7 @@ const sempervivum = ({ data }) => {
       </Header>
 
       <PostWrapper>
-          <h2> Sempervivum  (Hens & Chicks) </h2>
+          <h2> Sempervivum  (Hens & Chicks) and Heuffelii</h2>
       </PostWrapper>
 
       <CatalogWrapper>
