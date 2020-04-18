@@ -17,7 +17,7 @@ stresscolors: "Red / Burgundy"
 bloomcolor: "Pink Bloom"
 petsafe: "Yes"
 temperature: "-20F"
-seasonality: ""
+seasonality: "Winter Dormant Partial"
 inventory: 14
 option1: ""
 option2: ""

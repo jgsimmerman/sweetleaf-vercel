@@ -24,7 +24,7 @@ sku: "sku_H6CfEzbFaJHuXg"
 sku2: ""
 # option1: "Plastic Nursery Pot"
 option2: "Terra Cotta Pot"
-price: 29.99
+price: 19.99
 # price2: 39.99
 available: 1
 published: true
