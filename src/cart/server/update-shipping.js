@@ -196,7 +196,7 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
         {
           "parent": null,
           "type": "tax",
-          "description": "Sales taxes",
+          "description": "Sales tax",
           "amount": itemTax,
           "currency": "usd"
         }
@@ -209,15 +209,15 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
           "currency": "usd",
 
           // Optional delivery estimate and tax items:
-          "tax_items": [
-            {
-              "parent": "priority_shipping",
-              "type": "tax",
-              "description": "Shipping sales taxes",
-              "amount": tax0,
-              "currency": "usd"
-            }
-          ]
+          // "tax_items": [
+          //   {
+          //     "parent": "priority_shipping",
+          //     "type": "tax",
+          //     "description": "Shipping sales taxes",
+          //     "amount": tax0,
+          //     "currency": "usd"
+          //   }
+          // ]
         },
         {
           "id": "shipping-1",
