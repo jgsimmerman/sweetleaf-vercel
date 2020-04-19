@@ -196,15 +196,15 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 	// Prepare response
   let response = {
     "order_update": {
-      "items": [
-        {
-          "parent": null,
-          "type": "tax",
-          "description": "Sales tax",
-          "amount": itemTax,
-          "currency": "usd"
-        }
-      ],
+      // "items": [
+      //   {
+      //     "parent": null,
+      //     "type": "tax",
+      //     "description": "Sales tax",
+      //     "amount": itemTax,
+      //     "currency": "usd"
+      //   }
+      // ],
       "shipping_methods": [
         {
           "id": "shipping-0",
