@@ -1,4 +1,6 @@
 import React from 'react';
+import dotenv from 'dotenv'
+
 import { graphql, Link } from 'gatsby';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
@@ -31,17 +33,21 @@ const ZygoteCart = props => {
     
     <Cart
      //stripeApiKey="pk_live_nMctV4G1movcajzQsjXet2Zs000zybvAUV"
-      stripeApiKey="pk_test_Vc8z3p2pdxHFQgxhbbhIXtyv00GnPddsjV"
+      //stripeApiKey="pk_test_Vc8z3p2pdxHFQgxhbbhIXtyv00GnPddsjV"
 
-      //stripeApiKey=`${process.env.STRIPE_API_PUBLIC}`
+      stripeApiKey={process.env.STRIPE_API_PUBLIC}
 
-      infoWebhook='/.netlify/functions/info-stripe'
-      orderWebhook='/.netlify/functions/order-stripe'
-      shippingWebhook='/.netlify/functions/shipping-stripe'
+      // infoWebhook='/.netlify/functions/info-stripe'
+      // orderWebhook='/.netlify/functions/order-stripe'
+      // shippingWebhook='/.netlify/functions/shipping-stripe'
 
       // infoWebhook='https://97bc9b72.ngrok.io/.netlify/functions/info-stripe'
       // orderWebhook='https://97bc9b72.ngrok.io/.netlify/functions/order-stripe'
       // shippingWebhook='https://97bc9b72.ngrok.io/.netlify/functions/shipping-stripe'
+
+      infoWebhook={process.env.INFO_WEBHOOK}
+      orderWebhook={process.env.ORDER_WEBHOOK}
+      shippingWebhook={process.env.SHIPPING_WEBHOOK}
 
       plugins={[ 
         // getShippingMethods, 
