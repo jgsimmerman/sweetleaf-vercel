@@ -1,5 +1,4 @@
 import React from 'react';
-import dotenv from 'dotenv'
 
 import { graphql, Link } from 'gatsby';
 import styled from '@emotion/styled';
