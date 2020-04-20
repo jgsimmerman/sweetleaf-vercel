@@ -71,7 +71,7 @@ const ZygoteCart = props => {
         auth: {
           // Solution from this link: https://github.com/auth0/lock/issues/1294
            responseType: 'token',
-           redirect: false,
+           redirect: true,
            //redirectUrl: 'https://localhost:8000/'
           redirectUrl: 'https://sweetleaf-gc.netlify.app/'
         },
