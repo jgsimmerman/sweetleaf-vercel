@@ -49,7 +49,7 @@ const fairy = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Header title="Fairy Garden Plants">
+      <Header title="Fairy Garden Plants - Sweet Leaf Succulents">
         Sweet Leaf Succulents and Ornamental Plants
       </Header>
 

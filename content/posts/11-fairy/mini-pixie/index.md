@@ -8,7 +8,7 @@ pic4: "./topPlastic.jpg"
 snipPic: "./front2.jpg"
 care: "/care/dummy.pdf"
 
-title: "Mini Pixie"
+title: "'Mini Pixie' Syngonium"
 scientificname: "Syngonium podophyllum"
 id: 11
 

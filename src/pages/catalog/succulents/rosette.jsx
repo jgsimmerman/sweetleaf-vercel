@@ -49,7 +49,7 @@ const rosette = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Header title="Rosette's">
+      <Header title="Rosette's - Sweet Leaf Succulents">
         Sweet Leaf Succulents and Ornamental Plants
       </Header>
 

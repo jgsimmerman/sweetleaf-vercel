@@ -49,7 +49,7 @@ const soft = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Header title="Soft Varieties">
+      <Header title="Soft Varieties - Sweet Leaf Succulents">
         Sweet Leaf Succulents and Ornamental Plants
       </Header>
 

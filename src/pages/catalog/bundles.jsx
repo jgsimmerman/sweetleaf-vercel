@@ -45,7 +45,7 @@ const CatalogWrapper = styled.div`
   }
 `;
 
-const fairy = ({ data }) => {
+const bundles = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
@@ -74,9 +74,9 @@ const fairy = ({ data }) => {
   );
 };
 
-export default fairy;
+export default bundles;
 
-fairy.propTypes = {
+bundles.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.arrayOf(

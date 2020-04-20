@@ -49,7 +49,7 @@ const echeveria = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Header title="Echeveria">
+      <Header title="Echeveria - Sweet Leaf Succulents">
         Sweet Leaf Succulents and Ornamental Plants
       </Header>
 

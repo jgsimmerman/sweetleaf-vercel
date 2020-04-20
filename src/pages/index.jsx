@@ -186,6 +186,17 @@ const Index = ({ data }) => {
             </Info>
           </StyledLink>
         </Wrapper2>
+        <Wrapper>
+          <Image>
+            <Img fluid={data.imageThirteen.childImageSharp.fluid} alt="Cacti"/>
+          </Image>
+          <StyledLink to="/catalog/cacti/">
+            <Info>
+              <Title>Cactus</Title>
+              {/* <Price>$9.95</Price> */}
+            </Info>
+          </StyledLink>
+        </Wrapper>
       <Wrapper>
           <Image>
             <Img fluid={data.imageEleven.childImageSharp.fluid} alt="Nepenthes Kokedama"/>
@@ -474,6 +485,13 @@ export const pageQuery = graphql`
       }
     }
     imageTwelve: file(relativePath: { eq: "succulents2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 80) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    imageThirteen: file(relativePath: { eq: "cacti.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1600, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG

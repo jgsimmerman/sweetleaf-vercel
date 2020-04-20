@@ -49,7 +49,7 @@ const succulents = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Header title="Succulents">
+      <Header title="Succulents - Sweet Leaf Succulents">
         Sweet Leaf Succulents and Ornamental Plants
       </Header>
 

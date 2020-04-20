@@ -45,15 +45,15 @@ const CatalogWrapper = styled.div`
   }
 `;
 
-const carnivorous = ({ data }) => {
+const cacti = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Header title="Carnivorous Plants - Sweet Leaf Succulents">
+      <Header title="Cactus Varieties - Sweet Leaf Succulents">
         Sweet Leaf Succulents and Ornamental Plants
       </Header>
       <PostWrapper>
-          <h2> Carnivorous Plants </h2>
+          <h2> Cactus Varieties </h2>
       </PostWrapper>
 
       <CatalogWrapper>
@@ -73,9 +73,9 @@ const carnivorous = ({ data }) => {
   );
 };
 
-export default carnivorous;
+export default cacti;
 
-carnivorous.propTypes = {
+cacti.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.arrayOf(
@@ -98,7 +98,7 @@ carnivorous.propTypes = {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: { frontmatter: { id: { eq: 9 } } }) {
+    allMarkdownRemark(filter: { frontmatter: { id: { eq: 17 } } }) {
       edges {
         node {
           id
