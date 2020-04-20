@@ -35,4 +35,3 @@ available: 1
 story: "Corpuscularia lehmannii (Ice Plant)"
 
 ---
-Corpuscularia lehmannii (Ice Plant): 

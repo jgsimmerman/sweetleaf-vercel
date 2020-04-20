@@ -35,4 +35,3 @@ available: 1
 story: "Ivory Towers or Giant String of Buttons (Crassula × perforata):"
 
 ---
-Ivory Towers or Giant String of Buttons (Crassula × perforata): 

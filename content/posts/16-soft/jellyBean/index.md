@@ -35,4 +35,3 @@ available: 1
 story: "Jelly Bean (Sedum rubrotinctum):"
 
 ---
-Jelly Bean (Sedum rubrotinctum): 

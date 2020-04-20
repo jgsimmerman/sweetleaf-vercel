@@ -34,4 +34,3 @@ available: 1
 story: "Graptosedum 'Alpenglow' (Graptopetalum × Sedum hybrid)"
 
 ---
-Graptosedum 'Alpenglow' (Graptopetalum × Sedum hybrid): 

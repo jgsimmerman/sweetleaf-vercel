@@ -295,26 +295,36 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
             <th scope="row">Primary Color: </th>
             <td>{post.primarycolor}</td>
           </tr>
+          {post.stresscolor &&
           <tr>
             <th scope="row">Stress Color:</th>
             <td>{post.stresscolors}</td>
           </tr>
-          <tr>
-            <th scope="row">Bloom Color: </th>
-            <td>{post.bloomcolor}</td>
-          </tr>
-          <tr>
-            <th scope="row">Pet Safe: </th>
-            <td>{post.petsafe}</td>
-          </tr>
-          <tr>
-            <th scope="row">Seasonality:</th>
-            <td>{post.seasonality}</td>
-          </tr>
-          <tr>
-            <th scope="row">Temperature: </th>
-            <td>{post.temperature}</td>
-          </tr>
+          }
+          {post.bloomcolor &&
+            <tr>
+              <th scope="row">Bloom Color: </th>
+              <td>{post.bloomcolor}</td>
+            </tr>
+          }
+          {post.petsafe  &&
+            <tr>
+              <th scope="row">Pet Safe: </th>
+              <td>{post.petsafe}</td>
+            </tr>
+          }
+          {post.seasonality &&
+            <tr>
+              <th scope="row">Seasonality:</th>
+              <td>{post.seasonality}</td>
+            </tr>
+          }
+          {post.temperature &&
+            <tr>
+              <th scope="row">Temperature: </th>
+              <td>{post.temperature}</td>
+            </tr>
+          }
         </tbody>
       </Table> }
     </Wrapper>

@@ -34,4 +34,3 @@ available: 1
 story: "Sedum 'Little Missy': "
 
 ---
-Sedum 'Little Missy':  
