@@ -25,11 +25,11 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 	}
 	// Create stripe customer
 	
-		let customer = await stripe.customers.create(
-			{
-				email: body.customer.email,
-			}
-		)
+		// let customer = await stripe.customers.create(
+		// 	{
+		// 		email: body.customer.email,
+		// 	}
+		// )
 	
 	
 	// Create stripe order
