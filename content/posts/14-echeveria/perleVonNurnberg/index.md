@@ -1,6 +1,6 @@
 ---
 path: "/catalog/succulents/echeveria/perle-von-nurnberg"
-cover: "./top1.jpg"
+cover: "./PVNTop.jpg"
 pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./side1.jpg"
