@@ -1,9 +1,9 @@
 ---
 path: "/catalog/carnivorous-plants/alata"
-cover: "./newAlata1.jpg"
-pic: "./front37.jpg"
-pic2: "./outdoorPeek.jpg"
-pic3: "./ruler37.jpg"
+cover: "./largeNep1.jpg"
+pic: "./largeNep1.jpg"
+pic2: "./peek.jpg"
+pic3: "./outdoorPeek.jpg"
 pic4: "./largeNep1.jpg"
 snipPic: "./back1.jpg"
 care: "/care/dummy.pdf"
@@ -19,12 +19,14 @@ petsafe: ""
 temperature: "55F"
 seasonality: ""
 inventory: 14
-option1: "Medium Nepenthes"
-option2: "Large Nepenthes"
-price: 14.25
-price2: 19.95
-sku: "sku_GjxyukjjpQOVDs"
-sku2: "sku_H8oMHXgTx3QW3z"
+option1: ""
+option2: ""
+#option1: "Medium Nepenthes"
+#option2: "Large Nepenthes"
+# price: 14.25
+price: 19.95
+# sku: "sku_GjxyukjjpQOVDs"
+sku: "sku_H8oMHXgTx3QW3z"
 # options: '[{ label: "Small", value: 1 }, { label: "Large", value: 2 }]'
 published: true
 available: 1
