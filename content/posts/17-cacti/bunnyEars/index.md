@@ -1,6 +1,6 @@
 ---
 path: "/catalog/cacti/bunny-ears"
-cover: "./top1.jpg"
+cover: "./front1.jpg"
 pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./side1.jpg"

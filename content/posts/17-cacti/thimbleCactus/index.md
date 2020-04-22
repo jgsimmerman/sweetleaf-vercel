@@ -1,6 +1,6 @@
 ---
 path: "/catalog/cacti/thimble-cactus"
-cover: "./top1.jpg"
+cover: "./front.jpg"
 pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./side1.jpg"

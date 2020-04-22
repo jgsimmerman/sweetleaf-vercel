@@ -25,8 +25,8 @@ option2: ""
 #option2: "Large Nepenthes"
 # price: 14.25
 price: 19.95
-# sku: "sku_GjxyukjjpQOVDs"
-sku: "sku_H8oMHXgTx3QW3z"
+sku: "sku_GjxyukjjpQOVDs"
+# sku: "sku_H8oMHXgTx3QW3z"
 # options: '[{ label: "Small", value: 1 }, { label: "Large", value: 2 }]'
 published: true
 available: 1
