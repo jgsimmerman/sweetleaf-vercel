@@ -2,9 +2,9 @@
 path: "/catalog/carnivorous-plants/alata"
 cover: "./newAlata1.jpg"
 pic: "./front37.jpg"
-pic2: "./front1.jpg"
+pic2: "./outdoorPeek.jpg"
 pic3: "./ruler37.jpg"
-pic4: "./top2.jpg"
+pic4: "./largeNep1.jpg"
 snipPic: "./back1.jpg"
 care: "/care/dummy.pdf"
 title: "Nepenthes x ventrata"
@@ -16,17 +16,15 @@ primarycolor: "Green"
 stresscolors: "Pink"
 bloomcolor: ""
 petsafe: ""
-temperature: ""
+temperature: "55F"
 seasonality: ""
 inventory: 14
-option1: ""
-option2: ""
+option1: "Medium Nepenthes"
+option2: "Large Nepenthes"
 price: 14.25
-# price2: 14.99
+price2: 19.95
 sku: "sku_GjxyukjjpQOVDs"
-# sku2: "sku_GjxyukjjpQOVDs"
-# option1: "blue"
-# option2: "red"
+sku2: "sku_H8oMHXgTx3QW3z"
 # options: '[{ label: "Small", value: 1 }, { label: "Large", value: 2 }]'
 published: true
 available: 1
