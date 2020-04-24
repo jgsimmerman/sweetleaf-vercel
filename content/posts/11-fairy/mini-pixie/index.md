@@ -1,11 +1,11 @@
 ---
 path: "/catalog/fairy-garden/mini-pixie"
-cover: "./terraCottaComparison37.jpg"
+cover: "./anglePixie2.jpg"
 pic: "./terraCottaComparison37.jpg"
-pic2: "./front3.jpg"
+pic2: "./anglePixie2.jpg"
 pic3: "./frontPlastic.jpg"
-pic4: "./topPlastic.jpg"
-snipPic: "./front2.jpg"
+pic4: "./topPixie.jpg"
+# snipPic: "./anglePixie2.jpg"
 care: "/care/dummy.pdf"
 
 title: "'Mini Pixie' Syngonium"

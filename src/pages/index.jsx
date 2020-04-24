@@ -435,7 +435,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    imageFive: file(relativePath: { eq: "miniPixie.jpg" }) {
+    imageFive: file(relativePath: { eq: "anglePixie2.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 400, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
