@@ -147,7 +147,6 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
 	let ship1 = ship[1]
 	let ship2 = ship[2]
 
-
 	//	let taxRate = createTaxAPI(postalCode)
 	let itemTax = Math.ceil(subtotal*.08)
 
