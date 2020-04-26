@@ -224,14 +224,14 @@ export default async function updateShipping({ stripeApiSecret, body, verbose })
         },
         {
           "id": "shipping-1",
-          "description": "Express shipping",
+          "description": "Priority shipping",
           "amount": ship1,
           "currency": "usd",
 
           // Optional delivery estimate and tax items:
           "tax_items": [
             {
-              "parent": "express",
+              "parent": "priority",
               "type": "tax",
               "description": "Shipping sales taxes",
               "amount": tax1,
