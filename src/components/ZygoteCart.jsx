@@ -63,6 +63,7 @@ const ZygoteCart = props => {
       // auth0Theme={{
       //   primaryColor: '#00cfff',
       // }}
+      
       // auth0Options={{
       //   avatar: null,
       //   rememberLastLogin: false,
