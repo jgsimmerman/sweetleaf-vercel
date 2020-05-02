@@ -8,7 +8,7 @@ module.exports = {
   siteUrl: 'https://sweetleafsucculents.com', // url + pathPrefix
   siteLanguage: 'en', // Language Tag on <html> element
   logo: 'static/logo/logo.png', // Used for SEO
-  banner: 'static/logo/banner.png',
+  banner: 'static/logo/logo.png',
   // JSONLD / Manifest
   favicon: 'static/logo/favicon.png', // Used for manifest favicon generation
   shortName: 'SweetLeaf', // shortname for manifest. MUST be shorter than 12 characters
