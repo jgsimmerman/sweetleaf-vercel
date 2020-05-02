@@ -56,16 +56,16 @@ const SEO = ({ title, desc, banner, pathname, product, article }) => (
               url: seo.image,
             },
             description: seo.description,
-            datePublished: buildTime,
-            dateModified: buildTime,
-            publisher: {
-              '@type': 'Organization',
-              name: author,
-              logo: {
-                '@type': 'ImageObject',
-                url: siteUrl + realPrefix + logo,
-              },
-            },
+            //datePublished: buildTime,
+            //dateModified: buildTime,
+            // publisher: {
+            //   '@type': 'Organization',
+            //   name: author,
+            //   logo: {
+            //     '@type': 'ImageObject',
+            //     url: siteUrl + realPrefix + logo,
+            //   },
+            // },
             isPartOf: siteUrl,
             mainEntityOfPage: {
               '@type': 'WebSite',
