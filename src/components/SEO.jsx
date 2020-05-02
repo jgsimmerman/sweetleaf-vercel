@@ -49,7 +49,7 @@ const SEO = ({ title, desc, banner, pathname, article }) => (
             '@id': seo.url,
             url: seo.url,
             name: title,
-            alternateName: titleAlt || '',
+            //alternateName: titleAlt || '',
             //headline: title,
             image: {
               '@type': 'ImageObject',
