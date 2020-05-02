@@ -59,7 +59,7 @@ const SEO = ({ title, desc, banner, pathname, article }) => (
             offers: {
               '@type': 'Offer',
               
-            }
+            },
             description: seo.description,
             //datePublished: buildTime,
             //dateModified: buildTime,
