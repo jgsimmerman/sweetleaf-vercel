@@ -32,7 +32,7 @@ const blog = ({ data, pageContext }) => {
         description={description || excerpt || ' '}
         banner={image}
         pathname={path}
-        product
+        article
       />
       <Header title={title} date={date} cover={image} />
       <Container>

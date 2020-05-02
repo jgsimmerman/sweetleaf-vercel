@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 
-const SEO = ({ title, desc, banner, pathname, product, article }) => (
+const SEO = ({ title, desc, banner, pathname, article }) => (
   <StaticQuery
     query={query}
     render={({
@@ -27,7 +27,7 @@ const SEO = ({ title, desc, banner, pathname, product, article }) => (
       const seo = {
         title: title || defaultTitle,
         description: defaultDescription || desc,
-        image: `${siteUrl}/${banner || defaultBanner}`,
+        image: `${siteUrl}${banner || defaultBanner}`,
         url: `${siteUrl}${pathname || '/'}`,
       };
       const realPrefix = pathPrefix === '/' ? '' : pathPrefix;
@@ -41,11 +41,11 @@ const SEO = ({ title, desc, banner, pathname, product, article }) => (
           alternateName: titleAlt || '',
         },
       ];
-      if (product) {
+      if (article) {
         schemaOrgJSONLD = [
           {
             '@context': 'http://schema.org',
-            '@type': 'Product',
+            '@type': 'BlogPosting',
             '@id': seo.url,
             url: seo.url,
             name: title,
@@ -56,16 +56,20 @@ const SEO = ({ title, desc, banner, pathname, product, article }) => (
               url: seo.image,
             },
             description: seo.description,
-            //datePublished: buildTime,
-            //dateModified: buildTime,
-            // publisher: {
-            //   '@type': 'Organization',
-            //   name: author,
-            //   logo: {
-            //     '@type': 'ImageObject',
-            //     url: siteUrl + realPrefix + logo,
-            //   },
-            // },
+            datePublished: buildTime,
+            dateModified: buildTime,
+            author: {
+              '@type': 'Person',
+              name: author,
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: author,
+              logo: {
+                '@type': 'ImageObject',
+                url: siteUrl + realPrefix + logo,
+              },
+            },
             isPartOf: siteUrl,
             mainEntityOfPage: {
               '@type': 'WebSite',
@@ -74,43 +78,6 @@ const SEO = ({ title, desc, banner, pathname, product, article }) => (
           },
         ];
       }
-      // else if (article) {
-      //   schemaOrgJSONLD = [
-      //     {
-      //       '@context': 'http://schema.org',
-      //       '@type': 'BlogPosting',
-      //       '@id': seo.url,
-      //       url: seo.url,
-      //       name: title,
-      //       alternateName: titleAlt || '',
-      //       headline: title,
-      //       image: {
-      //         '@type': 'ImageObject',
-      //         url: seo.image,
-      //       },
-      //       description: seo.description,
-      //       datePublished: buildTime,
-      //       dateModified: buildTime,
-      //       author: {
-      //         '@type': 'Person',
-      //         name: author,
-      //       },
-      //       publisher: {
-      //         '@type': 'Organization',
-      //         name: author,
-      //         logo: {
-      //           '@type': 'ImageObject',
-      //           url: siteUrl + realPrefix + logo,
-      //         },
-      //       },
-      //       isPartOf: siteUrl,
-      //       mainEntityOfPage: {
-      //         '@type': 'WebSite',
-      //         '@id': siteUrl,
-      //       },
-      //     },
-      //   ];
-      // }
       return (
         <>
           <Helmet title={seo.title}>
@@ -130,13 +97,12 @@ const SEO = ({ title, desc, banner, pathname, product, article }) => (
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments)}
               gtag('js', new Date());
-
               gtag('config', 'UA-158535531-1');
             </script> */}
 
             {/* OpenGraph  */}
             <meta property="og:url" content={seo.url} />
-            <meta property="og:type" content={product ? 'product' : null} />
+            <meta property="og:type" content={article ? 'article' : null} />
             <meta property="og:title" content={seo.title} />
             <meta property="og:description" content={seo.description} />
             <meta property="og:image" content={seo.image} />
@@ -163,7 +129,7 @@ SEO.propTypes = {
   desc: PropTypes.string,
   banner: PropTypes.string,
   pathname: PropTypes.string,
-  product: PropTypes.bool,
+  article: PropTypes.bool,
 };
 
 SEO.defaultProps = {
@@ -171,7 +137,7 @@ SEO.defaultProps = {
   desc: null,
   banner: null,
   pathname: null,
-  product: false,
+  article: false,
 };
 
 const query = graphql`
