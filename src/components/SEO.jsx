@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 
-const SEO = ({ title, desc, banner, pathname, article }) => (
+const SEO = ({ title, desc, banner, pathname, product }) => (
   <StaticQuery
     query={query}
     render={({
@@ -27,7 +27,7 @@ const SEO = ({ title, desc, banner, pathname, article }) => (
       const seo = {
         title: title || defaultTitle,
         description: defaultDescription || desc,
-        image: `${siteUrl}${banner || defaultBanner}`,
+        image: `${siteUrl}/${banner || defaultBanner}`,
         url: `${siteUrl}${pathname || '/'}`,
       };
       const realPrefix = pathPrefix === '/' ? '' : pathPrefix;
@@ -41,7 +41,40 @@ const SEO = ({ title, desc, banner, pathname, article }) => (
           alternateName: titleAlt || '',
         },
       ];
-      if (article) {
+      if (product) {
+        schemaOrgJSONLD = [
+          {
+            '@context': 'http://schema.org',
+            '@type': 'Product',
+            '@id': seo.url,
+            url: seo.url,
+            name: title,
+            alternateName: titleAlt || '',
+            headline: title,
+            image: {
+              '@type': 'ImageObject',
+              url: seo.image,
+            },
+            description: seo.description,
+            datePublished: buildTime,
+            dateModified: buildTime,
+            publisher: {
+              '@type': 'Organization',
+              name: author,
+              logo: {
+                '@type': 'ImageObject',
+                url: siteUrl + realPrefix + logo,
+              },
+            },
+            isPartOf: siteUrl,
+            mainEntityOfPage: {
+              '@type': 'WebSite',
+              '@id': siteUrl,
+            },
+          },
+        ];
+      }
+      else if (article) {
         schemaOrgJSONLD = [
           {
             '@context': 'http://schema.org',
@@ -103,7 +136,7 @@ const SEO = ({ title, desc, banner, pathname, article }) => (
 
             {/* OpenGraph  */}
             <meta property="og:url" content={seo.url} />
-            <meta property="og:type" content={article ? 'article' : null} />
+            <meta property="og:type" content={product ? 'product' : null} />
             <meta property="og:title" content={seo.title} />
             <meta property="og:description" content={seo.description} />
             <meta property="og:image" content={seo.image} />
@@ -130,7 +163,7 @@ SEO.propTypes = {
   desc: PropTypes.string,
   banner: PropTypes.string,
   pathname: PropTypes.string,
-  article: PropTypes.bool,
+  product: PropTypes.bool,
 };
 
 SEO.defaultProps = {
@@ -138,7 +171,7 @@ SEO.defaultProps = {
   desc: null,
   banner: null,
   pathname: null,
-  article: false,
+  product: false,
 };
 
 const query = graphql`
