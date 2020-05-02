@@ -216,6 +216,17 @@ module.exports = {
         websiteId: `95d36fea-f481-4495-8662-b3f118d5b387`, 
       },
     },
+    // {
+    //   resolve: `plugin-purechat`,
+    //   options: {
+    //     // include the PureChat js snippet
+    //     enabled: true,
+    //     // your website id, extract from the snippet provided by purechat 
+    //     websiteId: `95d36fea-f481-4495-8662-b3f118d5b387`, 
+    //     delayLoad: true,
+    //     delayLoadTime: 1000,
+    //   },
+    // },
     // "gatsby-theme-gallery",
     //`gatsby-plugin-netlify-cms`,
     // {

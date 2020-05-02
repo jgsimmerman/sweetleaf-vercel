@@ -12,7 +12,7 @@ id: 11
 catalog-section: "fairy garden"
 tags: ['fairy garden', 'terrarium', 'freckle face plant', 'polka dot plant', 'hypoestes']
 primarycolor: "Green"
-stresscolors: "Red"
+stresscolors: "Red, White, Pink, Rose"
 bloomcolor: ""
 petsafe: ""
 temperature: ""

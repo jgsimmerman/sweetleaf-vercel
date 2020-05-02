@@ -295,7 +295,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
             <th scope="row">Primary Color: </th>
             <td>{post.primarycolor}</td>
           </tr>
-          {post.stresscolor &&
+          {post.stresscolors &&
           <tr>
             <th scope="row">Stress Color:</th>
             <td>{post.stresscolors}</td>
