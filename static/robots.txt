@@ -1,12 +1,10 @@
 User-agent: *
 Disallow: */tags/
 Disallow: */sempervivum/
-Disallow:  */echeveria/
 Disallow: */more-soft-varieties/
 Disallow: */aeonium/
 Disallow: */soft-sedum/
 Disallow: */hens-n-chicks/
-Disallow: */sempervivum-heuffelii/
 Disallow: */hybrids/
 Disallow: */senecio/
 
