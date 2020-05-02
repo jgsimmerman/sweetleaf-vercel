@@ -15,7 +15,7 @@ tags: ['fairy garden', 'terrarium', 'freckle face plant', 'polka dot plant', 'hy
 primarycolor: "Green"
 stresscolors: "White"
 bloomcolor: ""
-petsafe: "Yes"
+petsafe: ""
 temperature: "60 F"
 seasonality: ""
 inventory: 14

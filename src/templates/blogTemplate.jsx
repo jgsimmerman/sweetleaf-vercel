@@ -29,7 +29,7 @@ const blog = ({ data, pageContext }) => {
     <Layout>
       <SEO
         title={title}
-        description={description || excerpt || ' '}
+        description={story || description || excerpt || ' '}
         banner={image}
         pathname={path}
         article
@@ -79,6 +79,7 @@ export const query = graphql`
         date
         title
         tags
+        story
         cover {
           childImageSharp {
             fluid(

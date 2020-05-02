@@ -45,12 +45,12 @@ const SEO = ({ title, desc, banner, pathname, article }) => (
         schemaOrgJSONLD = [
           {
             '@context': 'http://schema.org',
-            '@type': 'BlogPosting',
+            '@type': 'Product',
             '@id': seo.url,
             url: seo.url,
             name: title,
             alternateName: titleAlt || '',
-            headline: title,
+            //headline: title,
             image: {
               '@type': 'ImageObject',
               url: seo.image,
@@ -58,18 +58,18 @@ const SEO = ({ title, desc, banner, pathname, article }) => (
             description: seo.description,
             datePublished: buildTime,
             dateModified: buildTime,
-            author: {
-              '@type': 'Organization',
-              name: author,
-            },
-            publisher: {
-              '@type': 'Organization',
-              name: author,
-              logo: {
-                '@type': 'ImageObject',
-                url: siteUrl + "/" + realPrefix + logo,
-              },
-            },
+            // author: {
+            //   '@type': 'Organization',
+            //   name: author,
+            // },
+            // publisher: {
+            //   '@type': 'Organization',
+            //   name: author,
+            //   logo: {
+            //     '@type': 'ImageObject',
+            //     url: siteUrl + "/" + realPrefix + logo,
+            //   },
+            // },
             isPartOf: siteUrl,
             mainEntityOfPage: {
               '@type': 'WebSite',
