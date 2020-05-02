@@ -32,8 +32,8 @@ const blog = ({ data, pageContext }) => {
         description={story || description || excerpt || ' '}
         banner={image}
         pathname={path}
+        price={price}
         article
-        price
       />
       <Header title={title} date={date} cover={image} />
       <Container>
