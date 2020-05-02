@@ -67,7 +67,7 @@ const SEO = ({ title, desc, banner, pathname, article }) => (
               name: author,
               logo: {
                 '@type': 'ImageObject',
-                url: siteUrl + realPrefix + logo,
+                url: siteUrl + "/" + realPrefix + logo,
               },
             },
             isPartOf: siteUrl,
