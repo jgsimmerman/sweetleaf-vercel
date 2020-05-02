@@ -16,4 +16,5 @@ module.exports = {
   themeColor: '#3e7bf2',
   backgroundColor: '#d3e0ff',
   twitter: '@SweetLeafSuccs', // Twitter Username
+  price: '',
 };

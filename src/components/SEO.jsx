@@ -137,6 +137,7 @@ SEO.propTypes = {
   banner: PropTypes.string,
   pathname: PropTypes.string,
   article: PropTypes.bool,
+  price: PropTypes.string,
 };
 
 SEO.defaultProps = {
@@ -145,6 +146,7 @@ SEO.defaultProps = {
   banner: null,
   pathname: null,
   article: false,
+  price: null,
 };
 
 const query = graphql`
