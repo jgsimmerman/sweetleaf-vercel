@@ -74,43 +74,43 @@ const SEO = ({ title, desc, banner, pathname, product, article }) => (
           },
         ];
       }
-      else if (article) {
-        schemaOrgJSONLD = [
-          {
-            '@context': 'http://schema.org',
-            '@type': 'BlogPosting',
-            '@id': seo.url,
-            url: seo.url,
-            name: title,
-            alternateName: titleAlt || '',
-            headline: title,
-            image: {
-              '@type': 'ImageObject',
-              url: seo.image,
-            },
-            description: seo.description,
-            datePublished: buildTime,
-            dateModified: buildTime,
-            author: {
-              '@type': 'Person',
-              name: author,
-            },
-            publisher: {
-              '@type': 'Organization',
-              name: author,
-              logo: {
-                '@type': 'ImageObject',
-                url: siteUrl + realPrefix + logo,
-              },
-            },
-            isPartOf: siteUrl,
-            mainEntityOfPage: {
-              '@type': 'WebSite',
-              '@id': siteUrl,
-            },
-          },
-        ];
-      }
+      // else if (article) {
+      //   schemaOrgJSONLD = [
+      //     {
+      //       '@context': 'http://schema.org',
+      //       '@type': 'BlogPosting',
+      //       '@id': seo.url,
+      //       url: seo.url,
+      //       name: title,
+      //       alternateName: titleAlt || '',
+      //       headline: title,
+      //       image: {
+      //         '@type': 'ImageObject',
+      //         url: seo.image,
+      //       },
+      //       description: seo.description,
+      //       datePublished: buildTime,
+      //       dateModified: buildTime,
+      //       author: {
+      //         '@type': 'Person',
+      //         name: author,
+      //       },
+      //       publisher: {
+      //         '@type': 'Organization',
+      //         name: author,
+      //         logo: {
+      //           '@type': 'ImageObject',
+      //           url: siteUrl + realPrefix + logo,
+      //         },
+      //       },
+      //       isPartOf: siteUrl,
+      //       mainEntityOfPage: {
+      //         '@type': 'WebSite',
+      //         '@id': siteUrl,
+      //       },
+      //     },
+      //   ];
+      // }
       return (
         <>
           <Helmet title={seo.title}>
