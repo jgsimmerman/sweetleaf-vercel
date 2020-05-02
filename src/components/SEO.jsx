@@ -55,9 +55,13 @@ const SEO = ({ title, desc, banner, pathname, article }) => (
               '@type': 'ImageObject',
               url: seo.image,
             },
+            brand: 'Sweet Leaf Succulents and Ornamental Plants',
+            offers: {
+              "@type": 'Product',
+            },
             description: seo.description,
-            datePublished: buildTime,
-            dateModified: buildTime,
+            //datePublished: buildTime,
+            //dateModified: buildTime,
             // author: {
             //   '@type': 'Organization',
             //   name: author,
@@ -70,7 +74,7 @@ const SEO = ({ title, desc, banner, pathname, article }) => (
             //     url: siteUrl + "/" + realPrefix + logo,
             //   },
             // },
-            isPartOf: siteUrl,
+            //isPartOf: siteUrl,
             mainEntityOfPage: {
               '@type': 'WebSite',
               '@id': siteUrl,
