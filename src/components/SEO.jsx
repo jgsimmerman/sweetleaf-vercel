@@ -98,7 +98,10 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
             <meta name="application-name" content={shortName} />
             <meta name="p:domain_verify" content="25dbb4735617b64cd0bafe0086789449"/>
             <script type="application/ld+json">
-              {JSON.stringify(schemaOrgJSONLDProduct)}
+              {(function() {
+                JSON.stringify(schemaOrgJSONLDProduct)
+              })()}
+              {/* {JSON.stringify(schemaOrgJSONLDProduct)} */}
             </script>
 
             {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
