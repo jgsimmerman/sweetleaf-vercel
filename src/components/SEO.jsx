@@ -42,28 +42,26 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
           alternateName: titleAlt || '',
         },
       ];
-     // if (article) {
-        let schemaOrgJSONLDProduct = [
+      if (article) {
+        schemaOrgJSONLD = [
           {
             '@context': 'http://schema.org',
             '@type': 'Product',
             '@id': seo.url,
-            'url': seo.url,
-            'name': title,
-            'sku': sku,
-            'description': description,
+            url: seo.url,
+            name: title,
+            sku: sku,
+            description: description,
             //alternateName: titleAlt || '',
             //headline: title,
-            'image': {
+            image: {
               '@type': 'ImageObject',
               url: seo.image,
             },
-            'brand': 'Sweet Leaf Succulents and Ornamental Plants',
-            'offers': {
+            brand: 'Sweet Leaf Succulents and Ornamental Plants',
+            offers: {
               '@type': 'Offer',
-              "availability": "http://schema.org/InStock",
-              'price': seo.price,
-              "priceCurrency": "USD"
+              price: seo.price,
             },
             
             //datePublished: buildTime,
@@ -81,13 +79,13 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
             //   },
             // },
             //isPartOf: siteUrl,
-            'mainEntityOfPage': {
+            mainEntityOfPage: {
               '@type': 'WebSite',
               '@id': siteUrl,
             },
           },
         ];
-      //}
+      }
       return (
         <>
           <Helmet title={seo.title}>
@@ -98,12 +96,8 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
             <meta name="application-name" content={shortName} />
             <meta name="p:domain_verify" content="25dbb4735617b64cd0bafe0086789449"/>
             <script type="application/ld+json">
-              {(function() {
-                JSON.stringify(schemaOrgJSONLDProduct)
-              })()}
-              {/* {JSON.stringify(schemaOrgJSONLDProduct)} */}
+              {JSON.stringify(schemaOrgJSONLD)}
             </script>
-
             {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
             <script async src="https://googletagmanager.com/gtag/js?id=UA-158535531-1"></script>
             {/* <script>
@@ -112,14 +106,12 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
               gtag('js', new Date());
               gtag('config', 'UA-158535531-1');
             </script> */}
-
             {/* OpenGraph  */}
             <meta property="og:url" content={seo.url} />
             <meta property="og:type" content={article ? 'article' : null} />
             <meta property="og:title" content={seo.title} />
             <meta property="og:description" content={seo.description} />
             <meta property="og:image" content={seo.image} />
-
             {/* Twitter Card */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:creator" content={twitter} />
@@ -134,18 +126,15 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
 );
 //   }
 // }
-
 export default SEO;
-
 SEO.propTypes = {
   title: PropTypes.string,
   desc: PropTypes.string,
   banner: PropTypes.string,
   pathname: PropTypes.string,
   article: PropTypes.bool,
-  price: PropTypes.string,
+  price: PropTypes.number,
 };
-
 SEO.defaultProps = {
   title: null,
   desc: null,
@@ -154,7 +143,6 @@ SEO.defaultProps = {
   article: false,
   price: null,
 };
-
 const query = graphql`
   query SEO {
     site {
