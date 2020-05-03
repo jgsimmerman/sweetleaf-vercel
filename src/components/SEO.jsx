@@ -138,11 +138,11 @@ SEO.propTypes = {
 };
 SEO.defaultProps = {
   title: null,
-  description: description,
+  description: null,
   banner: null,
   pathname: null,
   article: false,
-  price: price,
+  price: 0.00,
   sku: null,
 };
 const query = graphql`
