@@ -26,7 +26,7 @@ const blog = ({ data, pageContext }) => {
   const image = frontmatter.cover.childImageSharp.fluid;
   console.log('blogTemplate', price)
 
-  const defaultPrice = price
+  const defaultPrice = data.markdownRemark.frontmatter.price
   return (
     <Layout>
       <SEO
