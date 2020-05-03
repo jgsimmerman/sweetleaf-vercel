@@ -61,7 +61,7 @@ const SEO = ({ title, description, banner, pathname, defaultPrice, sku, article 
             brand: 'Sweet Leaf Succulents and Ornamental Plants',
             offers: {
               '@type': 'Offer',
-              price: defaultPrice,
+              price: seo.price,
             },
             
             //datePublished: buildTime,
