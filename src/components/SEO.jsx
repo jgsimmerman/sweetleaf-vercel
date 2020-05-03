@@ -62,6 +62,8 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
             offers: {
               '@type': 'Offer',
               price: seo.price,
+              priceCurrency: "USD",
+              url: seo.url,
             },
             
             //datePublished: buildTime,
