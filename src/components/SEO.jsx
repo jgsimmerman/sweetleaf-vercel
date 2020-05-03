@@ -9,7 +9,6 @@ const SEO = ({ title, desc, banner, pathname, price, article }) => (
     render={({
       site: {
         buildTime,
-        price,
         siteMetadata: {
           defaultTitle,
           titleAlt,
