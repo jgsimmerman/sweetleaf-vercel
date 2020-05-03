@@ -42,7 +42,7 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
           alternateName: titleAlt || '',
         },
       ];
-      if (article) {
+     // if (article) {
         let schemaOrgJSONLDProduct = [
           {
             '@context': 'http://schema.org',
@@ -87,7 +87,7 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
             },
           },
         ];
-      }
+      //}
       return (
         <>
           <Helmet title={seo.title}>
