@@ -48,21 +48,21 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
             '@context': 'http://schema.org',
             '@type': 'Product',
             '@id': seo.url,
-            url: seo.url,
-            name: title,
-            sku: sku,
-            description: description,
+            'url': seo.url,
+            'name': title,
+            'sku': sku,
+            'description': description,
             //alternateName: titleAlt || '',
             //headline: title,
-            image: {
+            'image': {
               '@type': 'ImageObject',
               url: seo.image,
             },
-            brand: 'Sweet Leaf Succulents and Ornamental Plants',
-            offers: {
+            'brand': 'Sweet Leaf Succulents and Ornamental Plants',
+            'offers': {
               '@type': 'Offer',
               "availability": "http://schema.org/InStock",
-              price: seo.price,
+              'price': seo.price,
               "priceCurrency": "USD"
             },
             
@@ -81,7 +81,7 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
             //   },
             // },
             //isPartOf: siteUrl,
-            mainEntityOfPage: {
+            'mainEntityOfPage': {
               '@type': 'WebSite',
               '@id': siteUrl,
             },
