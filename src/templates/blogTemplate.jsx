@@ -27,6 +27,8 @@ const blog = ({ data, pageContext }) => {
   console.log('blogTemplate', price)
 
   const defaultPrice = data.markdownRemark.frontmatter.price
+  let priceString = JSON.stringify(defaultPrice)
+  let priceParse = JSON.parse(priceString)
   return (
     <Layout>
       <SEO
@@ -34,7 +36,7 @@ const blog = ({ data, pageContext }) => {
         description={story}
         banner={image}
         pathname={path}
-        price={defaultPrice}
+        price={priceParse}
         sku={sku}
         article
       />

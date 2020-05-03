@@ -29,7 +29,7 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
         description: description || defaultDescription,
         image: `${siteUrl}/${banner || defaultBanner}`,
         url: `${siteUrl}${pathname || '/'}`,
-        price: price,
+        price: price || 0.00,
       };
       const realPrefix = pathPrefix === '/' ? '' : pathPrefix;
       let schemaOrgJSONLD = [
@@ -142,7 +142,7 @@ SEO.defaultProps = {
   banner: null,
   pathname: null,
   article: false,
-  price: 0.00,
+  price: null,
   sku: null,
 };
 const query = graphql`
