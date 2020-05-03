@@ -43,7 +43,7 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
         },
       ];
       if (article) {
-        schemaOrgJSONLDProduct = [
+        let schemaOrgJSONLDProduct = [
           {
             '@context': 'http://schema.org',
             '@type': 'Product',
