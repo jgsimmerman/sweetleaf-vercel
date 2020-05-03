@@ -30,7 +30,7 @@ const SEO = ({ title, desc, banner, pathname, price, article }) => (
         description: defaultDescription || desc,
         image: `${siteUrl}/${banner || defaultBanner}`,
         url: `${siteUrl}${pathname || '/'}`,
-        price: price || '',
+        price: `${price}`,
       };
       const realPrefix = pathPrefix === '/' ? '' : pathPrefix;
       let schemaOrgJSONLD = [
@@ -60,7 +60,7 @@ const SEO = ({ title, desc, banner, pathname, price, article }) => (
             brand: 'Sweet Leaf Succulents and Ornamental Plants',
             offers: {
               '@type': 'Offer',
-              price: seo.price || price,
+              'price': price,
             },
             description: seo.description,
             //datePublished: buildTime,
