@@ -25,6 +25,8 @@ const blog = ({ data, pageContext }) => {
   const {date, title, tags, path, story, sku, price} = frontmatter
   const image = frontmatter.cover.childImageSharp.fluid;
   console.log('blogTemplate', price)
+
+  const defaultPrice = price
   return (
     <Layout>
       <SEO
@@ -32,7 +34,7 @@ const blog = ({ data, pageContext }) => {
         description={story}
         banner={image}
         pathname={path}
-        price={price}
+        price={defaultPrice}
         sku={sku}
         article
       />

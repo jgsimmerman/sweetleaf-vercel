@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 
-const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
+const SEO = ({ title, description, banner, pathname, defaultPrice, sku, article }) => (
   <StaticQuery
     query={query}
     render={({
@@ -29,7 +29,7 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
         description: description || defaultDescription,
         image: `${siteUrl}/${banner || defaultBanner}`,
         url: `${siteUrl}${pathname || '/'}`,
-        price: price,
+        price: defaultPrice,
       };
       const realPrefix = pathPrefix === '/' ? '' : pathPrefix;
       let schemaOrgJSONLD = [
@@ -61,7 +61,7 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
             brand: 'Sweet Leaf Succulents and Ornamental Plants',
             offers: {
               '@type': 'Offer',
-              price: price,
+              price: defaultPrice,
             },
             
             //datePublished: buildTime,
