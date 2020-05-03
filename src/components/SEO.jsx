@@ -61,7 +61,7 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
             brand: 'Sweet Leaf Succulents and Ornamental Plants',
             offers: {
               '@type': 'Offer',
-              price: `$${seo.price}`,
+              price: price,
             },
             
             //datePublished: buildTime,
@@ -138,11 +138,11 @@ SEO.propTypes = {
 };
 SEO.defaultProps = {
   title: null,
-  desc: null,
+  description: description,
   banner: null,
   pathname: null,
   article: false,
-  price: 0.00,
+  price: price,
   sku: null,
 };
 const query = graphql`
