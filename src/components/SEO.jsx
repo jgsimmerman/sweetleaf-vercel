@@ -26,7 +26,7 @@ const SEO = ({ title, desc, banner, pathname, price, article }) => (
     }) => {
       const seo = {
         title: title || defaultTitle,
-        description: desc || defaultDescription,
+        description: desc,
         image: `${siteUrl}/${banner || defaultBanner}`,
         url: `${siteUrl}${pathname || '/'}`,
         price: `$${price}`,
