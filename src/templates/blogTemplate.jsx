@@ -29,7 +29,7 @@ const blog = ({ data, pageContext }) => {
     <Layout>
       <SEO
         title={title}
-        description={story || description || excerpt || ' '}
+        description={story}
         banner={image}
         pathname={path}
         price={price}

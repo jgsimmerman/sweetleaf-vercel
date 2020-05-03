@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 
-const SEO = ({ title, desc, banner, pathname, price, article }) => (
+const SEO = ({ title, description, banner, pathname, price, article }) => (
   <StaticQuery
     query={query}
     render={({
@@ -26,7 +26,7 @@ const SEO = ({ title, desc, banner, pathname, price, article }) => (
     }) => {
       const seo = {
         title: title || defaultTitle,
-        description: desc || defaultDescription,
+        description: description || defaultDescription,
         image: `${siteUrl}/${banner || defaultBanner}`,
         url: `${siteUrl}${pathname || '/'}`,
         price: `$${price}`,
@@ -59,9 +59,9 @@ const SEO = ({ title, desc, banner, pathname, price, article }) => (
             brand: 'Sweet Leaf Succulents and Ornamental Plants',
             offers: {
               '@type': 'Offer',
-              price: `${price}`,
+              price: price.toString(),
             },
-            description: desc,
+            description: description,
             //datePublished: buildTime,
             //dateModified: buildTime,
             // author: {
