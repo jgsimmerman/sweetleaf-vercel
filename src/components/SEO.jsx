@@ -43,7 +43,7 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
         },
       ];
       if (article) {
-        schemaOrgJSONLD = [
+        schemaOrgJSONLDProduct = [
           {
             '@context': 'http://schema.org',
             '@type': 'Product',
@@ -61,7 +61,9 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
             brand: 'Sweet Leaf Succulents and Ornamental Plants',
             offers: {
               '@type': 'Offer',
+              "availability": "http://schema.org/InStock",
               price: seo.price,
+              "priceCurrency": "USD"
             },
             
             //datePublished: buildTime,
@@ -96,7 +98,7 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
             <meta name="application-name" content={shortName} />
             <meta name="p:domain_verify" content="25dbb4735617b64cd0bafe0086789449"/>
             <script type="application/ld+json">
-              {JSON.stringify(schemaOrgJSONLD)}
+              {JSON.stringify(schemaOrgJSONLDProduct)}
             </script>
 
             {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
