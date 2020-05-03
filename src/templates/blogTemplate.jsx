@@ -22,9 +22,9 @@ const blogSuggestion = styled.div`
 const blog = ({ data, pageContext }) => {
   const { next, prev } = pageContext;
   const {html, frontmatter, excerpt } = data.markdownRemark
-  const {date, title, tags, path, description, price} = frontmatter
+  const {date, title, tags, path, story, price} = frontmatter
   const image = frontmatter.cover.childImageSharp.fluid;
-  
+  console.log('blogTemplate', price)
   return (
     <Layout>
       <SEO
