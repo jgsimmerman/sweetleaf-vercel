@@ -50,6 +50,7 @@ const SEO = ({ title, description, banner, pathname, price, article }) => (
             '@id': seo.url,
             url: seo.url,
             name: title,
+            description: description,
             //alternateName: titleAlt || '',
             //headline: title,
             image: {
@@ -61,7 +62,7 @@ const SEO = ({ title, description, banner, pathname, price, article }) => (
               '@type': 'Offer',
               price: seo.price,
             },
-            description: description,
+            
             //datePublished: buildTime,
             //dateModified: buildTime,
             // author: {
