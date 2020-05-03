@@ -56,7 +56,7 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
             //headline: title,
             image: {
               '@type': 'ImageObject',
-              url: seo.image,
+              url: logo || seo.image,
             },
             brand: 'Sweet Leaf Succulents and Ornamental Plants',
             offers: {
