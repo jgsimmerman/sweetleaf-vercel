@@ -3,7 +3,7 @@ module.exports = {
   title: 'Sweet Leaf Succulents', // Navigation and Site Title
   titleAlt: 'Sweet Leaf Succulents and Ornamental Plants', // Title for JSONLD
   description:
-    'Sweet Leaf Succulents and Ornamental Plants -- Now selling carnivorous plants!',
+    'Sweet Leaf Succulents and Ornamental Plants',
   url: 'https://sweetleafsucculents.com', // Domain of your site. No trailing slash!
   siteUrl: 'https://sweetleafsucculents.com', // url + pathPrefix
   siteLanguage: 'en', // Language Tag on <html> element
