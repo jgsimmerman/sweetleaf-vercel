@@ -129,11 +129,12 @@ const SEO = ({ title, description, banner, pathname, price, sku, article }) => (
 export default SEO;
 SEO.propTypes = {
   title: PropTypes.string,
-  desc: PropTypes.string,
+  description: PropTypes.string,
   banner: PropTypes.string,
   pathname: PropTypes.string,
   article: PropTypes.bool,
   price: PropTypes.number,
+  sku: PropTypes.string,
 };
 SEO.defaultProps = {
   title: null,
@@ -141,7 +142,8 @@ SEO.defaultProps = {
   banner: null,
   pathname: null,
   article: false,
-  price: null,
+  price: 0.00,
+  sku: null,
 };
 const query = graphql`
   query SEO {
