@@ -64,10 +64,12 @@ const Post = ({ data, pageContext }) => {
      
       <SEO
         title={title}
-        story={story}
+        description={story}
         //description={post.frontmatter.description || post.excerpt || ' '}
-        image={image}
+        banner={image}
         pathname={post.frontmatter.path}
+        price = {post.frontmatter.price}
+        sku = {sku}
         article
       />
       <Header title={title} cover={image} />
