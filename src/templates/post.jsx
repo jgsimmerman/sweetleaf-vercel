@@ -43,6 +43,7 @@ const Post = ({ data, pageContext }) => {
     })
   );
 
+    console.log('post skuObj', skuObj);
 
   const image = post.frontmatter.cover.childImageSharp.fluid;
   //const pic = post.frontmatter.image.childImageSharp.fluid;
@@ -60,14 +61,18 @@ const Post = ({ data, pageContext }) => {
   const sku = post.frontmatter.sku;
   const care = post.frontmatter.care;
 
-  //let itemSkuArray = skuObj.find(obj => obj.sku == post.sku);
-  // itemQuantity = itemSkuArray.quantity;
-  // itemImage = itemSkuArray.image;
-
+  let itemSkuArray = skuObj.find(obj => obj.sku == sku);
+  let itemQuantity = itemSkuArray.quantity;
+  //itemImage = itemSkuArray.image;
+  console.log('post itemQuantity', itemQuantity)
+  
+  let inStock =  "http://schema.org/OutOfStock"
   // const inStock;
-  // if (itemQuantity > 0) {
-  //   inStock = "http://schema.org/InStock";
-  // }
+  if (itemQuantity > 0) {
+    inStock = "http://schema.org/InStock";
+  } 
+
+  console.log('inStock ', inStock);
   return (
     <Layout>
      
@@ -79,7 +84,7 @@ const Post = ({ data, pageContext }) => {
         pathname={post.frontmatter.path}
         price = {post.frontmatter.price}
         sku = {sku}
-        //availability = {inStock}
+        availability = {inStock}
         article
       />
       <Header title={title} cover={image} />
