@@ -241,7 +241,7 @@ module.exports = {
     //     callbackPath: "/callback", // Optional
     //   },
     // },
-    //`gatsby-plugin-force-trailing-slashes`,
+    `gatsby-plugin-force-trailing-slashes`,
     `gatsby-plugin-advanced-sitemap`,
   ],
 };
