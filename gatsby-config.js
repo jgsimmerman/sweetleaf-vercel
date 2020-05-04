@@ -75,7 +75,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-sharp',
-    'gatsby-plugin-sitemap',
+    //'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -241,5 +241,7 @@ module.exports = {
     //     callbackPath: "/callback", // Optional
     //   },
     // },
+    //`gatsby-plugin-force-trailing-slashes`,
+    `gatsby-plugin-advanced-sitemap`,
   ],
 };

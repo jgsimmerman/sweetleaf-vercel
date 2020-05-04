@@ -4,8 +4,8 @@ module.exports = {
   titleAlt: 'Sweet Leaf Succulents and Ornamental Plants', // Title for JSONLD
   description:
     'Sweet Leaf Succulents and Ornamental Plants',
-  url: 'https://sweetleafsucculents.com', // Domain of your site. No trailing slash!
-  siteUrl: 'https://sweetleafsucculents.com', // url + pathPrefix
+  url: 'https://sweetleafsucculents.com/', // Domain of your site. No trailing slash!
+  siteUrl: 'https://sweetleafsucculents.com/', // url + pathPrefix
   siteLanguage: 'en', // Language Tag on <html> element
   logo: 'static/logo/logo.png', // Used for SEO
   banner: 'static/logo/logo.png',
