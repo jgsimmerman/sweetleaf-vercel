@@ -55,6 +55,8 @@ const SEO = ({ title, description, banner, pathname, price, sku, availability, a
             "http://www.facebook.com/SweetLeafSucculents",
             "http://www.twitter.com/SweetLeafSuccs",
             "http://pinterest.com/sweetleafsucculents0081/",
+            "https://www.instagram.com/sweetleafsucculents/",
+            //"https://www.etsy.com/shop/SweetLeafSucculents",
           ],
           // "cont
         },
