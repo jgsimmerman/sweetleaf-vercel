@@ -37,10 +37,26 @@ const SEO = ({ title, description, banner, pathname, price, sku, availability, a
         {
           '@context': 'http://schema.org',
           '@type': 'WebSite',
-          '@id': siteUrl,
+          //'@id': siteUrl,
+          "@type": "Organization",
           url: siteUrl,
           name: defaultTitle,
           alternateName: titleAlt || '',
+          "foundingDate": "2019",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "104 S DARLINGTON AVE",
+            "addressLocality": "Lamar",
+            "addressRegion": "SC",
+            "postalCode": "29069-9799",
+            "addressCountry": "USA",
+          },
+          "sameAs": [ 
+            "http://www.facebook.com/SweetLeafSucculents",
+            "http://www.twitter.com/SweetLeafSuccs",
+            "http://pinterest.com/sweetleafsucculents0081/",
+          ],
+          // "cont
         },
       ];
       if (article) {
@@ -84,45 +100,45 @@ const SEO = ({ title, description, banner, pathname, price, sku, availability, a
             // },
             //isPartOf: siteUrl,
 
-            "@type": "Organization",
-            "name": title,
-            "legalName" : "Sweet Leaf Succulents and Ornamental Plants, LLC",
-            "url": "http://www.sweetleafsucculents.com",
-            "logo": defaultBanner,
-            "foundingDate": "2019",
-            // "founders": [
-            //   {
-            //   "@type": "Person",
-            //   "name": "Patrick Coombe"
-            //   },
-            //   {
-            //   "@type": "Person",
-            //   "name": ""
-            //   } 
-            // ],
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "104 S DARLINGTON AVE",
-              "addressLocality": "Lamar",
-              "addressRegion": "SC",
-              "postalCode": "29069-9799",
-              "addressCountry": "USA"
-            },
-            // "contactPoint": {
-            //   "@type": "ContactPoint",
-            //   "contactType": "customer support",
-            //   "telephone": "[+561-526-8457]",
-            //   "email": "info@elite-strategies.com"
+            // "@type": "Organization",
+            // "name": title,
+            // "legalName" : "Sweet Leaf Succulents and Ornamental Plants, LLC",
+            // "url": "http://www.sweetleafsucculents.com",
+            // "logo": defaultBanner,
+            // "foundingDate": "2019",
+            // // "founders": [
+            // //   {
+            // //   "@type": "Person",
+            // //   "name": "Patrick Coombe"
+            // //   },
+            // //   {
+            // //   "@type": "Person",
+            // //   "name": ""
+            // //   } 
+            // // ],
+            // "address": {
+            //   "@type": "PostalAddress",
+            //   "streetAddress": "104 S DARLINGTON AVE",
+            //   "addressLocality": "Lamar",
+            //   "addressRegion": "SC",
+            //   "postalCode": "29069-9799",
+            //   "addressCountry": "USA"
             // },
-            "sameAs": [ 
-              //"http://www.freebase.com/m/0_h96pq",
-              "http://www.facebook.com/SweetLeafSucculents",
-              "http://www.twitter.com/SweetLeafSuccs",
-              "http://pinterest.com/sweetleafsucculents0081/",
-              //"http://elitestrategies.tumblr.com/",
-              //"http://www.linkedin.com/company/elite-strategies",
-              //"https://plus.google.com/106661773120082093538",
-            ],
+            // // "contactPoint": {
+            // //   "@type": "ContactPoint",
+            // //   "contactType": "customer support",
+            // //   "telephone": "[+561-526-8457]",
+            // //   "email": "info@elite-strategies.com"
+            // // },
+            // "sameAs": [ 
+            //   //"http://www.freebase.com/m/0_h96pq",
+            //   "http://www.facebook.com/SweetLeafSucculents",
+            //   "http://www.twitter.com/SweetLeafSuccs",
+            //   "http://pinterest.com/sweetleafsucculents0081/",
+            //   //"http://elitestrategies.tumblr.com/",
+            //   //"http://www.linkedin.com/company/elite-strategies",
+            //   //"https://plus.google.com/106661773120082093538",
+            // ],
 
             mainEntityOfPage: {
               '@type': 'WebSite',
