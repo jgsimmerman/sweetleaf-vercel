@@ -60,7 +60,7 @@ const Post = ({ data, pageContext }) => {
   const sku = post.frontmatter.sku;
   const care = post.frontmatter.care;
 
-  // let itemSkuArray = skuObj.find(obj => obj.sku == post.sku);
+  //let itemSkuArray = skuObj.find(obj => obj.sku == post.sku);
   // itemQuantity = itemSkuArray.quantity;
   // itemImage = itemSkuArray.image;
 
