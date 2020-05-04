@@ -83,7 +83,7 @@ const SEO = ({ title, description, banner, pathname, price, sku, availability, a
               price: seo.price,
               priceCurrency: "USD",
               url: seo.url,
-              // availability: seo.availability
+              availability: seo.availability
             },
             
             //datePublished: buildTime,
