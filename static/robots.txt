@@ -1,11 +1,7 @@
 User-agent: *
 Disallow: */tags/
-Disallow: */sempervivum/
-Disallow: */more-soft-varieties/
 Disallow: */aeonium/
-Disallow: */soft-sedum/
 Disallow: */hens-n-chicks/
-Disallow: */hybrids/
 Disallow: */senecio/
 
 sitemap: https://sweetleafsucculents.com/sitemap.xml
