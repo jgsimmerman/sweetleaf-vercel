@@ -1,4 +1,4 @@
-<!-- ---
+---
 path: "/catalog/houseplants/coffee-plant"
 cover: "./coffee-front1.jpg"
 pic: "./coffee-front1.jpg"
@@ -31,7 +31,9 @@ sku: "sku_HEdoDcvdndCfhn"
 published: true
 available: 1
 
-story: "Coffea is a genus of flowering plants in the family Rubiaceae. Coffea species are shrubs or small trees native to tropical and southern Africa and tropical Asia. The seeds of some species, called coffee beans, are used to flavor various beverages and products."
+story: "Coffea arabica , also known as the Arabian coffee, "coffee shrub of Arabia", "mountain coffee" or "arabica coffee", is a species of Coffea. It is believed to be the first species of coffee to be cultivated, and is the dominant cultivar, representing about 60% of global production. Coffee produced from the (less acidic, more bitter, and more highly caffeinated) robusta bean (C. canephora) makes up most of the remaining coffee production. Arabica coffee was first found in Yemen and documented by the 12th century. Coffea arabica is called būna in Arabic."
 
 ---
-Coffea is a genus of flowering plants in the family Rubiaceae. Coffea species are shrubs or small trees native to tropical and southern Africa and tropical Asia. The seeds of some species, called coffee beans, are used to flavor various beverages and products. -->
+Coffea arabica , also known as the Arabian coffee, "coffee shrub of Arabia", "mountain coffee" or "arabica coffee", is a species of Coffea. It is believed to be the first species of coffee to be cultivated, and is the dominant cultivar, representing about 60% of global production. Coffee produced from the (less acidic, more bitter, and more highly caffeinated) robusta bean (C. canephora) makes up most of the remaining coffee production. Arabica coffee was first found in Yemen and documented by the 12th century. Coffea arabica is called būna in Arabic.
+
+Coffea is a genus of flowering plants in the family Rubiaceae. Coffea species are shrubs or small trees native to tropical and southern Africa and tropical Asia. The seeds of some species, called coffee beans, are used to flavor various beverages and products.
