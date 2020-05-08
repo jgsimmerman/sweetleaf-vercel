@@ -1,4 +1,4 @@
----
+<!-- ---
 path: "/catalog/houseplants/coffee-plant"
 cover: "./coffee-front1.jpg"
 pic: "./coffee-front1.jpg"
@@ -34,3 +34,4 @@ available: 1
 story: "Coffea is a genus of flowering plants in the family Rubiaceae. Coffea species are shrubs or small trees native to tropical and southern Africa and tropical Asia. The seeds of some species, called coffee beans, are used to flavor various beverages and products."
 
 ---
+Coffea is a genus of flowering plants in the family Rubiaceae. Coffea species are shrubs or small trees native to tropical and southern Africa and tropical Asia. The seeds of some species, called coffee beans, are used to flavor various beverages and products. -->
