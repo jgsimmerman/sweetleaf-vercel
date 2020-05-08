@@ -43,7 +43,6 @@ const Post = ({ data, pageContext }) => {
     })
   );
 
-    console.log('post skuObj', skuObj);
 
   const image = post.frontmatter.cover.childImageSharp.fluid;
   //const pic = post.frontmatter.image.childImageSharp.fluid;
@@ -61,18 +60,16 @@ const Post = ({ data, pageContext }) => {
   const sku = post.frontmatter.sku;
   const care = post.frontmatter.care;
 
-  let itemSkuArray = skuObj.find(obj => obj.sku == sku);
-  let itemQuantity = itemSkuArray.quantity;
-  //itemImage = itemSkuArray.image;
-  console.log('post itemQuantity', itemQuantity)
-  
-  let inStock =  "http://schema.org/OutOfStock"
-  // const inStock;
-  if (itemQuantity > 0) {
-    inStock = "http://schema.org/InStock";
-  } 
+  //let itemSkuArray = skuObj.find(obj => obj.sku == post.sku);
+  // itemQuantity = itemSkuArray.quantity;
+  // itemImage = itemSkuArray.image;
 
-  console.log('inStock ', inStock);
+  const inStock = "http://schema.org/InStock";
+  // if (skuObj.quantity == 0) {
+  //   inStock = "http://schema.org/OutOfStock";
+  // }
+  console.log('skuObj.quantity', skuObj)
+  console.log('inStock', inStock);
   return (
     <Layout>
      

@@ -30,7 +30,7 @@ const SEO = ({ title, description, banner, pathname, price, sku, availability, a
         image: `${siteUrl}/${banner || defaultBanner}`,
         url: `${siteUrl}${pathname || '/'}`,
         price: price || 0.00,
-        availability: availability
+        availability: availability || "http://schema.org/InStock"
       };
       const realPrefix = pathPrefix === '/' ? '' : pathPrefix;
       let schemaOrgJSONLD = [
