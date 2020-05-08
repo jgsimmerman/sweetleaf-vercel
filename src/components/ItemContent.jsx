@@ -131,7 +131,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
   let itemImage;
   if (post.sku) {
     let itemSkuArray = skuObj.find(obj => obj.sku == post.sku);
-    console.log(itemSkuArray);
+    //console.log(itemSkuArray);
     itemQuantity = itemSkuArray.quantity;
     itemImage = itemSkuArray.image;
   }
@@ -140,7 +140,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
 
   //let opts = JSON.parse(options);
   //console.log("Options: " + opts);
-  console.log(sku3)
+  //console.log(sku3)
   const scaryAnimals = [
     { label: `${option1}`, value: 1 },
     { label: `${option2}`, value: 2 },
@@ -151,7 +151,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
     scaryAnimals.pop();
     scaryAnimals.pop();
   }
-  console.log(scaryAnimals)
+  //console.log(scaryAnimals)
   return (
     <Wrapper>
       <Grid
@@ -213,7 +213,6 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
             )}
             
 
-            {console.log(`Sending sku ${sku}`)}
             <button
               style={{
                 backgroundColor: 'hsl(228, 34.9%, 83.1%)',

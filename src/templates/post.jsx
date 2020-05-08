@@ -68,8 +68,8 @@ const Post = ({ data, pageContext }) => {
   // if (skuObj.quantity == 0) {
   //   inStock = "http://schema.org/OutOfStock";
   // }
-  console.log('skuObj.quantity', skuObj)
-  console.log('inStock', inStock);
+  //console.log('skuObj.quantity', skuObj)
+  //console.log('inStock', inStock);
   return (
     <Layout>
      
