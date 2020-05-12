@@ -78,7 +78,7 @@ const Post = ({ data, pageContext }) => {
         title={title}
         description={story}
         //description={post.frontmatter.description || post.excerpt || ' '}
-        banner={publicImg}
+        //banner={publicImg}
         pathname={post.frontmatter.path}
         price = {post.frontmatter.price}
         sku = {sku}
