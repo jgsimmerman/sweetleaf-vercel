@@ -1,6 +1,7 @@
 ---
 path: "/catalog/fairy-garden/pink-hypoestes"
 cover: "./front1.jpg"
+jsonImg: "./front1.jpg"
 pic: "./front1.jpg"
 pic2: "./frontPlastic.jpg"
 pic3: "./frontTerraCotta.jpg"

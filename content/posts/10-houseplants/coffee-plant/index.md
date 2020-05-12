@@ -1,6 +1,7 @@
 ---
 path: "/catalog/houseplants/coffee-plant"
 cover: "./coffee-front1.jpg"
+jsonImg: "./coffee-front1.jpg"
 pic: "./coffee-front1.jpg"
 pic2: "./coffee-front2.jpg"
 pic3: "./coffee-side1.jpg"

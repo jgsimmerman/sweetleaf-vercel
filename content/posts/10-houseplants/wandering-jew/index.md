@@ -1,6 +1,7 @@
 ---
 path: "/catalog/houseplants/wandering-dude"
 cover: "./wandering.jpg"
+jsonImg: "./wandering.jpg"
 pic: "./wandering.jpg"
 pic2: "./wandering2.jpg"
 pic3: "./wandering2.jpg"

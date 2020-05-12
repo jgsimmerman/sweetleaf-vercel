@@ -1,6 +1,7 @@
 ---
 path: "/catalog/fairy-garden/mini-pixie"
 cover: "./anglePixie2.jpg"
+jsonImg: "./anglePixie2.jpg"
 pic: "./terraCottaComparison37.jpg"
 pic2: "./anglePixie2.jpg"
 pic3: "./frontPlastic.jpg"

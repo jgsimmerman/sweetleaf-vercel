@@ -1,6 +1,7 @@
 ---
 path: "/catalog/carnivorous-plants/alata"
 cover: "./largeNep1.jpg"
+json1: "./newAlata1.jpg"
 pic: "./largeNep1.jpg"
 pic2: "./peek.jpg"
 pic3: "./topNew.jpg"

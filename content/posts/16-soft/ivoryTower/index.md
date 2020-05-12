@@ -1,6 +1,7 @@
 ---
 path: "/catalog/succulents/soft/ivory-towers"
 cover: "./top1.jpg"
+jsonImg: "./top1.jpg"
 pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./top2.jpg"

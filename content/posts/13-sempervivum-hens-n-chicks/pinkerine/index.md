@@ -1,6 +1,7 @@
 ---
 path: "/catalog/succulents/sempervivum/pinkerine"
 cover: "./top1.jpg"
+jsonImg: "./top1.jpg"
 pic: "./front1.jpg"
 pic2: "./front2.jpg"
 pic3: "./side1.jpg"

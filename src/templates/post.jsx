@@ -45,6 +45,7 @@ const Post = ({ data, pageContext }) => {
 
 
   const image = post.frontmatter.cover.childImageSharp.fluid;
+  const publicImg = post.frontmatter.cover.publicURL
   //const pic = post.frontmatter.image.childImageSharp.fluid;
   const title = post.frontmatter.title;
   const date = post.frontmatter.date;
@@ -59,6 +60,7 @@ const Post = ({ data, pageContext }) => {
   const dataItemWeight = post.frontmatter.dataItemWeight;
   const sku = post.frontmatter.sku;
   const care = post.frontmatter.care;
+  const jsonImg = post.frontmatter.jsonImg.relativePath;
 
   //let itemSkuArray = skuObj.find(obj => obj.sku == post.sku);
   // itemQuantity = itemSkuArray.quantity;
@@ -77,7 +79,7 @@ const Post = ({ data, pageContext }) => {
         title={title}
         description={story}
         //description={post.frontmatter.description || post.excerpt || ' '}
-        //banner={itemImage}
+        banner={publicImg}
         pathname={post.frontmatter.path}
         price = {post.frontmatter.price}
         sku = {sku}
@@ -160,7 +162,9 @@ export const query = graphql`
         seasonality
         bloomcolor
         temperature
-        
+        jsonImg {
+          relativePath
+        }
         pic {
           childImageSharp {
             fluid( maxWidth: 500, quality: 75, traceSVG: { color: "#2B2B2F" }) {
@@ -189,7 +193,9 @@ export const query = graphql`
             }
           }
         }
+        
         cover {
+          publicURL
           childImageSharp {
             fluid(
               maxWidth: 1920

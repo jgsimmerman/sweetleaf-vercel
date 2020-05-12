@@ -1,6 +1,7 @@
 ---
 path: "/catalog/carnivorous-plants/kokedama"
 cover: "./front1.jpg"
+jsonImg: "./front1.jpg"
 pic: "./front2.jpg"
 pic2: "./front1.jpg"
 pic3: "./front3.jpg"

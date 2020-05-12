@@ -1,6 +1,7 @@
 ---
 path: "/catalog/succulents/sempervivum/sundancer"
 cover: "./top2.jpg"
+jsonImg: "./top2.jpg"
 pic: "./front3.jpg"
 pic2: "./front4.jpg"
 pic3: "./side2.jpg"
