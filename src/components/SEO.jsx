@@ -28,7 +28,7 @@ const SEO = ({ title, description, banner, pathname, price, sku, availability, a
         title: title || defaultTitle,
         description: description || defaultDescription,
         image: `${siteUrl}${banner || defaultBanner}`,
-        url: `${siteUrl}${pathname || '/'}`,
+        url: `${siteUrl}${pathname || '/'}/`,
         price: price || 0.00,
         availability: availability || "http://schema.org/InStock"
       };

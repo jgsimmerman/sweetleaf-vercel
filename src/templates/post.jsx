@@ -60,7 +60,6 @@ const Post = ({ data, pageContext }) => {
   const dataItemWeight = post.frontmatter.dataItemWeight;
   const sku = post.frontmatter.sku;
   const care = post.frontmatter.care;
-  const jsonImg = post.frontmatter.jsonImg.relativePath;
 
   //let itemSkuArray = skuObj.find(obj => obj.sku == post.sku);
   // itemQuantity = itemSkuArray.quantity;
@@ -162,9 +161,7 @@ export const query = graphql`
         seasonality
         bloomcolor
         temperature
-        jsonImg {
-          relativePath
-        }
+        
         pic {
           childImageSharp {
             fluid( maxWidth: 500, quality: 75, traceSVG: { color: "#2B2B2F" }) {
