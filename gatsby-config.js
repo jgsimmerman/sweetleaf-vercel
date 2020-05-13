@@ -242,6 +242,19 @@ module.exports = {
     //   },
     // },
     `gatsby-plugin-force-trailing-slashes`,
-    `gatsby-plugin-advanced-sitemap`,
+    {
+      resolve: `gatsby-plugin-advanced-sitemap`,
+      options: {
+           // 1 query for each data type
+        
+          exclude: [
+              `/404`,
+              `/tags/`,
+              ///(\/)?hash-\S*/, // you can also pass valid RegExp to exclude internal tags for example
+          ],
+          createLinkInHead: true, // optional: create a link in the `<head>` of your site
+          addUncaughtPages: true, // optional: will fill up pages that are not caught by queries and mapping and list them under `sitemap-pages.xml`
+      }
+    },
   ],
 };
