@@ -25,12 +25,12 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 	}
 	// Create stripe customer
 	
-		 const customer = stripe.customers.create(
+		 const customer = await stripe.customers.create(
 		 	{
 		 		email: body.customer.email,
 		 	}
 		 )
-	 const customerId = customer.id
+	 
 	
 	// Create stripe order
 	let order
@@ -39,7 +39,7 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 		const obj = {
 			currency: `usd`,
 			email: body.infoEmail,
-			customer: customerId,
+			customer: customer.id,
 			items: body.products.map(({ id, quantity, type }) => {
 				switch (type) {
 
