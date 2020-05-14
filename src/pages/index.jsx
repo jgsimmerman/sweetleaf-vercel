@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import styled from '@emotion/styled';
-import { Header, ItemList, SocialIcons } from 'components';
+import { Header, ItemList, SocialIcons, Mailchimp, Wheel } from 'components';
 import { Layout } from 'layouts';
 import theme from '../../config/theme';
 import Img from 'gatsby-image';
@@ -173,6 +173,11 @@ const Index = ({ data }) => {
       <PostWrapper>
           <h2> Featured Plants </h2>
       </PostWrapper>
+      <PostWrapper>
+          <p>
+            Announcement: We will be adding many new plants to our inventory over the coming weeks. You can follow us on social media to get the latest updates!
+          </p>
+      </PostWrapper>
 
       <PostWrapper>
       <Wrapper2>
@@ -272,6 +277,11 @@ const Index = ({ data }) => {
         <h4> <Link to="/catalog/">See our full catalog for more!</Link></h4>
       </PostWrapper>
       {/* <PostWrapper>
+        <Wheel />
+        <Mailchimp />
+      </PostWrapper> */}
+
+      {/* <PostWrapper>
           <h2> Coming Spring 2020! </h2>
       </PostWrapper>
 
@@ -368,6 +378,8 @@ const Index = ({ data }) => {
         </Wrapper>
 
       </PostWrapper> */}
+
+      
     </Layout>
   );
 };

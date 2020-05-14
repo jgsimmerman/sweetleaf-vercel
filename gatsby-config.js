@@ -256,5 +256,11 @@ module.exports = {
           addUncaughtPages: true, // optional: will fill up pages that are not caught by queries and mapping and list them under `sitemap-pages.xml`
       }
     },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+          endpoint: 'https://sweetleafsucculents.us18.list-manage.com/subscribe/post?u=a0089393547a91632f9fa7f45&amp;id=dc39dd6a41', // add your MC list endpoint here; see instructions below
+      },
+    },
   ],
 };

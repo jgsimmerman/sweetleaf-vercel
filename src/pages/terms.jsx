@@ -13,8 +13,6 @@ const Terms = center => (
 
     <h1>TERMS OF SERVICE</h1>
       <p></p>
-      <p>----</p>
-      <p></p>
       <p>OVERVIEW</p>
       <p></p>
       <p>This website is operated by Sweet Leaf Succulents and Ornamental Plants, LLC. Throughout the site, the terms &ldquo;we&rdquo;, &ldquo;us&rdquo; and &ldquo;our&rdquo; refer to Sweet Leaf Succulents and Ornamental Plants, LLC. Sweet Leaf Succulents and Ornamental Plants, LLC offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.</p>
