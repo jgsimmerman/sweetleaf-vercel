@@ -9,6 +9,8 @@ const Shipping = center => (
     <Helmet title={'Shipping Policies'} />
     <Header title="Shipping Policies"></Header>
     <Container  styles={{textAlign: "left"}}>
+    <div style={{color: "#232b2b"}} > 
+
       <h1>SHIPPING POLICIES</h1>
       <p>
         All plants are hand picked by us, including any assortments, and hand packaged and wrapped by us. 
@@ -95,6 +97,7 @@ const Shipping = center => (
       <p>
       While we take every precaution and do everything in our power to ensure that your plants will arrive happy and healthy, during the Winter we have no control over the weather and highly recommend a heat pack if daytime temps are expected to dip below the temperatures that are recommended for your plants. Heat packs last for a minimum of 72 hours and in extreme cold conditions two heat packs might be necessary. If we deem that to be the case and you have only purchased one, or none at all, we will message you to double check that you want the package sent without a heat pack, and we may also contact you to delay shipment or refund your order in full if we do not believe that there is any chance of your plants arriving alive. We would rather lose a sale than lose the faith of our customers and want to give you every opportunity to ensure a safe arrival. Heat packs are $4 each and between our cost of the packs and the added shipping weight we make no profit on these and merely provide them as a service to ensure your plants arrive in good condition. Please understand that Sweet Lead cannot be responsible for damage due to freezing or cold when a heat pack is not purchased. 
       </p>
+      </div>
     </Container>
   </Layout>
 );

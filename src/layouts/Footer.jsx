@@ -32,9 +32,14 @@ const Footer = () => (
         {/* <a href="https://twitter.com/jacobsimmerman">Follow us on twitter!</a> */}
       </div>
       <span>
-        <Link to="/shipping/">Shipping Policies</Link>
+        <Link to="/shipping/">Shipping Policies</Link> {' | '}
       </span>
-      
+      <span>
+        <Link to="/privacy/">Privacy Policy</Link> {' | '}
+      </span>
+      <span>
+        <Link to="/terms/">Terms and Conditions</Link> {' '}
+      </span>
     </Text>
   </Wrapper>
 );

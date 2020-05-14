@@ -61,12 +61,12 @@ const Post = ({ data, pageContext }) => {
   const sku = post.frontmatter.sku;
   const care = post.frontmatter.care;
 
-  //let itemSkuArray = skuObj.find(obj => obj.sku == post.sku);
-  // itemQuantity = itemSkuArray.quantity;
+  // let itemSkuArray = skuObj.find(obj => obj.sku == sku);
+  // let itemQuantity = itemSkuArray.quantity;
   // itemImage = itemSkuArray.image;
-
+  // console.log('itemQuantity', itemQuantity)
   const inStock = "http://schema.org/InStock";
-  // if (skuObj.quantity == 0) {
+  // if (itemQuantity == 0) {
   //   inStock = "http://schema.org/OutOfStock";
   // }
   //console.log('skuObj.quantity', skuObj)

@@ -95,7 +95,7 @@ const SocialIcons = () => {
             <FaEtsy />
           </a>
         </li> */}
-        <li>
+        {/* <li>
           <a
             href={redditUrl}
             target="_blank"
@@ -104,7 +104,7 @@ const SocialIcons = () => {
           >
             <FaReddit />
           </a>
-        </li>
+        </li> */}
       </ul>
     </SocialWrapper>
   );
