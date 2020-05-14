@@ -278,7 +278,6 @@ const Index = ({ data }) => {
       </PostWrapper>
       {/* <PostWrapper>
         <Wheel />
-        <Mailchimp />
       </PostWrapper> */}
 
       {/* <PostWrapper>
