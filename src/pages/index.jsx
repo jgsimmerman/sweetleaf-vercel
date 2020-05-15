@@ -276,9 +276,9 @@ const Index = ({ data }) => {
       <PostWrapper>
         <h4> <Link to="/catalog/">See our full catalog for more!</Link></h4>
       </PostWrapper>
-      {/* <PostWrapper>
+      <PostWrapper>
         <Wheel />
-      </PostWrapper> */}
+      </PostWrapper>
 
       {/* <PostWrapper>
           <h2> Coming Spring 2020! </h2>

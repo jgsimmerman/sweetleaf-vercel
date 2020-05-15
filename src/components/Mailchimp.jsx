@@ -20,6 +20,7 @@ const Mailchimp = () => {
       }
       setDisabled(false)
     } else {
+      // Wheel selectItem call here
       setMessage(
         "Thanks! Please check your e-mail and click the confirmation link."
       )
