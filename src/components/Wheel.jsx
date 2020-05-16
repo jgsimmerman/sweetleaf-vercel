@@ -40,7 +40,7 @@ export class WheelComponent extends React.Component {
       //setTimeout(this.selectItem, 500);
     }
     
-    (event) => {
+    
       event.preventDefault() 
       let disabled =true
       let message = "Sending..."
@@ -60,8 +60,6 @@ export class WheelComponent extends React.Component {
           "Thanks! Please check your e-mail and click the confirmation link."
         })
       }
-    }
-     
 
 
     }
