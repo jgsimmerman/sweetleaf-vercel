@@ -6,9 +6,9 @@ import Button from "../components/Button"
 import React, { useState } from 'react';
 //import Mailchimp from './Mailchimp';
 import Modal from './Modal';
-import ReactTimeout from 'react-timeout'
 
 import './wheel.css';
+
 
 export class WheelComponent extends React.Component {
   constructor(props) {
@@ -25,27 +25,25 @@ export class WheelComponent extends React.Component {
     // this.disabled = this.disabled.bind(this);
     // this.message = this.message.bind(this);
   }
-
   
-  handleSubmit = async (event) => {
+  handleSubmit = async event => {
     if (this.state.selectedItem === null) {
       const selectedItem = Math.floor(Math.random() * this.props.items.length);
       console.log(selectedItem)
       if (this.props.onSelectItem) {
         this.props.onSelectItem(selectedItem);
       }
-      this.setState({ selectedItem }, );
+      this.setState({ selectedItem });
     } else {
       this.setState({ selectedItem: null });
       //setTimeout(this.selectItem, 500);
     }
     
-    
-      event.preventDefault() 
+
+    event.preventDefault()
       let disabled =true
       let message = "Sending..."
-      const response = await addToMailchimp(this.state.email, {SELECTED: this.state.selectedItem});
-      
+      const response = await addToMailchimp(this.state.email, {SELECTED: this.state.selectedItem})
       if (response.result === "error") {
         if (response.msg.toLowerCase().includes("already subscribed")) {
           this.setState({ message: "You're already on to the list!"})
@@ -60,8 +58,6 @@ export class WheelComponent extends React.Component {
           "Thanks! Please check your e-mail and click the confirmation link."
         })
       }
-
-
     }
 
   // selectItem() {
@@ -118,9 +114,9 @@ export class WheelComponent extends React.Component {
             </div>
           ))}
         </div>
-          
+          <p>{this.state.message}</p>
         <p>{`You have won ${items[selectedItem]}`}</p>
-        <p>{this.state.message}</p>
+        
 
         
       </div>
