@@ -330,7 +330,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
           }
         </tbody>
       </Table> }
-      {/* <Yotpo sku={post.sku} price={post.price} title={post.title} path={post.path} pic={post.pic} /> */}
+      <Yotpo sku={post.sku} price={post.price} title={post.title} path={post.path} pic={post.pic} />
 
       {/* <div class="yotpo yotpo-main-widget" 
         data-product-id={post.sku} 
