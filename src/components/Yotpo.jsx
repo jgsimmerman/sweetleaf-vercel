@@ -29,7 +29,7 @@ export default class Yotpo extends React.Component {
         data-currency="USD" 
         data-name={title} 
         data-url={`https://sweetleafsucculents.com${path}`} 
-        data-image-url={pic}
+        data-image-url={`https://sweetleafsucculents.com${pic}`}
       > 
       </div>
     )

@@ -98,12 +98,12 @@ const Table = styled.table`
   }
 `;
 
-const ItemContent = ({ post, skuObj, skus, html }) => {
+const ItemContent = ({ post, skuObj, skus, html, publicImg}) => {
   let pic1 = post.pic.childImageSharp.fluid;
   let pic2 = post.pic2.childImageSharp.fluid;
   let pic3 = post.pic3.childImageSharp.fluid;
   let pic4 = post.pic4.childImageSharp.fluid;
-
+  let yotpoPic = post.pic.childImageSharp.fluid.src;
   let option1 = post.option1;
   let option2 = post.option2;
   //let options = post.options;
@@ -330,7 +330,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
           }
         </tbody>
       </Table> }
-      {/* <Yotpo sku={post.sku} price={post.price} title={post.title} path={post.path} pic={post.pic} /> */}
+      <Yotpo sku={post.sku} price={post.price} title={post.title} path={post.path} pic={publicImg} />
 
       {/* <div class="yotpo yotpo-main-widget" 
         data-product-id={post.sku} 

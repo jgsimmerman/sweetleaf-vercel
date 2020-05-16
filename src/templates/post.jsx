@@ -88,7 +88,7 @@ const Post = ({ data, pageContext }) => {
       <Header title={title} cover={image} />
 
       <Container>
-        <ItemContent post={post.frontmatter} skus={skus} skuObj={skuObj}  html={html} />
+        <ItemContent post={post.frontmatter} skus={skus} skuObj={skuObj}  html={html} publicImg={publicImg} />
       </Container>
     </Layout>
   );
