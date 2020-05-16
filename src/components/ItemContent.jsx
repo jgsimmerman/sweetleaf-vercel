@@ -22,6 +22,7 @@ import { openCart, addToCart } from 'cart';
 // import { SRLWrapper } from "simple-react-lightbox";
 import Select from 'react-select';
 import Zoom from 'react-medium-image-zoom';
+
 // https://www.reddit.com/r/gatsbyjs/comments/fmgm2k/gatsbyimage_zoom/
 
 const Wrapper = styled.div`
@@ -154,6 +155,8 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
   }
   //console.log(scaryAnimals)
   return (
+    <>
+    
     <Wrapper>
       <Grid
         display="flex"
@@ -339,6 +342,7 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
       > 
       </div> */}
     </Wrapper>
+    </>
   );
 };
 
