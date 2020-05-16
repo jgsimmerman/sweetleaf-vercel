@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
@@ -163,6 +163,18 @@ const Price = styled.p``;
 
 const Index = ({ data }) => {
   //const { edges } = data.allMarkdownRemark;
+
+  // useEffect(() => { 
+
+  //   if ( typeof window.yotpo !== "undefined" &&  yotpo.initialized && post) { 
+  //     window.yotpo.initWidgets();
+
+  //     setTimeout(function() {
+  //       window.yotpo.refreshWidgets()
+  //     }, 1000) 
+  //   } 
+  // }, [post]);
+
   return (
     <Layout>
       <Helmet title={'Sweet Leaf Succulents'} />

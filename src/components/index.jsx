@@ -13,6 +13,7 @@ import CareList from './CareList';
 import PotSelect from './PotSelect';
 import Mailchimp from './Mailchimp';
 import Wheel from './Wheel';
+import Yotpo from './Yotpo'
 
 
-export { CatalogList, Header, ItemList, SEO, TagsBlock, BurgerMenu, SocialIcons, ZygoteCart, BlogList, PostList, CareList, PotSelect, Mailchimp, Wheel };
+export { CatalogList, Header, ItemList, SEO, TagsBlock, BurgerMenu, SocialIcons, ZygoteCart, BlogList, PostList, CareList, PotSelect, Mailchimp, Wheel, Yotpo };

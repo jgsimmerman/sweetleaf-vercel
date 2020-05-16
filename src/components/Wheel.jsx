@@ -6,9 +6,9 @@ import Button from "../components/Button"
 import React, { useState } from 'react';
 //import Mailchimp from './Mailchimp';
 import Modal from './Modal';
+import ReactTimeout from 'react-timeout'
 
 import './wheel.css';
-
 
 export class WheelComponent extends React.Component {
   constructor(props) {
@@ -20,65 +20,66 @@ export class WheelComponent extends React.Component {
       message: "",
       show: false,
     };
-    this.selectItem = this.selectItem.bind(this);
-    
+    //this.selectItem = this.selectItem.bind(this);
+    //this.getSelectedItem = this.getSelectedItem.bind(this);
     // this.disabled = this.disabled.bind(this);
     // this.message = this.message.bind(this);
   }
-  showModal = () => {
-    this.setState({
-      show: !this.state.show
-    });
-  };
+
   
-  handleSubmit = async event => {
+  handleSubmit = async (event) => {
     if (this.state.selectedItem === null) {
       const selectedItem = Math.floor(Math.random() * this.props.items.length);
       console.log(selectedItem)
       if (this.props.onSelectItem) {
         this.props.onSelectItem(selectedItem);
       }
-      this.setState({ selectedItem });
+      this.setState({ selectedItem }, );
     } else {
       this.setState({ selectedItem: null });
-      setTimeout(this.selectItem, 500);
+      //setTimeout(this.selectItem, 500);
     }
-
-
-    event.preventDefault()
-    let disabled =true
-    let message = "Sending..."
-    const response = await addToMailchimp(this.state.email, this.state.selectedItem)
-    if (response.result === "error") {
-      if (response.msg.toLowerCase().includes("already subscribed")) {
-        this.setState({ message: "You're already on to the list!"})
+    
+    (event) => {
+      event.preventDefault() 
+      let disabled =true
+      let message = "Sending..."
+      const response = await addToMailchimp(this.state.email, {SELECTED: this.state.selectedItem});
+      
+      if (response.result === "error") {
+        if (response.msg.toLowerCase().includes("already subscribed")) {
+          this.setState({ message: "You're already on to the list!"})
+        } else {
+          this.setState({ message: "Some error occured while subscribing you to the list."})
+        }
+        this.setState({ disabled:  false })
       } else {
-        this.setState({ message: "Some error occured while subscribing you to the list."})
+        // Wheel selectItem call here
+        //selectItem();
+        this.setState({ message:
+          "Thanks! Please check your e-mail and click the confirmation link."
+        })
       }
-      this.setState({ disabled:  false })
-    } else {
-      // Wheel selectItem call here
-      //selectItem();
-      this.setState({ message:
-        "Thanks! Please check your e-mail and click the confirmation link."
-      })
     }
-  }
+     
 
-  selectItem() {
-    if (this.state.selectedItem === null) {
-      const selectedItem = Math.floor(Math.random() * this.props.items.length);
-      console.log(selectedItem)
-      if (this.props.onSelectItem) {
-        this.props.onSelectItem(selectedItem);
-      }
-      this.setState({ selectedItem });
-    } else {
-      this.setState({ selectedItem: null });
-      setTimeout(this.selectItem, 500);
-      this.showModal();
+
     }
-  }
+
+  // selectItem() {
+  //   if (this.state.selectedItem === null) {
+  //     const selectedItem = Math.floor(Math.random() * this.props.items.length);
+  //     console.log(selectedItem)
+  //     if (this.props.onSelectItem) {
+  //       this.props.onSelectItem(selectedItem);
+  //     }
+  //     this.setState({ selectedItem });
+  //   } else {
+  //     this.setState({ selectedItem: null });
+  //     setTimeout(this.selectItem, 500);
+  //     this.showModal();
+  //   }
+  // }
 
   render() {
     const { selectedItem } = this.state;
@@ -119,14 +120,10 @@ export class WheelComponent extends React.Component {
             </div>
           ))}
         </div>
+          
+        <p>{`You have won ${items[selectedItem]}`}</p>
+        <p>{this.state.message}</p>
 
-        <Modal onClose={this.showModal} show={this.state.show}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
-          deserunt corrupti, ut fugit magni qui quasi nisi amet repellendus non
-          fuga omnis a sed impedit explicabo accusantium nihil doloremque
-          consequuntur.
-        </Modal>
-        
         
       </div>
 

@@ -169,6 +169,15 @@ const SEO = ({ title, description, banner, pathname, price, sku, availability, a
               gtag('js', new Date());
               gtag('config', 'UA-158535531-1');
             </script> */}
+
+            <script type="text/javascript"> 
+              { (function e(){ 
+                var e=document.createElement("script"); 
+                e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/oqoqaYJmZaZJrICMIqc4gz5ehcle2gb97m3WJojY/widget.js"; 
+                var t=document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e,t) })() 
+                } 
+            </script>
+
             {/* OpenGraph  */}
             <meta property="og:url" content={seo.url} />
             <meta property="og:type" content={article ? 'article' : null} />

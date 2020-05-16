@@ -12,6 +12,7 @@ import {
   SecondNav,
   Zygote,
   PotSelect,
+  Yotpo,
 } from 'components';
 import Helmet from 'react-helmet';
 import BuyButton from './BuyButton';
@@ -326,6 +327,17 @@ const ItemContent = ({ post, skuObj, skus, html }) => {
           }
         </tbody>
       </Table> }
+      <Yotpo sku={post.sku} price={post.price} title={post.title} path={post.path} pic={post.pic} />
+
+      {/* <div class="yotpo yotpo-main-widget" 
+        data-product-id={post.sku} 
+        data-price={post.price} 
+        data-currency="USD" 
+        data-name={post.title} 
+        data-url={`https://sweetleafsucculents.com${post.path}`} 
+        data-image-url={post.pic}
+      > 
+      </div> */}
     </Wrapper>
   );
 };
