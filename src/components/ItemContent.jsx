@@ -217,7 +217,7 @@ const ItemContent = ({ post, skuObj, skus, html, publicImg}) => {
             )}
             
 
-            <button
+            <button id="addToCart"
               style={{
                 backgroundColor: 'hsl(228, 34.9%, 83.1%)',
                 borderRadius: '5px',
