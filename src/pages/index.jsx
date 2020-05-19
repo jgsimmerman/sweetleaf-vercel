@@ -8,6 +8,7 @@ import { Layout } from 'layouts';
 import theme from '../../config/theme';
 import Img from 'gatsby-image';
 
+import Skeleton from 'react-loading-skeleton';
 
 
 const PostWrapper = styled.main`
@@ -194,7 +195,7 @@ const Index = ({ data }) => {
       <PostWrapper>
       <Wrapper2>
           <Image>
-            <Img fluid={data.imageTwelve.childImageSharp.fluid} alt="Succulents"/>
+            <Img fluid={data.imageTwelve.childImageSharp.fluid || <Skeleton />} alt="Succulents"/>
           </Image>
           <StyledLink to="/catalog/succulents/">
             <Info>
@@ -205,7 +206,7 @@ const Index = ({ data }) => {
         </Wrapper2>
         <Wrapper>
           <Image>
-            <Img fluid={data.imageThirteen.childImageSharp.fluid} alt="Cacti"/>
+            <Img fluid={data.imageThirteen.childImageSharp.fluid || <Skeleton />} alt="Cacti"/>
           </Image>
           <StyledLink to="/catalog/cacti/">
             <Info>
@@ -216,7 +217,7 @@ const Index = ({ data }) => {
         </Wrapper>
       <Wrapper>
           <Image>
-            <Img fluid={data.imageEleven.childImageSharp.fluid} alt="Nepenthes Kokedama"/>
+            <Img fluid={data.imageEleven.childImageSharp.fluid || <Skeleton />} alt="Nepenthes Kokedama"/>
           </Image>
           <StyledLink to="/catalog/carnivorous-plants/kokedama">
             <Info>
@@ -227,7 +228,7 @@ const Index = ({ data }) => {
         </Wrapper>
         <Wrapper>
           <Image>
-            <Img fluid={data.imageEight.childImageSharp.fluid} alt="Rose Hypoestes"/>
+            <Img fluid={data.imageEight.childImageSharp.fluid || <Skeleton />} alt="Rose Hypoestes"/>
           </Image>
           <StyledLink to="/catalog/fairy-garden/rose-hypoestes/">
             <Info>
@@ -238,7 +239,7 @@ const Index = ({ data }) => {
         </Wrapper>
         <Wrapper>
           <Image>
-            <Img fluid={data.imageFive.childImageSharp.fluid} alt="Mini Pixie"/>
+            <Img fluid={data.imageFive.childImageSharp.fluid || <Skeleton />} alt="Mini Pixie"/>
           </Image>
           <StyledLink to="/catalog/fairy-garden/mini-pixie/">
             <Info>
@@ -251,7 +252,7 @@ const Index = ({ data }) => {
 
         <Wrapper>
           <Image>
-            <Img fluid={data.imageSeven.childImageSharp.fluid} alt="Mini White"/>
+            <Img fluid={data.imageSeven.childImageSharp.fluid || <Skeleton />} alt="Mini White"/>
           </Image>
           <StyledLink to="/catalog/fairy-garden/mini-white/">
             <Info>
@@ -262,7 +263,7 @@ const Index = ({ data }) => {
         </Wrapper>
         <Wrapper>
           <Image>
-            <Img fluid={data.imageTen.childImageSharp.fluid} alt="Nepenthes Alata"/>
+            <Img fluid={data.imageTen.childImageSharp.fluid || <Skeleton />} alt="Nepenthes Alata"/>
           </Image>
           <StyledLink to="/catalog/carnivorous-plants/alata/">
             <Info>
@@ -274,7 +275,7 @@ const Index = ({ data }) => {
         
         <Wrapper>
           <Image>
-            <Img fluid={data.imageNine.childImageSharp.fluid} alt="Mixed Colors Hypoestes"/>
+            <Img fluid={data.imageNine.childImageSharp.fluid || <Skeleton />} alt="Mixed Colors Hypoestes"/>
           </Image>
           <StyledLink to="/catalog/fairy-garden/mixed-hypoestes/">
             <Info>
