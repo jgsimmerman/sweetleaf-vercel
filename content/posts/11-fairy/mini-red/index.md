@@ -27,6 +27,7 @@ sku: "sku_GjxwATJM1jnNby"
 sku2: "sku_GpbeNgpZOOVmfW"
 available: 1
 published: true
+inStock: "http://schema.org/InStock"
 story: "'Mini Red' Fittonia - The Nerve Plant - is covered in beautiful red colored veins over green leaves."
 
 ---

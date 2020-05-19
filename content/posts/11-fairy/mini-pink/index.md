@@ -27,6 +27,7 @@ price2: 8.95
 sku: "sku_GjxT8DgnT5AWVt"
 sku2: "sku_GpcCh7LkLeHzOS"
 published: true
+inStock: "http://schema.org/InStock"
 story: "'Mini Pink' Fittonia - The Nerve Plant - is covered in beautiful pink colored veins over green leaves."
 
 ---

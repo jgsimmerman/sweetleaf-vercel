@@ -32,7 +32,7 @@ sku: "sku_H80K2blADXuj5G"
 # options: '[{ label: "Small", value: 1 }, { label: "Large", value: 2 }]'
 published: true
 available: 1
-
+inStock: "http://schema.org/InStock"
 story: "Austrocylindropuntia subulata (Eve's Pin)"
 
 ---

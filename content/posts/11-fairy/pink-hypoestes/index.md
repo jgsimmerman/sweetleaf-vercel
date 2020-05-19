@@ -27,6 +27,7 @@ price2: 8.45
 sku: "sku_GjxYiNOR9gTB4W"
 sku2: "sku_GpcAFBQolK3FWZ"
 published: true
+inStock: "http://schema.org/InStock"
 story: "Pink color Hypoestes phyllostachya - The Polka Dot Plant is covered in beautiful colored splotches."
 
 ---

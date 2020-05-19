@@ -27,6 +27,7 @@ price2: 8.95
 sku: "sku_Gjxrzxp7GTuUQk"
 sku2: "sku_GpbmL5j0k9fU82"
 published: true
+inStock: "http://schema.org/InStock"
 story: "'Mini White' Fittonia - The Silver Nerve Plant - is covered in beautiful white colored veins over green leaves."
 
 ---

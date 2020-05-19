@@ -32,7 +32,7 @@ sku: "sku_H4iDsQRUOZfsWI"
 # options: '[{ label: "Small", value: 1 }, { label: "Large", value: 2 }]'
 published: true
 available: 1
-
+inStock: "http://schema.org/InStock"
 story: "Sempervivum 'Pink Lemonade' "
 
 ---

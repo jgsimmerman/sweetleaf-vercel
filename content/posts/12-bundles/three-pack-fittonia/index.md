@@ -27,6 +27,7 @@ option1: "Plastic Nursery Pot"
 option2: "Terra Cotta Pot"
 available: 1
 published: true
+inStock: "http://schema.org/InStock"
 story: "'Fittonia 3 Pack Bundle - The Nerve Plant - is covered in beautiful colored veins over green leaves."
 ---
 This listing is for a bundle of three plants in one of each of the colors that we carry. If you are looking for an individual color, please check our individual listings. We currently carry [Red](/catalog/fairy-garden/mini-red), [White](/catalog/fairy-garden/mini-white) and [Pink](/catalog/fairy-garden/mini-pink).

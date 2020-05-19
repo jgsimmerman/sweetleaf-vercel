@@ -31,7 +31,7 @@ sku: "sku_H4iQf0HXfKiQaf"
 # options: '[{ label: "Small", value: 1 }, { label: "Large", value: 2 }]'
 published: true
 available: 1
-
+inStock: "http://schema.org/InStock"
 story: "Sedum 'Little Missy': "
 
 ---

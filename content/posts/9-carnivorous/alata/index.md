@@ -31,7 +31,7 @@ sku: "sku_GjxyukjjpQOVDs"
 # options: '[{ label: "Small", value: 1 }, { label: "Large", value: 2 }]'
 published: true
 available: 1
-
+inStock: "http://schema.org/InStock"
 story: "One of the easiest pitcher plants to grow. Plants come potted in a 3.5 inch square plastic pot with pure long fiber sphagnum moss, so it is ready to go and doesn't need to be repotted in a different medium. These would be considered large starters are their leaves span between 9 inches and 12 inches at the largest point. Plants have an average of five or six pitchers."
 
 ---

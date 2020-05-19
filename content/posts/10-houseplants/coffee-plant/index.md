@@ -31,6 +31,7 @@ sku: "sku_HEdoDcvdndCfhn"
 # options: '[{ label: "Small", value: 1 }, { label: "Large", value: 2 }]'
 published: true
 available: 1
+inStock: "http://schema.org/InStock"
 
 story: "Coffea arabica, commonly known as Arabian coffee, mountain coffee or arabica coffee, is a species of Coffea. It is widely believed to be the first species of coffee to be cultivated, and is the dominant cultivar, representing about 60% of global production. Arabica coffee was originally found in Yemen and documented by the 12th century. "
 ---

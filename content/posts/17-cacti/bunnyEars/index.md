@@ -32,7 +32,7 @@ sku: "sku_H806ttQjWKjzQT"
 # options: '[{ label: "Small", value: 1 }, { label: "Large", value: 2 }]'
 published: true
 available: 1
-
+inStock: "http://schema.org/InStock"
 story: "Opuntia microdasys var. pallida (Bunny Ears)"
 
 ---

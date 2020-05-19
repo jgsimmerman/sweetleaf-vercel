@@ -38,6 +38,7 @@ sku3: "sku_GpcUYFWQN07Wc1"
 sku4: "sku_GpcVERBp2iBybJ"
 
 published: true
+inStock: "http://schema.org/InStock"
 story: "Semi-tropical plant perfect for fairy gardens, doll houses or just a really cute house plant for tiny spaces! Plant comes in a two inch plastic nursery pot or a 2.5 inch terra cotta pot and only grows to be about six inches tall at maturity."
 
 
