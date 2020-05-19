@@ -60,12 +60,13 @@ const Post = ({ data, pageContext }) => {
   const dataItemWeight = post.frontmatter.dataItemWeight;
   const sku = post.frontmatter.sku;
   const care = post.frontmatter.care;
+  const inStock = post.frontmatter.inStock;
 
   // let itemSkuArray = skuObj.find(obj => obj.sku == sku);
   // let itemQuantity = itemSkuArray.quantity;
   // itemImage = itemSkuArray.image;
   // console.log('itemQuantity', itemQuantity)
-  const inStock = "http://schema.org/InStock";
+  //const inStock = "http://schema.org/InStock";
   // if (itemQuantity == 0) {
   //   inStock = "http://schema.org/OutOfStock";
   // }
@@ -139,6 +140,8 @@ export const query = graphql`
         tags
         id
 
+        inStock
+        
         option1
         option2
         option3
