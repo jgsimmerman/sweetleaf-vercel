@@ -518,7 +518,7 @@ export const pageQuery = graphql`
     }
     imageThirteen: file(relativePath: { eq: "cacti.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1600, quality: 80) {
+        fluid(maxWidth: 400, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
