@@ -12,7 +12,7 @@
   },
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build && netlify-lambda build src/cart/functions",
+    "build": "gatsby build", 
     "build:app": "gatsby build",
     "build:lambda": "netlify-lambda build src/cart/functions",
     "dev": "run-p dev:functions dev:gatsby",
