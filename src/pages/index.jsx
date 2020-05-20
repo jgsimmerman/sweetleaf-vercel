@@ -294,103 +294,6 @@ const Index = ({ data }) => {
         <Wheel />
       </PostWrapper> */}
 
-      {/* <PostWrapper>
-          <h2> Coming Spring 2020! </h2>
-      </PostWrapper>
-
-      <PostWrapper>
-        <Wrapper>
-          <Image>
-            <Img fluid={data.imageOne.childImageSharp.fluid} />
-          </Image>
-          <StyledLink to="/catalog/echeveria/">
-            <Info>
-              <Title>Echeveria</Title>
-            </Info>
-          </StyledLink>
-        </Wrapper>
-        <Wrapper>
-          <Image>
-            <Img fluid={data.imageOne.childImageSharp.fluid} />
-          </Image>
-          <StyledLink to="/catalog/sempervivum-heuffelii/">
-            <Info>
-              <Title>Sempervivum Heuffelii</Title>
-            </Info>
-          </StyledLink>
-        </Wrapper>
-        <Wrapper>
-          <Image>
-            <Img fluid={data.imageOne.childImageSharp.fluid} />
-          </Image>
-          <StyledLink to="/catalog/hens-n-chicks/">
-            <Info>
-              <Title>Hens & Chicks</Title>
-            </Info>
-          </StyledLink>
-        </Wrapper>
-        <Wrapper>
-          <Image>
-            <Img fluid={data.imageTwo.childImageSharp.fluid} />
-          </Image>
-          <StyledLink to="/catalog/aeonium/">
-            <Info>
-              <Title>Aeonium</Title>
-            </Info>
-          </StyledLink>
-        </Wrapper>
-        <Wrapper>
-          <Image>
-            <Img fluid={data.imageOne.childImageSharp.fluid} />
-          </Image>
-          <StyledLink to="/catalog/senecio/">
-            <Info>
-              <Title>Senecio</Title>
-            </Info>
-          </StyledLink>
-        </Wrapper>
-        <Wrapper>
-          <Image>
-            <Img fluid={data.imageOne.childImageSharp.fluid} />
-          </Image>
-          <StyledLink to="/catalog/soft-sedum/">
-            <Info>
-              <Title>Soft Sedum</Title>
-            </Info>
-          </StyledLink>
-        </Wrapper>
-        <Wrapper>
-          <Image>
-            <Img fluid={data.imageOne.childImageSharp.fluid} />
-          </Image>
-          <StyledLink to="/catalog/hybrids/">
-            <Info>
-              <Title>Hybrids</Title>
-            </Info>
-          </StyledLink>
-        </Wrapper>
-        <Wrapper>
-          <Image>
-            <Img fluid={data.imageOne.childImageSharp.fluid} />
-          </Image>
-          <StyledLink to="/catalog/more-soft-varieties/">
-            <Info>
-              <Title>More Soft Varieties</Title>
-            </Info>
-          </StyledLink>
-        </Wrapper>
-        <Wrapper>
-          <Image>
-            <Img fluid={data.imageOne.childImageSharp.fluid} />
-          </Image>
-          <StyledLink to="/catalog/carnivorous-plants/">
-            <Info>
-              <Title>Carnivorous Plants</Title>
-            </Info>
-          </StyledLink>
-        </Wrapper>
-
-      </PostWrapper> */}
 
       
     </Layout>
@@ -518,7 +421,7 @@ export const pageQuery = graphql`
     }
     imageThirteen: file(relativePath: { eq: "cacti.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1600, quality: 80) {
+        fluid(maxWidth: 400, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
