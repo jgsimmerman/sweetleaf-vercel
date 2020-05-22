@@ -1,22 +1,74 @@
 import Stripe from 'stripe'
 import noop from '../utils/noop'
+const Lightrail = require('lightrail-client');
+import * as uuid from "uuid";
 
-export default async function submitStripeOrder({ stripeApiSecret, body, verbose }) {
+export default async function submitStripeOrder({ stripeApiSecret, lightrailAPIKey, body, verbose }) {
 	let log = noop
 	let error = noop
 	if(verbose){
 		log = console.log
 		error = console.error
 	}
+	Lightrail.configure({
+		apiKey: lightrailAPIKey
+	})
 	const stripe = Stripe(stripeApiSecret)
 	if(typeof body === `string`){
 		body = JSON.parse(body)
 	}
 
-	// Validate product prices & stock here
-	log(`submitStripeOrder received from invoke:`, body)
+	/*    Lightrail  */
 
+	const contactId = uuid.v4().substring(0,24)
+	const contactParams = {
+		id: contactId,
+		email: body.infoEmail,
+		metadata: {
+			name: body.infoName
+		}
+	}
+
+	const contact = await Lightrail.contacts.createContact(contactParams)
+	// await Lightrail.contacts.attachContactToValue(contact, {valueId: 'cCB_PK_HSLFfGipsIIWBhl_Qef0'});
+
+	const lineItems = body.products.map(prod => ({
+		productId: prod.name,
+		unitPrice: prod.price,
+		quantity: prod.quantity,
+		taxRate: 0,
+	}))
+	console.log('Lightrail lineItems: ', lineItems)
+	const transactionId = uuid.v4().substring(0, 24)
+	const transaction = {
+		id: transactionId,
+		currency: "USD",
+		lineItems,
+		sources: [
+			{
+				rail: "lightrail",
+				contactId: contact.body.id,
+				//code: "First_Test_LIGHTRAIL", 
+				//valueId: '468c0bb8-5d8d25ec-44ec91c1'
+
+			},
+			{
+				rail: 'stripe',
+				source: body.payment.id,
+				customer: body.meta.customerId
+			}
+		]
+	}
+
+	console.log('transaction in submit-stripe-order: ', transaction)
+
+	/*     End Lightrail    */
+
+	// Validate product prices & stock here
+	console.log(`submitStripeOrder received from invoke:`, body)
+	body.transaction = transaction
 	// Create empty result object to be sent later
+	console.log('BODY.META ', body.meta)
 	let res = {
 		messages: {
 			error: [],
@@ -50,12 +102,14 @@ export default async function submitStripeOrder({ stripeApiSecret, body, verbose
 	if (res.success) {
 		let req
 		try {
-			req = await stripe.orders.pay(res.meta.orderId, {
-				email: body.infoEmail,
-				source: body.payment.id,
-			})
-			res.success = req.status === `paid`
-			log(`submitStripeOrder received from Stripe after order placement:`, req)
+			req = await Lightrail.transactions.checkout(transaction)
+
+			// req = await stripe.orders.pay(res.meta.orderId, {
+			// 	email: body.infoEmail,
+			// 	source: body.payment.id,
+			// })
+			res.success //= req.status === `paid`
+			console.log(`submitStripeOrder received from Lightrail after order placement:`, req)
 		}
 		catch (err) {
 			error(err)

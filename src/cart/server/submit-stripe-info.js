@@ -159,6 +159,7 @@ export default async function submitStripeInfo({ stripeApiSecret, body, verbose 
 	}
 	if (order.id) {
 		res.meta.orderId = order.id
+		res.meta.customerId = order.customer
 	}
 
 	res = {
