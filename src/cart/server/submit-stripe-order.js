@@ -38,6 +38,18 @@ export default async function submitStripeOrder({ stripeApiSecret, lightrailAPIK
 		quantity: prod.quantity,
 		taxRate: 0,
 	}))
+
+	// const ship = body.shippingMethods.map(method => {
+	// 	method.id == body.selectedShippingMethod;
+	// })
+
+	// const shipItem = {
+	// 	productId: ship.description,
+	// 	unitPrice: ship.amount,
+	// }
+
+	// lineItems.push(shipItem)
+
 	console.log('Lightrail lineItems: ', lineItems)
 	const transactionId = uuid.v4().substring(0, 24)
 	const transaction = {
@@ -54,8 +66,8 @@ export default async function submitStripeOrder({ stripeApiSecret, lightrailAPIK
 			},
 			{
 				rail: 'stripe',
-				source: body.payment.id,
-				customer: body.meta.customerId
+				source: 'tok_visa', //body.payment.id,
+				//customer: body.meta.customerId
 			}
 		]
 	}
@@ -65,10 +77,10 @@ export default async function submitStripeOrder({ stripeApiSecret, lightrailAPIK
 	/*     End Lightrail    */
 
 	// Validate product prices & stock here
-	console.log(`submitStripeOrder received from invoke:`, body)
+	//console.log(`submitStripeOrder received from invoke:`, body)
 	body.transaction = transaction
 	// Create empty result object to be sent later
-	console.log('BODY.META ', body.meta)
+	//console.log('BODY.META ', body.meta)
 	let res = {
 		messages: {
 			error: [],
