@@ -7,7 +7,7 @@ export default function BankStatement() {
 
     useEffect(() => {
         if (auth.loggedIn) {
-            auth.fetch('magicWebhook')
+            auth.fetch('https://sweetleaf-gc.netlify.app/.netlify/functions/statement')
                 .then(res => res.json())
                 .then((payload) => {
                     setStatement(payload);
