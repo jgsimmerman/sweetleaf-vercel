@@ -39,16 +39,17 @@ export default async function submitStripeOrder({ stripeApiSecret, lightrailAPIK
 		taxRate: 0,
 	}))
 
-	// const ship = body.shippingMethods.map(method => {
-	// 	method.id == body.selectedShippingMethod;
-	// })
+	const ship = body.shippingMethods.find(method => method.id == body.selectedShippingMethod)
 
-	// const shipItem = {
-	// 	productId: ship.description,
-	// 	unitPrice: ship.amount,
-	// }
 
-	// lineItems.push(shipItem)
+	console.log('SHIP', ship)
+	const shipItem = {
+		productId: ship.description,
+		unitPrice: ship.value,
+		variantId: ship.id
+	}
+
+	lineItems.push(shipItem)
 
 	console.log('Lightrail lineItems: ', lineItems)
 	const transactionId = uuid.v4().substring(0, 24)
@@ -60,6 +61,7 @@ export default async function submitStripeOrder({ stripeApiSecret, lightrailAPIK
 			{
 				rail: "lightrail",
 				contactId: contact.body.id,
+				//contactId: '0a0fe50d-a688-4ba1-a',
 				//code: "First_Test_LIGHTRAIL", 
 				//valueId: '468c0bb8-5d8d25ec-44ec91c1'
 
@@ -95,7 +97,7 @@ export default async function submitStripeOrder({ stripeApiSecret, lightrailAPIK
 				selected_shipping_method: body.selectedShippingMethod,
 			})
 			res.success = true
-			log(`submitStripeOrder received from Stripe after updated shipping:`, req)
+			//log(`submitStripeOrder received from Stripe after updated shipping:`, req)
 		}
 		catch (err) {
 			error(err)
@@ -121,7 +123,7 @@ export default async function submitStripeOrder({ stripeApiSecret, lightrailAPIK
 			// 	source: body.payment.id,
 			// })
 			res.success //= req.status === `paid`
-			console.log(`submitStripeOrder received from Lightrail after order placement:`, req)
+			//console.log(`submitStripeOrder received from Lightrail after order placement:`, req)
 		}
 		catch (err) {
 			error(err)
