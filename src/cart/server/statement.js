@@ -4,6 +4,8 @@ const magic = new Magic(process.env.MAGIC_SECRET_KEY)
 function sendError(res, error) {
   console.error(error.stack);
   res.statusCode = 401
+  console.log('res.statusCode', res.statusCode)
+
   res.json({
     error: {
       message: 'Unauthorized'
@@ -18,9 +20,12 @@ export default async function statement(req, res)  {
     const metadata = await magic.users.getMetadataByToken(magicToken)
     
     // send the statement
-    //res.statusCode = 200
+    res.statusCode = 200
     res.json({ balance: 3000, email: metadata.email })
+    console.log('res.statusCode', res.statusCode)
   } catch (err) {
     sendError(res, err)
   }
+
+  return res
 }

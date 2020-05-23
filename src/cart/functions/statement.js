@@ -5,8 +5,10 @@ import {
 } from '../server'
 dotenv.config({ silent: true })
 
-export async function handler(req) {
+export async function handler(req, res) {
 
-	const res = await statement(req)
+  const res = await statement(req, res)
+  console.log('res.statusCode', res.statusCode)
+
   return res
 }
