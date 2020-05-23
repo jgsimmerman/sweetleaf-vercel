@@ -26,7 +26,21 @@ export default async function submitStripeOrder({ stripeApiSecret, lightrailAPIK
 		2. Attach giftcards to customers
 		3. Award rewards to customers
 	*/
+	////////////// VALUES /////////////////////////
+	let valueId = "transactionTestValueId1"
+	const value = await Lightrail.values.getValue(valueId);
 
+        if (!value.body) {
+            await Lightrail.values.createValue({
+                id: valueId,
+                code: "TRANSACTION_TEST_CODE_1",
+								currency: "USD",
+                usesRemaining: 100,
+                balance: 500 // must be 0 for totals test
+            });
+				}
+				
+	//////////////
 	const contactId = uuid.v4().substring(0,24)
 	const contactParams = {
 		id: contactId,
@@ -75,12 +89,13 @@ export default async function submitStripeOrder({ stripeApiSecret, lightrailAPIK
 			},
 			{
 				rail: 'stripe',
-				source: 'tok_visa', //body.payment.id,
+				source: 'tok_visa',// body.payment.id.toString(),
 				//customer: body.meta.customerId
-			}
-		]
+			},
+		],
+		simulate: true
 	}
-
+	console.log('SOURCES: ', transaction.sources)
 	console.log('transaction in submit-stripe-order: ', transaction)
 
 	/*     End Lightrail    */
@@ -90,6 +105,7 @@ export default async function submitStripeOrder({ stripeApiSecret, lightrailAPIK
 	body.transaction = transaction
 	// Create empty result object to be sent later
 	//console.log('BODY.META ', body.meta)
+	console.log('body.payment.id ', body.payment.id)
 	let res = {
 		messages: {
 			error: [],

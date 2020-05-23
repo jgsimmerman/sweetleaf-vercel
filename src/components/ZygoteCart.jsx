@@ -44,7 +44,7 @@ const ZygoteCart = props => {
       infoWebhook='https://50e08548.ngrok.io/.netlify/functions/info-stripe'
       orderWebhook='https://50e08548.ngrok.io/.netlify/functions/order-stripe'
       shippingWebhook='https://50e08548.ngrok.io/.netlify/functions/shipping-stripe'
-
+      magicWebhook='https://50e08548.ngrok.io/.netlify/functions/statement'
 
       // infoWebhook={process.env.INFO_WEBHOOK}
       // orderWebhook={process.env.ORDER_WEBHOOK}

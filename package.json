@@ -37,6 +37,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.12.0",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "@fortawesome/react-fontawesome": "^0.1.8",
+    "@magic-sdk/admin": "^1.0.0",
     "@mangoart/gatsby-plugin-purechat": "^1.0.2",
     "@mdx-js/mdx": "^1.5.3",
     "@mdx-js/react": "^1.5.3",
@@ -132,7 +133,8 @@
     "sweetleaf-lock": "^1.0.1",
     "typeface-candal": "0.0.72",
     "typeface-open-sans": "0.0.54",
-    "typography": "^0.16.19"
+    "typography": "^0.16.19",
+    "use-magic-link": "^1.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
