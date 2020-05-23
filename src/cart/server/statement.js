@@ -18,7 +18,7 @@ export default async function statement(req, res)  {
     const metadata = await magic.users.getMetadataByToken(magicToken)
     
     // send the statement
-    res.statusCode = 200
+    //res.statusCode = 200
     res.json({ balance: 3000, email: metadata.email })
   } catch (err) {
     sendError(res, err)
