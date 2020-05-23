@@ -20,6 +20,13 @@ export default async function submitStripeOrder({ stripeApiSecret, lightrailAPIK
 
 	/*    Lightrail  */
 
+	/*
+		TODO
+		1. Get Customers working
+		2. Attach giftcards to customers
+		3. Award rewards to customers
+	*/
+
 	const contactId = uuid.v4().substring(0,24)
 	const contactParams = {
 		id: contactId,
