@@ -25,9 +25,7 @@ const ZygoteCart = props => {
 	// 		return totalsState.State.subtotal * -.1
 	// 	}
   // })
-  
-  var url = "http://" + location.host.split(":")[0];
-   
+     
   return(
     
     <Cart
