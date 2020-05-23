@@ -9,4 +9,5 @@ export async function handler(req, res) {
 
 	const res = await statement(req, res)
 
+  return res
 }
