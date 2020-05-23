@@ -26,7 +26,7 @@ const ZygoteCart = props => {
 	// 	}
   // })
   
-  
+  var url = "http://" + location.host.split(":")[0];
    
   return(
     
@@ -35,11 +35,11 @@ const ZygoteCart = props => {
      stripeApiKey="pk_test_Vc8z3p2pdxHFQgxhbbhIXtyv00GnPddsjV"
 
      // stripeApiKey={process.env.STRIPE_API_PUBLIC}
-
+     
       infoWebhook='/.netlify/functions/info-stripe'
       orderWebhook='/.netlify/functions/order-stripe'
       shippingWebhook='/.netlify/functions/shipping-stripe'
-      magicWebhook='../.netlify/functions/statement'
+      magicWebhook='https://sweetleaf-gc.netlify.app/.netlify/functions/statement'
 
 
       // infoWebhook='https://50e08548.ngrok.io/.netlify/functions/info-stripe'
