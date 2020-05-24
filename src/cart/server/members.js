@@ -3,9 +3,9 @@ import { Magic } from '@magic-sdk/admin';
 const Lightrail = require('lightrail-client');
 import * as uuid from 'uuid';
 
-export default async function members(event, magicSecretKey) {
+export default async function members(event) {
   //  START MAGIC AUTH
-  const magic = new Magic(magicSecretKey);
+  const magic = new Magic('sk_test_C9795F33831A21B8');
   const magicToken = event.headers.authorization.substring(7);
 
   // Authorize the request
