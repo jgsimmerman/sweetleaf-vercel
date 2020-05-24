@@ -1,6 +1,6 @@
 import dotenv from 'dotenv'
 import {
-	statement,
+	members,
 	sendSparkpostConfirmation,
 } from '../server'
 dotenv.config({ silent: true })

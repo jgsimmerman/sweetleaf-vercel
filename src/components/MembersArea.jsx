@@ -3,14 +3,14 @@ import useMagicLink from 'use-magic-link'
 
 export default function MembersArea() {
     const auth = useMagicLink('pk_test_8659A943739758FA');
-    const [statement, setStatement] = useState(null);
+    const [members, setMembers] = useState(null);
 
     useEffect(() => {
         if (auth.loggedIn) {
             auth.fetch('https://sweetleaf-gc.netlify.app/.netlify/functions/members')
                 .then(res => res.json())
                 .then((payload) => {
-                    setStatement(payload);
+                    setMembers(payload);
                 })
         }
     }, [auth.loggedIn])
@@ -19,13 +19,13 @@ export default function MembersArea() {
         return (<div>Not Authorized!</div>)
     }
 
-    if (statement === null) {
+    if (members === null) {
         return (<div>Checking your account information ...</div>)
     }
 
     return (
         <div>
-            Account Email: {statement.email}.
+            Account Email: {members.email}.
         </div>
     )
 }

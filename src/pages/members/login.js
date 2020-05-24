@@ -1,6 +1,6 @@
 import React from 'react'
 import useMagicLink from 'use-magic-link'
-import BankStatement from '../../components/MembersArea'
+import MembersArea from '../../components/MembersArea'
 
 
 export default function Login() {
@@ -34,7 +34,7 @@ export default function Login() {
       <h2>Please sign up or login</h2>
       <form onSubmit={loginNow}>
         <input type="email" name="email" required="required" placeholder="Enter your email" />
-        <button type="submit">Join</button>
+        <button type="submit">Submit</button>
       </form>
       </>
     )
