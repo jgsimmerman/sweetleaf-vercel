@@ -20,14 +20,17 @@ export default async function members(event) {
         eq: metadata.email,
       },
     });
+    console.log('try contact', contact)
   } catch {
     const newContact = {
       id: uuid.v4().substring(0, 24),
       email: metadata.email,
     };
     const contact = await Lightrail.contacts.createContact(newContact);
+    console.log('catch contact', contact)
   } finally {
-    contactId = contact.id
+    contactId = contact.id || 'exampleID123'
+    console.log('finally contactId ', contactId)
   }
 
   const contactValuesList = await Lightrail.contacts.listContactsValues(contact)
