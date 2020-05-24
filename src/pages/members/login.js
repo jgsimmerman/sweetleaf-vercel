@@ -3,41 +3,53 @@ import useMagicLink from 'use-magic-link'
 import { MembersArea } from 'components'
 
 
+const initialFormData = Object.freeze({
+  email: '',
+});
+
 export default function Login() {
   const auth = useMagicLink('pk_test_8659A943739758FA');
+  const [formData, updateFormData] = React.useState(initialFormData);
 
-  function loginNow() {
+  const handleChange = e => {
+    updateFormData({
+      ...formData,
+
+      // Trimming any whitespace
+      [e.target.name]: e.target.value.trim(),
+    });
+  };
+
+  function loginNow(e) {
     //const email = prompt('Enter your email');
+    const email = formData.email;
     auth.login(email);
   }
 
   function getContent() {
     if (auth.loading || auth.loggingIn || auth.loggingOut) {
-      return 'Loading...'
+      return '...';
     }
 
     if (auth.loggedIn) {
       return (
         <div>
           <MembersArea />
-          <br/>
+          <br />
           <button onClick={() => auth.logout()}>Logout</button>
         </div>
-      )
+      );
     }
 
     return (
-      // <div>
-      //   <button onClick={loginNow}>Login Now</button>
-      // </div>
-      <>
-      <h2>Please sign up or login</h2>
-      <form onSubmit={loginNow}>
-        <input type="email" name="email" required="required" placeholder="Enter your email" />
-        <button type="submit">Submit</button>
-      </form>
-      </>
-    )
+      <div>
+        <label>
+          Enter your email
+          <input name="email" onChange={handleChange} />
+        </label>
+        <button onClick={loginNow}>Submit</button>
+      </div>
+    );
   }
 
   return (
@@ -47,16 +59,16 @@ export default function Login() {
         <div className="content">{getContent()}</div>
       </main>
 
-    <style jsx>{`
-      .container {
-        margin: 200px 0;
-        text-align: center;
-        font-family: Arial;
-      }
-      .content {
-        margin: 20px 0;
-      }
-    `}</style>
+      <style jsx>{`
+        .container {
+          margin: 200px 0;
+          text-align: center;
+          font-family: Arial;
+        }
+        .content {
+          margin: 20px 0;
+        }
+      `}</style>
     </div>
-  )
+  );
 }
