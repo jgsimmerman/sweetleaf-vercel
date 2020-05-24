@@ -20,7 +20,7 @@ export default function MembersArea() {
     }
 
     if (statement === null) {
-        return (<div>Checking your statement ...</div>)
+        return (<div>Checking your account information ...</div>)
     }
 
     return (
