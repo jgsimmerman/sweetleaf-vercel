@@ -16,29 +16,36 @@ export default async function members(event) {
   const metadata = await magic.users.getMetadataByToken(magicToken);
   console.log('members.js', metadata);
   //  END MAGIC AUTH
-  // START LIGHTRAIL
+  // START LIGHTRAIL5.0
   // Create Contact
-  let contact = {}
-  let contactId = ''
-  try {
-    const contacts = await Lightrail.contacts.listContacts({
-      email: {
-        eq: metadata.email,
-      },
-    });
-    contact = contacts.body[0]
-    console.log('try contact', contact)
-  } catch {
-    const newContact = {
-      id: uuid.v4().substring(0, 24),
-      email: metadata.email,
-    };
-     contact = await Lightrail.contacts.createContact(newContact);
-    console.log('catch contact', contact)
-  } finally {
-    contactId = contact.id || 'exampleID123'
-    console.log('finally contactId ', contactId)
+  
+  const getContactId = () =>{
+    try {
+      const contacts = await Lightrail.contacts.listContacts({
+        email: {
+          eq: metadata.email,
+        },
+      });
+      contact = contacts.body[0]
+      console.log('try contactId', contact.id)
+      return contact.id
+
+    } catch {
+      const newContact = {
+        id: uuid.v4().substring(0, 24),
+        email: metadata.email,
+      };
+       contact = await Lightrail.contacts.createContact(newContact);
+       console.log('catch contactId', contact.id)
+       return contact.id
+    } finally {
+      contactId = contact.id || 'exampleID123'
+      console.log('finally contactId ', contactId)
+      return contact.id
+    }
   }
+
+  const contactId = getContactId
 
   const contactValuesList = await Lightrail.contacts.listContactsValues(contact)
 
