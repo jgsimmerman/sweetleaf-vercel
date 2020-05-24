@@ -61,12 +61,11 @@ export default function Login() {
 
       <style jsx>{`
         .container {
-          margin: 200px 0;
+          
           text-align: center;
           font-family: Arial;
         }
         .content {
-          margin: 20px 0;
         }
       `}</style>
     </div>
