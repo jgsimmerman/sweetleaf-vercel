@@ -33,7 +33,7 @@ export default async function members(event) {
     const contact = await Lightrail.contacts.createContact(newContact);
     console.log('catch contact', contact)
   } finally {
-    contactId = contact.id || 'exampleID123'
+    const contactId = contact.id || 'exampleID123'
     console.log('finally contactId ', contactId)
   }
 
