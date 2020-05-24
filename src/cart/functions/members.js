@@ -14,7 +14,7 @@ export async function handler(event, context, callback) {
    
   // Authorize the request
   const metadata = await magic.users.getMetadataByToken(magicToken)
-
+  console.log('members.js', metadata)
   return {
     statusCode: 200,
     body: JSON.stringify({ balance: 3000, email: metadata.email })

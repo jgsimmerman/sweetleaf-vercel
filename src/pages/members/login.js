@@ -1,6 +1,6 @@
 import React from 'react'
 import useMagicLink from 'use-magic-link'
-import MembersArea from '../../components/MembersArea'
+import { MembersArea } from 'components'
 
 
 export default function Login() {
