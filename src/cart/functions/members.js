@@ -9,7 +9,7 @@ import { Magic } from '@magic-sdk/admin';
 
 export async function handler(event, context, callback) {
 
-  const magicSecretKey = process.env.MAGIC_SECRET_KEY
+  const magicSecretKey = 'sk_test_C9795F33831A21B8' //process.env.MAGIC_SECRET_KEY
   const res = await members(event, magicSecretKey)
   
   
