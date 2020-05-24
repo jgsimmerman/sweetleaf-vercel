@@ -17,8 +17,11 @@ export default async function members(event) {
   console.log('members.js', metadata);
   //  END MAGIC AUTH
   // START LIGHTRAIL5.0
+  const sweetleafMemberProgramId = '722f71b4-455ed875-6605aff5'
+
   // Create Contact
-  
+  let contact = {}
+  let contactId =''
   const getContactId = () =>{
     try {
       const contacts = await Lightrail.contacts.listContacts({
@@ -32,20 +35,36 @@ export default async function members(event) {
 
     } catch {
       const newContact = {
-        id: uuid.v4().substring(0, 24),
+        id: `cus_${uuid.v4().substring(0, 6)}`,
         email: metadata.email,
       };
        contact = await Lightrail.contacts.createContact(newContact);
        console.log('catch contactId', contact.id)
        return contact.id
-    } finally {
-      contactId = contact.id || 'exampleID123'
-      console.log('finally contactId ', contactId)
-      return contact.id
     }
+    // } finally {
+    //   contactId = contact.id || 'exampleID123'
+    //   console.log('finally contactId ', contactId)
+    //   return contact.id
+    // }
   }
 
-  const contactId = getContactId
+  contactId = getContactId
+  const accountId = `account_${uuid.v4().substring(0, 6)}`,
+
+  // Create Account
+  const createAccount = (accountId, contactId, sweetleafMemberProgramId) => {
+    
+    const accountParams = {
+      id: accountId,
+      programId: sweetleafMemberProgramId,
+      contactId: contactId,
+      balance: 100, 
+      //currency: 'Points'
+    }
+    const value = await Lightrail.values.createValue(createAccount);
+  }
+  createAccount(accountId, contactId, sweetleafMemberProgramId)
 
   const contactValuesList = await Lightrail.contacts.listContactsValues(contact)
 
