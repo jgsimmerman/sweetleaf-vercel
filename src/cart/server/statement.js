@@ -1,31 +1,16 @@
 import { Magic } from '@magic-sdk/admin'
-const magic = new Magic(process.env.MAGIC_SECRET_KEY)
+const magic = new Magic('sk_test_C9795F33831A21B8')
 
-function sendError(res, error) {
-  console.error(error.stack);
-  res.statusCode = 401
-  console.log('res.statusCode', res.statusCode)
 
-  res.json({
-    error: {
-      message: 'Unauthorized'
-    }
-  })
-}
-
-export default async function statement(req, res)  {
+export default async (req, res) => {
   const magicToken = (req.headers.authorization || '').replace('Bearer ', '')
-  try {
-    // Authorize the request
-    const metadata = await magic.users.getMetadataByToken(magicToken)
-    
-    // send the statement
-    res.statusCode = 200
-    res.json({ balance: 3000, email: metadata.email })
-    console.log('res.statusCode', res.statusCode)
-  } catch (err) {
-    sendError(res, err)
-  }
+   
+  // Authorize the request
+  const metadata = await magic.users.getMetadataByToken(magicToken)
+  
+  // send the statement
+  res.statusCode = 200
+  res.json({ balance: 3000, email: metadata.email })
 
-  return res
+  return callback
 }
