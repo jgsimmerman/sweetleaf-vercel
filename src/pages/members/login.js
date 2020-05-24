@@ -1,7 +1,7 @@
 import React from 'react'
 import useMagicLink from 'use-magic-link'
 import { MembersArea } from 'components'
-
+import Skeleton from 'react-loading-skeleton'
 
 const initialFormData = Object.freeze({
   email: '',
@@ -28,7 +28,7 @@ export default function Login() {
 
   function getContent() {
     if (auth.loading || auth.loggingIn || auth.loggingOut) {
-      return '...';
+      return <p>{<Skeleton count={4}/> }</p>;
     }
 
     if (auth.loggedIn) {
