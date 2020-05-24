@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import useMagicLink from 'use-magic-link'
 
-export default function BankStatement() {
+export default function MembersArea() {
     const auth = useMagicLink('pk_test_8659A943739758FA');
     const [statement, setStatement] = useState(null);
 
     useEffect(() => {
         if (auth.loggedIn) {
-            auth.fetch('https://sweetleaf-gc.netlify.app/.netlify/functions/statement')
+            auth.fetch('https://sweetleaf-gc.netlify.app/.netlify/functions/members')
                 .then(res => res.json())
                 .then((payload) => {
                     setStatement(payload);
@@ -25,7 +25,7 @@ export default function BankStatement() {
 
     return (
         <div>
-            Hello "{statement.email}", your balance is <b>${statement.balance}</b>.
+            Account Email: {statement.email}.
         </div>
     )
 }

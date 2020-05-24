@@ -3,7 +3,7 @@ const magic = new Magic('sk_test_C9795F33831A21B8')
 
 
 export default async (req, res) => {
-  const magicToken = (req.headers.authorization || '').replace('Bearer ', '')
+  const magicToken = (req.headers.authorization).substring(7)
    
   // Authorize the request
   const metadata = await magic.users.getMetadataByToken(magicToken)
@@ -12,5 +12,5 @@ export default async (req, res) => {
   res.statusCode = 200
   res.json({ balance: 3000, email: metadata.email })
 
-  return callback
+  return res
 }

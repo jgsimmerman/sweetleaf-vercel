@@ -1,54 +1,22 @@
-import useMagicLink from 'use-magic-link'
-import BankStatement from '../../components/bank-statement'
+import React from 'react';
+import Helmet from 'react-helmet';
+import PropTypes from 'prop-types';
+import { Header } from 'components';
+import { Layout, Container } from 'layouts';
+import Login from './login'
 
+const Members = center => (
+  <Layout>
+    <Helmet title={'Members Area'} />
+    <Header title="Members Area"></Header>
+    <Container center={center}>
+      <Login />
+    </Container>
+  </Layout>
+);
 
-export default function Home() {
-  const auth = useMagicLink('pk_test_8659A943739758FA');
+export default Members;
 
-  function loginNow() {
-    const email = prompt('Enter your email');
-    auth.login(email);
-  }
-
-  function getContent() {
-    if (auth.loading || auth.loggingIn || auth.loggingOut) {
-      return '...'
-    }
-
-    if (auth.loggedIn) {
-      return (
-        <div>
-          <BankStatement />
-          <br/>
-          <button onClick={() => auth.logout()}>Logout</button>
-        </div>
-      )
-    }
-
-    return (
-      <div>
-        <button onClick={loginNow}>Login Now</button>
-      </div>
-    )
-  }
-
-  return (
-    <div className="container">
-      <main>
-        <h1>Next.js Magic Bank</h1>
-        <div className="content">{getContent()}</div>
-      </main>
-
-    <style jsx>{`
-      .container {
-        margin: 200px 0;
-        text-align: center;
-        font-family: Arial;
-      }
-      .content {
-        margin: 20px 0;
-      }
-    `}</style>
-    </div>
-  )
-}
+Container.propTypes = {
+  center: PropTypes.object,
+};
