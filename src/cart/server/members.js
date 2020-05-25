@@ -70,6 +70,6 @@ export default async function members(event) {
 
   return {
     statusCode: 200,
-    body: JSON.stringify({ contactId: contactId, email: metadata.email }),
+    body: JSON.stringify({ contactId: contactId, accountId: accountId, email: metadata.email }),
   };
 }
