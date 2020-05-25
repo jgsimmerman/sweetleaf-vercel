@@ -49,7 +49,7 @@ export default async function members(event) {
     // }
   }
 
-  contact = getContact
+  contact = await getContact()
   contactId = contact.id
   const accountId = `account_${uuid.v4().substring(0, 6)}`
 
@@ -61,13 +61,13 @@ export default async function members(event) {
       programId: sweetleafMemberProgramId,
       contactId: contactId,
       balance: 100, 
-      //currency: 'Points'
+      currency: 'Points'
     }
     const value = await Lightrail.values.createValue(accountParams);
     return value
   }
 
-  const account = createAccount(accountId, contactId, sweetleafMemberProgramId)
+  const account = await createAccount(accountId, contactId, sweetleafMemberProgramId)
   console.log('account', account)
   const contactValuesList = await Lightrail.contacts.listContactsValues(contact)
   console.log('contactValuesList ', contactValuesList)
