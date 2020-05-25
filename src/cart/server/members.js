@@ -69,8 +69,8 @@ export default async function members(event) {
 
   const account = await createAccount(accountId, contactId, sweetleafMemberProgramId)
   console.log('account', account)
-  const contactValuesList = await Lightrail.contacts.listContactsValues(contact)
-  console.log('contactValuesList ', contactValuesList)
+  //const contactValuesList = await Lightrail.contacts.listContactsValues(contact)
+  //console.log('contactValuesList ', contactValuesList)
 
   return {
     statusCode: 200,
