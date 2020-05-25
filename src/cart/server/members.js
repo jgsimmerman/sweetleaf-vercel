@@ -17,7 +17,7 @@ export default async function members(event) {
   console.log('members.js', metadata);
   //  END MAGIC AUTH
   // START LIGHTRAIL5.0
-  const sweetleafMemberProgramId = '722f71b4-455ed875-6605aff5'
+  //const sweetleafMemberProgramId = '722f71b4-455ed875-6605aff5'
 
   // Create Contact
   let contact = {}
@@ -51,21 +51,21 @@ export default async function members(event) {
 
   contact = await getContact()
   contactId = contact.id
-  const accountId = uuid.v4().substring(0, 6)
+  // const accountId = uuid.v4().substring(0, 6)
 
-  // Create Account
-  async function createAccount(accountId, contactId, sweetleafMemberProgramId) {
+  // // Create Account
+  // async function createAccount(accountId, contactId, sweetleafMemberProgramId) {
     
-    const accountParams = {
-      id: accountId,
-      programId: sweetleafMemberProgramId,
-      contactId: contactId,
-      balance: 100, 
-      currency: 'Points'
-    }
-    const value = await Lightrail.values.createValue(accountParams);
-    return value
-  }
+  //   const accountParams = {
+  //     id: accountId,
+  //     programId: sweetleafMemberProgramId,
+  //     contactId: contactId,
+  //     balance: 100, 
+  //     currency: 'Points'
+  //   }
+  //   const value = await Lightrail.values.createValue(accountParams);
+  //   return value
+  // }
 
   //const account = await createAccount(accountId, contactId, sweetleafMemberProgramId)
   //console.log('account', account)
