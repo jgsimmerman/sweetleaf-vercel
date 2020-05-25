@@ -35,7 +35,7 @@ export default async function members(event) {
 
     } catch {
       const newContact = {
-        id: `cus_${uuid.v4().substring(0, 6)}`,
+        id: uuid.v4().substring(0, 6),
         email: metadata.email,
       };
        contact = await Lightrail.contacts.createContact(newContact);
@@ -51,7 +51,7 @@ export default async function members(event) {
 
   contact = await getContact()
   contactId = contact.id
-  const accountId = `account_${uuid.v4().substring(0, 6)}`
+  const accountId = uuid.v4().substring(0, 6)
 
   // Create Account
   async function createAccount(accountId, contactId, sweetleafMemberProgramId) {
@@ -75,5 +75,5 @@ export default async function members(event) {
   return {
     statusCode: 200,
     body: JSON.stringify({ contactId: contactId, accountId: accountId, email: metadata.email }),
-  };
+  }
 }
