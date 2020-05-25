@@ -66,10 +66,10 @@ export default async function members(event) {
     const value = await Lightrail.values.createValue(accountParams);
     return value
   }
-  createAccount(accountId, contactId, sweetleafMemberProgramId)
-
+  const account = createAccount(accountId, contactId, sweetleafMemberProgramId)
+  console.log('account', account)
   const contactValuesList = await Lightrail.contacts.listContactsValues(contact)
-  console.log(contactValuesList)
+  console.log('contactValuesList ', contactValuesList)
   return {
     statusCode: 200,
     body: JSON.stringify({ contactId: contactId, accountId: accountId, email: metadata.email }),
